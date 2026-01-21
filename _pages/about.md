@@ -39,6 +39,11 @@ His research interests include technology-supported programming instruction, dig
 - 2020-2021 Zhejiang Provincial Government Scholarship (6,000 RMB)
 - 2019-2020 Zhejiang Provincial Government Scholarship (6,000 RMB)
 
+# 💴 Funding
+- 2020-2021 Zhejiang Provincial Government Scholarship (6,000 RMB)
+- 2019-2020 Zhejiang Provincial Government Scholarship (6,000 RMB)
+
+
 # 📖 Educations
 - 2019-2023 Zhejiang University of Technology
 - 2023-2025 East China Normal University
