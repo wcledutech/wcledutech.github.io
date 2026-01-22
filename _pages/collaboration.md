@@ -1,7 +1,7 @@
 ---
 layout: default
-permalink: /publications/
-title: "Publications"
+permalink: /collaboration/
+title: "collaboration"
 excerpt: ""
 author_profile: true
 ---
