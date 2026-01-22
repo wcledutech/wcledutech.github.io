@@ -48,7 +48,7 @@ His research interests include technology-supported programming instruction, dig
 
 * **2022–2023 Provincial Undergraduate Innovation & Entrepreneurship Training Program** | *Analyzing the Impact of Video Attributes on Learners’ Performance and Learning Experience* (5,000 RMB)
 
-* **2021–2022 University-Level “Xin’an” Yangfan (Set Sail) Program Project** | *A Study on Hangzhou Asian Games Volunteers’ Participation Motivation and Willingness: A Self-Determination Theory Perspective*  (3,000 RMB)
+* **2021–2022 University-Level “Xin’an” Yangfan Program Project** | *A Study on Hangzhou Asian Games Volunteers’ Participation Motivation and Willingness: A Self-Determination Theory Perspective*  (3,000 RMB)
 
 * **2020–2021 National Undergraduate Innovation & Entrepreneurship Training Program** | *College Students’ Perceived Privacy Risks and Self-Disclosure Behaviors in Mobile Social Networking Apps* (10,000 RMB)
 
