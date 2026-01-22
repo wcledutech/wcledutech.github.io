@@ -1,4 +1,4 @@
----
+<img width="20" height="21" alt="image" src="https://github.com/user-attachments/assets/0fcfa2fe-f89e-4a00-a6d4-17b10dcfa138" />---
 permalink: /
 title: ""
 excerpt: ""
@@ -29,16 +29,16 @@ His research interests include technology-supported programming instruction, dig
   *PLOS One* (SCI Q1)
 
 # 🎖 Honors, Awards and Scholarship
-- 2026-2028 ACU Vice Chancellor's PhD Excellence Scholarship (Totaling approximately 983,000 RMB over three years, inclusive of tuition.)
-- 2024-2025 China National Scholarship for Postgraduate Students (20,000 RMB)
-- 2024 East China Normal University President's Scholarship (The highest academic honor at ECNU, 20,000 RMB)
-- 2023-2024 China National Scholarship for Postgraduate Students (20,000 RMB)
-- 2023 Outstanding Graduate of Zhejiang Province
-- 2023 Outstanding Graduation Thesis Award, Zhejiang University of Technology
-- 2022 The Best Presentation of Session 5 on the 7th International Conference on Cloud Computing and Big Data Analytics (ICCCBDA 2022)
-- 2021 First Prize in 7th “Jianxing” Undergraduate Forum (the only First Prize awarded in the Humanities & Social Sciences track, 1,500 RMB)
-- 2020-2021 Zhejiang Provincial Government Scholarship (6,000 RMB)
-- 2019-2020 Zhejiang Provincial Government Scholarship (6,000 RMB)
+- **2026-2028** ACU Vice Chancellor's PhD Excellence Scholarship (Totaling approximately 983,000 RMB over three years, inclusive of tuition.)
+- **2024-2025** China National Scholarship for Postgraduate Students (20,000 RMB)
+- **2024** East China Normal University President's Scholarship (The highest academic honor at ECNU, 20,000 RMB)
+- **2023-2024** China National Scholarship for Postgraduate Students (20,000 RMB)
+- **2023** Outstanding Graduate of Zhejiang Province
+- **2023** Outstanding Graduation Thesis Award, Zhejiang University of Technology
+- **2022** The Best Presentation of Session 5 on the 7th International Conference on Cloud Computing and Big Data Analytics (ICCCBDA 2022)
+- **2021** First Prize in 7th “Jianxing” Undergraduate Forum (the only First Prize awarded in the Humanities & Social Sciences track, 1,500 RMB)
+- **2020-2021** Zhejiang Provincial Government Scholarship (6,000 RMB)
+- **2019-2020** Zhejiang Provincial Government Scholarship (6,000 RMB)
 
 # 💴 Funding
 * **2023–2024 ECNU Faculty/Division Project** | *Macro Trends, Normative Logic, and Practical Models of AIGC-Driven Educational Transformation*  (1,000 RMB)
