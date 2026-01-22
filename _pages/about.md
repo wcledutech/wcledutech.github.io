@@ -36,6 +36,7 @@ His research interests include technology-supported programming instruction, dig
 - 2023 Outstanding Graduate of Zhejiang Province
 - 2023 Outstanding Graduation Thesis Award, Zhejiang University of Technology
 - 2022 The Best Presentation of Session 5 on the 7th International Conference on Cloud Computing and Big Data Analytics (ICCCBDA 2022)
+- 2021 First Prize in 7th “Jianxing” Undergraduate Forum (the only First Prize awarded in the Humanities & Social Sciences track, 1,500 RMB)
 - 2020-2021 Zhejiang Provincial Government Scholarship (6,000 RMB)
 - 2019-2020 Zhejiang Provincial Government Scholarship (6,000 RMB)
 
