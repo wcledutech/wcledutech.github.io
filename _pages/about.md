@@ -55,9 +55,9 @@ His research interests include technology-supported programming instruction, dig
 
 
 # 📖 Educations
-- 2019-2023 Zhejiang University of Technology
-- 2023-2025 East China Normal University
-- 2025-present Australian Catholic University
+- **2019-2023** Zhejiang University of Technology
+- **2023-2025** East China Normal University
+- **2026-present** Australian Catholic University
 
 # 💻 Internships
 - **2022.8–2022.11**: Interned as a High School Information Technology Teacher - Jishan High School in Shaoxing
