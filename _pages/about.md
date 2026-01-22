@@ -40,8 +40,17 @@ His research interests include technology-supported programming instruction, dig
 - 2019-2020 Zhejiang Provincial Government Scholarship (6,000 RMB)
 
 # 💴 Funding
-- 2020-2021 Zhejiang Provincial Government Scholarship (6,000 RMB)
-- 2019-2020 Zhejiang Provincial Government Scholarship (6,000 RMB)
+* **2023–2024 ECNU Faculty/Division Project** | *Macro Trends, Normative Logic, and Practical Models of AIGC-Driven Educational Transformation*  (1,000 RMB)
+
+* **2022–2023 National Undergraduate Innovation & Entrepreneurship Training Program** / **Also funded by Zhejiang Province “Xinmiao” Talent Program** | *Constructing Learner Digital Profiles from a Personalized Adaptive Learning Perspective: An Empirical Study of Online Learning in the Post-Pandemic Era*  (20,000 RMB)
+
+* **2022–2023 National Undergraduate Innovation & Entrepreneurship Training Program** | *An Emotion-Computing–Based System for Analyzing and Intervening in College Students’ Classroom Learning States* (10,000 RMB)
+
+* **2022–2023 Provincial Undergraduate Innovation & Entrepreneurship Training Program** | *Analyzing the Impact of Video Attributes on Learners’ Performance and Learning Experience* (5,000 RMB)
+
+* **2021–2022 University-Level “Xin’an” Yangfan (Set Sail) Program Project** | *A Study on Hangzhou Asian Games Volunteers’ Participation Motivation and Willingness: A Self-Determination Theory Perspective*  (3,000 RMB)
+
+* **2020–2021 National Undergraduate Innovation & Entrepreneurship Training Program** | *College Students’ Perceived Privacy Risks and Self-Disclosure Behaviors in Mobile Social Networking Apps* (10,000 RMB)
 
 
 # 📖 Educations
