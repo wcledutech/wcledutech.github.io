@@ -1,12 +1,14 @@
-<img width="20" height="21" alt="image" src="https://github.com/user-attachments/assets/0fcfa2fe-f89e-4a00-a6d4-17b10dcfa138" />---
+<img width="20" height="21" alt="image" src="https://github.com/user-attachments/assets/0fcfa2fe-f89e-4a00-a6d4-17b10dcfa138" />
+---
 permalink: /
 title: ""
 excerpt: ""
 author_profile: true
 redirect_from: 
   - /about/
-  - /about.html/
+  - /about.html
 ---
+
 
 {% if site.google_scholar_stats_use_cdn %}
 {% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
