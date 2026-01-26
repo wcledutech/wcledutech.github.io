@@ -59,13 +59,13 @@ His research interests include technology-supported programming instruction, dig
 
 
 # 📖 Educations
-- **2019-2023** Zhejiang University of Technology, College of Education
+- **2019-2023 Zhejiang University of Technology, College of Education** | Hangzhou, Zhejiang Province
 
   Linear Algebra (98, the 🥇 denotes the highest score in the major); Web Front-End Development Technology (🥇95); Fundamentals of Artificial Intelligence (🥇100); Eduational Web Application Development (🥇95); Intelligent Learning Systems Designing and Developing (🥇95); Theory of Computer Networks (🥇95); The Forefront of Educational Information Technology (🥇95); Introduction of Big Data (95); Experiment of Big Data in Education (97); Educational Data Statistics and Evaluation (🥇97); Oral Presentation Skill of Teacher (🥇99); Class Work Skill Training (97); Teachers Skills Training (95); Pedagogy of ICT in Primary and Secondary School (95); Educational Management (🥇94); 
-- **2023-2025** East China Normal University
+- **2023-2025 East China Normal University, Faculty of Education** | Shanghai
 
   Theory and Practice of Educational Technology (92); Research Methods (90)
-- **2026-present** Australian Catholic University
+- **2026-present Australian Catholic University, Institute for Positive Psychology and Education** | Sydney
 
    A project-led doctoral program that focuses entirely on independent research rather than traditional taught modules.
 
