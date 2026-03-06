@@ -25,12 +25,6 @@ Chengliang Wang is pursuing a PhD. under the supervision of <a href="https://sch
 
 His research interests include technology-supported programming instruction, digital learning environment construction, AI literacy education and educational technology philosophy. Over the past three years, he has published 25 SSCI Q1 papers as first author or corresponding author, with 15 papers selected as ESI 1% highly cited papers🏆 and 5 papers selected as ESI 0.1% hot papers🔥. His ResearchGate link: <a href="https://www.researchgate.net/profile/Chengliang-Wang-5" target="_blank">https://www.researchgate.net/profile/Chengliang-Wang-5</a>
 
-# 📚 Editorial Membership
-
-- **Handling Editor** (May 2024 – present)  
-  *SAGE Open* (SSCI Q1)
-- **Editorial Advisory Board Member** (April 2024 – present)  
-  *PLOS One* (SCI Q1)
 
 # 🎖 Honors, Awards and Scholarship
 - **2026-2028** ACU Vice Chancellor's PhD Excellence Scholarship (Totaling approximately 1,033,000 RMB over 3 years, inclusive of tuition.)
@@ -43,6 +37,9 @@ His research interests include technology-supported programming instruction, dig
 - **2021** First Prize in 7th “Jianxing” Undergraduate Forum (the only First Prize awarded in the Humanities & Social Sciences track, 1,500 RMB)
 - **2020-2021** Zhejiang Provincial Government Scholarship (6,000 RMB)
 - **2019-2020** Zhejiang Provincial Government Scholarship (6,000 RMB)
+
+
+
 
 # 💴 Funding
 * **2023–2024 ECNU Faculty/Division Project** | *Macro Trends, Normative Logic, and Practical Models of AIGC-Driven Educational Transformation*  (1,000 RMB)
@@ -68,6 +65,14 @@ His research interests include technology-supported programming instruction, dig
 - **2026-present Australian Catholic University, Institute for Positive Psychology and Education** | Sydney
 
    A project-led doctoral program that focuses entirely on independent research rather than traditional taught modules.
+
+
+  # 📚 Editorial Membership
+
+- **Handling Editor** (May 2024 – present)  
+  *SAGE Open* (SSCI Q1)
+- **Editorial Advisory Board Member** (April 2024 – present)  
+  *PLOS One* (SCI Q1)
 
 # 💻 Internships
 - **2022.8–2022.11**: Interned as a High School Information Technology Teacher - Jishan High School in Shaoxing
