@@ -67,7 +67,9 @@ His research interests include technology-supported programming instruction, dig
    A project-led doctoral program that focuses entirely on independent research rather than traditional taught modules.
 
 
-  # 📚 Editorial Membership
+
+
+# 📚 Editorial Membership
 
 - **Handling Editor** (May 2024 – present)  
   *SAGE Open* (SSCI Q1)
