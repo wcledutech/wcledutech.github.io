@@ -22,7 +22,7 @@ Additionally, <a href="https://scholar.google.com/citations?user=Ra8fbcYAAAAJ&hl
 
 # 📅 Routine 
 
-- Feb 19                   Arrive in Sydney 🛬
+- <del>Feb 19                   Arrive in Sydney 🛬 <del>
 - Apr 10 - 14              Melbourne Visit 📍
 - May 30 - Jun 02          Hong Kong (GCCCE @ CUHK) 🎓
 - Jun 30 - Jul 02          Shanghai Visit ✈️
