@@ -27,7 +27,7 @@ His research interests include technology-supported programming instruction, dig
 
 
 # 🎖 Honors, Awards and Scholarship
-- **2026-2028** ACU Vice Chancellor's PhD Excellence Scholarship (Totaling approximately 1,033,000 RMB over 3 years, inclusive of tuition.)
+- **2026-2028** ACU Vice Chancellor's PhD Excellence Scholarship (Research Training Program (RTP) Scholarships, Totaling approximately 1,033,000 RMB over 3 years, inclusive of tuition.)
 - **2024-2025** China National Scholarship for Postgraduate Students (20,000 RMB)
 - **2024** East China Normal University President's Scholarship (The highest academic honor at ECNU, 20,000 RMB)
 - **2023-2024** China National Scholarship for Postgraduate Students (20,000 RMB)
