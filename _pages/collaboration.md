@@ -18,3 +18,11 @@ Additionally, <a href="https://scholar.google.com/citations?user=Ra8fbcYAAAAJ&hl
 - Our team is also committed to academic public service. We have compiled a set of key metrics for SSCI journals in Education, which can <a href="https://mp.weixin.qq.com/s/lMOSSRYn50dYkK_doqWrpw" target="_blank">be accessed for free</a>. Additionally, I offer a series of free courses on my <a href="https://space.bilibili.com/481706784?spm_id_from=333.788.upinfo.head.click" target="_blank">Bilibili homepage</a>, covering topics such as Structural Equation Modeling (SEM), Quasi-experimental Design, Systematic Literature Review writing, and Bibliometrics. In the future, I plan to launch a series of methodology courses covering Qualitative Comparative Analysis (QCA) and Artificial Neural Networks (ANN).
 
 - I maintain an open attitude toward collaboration; however, to ensure high-quality outcomes given my current capacity, I apply certain baseline criteria for new partnerships. Nevertheless, I welcome potential collaborators to reach out via email (wcledutech@gmail.com). I aim to make time for a brief discussion with all inquiries to efficiently explore the possibility of working together.
+
+
+# 📅 Routine 
+
+- Feb 19 | Arrive in Sydney 🛬
+- Apr 10 - 14 | Melbourne Visit 📍
+- May 30 - Jun 02 | Hong Kong (GCCCE @ CUHK) 🎓
+- Jun 30 - Jul 02 | Shanghai Visit ✈️
