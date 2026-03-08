@@ -77,26 +77,26 @@ His research interests include technology-supported programming instruction, dig
   *PLOS One* (SCI Q1)
 
 - **PC Member**:
-  *The 27th edition of the International Conference on Artificial Intelligence in Education (AIED2026)* (Seoul, South Korea)
+  *The 27th edition of the International Conference on Artificial Intelligence in Education (AIED2026)* (Seoul, South Korea); 
   *The 33rd International Conference on Computers in Education (ICCE2026)* (New Zealand)
   
 - **Reviewer**:
-  *Educational Psychology Review* (SSCI Q1)
-  *Computers & Education* (SSCI Q1; SCI Q1)
-  *Technology in Society* (SSCI Q1)
-  *Journal of Innovation and Knowledge* (SSCI Q1)
-  *International Multilingual Research Journal* (SSCI Q1)
-  *Journal of Educational Computing Research* (SSCI Q1)
-  *Journal of Computer Assisted Learning* (SSCI Q1)
-  *Research Papers in Education* (SSCI Q1)
-  *International Journal of Human-Computer Interaction* (SSCI Q1; SCI Q1)
-  *European Journal of Education* (SSCI Q1)
-  *Interactive Learning Environments (SSCI Q1)
-  *Education and Information Technologies* (SSCI Q1)
-  *Asia Pacific Education Review* (SSCI Q1)
-  *Educational Technology Research and Development* (SSCI Q1)
-  *International Journal of Educational Research* (SSCI Q1)
-  *Technology, Pedagogy and Education* (SSCI Q1)
+  *Educational Psychology Review* (SSCI Q1); 
+  *Computers & Education* (SSCI Q1, SCI Q1); 
+  *Technology in Society* (SSCI Q1); 
+  *Journal of Innovation and Knowledge* (SSCI Q1); 
+  *International Multilingual Research Journal* (SSCI Q1); 
+  *Journal of Educational Computing Research* (SSCI Q1); 
+  *Journal of Computer Assisted Learning* (SSCI Q1); 
+  *Research Papers in Education* (SSCI Q1); 
+  *International Journal of Human-Computer Interaction* (SSCI Q1, SCI Q1); 
+  *European Journal of Education* (SSCI Q1); 
+  *Interactive Learning Environments (SSCI Q1);
+  *Education and Information Technologies* (SSCI Q1);
+  *Asia Pacific Education Review* (SSCI Q1);
+  *Educational Technology Research and Development* (SSCI Q1);
+  *International Journal of Educational Research* (SSCI Q1);
+  *Technology, Pedagogy and Education* (SSCI Q1);
   ... ...
 
 # 💻 Internships
