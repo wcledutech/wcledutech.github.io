@@ -182,6 +182,30 @@ author_profile: true
   text-decoration: underline;
 }
 
+.email-highlight {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 .12rem;
+  padding: .12rem .5rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(135deg, var(--teal), var(--gold), var(--coral)) border-box;
+  box-shadow: 0 8px 22px rgba(15,118,110,.16);
+  color: var(--teal) !important;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.email-highlight:hover {
+  color: #fff !important;
+  background:
+    linear-gradient(135deg, var(--teal), var(--coral)) padding-box,
+    linear-gradient(135deg, var(--teal), var(--gold), var(--coral)) border-box;
+  text-decoration: none !important;
+}
+
 @media (max-width: 900px) {
   .collaboration-tags {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -234,7 +258,7 @@ Additionally, <a href="https://scholar.google.com/citations?user=Ra8fbcYAAAAJ&hl
 
 - Our team is also committed to academic public service. We have compiled a set of key metrics for SSCI journals in Education, which can <a href="https://mp.weixin.qq.com/s/lMOSSRYn50dYkK_doqWrpw" target="_blank">be accessed for free</a>. Additionally, I offer a series of free courses on my <a href="https://space.bilibili.com/481706784?spm_id_from=333.788.upinfo.head.click" target="_blank">Bilibili homepage</a>, covering topics such as Structural Equation Modeling (SEM), Quasi-experimental Design, Systematic Literature Review writing, and Bibliometrics. In the future, I plan to launch a series of methodology courses covering Qualitative Comparative Analysis (QCA) and Artificial Neural Networks (ANN).
 
-- I maintain an open attitude toward collaboration; however, to ensure high-quality outcomes given my current capacity, I apply certain baseline criteria for new partnerships. Nevertheless, I welcome potential collaborators to reach out via email (wcledutech@gmail.com). I aim to make time for a brief discussion with all inquiries to efficiently explore the possibility of working together.
+- I maintain an open attitude toward collaboration; however, to ensure high-quality outcomes given my current capacity, I apply certain baseline criteria for new partnerships. Nevertheless, I welcome potential collaborators to reach out via email <a class="email-highlight" href="mailto:wcledutech@gmail.com">wcledutech@gmail.com</a>. I aim to make time for a brief discussion with all inquiries to efficiently explore the possibility of working together.
 
 
 ## Routine
