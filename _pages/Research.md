@@ -82,7 +82,7 @@ author_profile: true
 
 .research-metrics {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: .75rem;
   margin-top: 1.7rem;
 }
@@ -380,7 +380,8 @@ author_profile: true
       <div class="research-metric"><strong>7</strong><span>Research directions</span></div>
       <div class="research-metric"><strong>56</strong><span>SSCI/SCI papers</span></div>
       <div class="research-metric"><strong>30</strong><span>First-author and corresponding-author studies</span></div>
-      <div class="research-metric"><strong>15 + 5</strong><span>ESI 1% highly cited papers and ESI 0.1% hot papers</span></div>
+      <div class="research-metric"><strong>15</strong><span>ESI 1% highly cited papers</span></div>
+      <div class="research-metric"><strong>5</strong><span>ESI 0.1% hot papers</span></div>
     </div>
   </section>
 
