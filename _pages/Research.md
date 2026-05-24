@@ -82,7 +82,7 @@ author_profile: true
 
 .research-metrics {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: .75rem;
   margin-top: 1.7rem;
 }
@@ -378,8 +378,6 @@ author_profile: true
     <div class="research-metrics" aria-label="Research overview">
       <div class="research-metric"><strong>7</strong><span>Research directions</span></div>
       <div class="research-metric"><strong>44</strong><span>Direction-linked works listed on this page</span></div>
-      <div class="research-metric"><strong>2023-2026</strong><span>Main publication window represented here</span></div>
-      <div class="research-metric"><strong>AI + LA</strong><span>Cross-cutting focus on AI, analytics, and learning systems</span></div>
     </div>
   </section>
 
