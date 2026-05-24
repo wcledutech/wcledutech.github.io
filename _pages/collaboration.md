@@ -94,41 +94,6 @@ author_profile: true
   line-height: 1.35;
 }
 
-.collaboration-nav {
-  position: sticky;
-  top: 5rem;
-  z-index: 20;
-  display: flex;
-  flex-wrap: wrap;
-  gap: .5rem;
-  margin: 1.35rem 0 2rem;
-  padding: .65rem;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(255,255,255,.88);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 14px 36px rgba(23,32,51,.08);
-}
-
-.collaboration-nav a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 38px;
-  padding: .45rem .72rem;
-  border-radius: 6px;
-  color: var(--ink);
-  text-decoration: none;
-  font-size: .88rem;
-  line-height: 1.2;
-  transition: background .2s ease, color .2s ease, transform .2s ease;
-}
-
-.collaboration-nav a:hover {
-  color: #fff;
-  background: var(--ink);
-  transform: translateY(-1px);
-}
-
 .collaboration-page h2 {
   margin: 2.8rem 0 1rem;
   padding-top: 1.15rem;
@@ -213,15 +178,6 @@ author_profile: true
 }
 
 @media (max-width: 620px) {
-  .collaboration-nav {
-    position: relative;
-    top: auto;
-  }
-
-  .collaboration-nav a {
-    width: 100%;
-  }
-
   .collaboration-tags {
     grid-template-columns: 1fr;
   }
@@ -241,11 +197,6 @@ author_profile: true
     <div class="collaboration-tag"><strong>Public Service</strong><span>Journal metrics, courses, and method resources</span></div>
   </div>
 </section>
-
-<nav class="collaboration-nav" aria-label="Collaboration page sections">
-  <a href="#collaboration">Collaboration</a>
-  <a href="#routine">Routine</a>
-</nav>
 
 ## Collaboration
 
