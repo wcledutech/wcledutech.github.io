@@ -6,7 +6,657 @@ excerpt: ""
 author_profile: true
 ---
 
-# 📝 Publications 
+<style>
+.research-page {
+  --ink: #172033;
+  --muted: #5f6b7a;
+  --line: rgba(23, 32, 51, .12);
+  --soft: #f6f8fb;
+  --teal: #0f766e;
+  --coral: #b55a3c;
+  --gold: #b6821b;
+  --indigo: #344a7a;
+  --plum: #6b3f68;
+  --paper: #ffffff;
+  color: var(--ink);
+  font-family: "Times New Roman", Times, serif;
+}
+
+.research-page * {
+  box-sizing: border-box;
+}
+
+.research-hero {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, .22);
+  border-radius: 8px;
+  padding: clamp(2rem, 4vw, 3.6rem);
+  color: #fff;
+  background:
+    linear-gradient(120deg, rgba(19, 34, 56, .98), rgba(15, 118, 110, .9) 54%, rgba(181, 90, 60, .9)),
+    repeating-linear-gradient(90deg, rgba(255,255,255,.08) 0 1px, transparent 1px 54px);
+  box-shadow: 0 24px 60px rgba(23, 32, 51, .18);
+}
+
+.research-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, transparent, rgba(255,255,255,.18), transparent),
+    repeating-linear-gradient(0deg, transparent 0 45px, rgba(255,255,255,.08) 45px 46px);
+  mix-blend-mode: screen;
+  animation: researchSweep 9s linear infinite;
+}
+
+@keyframes researchSweep {
+  0% { transform: translateX(-60%); opacity: .25; }
+  50% { opacity: .55; }
+  100% { transform: translateX(60%); opacity: .25; }
+}
+
+.research-hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.research-kicker {
+  display: inline-flex;
+  gap: .55rem;
+  align-items: center;
+  margin: 0 0 .9rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  font-size: .82rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .82);
+}
+
+.research-hero h1 {
+  margin: 0;
+  max-width: 820px;
+  border: 0;
+  font-size: clamp(2.2rem, 6vw, 4.7rem);
+  line-height: .96;
+  letter-spacing: 0;
+}
+
+.research-hero p {
+  max-width: 780px;
+  margin: 1.2rem 0 0;
+  color: rgba(255, 255, 255, .88);
+  font-size: clamp(1.06rem, 2.1vw, 1.32rem);
+  line-height: 1.55;
+}
+
+.research-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .75rem;
+  margin-top: 1.7rem;
+}
+
+.research-metric {
+  min-height: 104px;
+  padding: 1rem;
+  border: 1px solid rgba(255,255,255,.24);
+  border-radius: 8px;
+  background: rgba(255,255,255,.12);
+  backdrop-filter: blur(8px);
+}
+
+.research-metric strong {
+  display: block;
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  line-height: 1;
+}
+
+.research-metric span {
+  display: block;
+  margin-top: .5rem;
+  color: rgba(255,255,255,.82);
+  font-size: .92rem;
+  line-height: 1.35;
+}
+
+.research-nav {
+  position: sticky;
+  top: .75rem;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin: 1.35rem 0 2rem;
+  padding: .65rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255,255,255,.86);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 14px 36px rgba(23,32,51,.08);
+}
+
+.research-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: .45rem .72rem;
+  border-radius: 6px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: .88rem;
+  line-height: 1.2;
+  transition: background .2s ease, color .2s ease, transform .2s ease;
+}
+
+.research-nav a:hover {
+  color: #fff;
+  background: var(--ink);
+  transform: translateY(-1px);
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2.4rem;
+}
+
+.theme-card,
+.research-work,
+.method-panel {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background:
+    linear-gradient(var(--paper), var(--paper)) padding-box,
+    linear-gradient(135deg, var(--accent, var(--teal)), rgba(255,255,255,0) 58%, rgba(182,130,27,.62)) border-box;
+  box-shadow: 0 16px 42px rgba(23,32,51,.08);
+}
+
+.theme-card {
+  min-height: 230px;
+  padding: 1.25rem;
+  transition: transform .22s ease, box-shadow .22s ease;
+}
+
+.theme-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 54px rgba(23,32,51,.14);
+}
+
+.theme-card .index {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(23,32,51,.12);
+  border-radius: 50%;
+  color: var(--accent, var(--teal));
+  font-weight: 800;
+}
+
+.theme-card h2,
+.research-section h2 {
+  margin: 0;
+  border: 0;
+  font-size: clamp(1.25rem, 2vw, 1.65rem);
+  line-height: 1.18;
+}
+
+.theme-card p {
+  margin: .75rem 0 1rem;
+  color: var(--muted);
+  font-size: .98rem;
+  line-height: 1.52;
+}
+
+.theme-card a {
+  color: var(--accent, var(--teal));
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.research-section {
+  margin: 2.8rem 0;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--line);
+}
+
+.research-section .section-lead {
+  max-width: 860px;
+  margin: .65rem 0 1.2rem;
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.62;
+}
+
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: .95rem;
+}
+
+.research-work {
+  padding: 1rem 1.05rem;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.research-work:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 20px 46px rgba(23,32,51,.12);
+}
+
+.research-work h3 {
+  margin: 0 0 .55rem;
+  font-size: 1.02rem;
+  line-height: 1.35;
+}
+
+.research-work p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .94rem;
+  line-height: 1.5;
+}
+
+.work-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin-top: .8rem;
+}
+
+.work-meta span,
+.method-tags span {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid rgba(23,32,51,.12);
+  border-radius: 999px;
+  padding: .18rem .52rem;
+  color: var(--muted);
+  background: var(--soft);
+  font-size: .78rem;
+  line-height: 1.4;
+}
+
+.method-panel {
+  margin: 2.2rem 0 2.6rem;
+  padding: 1.25rem;
+  --accent: var(--gold);
+}
+
+.method-panel h2 {
+  margin-top: 0;
+  border: 0;
+}
+
+.method-panel p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.method-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .55rem;
+}
+
+.research-archive {
+  margin-top: 3rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+  background: #fff;
+  box-shadow: 0 16px 42px rgba(23,32,51,.06);
+}
+
+.research-archive summary {
+  cursor: pointer;
+  color: var(--ink);
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.research-archive h1 {
+  margin-top: 1.1rem;
+  font-size: 1.65rem;
+}
+
+@media (max-width: 900px) {
+  .research-metrics,
+  .research-grid,
+  .work-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 620px) {
+  .research-hero {
+    padding: 1.55rem;
+  }
+
+  .research-metrics,
+  .research-grid,
+  .work-list {
+    grid-template-columns: 1fr;
+  }
+
+  .research-nav {
+    position: relative;
+    top: auto;
+  }
+
+  .research-nav a {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .research-hero::after,
+  .theme-card,
+  .research-work,
+  .research-nav a {
+    animation: none;
+    transition: none;
+  }
+}
+</style>
+
+<div class="research-page" markdown="1">
+  <section class="research-hero">
+    <p class="research-kicker">Research Portfolio</p>
+    <h1>Learning Environments, AI, Programming Education, Methods, and Learner Modeling</h1>
+    <p>
+      My research examines how digital technologies reshape learning environments, how learners adopt and use intelligent tools,
+      and how rigorous methodological designs can explain, evaluate, and improve technology-enhanced education.
+    </p>
+    <div class="research-metrics" aria-label="Research overview">
+      <div class="research-metric"><strong>5</strong><span>Core research directions</span></div>
+      <div class="research-metric"><strong>60</strong><span>Journal and conference publications listed below</span></div>
+      <div class="research-metric"><strong>2022-2026</strong><span>Active publication window on this page</span></div>
+      <div class="research-metric"><strong>AI + LA</strong><span>Cross-cutting focus on artificial intelligence and learning analytics</span></div>
+    </div>
+  </section>
+
+  <nav class="research-nav" aria-label="Research directions">
+    <a href="#smart-learning-environments">Smart Learning Environments</a>
+    <a href="#programming-learning">Programming Learning</a>
+    <a href="#methods-evaluation">Methods and Evaluation</a>
+    <a href="#learner-modeling">Learner Modeling</a>
+    <a href="#ai-education">AI in Education</a>
+    <a href="#other-work">Other Work</a>
+  </nav>
+
+  <section class="research-grid" aria-label="Research direction map">
+    <article class="theme-card" style="--accent: var(--teal);">
+      <span class="index">01</span>
+      <h2>Smart and Intelligent Learning Environments</h2>
+      <p>Designing, mapping, and evaluating digital, virtual, XR, and platform-based learning environments.</p>
+      <a href="#smart-learning-environments">View this direction</a>
+    </article>
+    <article class="theme-card" style="--accent: var(--coral);">
+      <span class="index">02</span>
+      <h2>Technology-Supported Programming Learning</h2>
+      <p>Studying AI agents, ChatGPT, programming problem solving, and new paradigms for computing education.</p>
+      <a href="#programming-learning">View this direction</a>
+    </article>
+    <article class="theme-card" style="--accent: var(--gold);">
+      <span class="index">03</span>
+      <h2>Educational Research Methods and Evaluation</h2>
+      <p>Using meta-analysis, bibliometrics, content analysis, grounded theory, fsQCA, and quantitative ethnography.</p>
+      <a href="#methods-evaluation">View this direction</a>
+    </article>
+    <article class="theme-card" style="--accent: var(--indigo);">
+      <span class="index">04</span>
+      <h2>Learner Behavior Modeling</h2>
+      <p>Explaining technology adoption, continuance intention, knowledge sharing, behavioral intention, and learning experience.</p>
+      <a href="#learner-modeling">View this direction</a>
+    </article>
+    <article class="theme-card" style="--accent: var(--plum);">
+      <span class="index">05</span>
+      <h2>Artificial Intelligence in Education</h2>
+      <p>Investigating AIGC, human-centered AI, AI agents, language learning, higher education, and AI-supported learning systems.</p>
+      <a href="#ai-education">View this direction</a>
+    </article>
+    <article class="theme-card" style="--accent: #4f6f52;">
+      <span class="index">06</span>
+      <h2>Other Interdisciplinary Studies</h2>
+      <p>Housing related work that connects technology acceptance, trust, well-being, robotics, mobility, culture, and society.</p>
+      <a href="#other-work">View this direction</a>
+    </article>
+  </section>
+
+  <section class="method-panel">
+    <h2>Cross-cutting methodological toolkit</h2>
+    <p>
+      Across these directions, I combine theory-driven modeling, learning analytics, systematic review, mixed methods,
+      computational analysis, and design-oriented evaluation to make educational technology research both explainable and actionable.
+    </p>
+    <div class="method-tags">
+      <span>Mixed methods</span><span>Meta-analysis</span><span>Bibliometrics</span><span>fsQCA</span>
+      <span>Grounded theory</span><span>Quantitative ethnography</span><span>Learning analytics</span><span>Deep learning datasets</span>
+    </div>
+  </section>
+
+  <section class="research-section" id="smart-learning-environments">
+    <h2>Smart and Intelligent Learning Environments</h2>
+    <p class="section-lead">This direction focuses on digital learning environments as designed systems: how they are built, how they evolve, and how learners experience them across online, blended, virtual, and XR contexts.</p>
+    <div class="work-list">
+      <article class="research-work" style="--accent: var(--teal);">
+        <h3>The journey of challenges and victories: transformation action framework in the GenAI era</h3>
+        <p>A policy-informed framework for understanding educational transformation in the generative AI era.</p>
+        <div class="work-meta"><span>ETR&amp;D, 2025</span><span>SSCI Q1</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--teal);">
+        <h3>Education Reform and Change Driven by Digital Technology</h3>
+        <p>A global bibliometric study of digital technology-driven educational reform and frontier evolution.</p>
+        <div class="work-meta"><span>HSSCOMMS, 2024</span><span>Highly cited</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--teal);">
+        <h3>Continuance intention toward new e-learning spaces</h3>
+        <p>An integrated TAM and TTF model explaining sustained use of new e-learning spaces among college students.</p>
+        <div class="work-meta"><span>IJHCI, 2023</span><span>Hot paper</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--teal);">
+        <h3>Virtual learning environments and learning outcomes</h3>
+        <p>A meta-analytic synthesis of the impact of virtual learning environments on learning outcomes.</p>
+        <div class="work-meta"><span>Interactive Learning Environments, 2024</span><span>Meta-analysis</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--teal);">
+        <h3>Technology-supported learning environments: hot topics and frontier evolution</h3>
+        <p>A bibliometric mapping of research trends in technology-supported learning environments.</p>
+        <div class="work-meta"><span>JCAL, 2024</span><span>Bibliometrics</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--teal);">
+        <h3>Virtual laboratory and XR learning research</h3>
+        <p>Studies of virtual laboratory development and XR technologies in vocational education and training.</p>
+        <div class="work-meta"><span>SAGE Open, 2025</span><span>ICETC, 2024</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="research-section" id="programming-learning">
+    <h2>Technology-Supported Programming Learning</h2>
+    <p class="section-lead">This direction examines how intelligent tools, AI agents, and new learning designs support programming courses, computational thinking, problem solving, and programming education innovation.</p>
+    <div class="work-list">
+      <article class="research-work" style="--accent: var(--coral);">
+        <h3>MetaClassroom: a new paradigm and experience for programming education</h3>
+        <p>A programming education study centered on new learning paradigms and immersive learning experience design.</p>
+        <div class="work-meta"><span>JECR, 2025</span><span>SSCI Q1</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--coral);">
+        <h3>AI-agent-supported collaborative learning in university programming courses</h3>
+        <p>Evidence on how AI agents shape collaborative learning and learning outcomes in programming education.</p>
+        <div class="work-meta"><span>Education and Information Technologies, 2025</span><span>Highly cited</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--coral);">
+        <h3>ChatGPT for solving programming problems</h3>
+        <p>A quasi-experimental study identifying factors that affect the effectiveness of using ChatGPT for programming problem solving.</p>
+        <div class="work-meta"><span>HSSCOMMS, 2024</span><span>Hot paper</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--coral);">
+        <h3>Robot path planning algorithms</h3>
+        <p>A technical study of algorithm selection and application for robot path planning problems, extending computational learning contexts.</p>
+        <div class="work-meta"><span>Journal of Physics: Conference Series, 2024</span><span>Algorithmic learning</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="research-section" id="methods-evaluation">
+    <h2>Educational Research Methods and Evaluation</h2>
+    <p class="section-lead">This direction builds the methodological layer of my work: evidence synthesis, evaluation logic, mapping techniques, and mixed-method designs for interpreting complex educational technology phenomena.</p>
+    <div class="work-list">
+      <article class="research-work" style="--accent: var(--gold);">
+        <h3>Assessment as learning: meta-analysis and quantitative ethnography</h3>
+        <p>A methodological evaluation of assessment as learning using evidence synthesis and quantitative ethnography.</p>
+        <div class="work-meta"><span>Studies in Educational Evaluation, 2024</span><span>Evaluation</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--gold);">
+        <h3>Bibliometric mapping techniques in educational technology research</h3>
+        <p>A systematic literature review of bibliometric mapping techniques in educational technology studies.</p>
+        <div class="work-meta"><span>Education and Information Technologies, 2024</span><span>Systematic review</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--gold);">
+        <h3>Educational leadership theory: content analysis-based study</h3>
+        <p>A content analysis study tracing the evolution and current status of educational leadership theory.</p>
+        <div class="work-meta"><span>SAGE Open, 2024</span><span>Content analysis</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--gold);">
+        <h3>Big data and data mining in education</h3>
+        <p>A bibliometric study mapping big data and data mining research in education from 2010 to 2022.</p>
+        <div class="work-meta"><span>IEEE ICCCBDA, 2022</span><span>Bibliometrics</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--gold);">
+        <h3>Moral education research through knowledge graph analysis</h3>
+        <p>A visual analysis of the development and status of moral education research.</p>
+        <div class="work-meta"><span>Frontiers in Psychology, 2023</span><span>Knowledge mapping</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--gold);">
+        <h3>AI agents in education: knowledge mapping and trend analysis</h3>
+        <p>A trend analysis of AI-agent research in education from 2004 to 2024.</p>
+        <div class="work-meta"><span>ICLS, 2025</span><span>Trend analysis</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="research-section" id="learner-modeling">
+    <h2>Learner Behavior Modeling</h2>
+    <p class="section-lead">This direction models learners' behavioral intention, continuance intention, sharing behavior, adoption mechanisms, and experience formation across AI, online learning, blended learning, and social media contexts.</p>
+    <div class="work-list">
+      <article class="research-work" style="--accent: var(--indigo);">
+        <h3>University students' behavioral intention to use generative AI</h3>
+        <p>An integrated model combining the theory of planned behavior and AI literacy.</p>
+        <div class="work-meta"><span>IJHCI, 2024</span><span>Hot paper</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--indigo);">
+        <h3>University learners' adoption intention toward AIGC technology</h3>
+        <p>A mixed-methods study using ChatGPT as a focal case for understanding AIGC adoption.</p>
+        <div class="work-meta"><span>JCAL, 2025</span><span>Highly cited</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--indigo);">
+        <h3>Knowledge sharing on social media</h3>
+        <p>An fsQCA study identifying configurations that drive learners' behavioral intention to share knowledge.</p>
+        <div class="work-meta"><span>Current Psychology, 2025</span><span>fsQCA</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--indigo);">
+        <h3>Continuance intention in blended learning</h3>
+        <p>A study combining grounded theory and fsQCA to explain blended learning continuance intention.</p>
+        <div class="work-meta"><span>Interactive Learning Environments, 2024</span><span>Grounded theory + fsQCA</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--indigo);">
+        <h3>Continuance intention toward online education platforms</h3>
+        <p>A meta-analysis synthesizing factors associated with learners' continuance intention in online education.</p>
+        <div class="work-meta"><span>Education and Information Technologies, 2024</span><span>Meta-analysis</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--indigo);">
+        <h3>Influencer-led education</h3>
+        <p>An integrated qualitative and quantitative analysis of learners' intentions toward influencer-led education.</p>
+        <div class="work-meta"><span>Interactive Learning Environments, 2025</span><span>Mixed methods</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="research-section" id="ai-education">
+    <h2>Artificial Intelligence in Education</h2>
+    <p class="section-lead">This direction investigates AI as both a research object and a learning partner, covering generative AI, human-centered AI, AI agents, AI-supported language learning, and AI-mediated educational systems.</p>
+    <div class="work-list">
+      <article class="research-work" style="--accent: var(--plum);">
+        <h3>Empowering education development through AIGC</h3>
+        <p>A systematic literature review of AIGC and education development.</p>
+        <div class="work-meta"><span>Education and Information Technologies, 2024</span><span>Hot paper</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--plum);">
+        <h3>Human-centered artificial intelligence in education</h3>
+        <p>A systematic review of the dynamic evolution of human-centered AI in education.</p>
+        <div class="work-meta"><span>Interactive Learning Environments, 2025</span><span>SSCI Q1</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--plum);">
+        <h3>AI-agent school with dual memory</h3>
+        <p>A simulation-oriented study of AI-agent school dynamics and high-fidelity educational modeling.</p>
+        <div class="work-meta"><span>EMNLP Findings, 2025</span><span>CCF-B</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--plum);">
+        <h3>Generative AI in higher education</h3>
+        <p>An analytical and application framework for the future landscape of generative AI in higher education.</p>
+        <div class="work-meta"><span>ICLS, 2025</span><span>Framework</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--plum);">
+        <h3>Artificial intelligence in language learning</h3>
+        <p>A visual analysis of the application landscape and research status of AI in language learning.</p>
+        <div class="work-meta"><span>ICETC, 2023</span><span>Visual analysis</span></div>
+      </article>
+      <article class="research-work" style="--accent: var(--plum);">
+        <h3>AI-generated and human-written learning stories</h3>
+        <p>A comparative study of GPT and human-written stories for English language learning through moral dilemmas.</p>
+        <div class="work-meta"><span>Language Teaching Research, 2025</span><span>AI-supported learning</span></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="research-section" id="other-work">
+    <h2>Other Interdisciplinary Studies</h2>
+    <p class="section-lead">Work that does not fit fully into the five core directions is grouped here, especially studies connecting technology, trust, culture, psychology, mobility, robotics, consumer behavior, and society.</p>
+    <div class="work-list">
+      <article class="research-work" style="--accent: #4f6f52;">
+        <h3>Panels of peers and AI trustworthiness</h3>
+        <p>A commentary on why expert panels alone are not enough to gauge AI's trustworthiness.</p>
+        <div class="work-meta"><span>Nature, 2025</span><span>AI trust</span></div>
+      </article>
+      <article class="research-work" style="--accent: #4f6f52;">
+        <h3>Anthropomorphism in robotics</h3>
+        <p>A multidimensional study of perception and trust in robotics.</p>
+        <div class="work-meta"><span>IJHCI, 2025</span><span>Robotics</span></div>
+      </article>
+      <article class="research-work" style="--accent: #4f6f52;">
+        <h3>Digital art exhibitions and psychological well-being</h3>
+        <p>An S-O-R analysis of digital art exhibitions and psychological well-being among Chinese Generation Z.</p>
+        <div class="work-meta"><span>HSSCOMMS, 2024</span><span>Well-being</span></div>
+      </article>
+      <article class="research-work" style="--accent: #4f6f52;">
+        <h3>Older adults' technology acceptance</h3>
+        <p>A knowledge mapping study of older adults' technology acceptance from 2013 to 2023.</p>
+        <div class="work-meta"><span>HSSCOMMS, 2024</span><span>Technology acceptance</span></div>
+      </article>
+      <article class="research-work" style="--accent: #4f6f52;">
+        <h3>Volunteer motivation and major sport events</h3>
+        <p>Grounded theory and knowledge mapping studies of volunteer motivation and participation mechanisms.</p>
+        <div class="work-meta"><span>Current Psychology, 2025</span><span>Grounded theory</span></div>
+      </article>
+      <article class="research-work" style="--accent: #4f6f52;">
+        <h3>Technology adoption beyond education</h3>
+        <p>Studies on facial recognition payment, electric vehicles, supply chain AI adoption, and virtual influencers.</p>
+        <div class="work-meta"><span>SSCI journals</span><span>Interdisciplinary modeling</span></div>
+      </article>
+    </div>
+  </section>
+
+<details class="research-archive" markdown="1">
+<summary>Complete publication list</summary>
+
+# Complete Publication List
 
 ## Authored Journal Paper - First Author
 - **Wang, C. L.**, Chen, Y. F., Hu, Z. B., Li, Y. Y., & Gu, X. Q.* (2025). The journey of challenges and victories: Exploring the transformation action framework in the GenAI era from multifaceted policies. *Educational Technology Research and Development*, 1-43. [https://doi.org/10.1007/s11423-025-10535-5](https://doi.org/10.1007/s11423-025-10535-5) (SSCI Q1)
@@ -83,3 +733,6 @@ author_profile: true
 - Chen, X. J., Chen, L., Fu, L., & **Wang, C. L.** (2024, March). Algorithm Selection and Application for Robot Path Planning Problems. In *Journal of Physics: Conference Series (ACCC2023, Vol. 2722, No. 1)*. IOP Publishing. [https://doi.org/10.1088/1742-6596/2722/1/012008](https://doi.org/10.1088/1742-6596/2722/1/012008)
 
 - Xu, Y., Mao, D., & **Wang, C. L.** (2024, September). XR Technologies in vocational education and training research (2000-2024): A Bibliometric Review. In *Proceedings of the 2024 the 16th International Conference on Education Technology and Computers* (pp. 76-83). [https://doi.org/10.1145/3702163.3702174](https://doi.org/10.1145/3702163.3702174)
+
+</details>
+</div>
