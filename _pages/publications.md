@@ -175,6 +175,60 @@ author_profile: true
   text-decoration: underline;
 }
 
+.publication-group {
+  margin: 1rem 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 14px 36px rgba(23,32,51,.07);
+}
+
+.publication-group:first-of-type {
+  margin-top: 2.8rem;
+}
+
+.publication-group summary {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .8rem;
+  padding: 1rem 2.5rem 1rem 1rem;
+  color: var(--ink);
+  font-size: clamp(1.18rem, 2vw, 1.62rem);
+  font-weight: 800;
+  line-height: 1.2;
+  list-style: none;
+}
+
+.publication-group summary::-webkit-details-marker {
+  display: none;
+}
+
+.publication-group summary::after {
+  content: "+";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--teal);
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.publication-group[open] summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.publication-group[open] summary::after {
+  content: "-";
+}
+
+.publication-group ul {
+  padding: 1rem;
+}
+
 .method-section {
   margin-top: 3rem;
   padding-top: 1.15rem;
@@ -275,6 +329,11 @@ author_profile: true
     align-items: flex-start;
     flex-direction: column;
   }
+
+  .publication-group summary {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 </style>
 
@@ -294,9 +353,9 @@ author_profile: true
 
 <nav class="publication-nav" aria-label="Publication page sections">
   <a href="#authored-journal-paper---first-author">First Author</a>
-  <a href="#authored-journal-paper---corresponding-author">Corresponding Author</a>
-  <a href="#authored-journal-paper---other-author">Other Author</a>
-  <a href="#conference-papers">Conference Papers</a>
+  <a href="#corresponding-author-publications">Corresponding Author</a>
+  <a href="#other-author-publications">Other Author</a>
+  <a href="#conference-publications">Conference Papers</a>
   <a href="#research-methods">Research Methods</a>
 </nav>
 
@@ -311,7 +370,9 @@ author_profile: true
 - Wang, H. M.#, **Wang, C. L.#**, Chen, Z., Liu, F., Bao, C. J. & Xu, X. L.* (2025). Impact of AI-Agent-supported Collaborative Learning on the Learning Outcomes of University Programming Courses. *Education and Information Technologies*, 1-33. [https://doi.org/10.1007/s10639-025-13487-8](https://doi.org/10.1007/s10639-025-13487-8) (SSCI Q1; ESI 1% highly cited paper🏆)
 - **Wang, C. L.**, Wang, H. M.\*, Hu, Z. H., & Chen, X. J. (2024). Annotated Emotional Image Datasets of Chinese University Students in Real Classrooms for Deep Learning. *Data in Brief*, 57, 111147. [https://doi.org/10.1016/j.dib.2024.111147](https://doi.org/10.1016/j.dib.2024.111147) (ESCI; EI)
 
-## Authored Journal Paper - Corresponding Author
+<details class="publication-group" id="corresponding-author-publications" markdown="1">
+<summary>Authored Journal Paper - Corresponding Author <span class="method-count">Click to expand</span></summary>
+
 - Chen, X. J., Hu, Z. B., & Wang, C. L.* (2024). Empowering Education Development through AIGC: A Systematic Literature Review. *Education and Information Technologies*, 29, 17485-17537. [https://doi.org/10.1007/s10639-024-12549-7](https://doi.org/10.1007/s10639-024-12549-7) (SSCI Q1; ESI 0.1 % hot paper; ESI 1% highly cited paper🏆)
 - Jing, Y. H., Wang, H. M., Chen, X. J., & Wang, C. L.* (2024). What factors will affect the effectiveness of using ChatGPT to solve programming problems? A quasi-experimental study. *Humanities & Social Sciences Communications*, 11, 319. [https://doi.org/10.1057/s41599-024-02751-w](https://doi.org/10.1057/s41599-024-02751-w) (SSCI Q1; AHCI; ESI 0.1 % hot paper🔥 in 2025; ESI 1% highly cited paper🏆)
 - Yu, T., Dai, J., Chen, X. J., & Wang, C. L*. (2026). From information evaluation to technology use: Generative AI adoption in Chinese business schools. The International Journal of Management Education, 24(3), 101430. [https://doi.org/10.1016/j.ijme.2026.101430](https://doi.org/10.1016/j.ijme.2026.101430) (SSCI Q1)
@@ -341,7 +402,11 @@ author_profile: true
 - Chen, J., Tang, Y.\*, & Wang, C. L.\* (2025). Motivation and mechanism of university volunteers' participation in major sport events: A grounded theory study on volunteers for the Hangzhou Asian games. *Current Psychology*. [https://doi.org/10.1007/s12144-025-08052-y](https://doi.org/10.1007/s12144-025-08052-y) (SSCI Q1)
 - Yu, T., Teoh, A. P., & Wang, C. L. (2026). Integrating explanation and prediction: A PLS-MGA-ANN study of drone food delivery continuance intention. International Journal of Hospitality Management, 137, 104703. [https://doi.org/10.1016/j.ijhm.2026.104703](https://doi.org/10.1016/j.ijhm.2026.104703) (SSCI Q1)
 
-## Authored Journal Paper - Other Author
+</details>
+
+<details class="publication-group" id="other-author-publications" markdown="1">
+<summary>Authored Journal Paper - Other Author <span class="method-count">Click to expand</span></summary>
+
 - Cheng, C., Dai, J., Yan, L. L., & **Wang, C. L.** (2025). Panels of peers are needed to gauge AI’s trustworthiness-Experts are not enough. *Nature*, 647(8090), 592. [https://doi.org/10.1038/d41586-025-03783-1](https://doi.org/10.1038/d41586-025-03783-1) (SCIE Q1)
 - Li, Y. Y., **Wang, C. L.** & Gu, X. Q. (2025). Instructional Design Guidelines for Virtual Reality-Based Teacher Training: A Meta-analysis. *Education Technology & Society*, 28(1), 338-358. [https://doi.org/10.30191/ETS.202501_28(1).SP02](https://doi.org/10.30191/ETS.202501_28(1).SP02) (SSCI Q1)
 - Jing, Y. H., **Wang, C. L.**, Chen, Z. Y., Shen, S. S., & Shadiev, R. (2024). A Bibliometric Analysis of Studies on Technology-Supported Learning Environments: Hot Topics and Frontier Evolution. *Journal of Computer Assisted Learning*, 40(3), 1185-1200. [https://doi.org/10.1111/jcal.12934](https://doi.org/10.1111/jcal.12934) (SSCI Q1)
@@ -358,7 +423,11 @@ author_profile: true
 - Yu, T., Teoh, A.P., Liao, J., & **Wang, C. L.** (2025). Factors influencing behavioral intention to use facial recognition payment in the restaurant industry: a comparative analysis of China and Malaysia. *Journal of Travel & Tourism Marketing*, 42(2), 222-247. [https://doi.org/10.1080/10548408.2025.2455421](https://doi.org/10.1080/10548408.2025.2455421) (SSCI Q1; AJG 2)
 - Yu, T., Teoh, A. P., Liao, J., & **Wang, C. L.** (2025). Determinants of switching intention to adopt electric vehicles: A comparative analysis of China and Malaysia. *Technology in Society*, 82, 102949. [https://doi.org/10.1016/j.techsoc.2025.102949](https://doi.org/10.1016/j.techsoc.2025.102949) (SSCI Q1; AJG 2)
 
-## Conference Papers
+</details>
+
+<details class="publication-group" id="conference-publications" markdown="1">
+<summary>Conference Papers <span class="method-count">Click to expand</span></summary>
+
 
 - **Wang, C. L.**, Wang, H. M., Lai, Y. T., Xiao, Z. H., & Xu, X. L. (2025). Prediction of online mathematics test efficiency based on stacked integrated models: A case study of NAEP data. In A. I. Cristea, E. Walker, Y. Lu, O. C. Santos, & S. Isotani (Eds.), *Artificial intelligence in education: Posters and late breaking results, workshops and tutorials, industry and innovation tracks, practitioners, doctoral consortium, blue sky, and WideAIED (AIED 2025)*. Springer. [https://doi.org/10.1007/978-3-031-99261-2_20](https://doi.org/10.1007/978-3-031-99261-2_20)
 
@@ -379,6 +448,8 @@ author_profile: true
 - Chen, X. J., Chen, L., Fu, L., & **Wang, C. L.** (2024, March). Algorithm Selection and Application for Robot Path Planning Problems. In *Journal of Physics: Conference Series (ACCC2023, Vol. 2722, No. 1)*. IOP Publishing. [https://doi.org/10.1088/1742-6596/2722/1/012008](https://doi.org/10.1088/1742-6596/2722/1/012008)
 
 - Xu, Y., Mao, D., & **Wang, C. L.** (2024, September). XR Technologies in vocational education and training research (2000-2024): A Bibliometric Review. In *Proceedings of the 2024 the 16th International Conference on Education Technology and Computers* (pp. 76-83). [https://doi.org/10.1145/3702163.3702174](https://doi.org/10.1145/3702163.3702174)
+
+</details>
 
 <section class="method-section" id="research-methods" markdown="1">
 <h2>Publications by Research Method</h2>
