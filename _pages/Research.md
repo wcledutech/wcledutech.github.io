@@ -82,7 +82,7 @@ author_profile: true
 
 .research-metrics {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: .75rem;
   margin-top: 1.7rem;
 }
@@ -372,12 +372,15 @@ author_profile: true
   <section class="research-hero">
     <p class="research-kicker">Research Portfolio</p>
     <p class="hero-lead">
-      My research focuses on AI in education, social media learning, learning spaces and environments,
-      technology-enabled programming education, learner behavior modeling, and macro-level educational technology research.
+      Focusing on the construction of intelligent learning environments and the vertical design of AI agents, with learning experience,
+      behavior modeling, and cognitive development as the three core foundations, this research explores the empowering value of
+      intelligent technologies in teaching, learning, management, and assessment.
     </p>
     <div class="research-metrics" aria-label="Research overview">
       <div class="research-metric"><strong>7</strong><span>Research directions</span></div>
-      <div class="research-metric"><strong>44</strong><span>Direction-linked works listed on this page</span></div>
+      <div class="research-metric"><strong>56</strong><span>SSCI/SCI papers</span></div>
+      <div class="research-metric"><strong>30</strong><span>First-author and corresponding-author studies</span></div>
+      <div class="research-metric"><strong>15 + 5</strong><span>ESI 1% highly cited papers and ESI 0.1% hot papers</span></div>
     </div>
   </section>
 
