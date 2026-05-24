@@ -512,7 +512,7 @@ redirect_from:
   </section>
 
   <section class="about-section" id="internships">
-    <h2>Internships</h2>
+    <h2>Internships, Visits, and Exchanges</h2>
     <div class="service-list" style="--accent: var(--green);">
       <div class="compact-item"><strong>2025.7 | Educational Technology Pedagogy Workshop Summer School</strong><p>Peking University.</p></div>
       <div class="compact-item"><strong>2022.8-2022.11 | High School Information Technology Teacher Intern</strong><p>Jishan High School in Shaoxing.</p></div>
