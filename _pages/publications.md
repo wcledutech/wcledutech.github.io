@@ -94,41 +94,6 @@ author_profile: true
   line-height: 1.35;
 }
 
-.publication-nav {
-  position: sticky;
-  top: 5rem;
-  z-index: 20;
-  display: flex;
-  flex-wrap: wrap;
-  gap: .5rem;
-  margin: 1.35rem 0 2rem;
-  padding: .65rem;
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: rgba(255,255,255,.88);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 14px 36px rgba(23,32,51,.08);
-}
-
-.publication-nav a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 38px;
-  padding: .45rem .72rem;
-  border-radius: 6px;
-  color: var(--ink);
-  text-decoration: none;
-  font-size: .88rem;
-  line-height: 1.2;
-  transition: background .2s ease, color .2s ease, transform .2s ease;
-}
-
-.publication-nav a:hover {
-  color: #fff;
-  background: var(--ink);
-  transform: translateY(-1px);
-}
-
 .publication-page h2 {
   margin: 2.8rem 0 1rem;
   padding-top: 1.15rem;
@@ -311,12 +276,6 @@ author_profile: true
 }
 
 @media (max-width: 620px) {
-  .publication-nav {
-    position: relative;
-    top: auto;
-  }
-
-  .publication-nav a,
   .method-count {
     width: 100%;
   }
@@ -350,14 +309,6 @@ author_profile: true
     <div class="publication-metric"><strong>5</strong><span>ESI 0.1% hot papers</span></div>
   </div>
 </section>
-
-<nav class="publication-nav" aria-label="Publication page sections">
-  <a href="#authored-journal-paper---first-author">First Author</a>
-  <a href="#corresponding-author-publications">Corresponding Author</a>
-  <a href="#other-author-publications">Other Author</a>
-  <a href="#conference-publications">Conference Papers</a>
-  <a href="#research-methods">Research Methods</a>
-</nav>
 
 ## Authored Journal Paper - First Author
 - **Wang, C. L.**, Chen, Y. F., Hu, Z. B., Li, Y. Y., & Gu, X. Q.* (2025). The journey of challenges and victories: Exploring the transformation action framework in the GenAI era from multifaceted policies. *Educational Technology Research and Development*, 1-43. [https://doi.org/10.1007/s11423-025-10535-5](https://doi.org/10.1007/s11423-025-10535-5) (SSCI Q1)
