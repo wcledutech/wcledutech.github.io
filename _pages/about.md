@@ -36,121 +36,6 @@ redirect_from:
   box-sizing: border-box;
 }
 
-.about-hero {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
-  padding: clamp(2rem, 4vw, 3.3rem);
-  color: #fff;
-  background:
-    linear-gradient(120deg, rgba(19, 34, 56, .98), rgba(15, 118, 110, .88) 50%, rgba(181, 90, 60, .86)),
-    repeating-linear-gradient(90deg, rgba(255,255,255,.1) 0 1px, transparent 1px 58px),
-    repeating-linear-gradient(0deg, rgba(255,255,255,.08) 0 1px, transparent 1px 58px);
-  box-shadow: 0 24px 60px rgba(23, 32, 51, .18);
-}
-
-.about-hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: linear-gradient(105deg, transparent 20%, rgba(255,255,255,.2) 45%, transparent 63%);
-  mix-blend-mode: screen;
-  animation: aboutSweep 9s linear infinite;
-}
-
-@keyframes aboutSweep {
-  0% { transform: translateX(-70%); opacity: .22; }
-  50% { opacity: .5; }
-  100% { transform: translateX(70%); opacity: .22; }
-}
-
-.about-hero > * {
-  position: relative;
-  z-index: 1;
-}
-
-.about-kicker {
-  margin: 0 0 .8rem;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  font-size: .86rem;
-  font-weight: 700;
-  color: rgba(255,255,255,.82);
-}
-
-.about-hero h1 {
-  margin: 0;
-  border: 0;
-  font-size: clamp(2.25rem, 6vw, 4.6rem);
-  line-height: .98;
-  letter-spacing: 0;
-}
-
-.about-hero .hero-lead {
-  max-width: 900px;
-  margin: 1.1rem 0 0;
-  color: rgba(255,255,255,.9);
-  font-size: clamp(1.08rem, 2.2vw, 1.32rem);
-  line-height: 1.58;
-}
-
-.about-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .65rem;
-  margin-top: 1.35rem;
-}
-
-.about-actions a {
-  display: inline-flex;
-  align-items: center;
-  min-height: 40px;
-  padding: .52rem .85rem;
-  border: 1px solid rgba(255,255,255,.32);
-  border-radius: 6px;
-  color: #fff;
-  text-decoration: none;
-  background: rgba(255,255,255,.12);
-  backdrop-filter: blur(8px);
-  transition: transform .2s ease, background .2s ease;
-}
-
-.about-actions a:hover {
-  transform: translateY(-1px);
-  background: rgba(255,255,255,.22);
-}
-
-.about-metrics {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: .75rem;
-  margin-top: 1.6rem;
-}
-
-.about-metric {
-  min-height: 104px;
-  padding: 1rem;
-  border: 1px solid rgba(255,255,255,.24);
-  border-radius: 8px;
-  background: rgba(255,255,255,.12);
-  backdrop-filter: blur(8px);
-}
-
-.about-metric strong {
-  display: block;
-  font-size: clamp(1.35rem, 3vw, 1.9rem);
-  line-height: 1;
-}
-
-.about-metric span {
-  display: block;
-  margin-top: .5rem;
-  color: rgba(255,255,255,.84);
-  font-size: .92rem;
-  line-height: 1.35;
-}
-
 .about-nav {
   position: sticky;
   top: 5rem;
@@ -321,7 +206,6 @@ redirect_from:
 }
 
 @media (max-width: 900px) {
-  .about-metrics,
   .profile-grid,
   .card-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -329,11 +213,6 @@ redirect_from:
 }
 
 @media (max-width: 620px) {
-  .about-hero {
-    padding: 1.45rem;
-  }
-
-  .about-metrics,
   .profile-grid,
   .card-grid {
     grid-template-columns: 1fr;
@@ -350,8 +229,6 @@ redirect_from:
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .about-hero::after,
-  .about-actions a,
   .about-nav a {
     animation: none;
     transition: none;
@@ -360,26 +237,6 @@ redirect_from:
 </style>
 
 <div class="about-page">
-  <section class="about-hero">
-    <p class="about-kicker">About</p>
-    <h1>Chengliang Wang</h1>
-    <p class="hero-lead">
-      PhD researcher in educational technology, AI in education, learner behavior modeling, programming education,
-      and digital learning environments.
-    </p>
-    <div class="about-actions">
-      <a href="https://scholar.google.com/citations?user=C_PHTMsAAAAJ&amp;hl" target="_blank" rel="noopener">Google Scholar</a>
-      <a href="https://www.researchgate.net/profile/Chengliang-Wang-5" target="_blank" rel="noopener">ResearchGate</a>
-      <a href="https://orcid.org/0000-0003-2208-3508" target="_blank" rel="noopener">ORCID</a>
-    </div>
-    <div class="about-metrics" aria-label="Profile highlights">
-      <div class="about-metric"><strong>25</strong><span>SSCI Q1 papers as first or corresponding author</span></div>
-      <div class="about-metric"><strong>15</strong><span>ESI 1% highly cited papers</span></div>
-      <div class="about-metric"><strong>5</strong><span>ESI 0.1% hot papers</span></div>
-      <div class="about-metric"><strong>2026-2028</strong><span>ACU Vice Chancellor's PhD Excellence Scholarship</span></div>
-    </div>
-  </section>
-
   <nav class="about-nav" aria-label="About page sections">
     <a href="#profile">Profile</a>
     <a href="#honors">Honors</a>
@@ -464,7 +321,11 @@ redirect_from:
       </article>
       <article class="about-card" style="--accent: var(--indigo);">
         <h3>2023-2025 | East China Normal University, Faculty of Education</h3>
-        <p>Master's degree in Educational Technology. Key courses included Theory and Practice of Educational Technology and Research Methods.</p>
+        <p>
+          Master's degree in Educational Technology. Graduated early with outstanding academic performance under the supervision of Prof. Gu Xiaoqing.
+          Key courses included Theory and Practice of Educational Technology and Research Methods.
+        </p>
+        <div class="tag-row"><span>Early graduation</span><span>Educational Technology</span><span>ECNU Faculty of Education</span></div>
       </article>
       <article class="about-card" style="--accent: var(--indigo);">
         <h3>2019-2023 | Zhejiang University of Technology, College of Education</h3>
