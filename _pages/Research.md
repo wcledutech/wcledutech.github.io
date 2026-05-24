@@ -112,8 +112,8 @@ author_profile: true
 
 .research-nav {
   position: sticky;
-  top: .75rem;
-  z-index: 5;
+  top: 5rem;
+  z-index: 20;
   display: flex;
   flex-wrap: wrap;
   gap: .5rem;
@@ -296,7 +296,8 @@ author_profile: true
 .paper-card-link {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 10;
+  display: block;
   border-radius: 8px;
 }
 
@@ -306,6 +307,7 @@ author_profile: true
 }
 
 .paper-card p,
+.paper-card h3,
 .paper-tags {
   position: relative;
   z-index: 2;
