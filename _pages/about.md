@@ -416,22 +416,41 @@ redirect_from:
     <div class="timeline-grid" style="--accent: var(--indigo);">
       <article class="about-card" style="--accent: var(--indigo);">
         <h3>2026-present | Australian Catholic University, Institute for Positive Psychology and Education</h3>
-        <p>A project-led doctoral program focused on independent research rather than traditional taught modules.</p>
+        <p>
+          Sydney, Australia. A project-led doctoral program focused entirely on independent research rather than
+          traditional taught modules, with research training centered on educational psychology, positive education,
+          learning analytics, and large-scale project-based doctoral inquiry.
+        </p>
       </article>
       <article class="about-card" style="--accent: var(--indigo);">
         <h3>2023-2025 | East China Normal University, Faculty of Education</h3>
         <p>
-          Master's degree in Educational Technology. Graduated early with outstanding academic performance under the supervision of Prof. Gu Xiaoqing.
-          Key courses included Theory and Practice of Educational Technology and Research Methods.
+          Shanghai, China. Master's degree in Educational Technology. Graduated early with outstanding academic
+          performance under the supervision of
+          <a href="https://scholar.google.com/citations?user=231rZmwAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener">Prof. Gu Xiaoqing</a>.
         </p>
+        <ul>
+          <li>Theory and Practice of Educational Technology (92).</li>
+          <li>Research Methods (90).</li>
+        </ul>
         <div class="tag-row"><span>Early graduation</span><span>Educational Technology</span><span>ECNU Faculty of Education</span></div>
       </article>
       <article class="about-card" style="--accent: var(--indigo);">
         <h3>2019-2023 | Zhejiang University of Technology, College of Education</h3>
         <p>
-          Undergraduate study in Hangzhou, Zhejiang Province, with strong coursework performance across artificial intelligence,
-          educational data statistics and evaluation, intelligent learning systems, web development, big data, and educational technology.
+          Hangzhou, Zhejiang Province, China. Undergraduate study in the College of Education, with strong coursework
+          performance across artificial intelligence, learning systems, educational data, web development, big data,
+          and teacher education.
         </p>
+        <ul>
+          <li>Linear Algebra (98, highest score in the major).</li>
+          <li>Fundamentals of Artificial Intelligence (100, highest score in the major).</li>
+          <li>Web Front-End Development Technology (95, highest score in the major) and Educational Web Application Development (95, highest score in the major).</li>
+          <li>Intelligent Learning Systems Designing and Developing (95, highest score in the major).</li>
+          <li>Theory of Computer Networks (95) and The Forefront of Educational Information Technology (95, highest score in the major).</li>
+          <li>Introduction of Big Data (95), Experiment of Big Data in Education (97), and Educational Data Statistics and Evaluation (97, highest score in the major).</li>
+          <li>Oral Presentation Skill of Teacher (99, highest score in the major), Class Work Skill Training (97), Teachers Skills Training (95), Pedagogy of ICT in Primary and Secondary School (95), and Educational Management (94, highest score in the major).</li>
+        </ul>
       </article>
     </div>
   </section>
