@@ -215,4 +215,17 @@
       {% endif %}
     </div>
   </div>
+
+  {% if page.about_sidebar_nav %}
+    <nav class="about-sidebar-nav" aria-label="About page sections">
+      <p class="about-sidebar-nav__title">About Me</p>
+      <a href="#scholar-metrics">Scholar Metrics</a>
+      <a href="#profile">Profile</a>
+      <a href="#honors">Honors</a>
+      <a href="#funding">Funding</a>
+      <a href="#education">Education</a>
+      <a href="#service">Academic Service</a>
+      <a href="#internships">Internships</a>
+    </nav>
+  {% endif %}
 </div>

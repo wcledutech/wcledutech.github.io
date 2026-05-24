@@ -3,6 +3,7 @@ permalink: /
 title: ""
 excerpt: ""
 author_profile: true
+about_sidebar_nav: true
 redirect_from:
   - /about/
   - /about.html
@@ -36,38 +37,67 @@ redirect_from:
   box-sizing: border-box;
 }
 
-.about-nav {
-  position: sticky;
-  top: 5rem;
-  z-index: 20;
+.about-sidebar-nav {
+  --ink: #172033;
+  --muted: #5f6b7a;
+  --line: rgba(23, 32, 51, .13);
+  --teal: #0f766e;
+  --coral: #b55a3c;
   display: flex;
-  flex-wrap: wrap;
-  gap: .5rem;
-  margin: 1.35rem 0 2rem;
-  padding: .65rem;
+  flex-direction: column;
+  gap: .42rem;
+  margin: 1.75rem 0 0;
+  padding: .95rem .85rem;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: rgba(255,255,255,.88);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 14px 36px rgba(23,32,51,.08);
+  background:
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(135deg, rgba(15,118,110,.55), rgba(181,90,60,.48)) border-box;
+  box-shadow: 0 16px 34px rgba(23,32,51,.07);
+  font-family: "Times New Roman", Times, serif;
 }
 
-.about-nav a {
-  display: inline-flex;
+.about-sidebar-nav__title {
+  margin: 0 0 .35rem;
+  color: var(--muted);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.about-sidebar-nav a {
+  display: flex;
   align-items: center;
-  min-height: 38px;
-  padding: .45rem .72rem;
+  justify-content: space-between;
+  gap: .55rem;
+  min-height: 36px;
+  padding: .42rem .52rem;
+  border: 1px solid transparent;
   border-radius: 6px;
   color: var(--ink);
   text-decoration: none;
-  font-size: .88rem;
-  line-height: 1.2;
-  transition: background .2s ease, color .2s ease, transform .2s ease;
+  font-size: .86rem;
+  line-height: 1.25;
+  transition: border-color .2s ease, background .2s ease, color .2s ease, transform .2s ease;
 }
 
-.about-nav a:hover {
-  color: #fff;
-  background: var(--ink);
+.about-sidebar-nav a::after {
+  content: "";
+  width: .36rem;
+  height: .36rem;
+  flex: 0 0 auto;
+  border-top: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+  opacity: .42;
+  transform: rotate(45deg);
+}
+
+.about-sidebar-nav a:hover {
+  color: var(--teal);
+  border-color: rgba(15,118,110,.22);
+  background: rgba(15,118,110,.07);
   transform: translateY(-1px);
 }
 
@@ -271,18 +301,15 @@ redirect_from:
     grid-template-columns: 1fr;
   }
 
-  .about-nav {
-    position: relative;
-    top: auto;
-  }
-
-  .about-nav a {
+  .about-sidebar-nav {
+    flex-basis: 100%;
     width: 100%;
+    margin-top: 1rem;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .about-nav a {
+  .about-sidebar-nav a {
     animation: none;
     transition: none;
   }
@@ -290,16 +317,6 @@ redirect_from:
 </style>
 
 <div class="about-page">
-  <nav class="about-nav" aria-label="About page sections">
-    <a href="#scholar-metrics">Scholar Metrics</a>
-    <a href="#profile">Profile</a>
-    <a href="#honors">Honors</a>
-    <a href="#funding">Funding</a>
-    <a href="#education">Education</a>
-    <a href="#service">Academic Service</a>
-    <a href="#internships">Internships</a>
-  </nav>
-
   <section class="about-section" id="scholar-metrics">
     <h2>Scholar Metrics</h2>
     <p class="section-lead">
