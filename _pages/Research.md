@@ -368,7 +368,6 @@ author_profile: true
 <div class="research-page" markdown="1">
   <section class="research-hero">
     <p class="research-kicker">Research Portfolio</p>
-    <h1>Learning Environments, AI, Programming Education, Methods, and Learner Modeling</h1>
     <p>
       My research examines how digital technologies reshape learning environments, how learners adopt and use intelligent tools,
       and how rigorous methodological designs can explain, evaluate, and improve technology-enhanced education.
