@@ -167,6 +167,57 @@ redirect_from:
   line-height: 1.4;
 }
 
+.scholar-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: .85rem;
+}
+
+.scholar-metric {
+  min-height: 142px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 1rem 1.05rem;
+  background:
+    linear-gradient(135deg, rgba(23,32,51,.94), rgba(15,118,110,.74) 48%, rgba(181,90,60,.72)) padding-box,
+    linear-gradient(135deg, rgba(255,255,255,.42), rgba(255,255,255,.06)) border-box;
+  box-shadow: 0 18px 42px rgba(23,32,51,.12);
+  color: #fff;
+}
+
+.scholar-metric strong {
+  display: block;
+  font-size: clamp(2.1rem, 4vw, 3rem);
+  line-height: .95;
+  letter-spacing: 0;
+}
+
+.scholar-metric div > span {
+  display: block;
+  margin-top: .55rem;
+  font-size: .98rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.scholar-metric small {
+  display: block;
+  margin-top: .45rem;
+  color: rgba(255,255,255,.82);
+  font-size: .76rem;
+  line-height: 1.35;
+}
+
+.scholar-meta {
+  margin: .8rem 0 0;
+  color: var(--muted);
+  font-size: .86rem;
+  line-height: 1.45;
+}
+
 .award-list,
 .funding-list,
 .service-list {
@@ -207,14 +258,16 @@ redirect_from:
 
 @media (max-width: 900px) {
   .profile-grid,
-  .card-grid {
+  .card-grid,
+  .scholar-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 620px) {
   .profile-grid,
-  .card-grid {
+  .card-grid,
+  .scholar-grid {
     grid-template-columns: 1fr;
   }
 
@@ -238,6 +291,7 @@ redirect_from:
 
 <div class="about-page">
   <nav class="about-nav" aria-label="About page sections">
+    <a href="#scholar-metrics">Scholar Metrics</a>
     <a href="#profile">Profile</a>
     <a href="#honors">Honors</a>
     <a href="#funding">Funding</a>
@@ -245,6 +299,51 @@ redirect_from:
     <a href="#service">Academic Service</a>
     <a href="#internships">Internships</a>
   </nav>
+
+  <section class="about-section" id="scholar-metrics">
+    <h2>Scholar Metrics</h2>
+    <p class="section-lead">
+      Google Scholar metrics are refreshed automatically when the scheduled site data workflow runs. The current values below are seeded from the latest visible profile snapshot.
+    </p>
+    <div class="scholar-grid" aria-label="Google Scholar and ESI metrics">
+      <article class="scholar-metric">
+        <div>
+          <strong id="gs-citations">2910</strong>
+          <span>Total citations</span>
+        </div>
+        <small>Since 2021: <span id="gs-citations-5y">2908</span></small>
+      </article>
+      <article class="scholar-metric">
+        <div>
+          <strong id="gs-hindex">23</strong>
+          <span>h-index</span>
+        </div>
+        <small>Since 2021: <span id="gs-hindex-5y">23</span></small>
+      </article>
+      <article class="scholar-metric">
+        <div>
+          <strong id="gs-i10index">44</strong>
+          <span>i10-index</span>
+        </div>
+        <small>Since 2021: <span id="gs-i10index-5y">44</span></small>
+      </article>
+      <article class="scholar-metric">
+        <div>
+          <strong>15</strong>
+          <span>ESI 1% highly cited papers</span>
+        </div>
+        <small>Profile metric</small>
+      </article>
+      <article class="scholar-metric">
+        <div>
+          <strong>5</strong>
+          <span>ESI 0.1% hot papers</span>
+        </div>
+        <small>Profile metric</small>
+      </article>
+    </div>
+    <p class="scholar-meta" id="gs-updated">Google Scholar metrics update automatically when scheduled data is available.</p>
+  </section>
 
   <section class="about-section" id="profile">
     <h2>Profile</h2>

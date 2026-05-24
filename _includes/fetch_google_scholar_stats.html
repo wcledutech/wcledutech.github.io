@@ -5,14 +5,49 @@
         {% else %}
         var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/'
         {% endif %}
+        function getMetric(data, keys) {
+            for (var i = 0; i < keys.length; i += 1) {
+                if (data[keys[i]] !== undefined && data[keys[i]] !== null) {
+                    return data[keys[i]];
+                }
+            }
+            return null;
+        }
+
+        function setTextById(id, value, prefix) {
+            if (value === null || value === undefined || value === '') {
+                return;
+            }
+            var element = document.getElementById(id);
+            if (element) {
+                element.textContent = (prefix || '') + value;
+            }
+        }
+
         $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
-            var totalCitation = data['citedby']
-            document.getElementById('total_cit').innerHTML = totalCitation;
-            var citationEles = document.getElementsByClassName('show_paper_citations')
-            Array.prototype.forEach.call(citationEles, element => {
-                var paperId = element.getAttribute('data')
-                var numCitations = data['publications'][paperId]['num_citations']
-                element.innerHTML = '| Citations: ' + numCitations;
+            var totalCitation = getMetric(data, ['citedby', 'citations', 'total_citations']);
+            var totalCitation5y = getMetric(data, ['citedby5y', 'citedby_5y', 'citations5y']);
+            var hIndex = getMetric(data, ['hindex', 'h_index']);
+            var hIndex5y = getMetric(data, ['hindex5y', 'h_index5y']);
+            var i10Index = getMetric(data, ['i10index', 'i10_index']);
+            var i10Index5y = getMetric(data, ['i10index5y', 'i10_index5y']);
+
+            setTextById('total_cit', totalCitation);
+            setTextById('gs-citations', totalCitation);
+            setTextById('gs-citations-5y', totalCitation5y);
+            setTextById('gs-hindex', hIndex);
+            setTextById('gs-hindex-5y', hIndex5y);
+            setTextById('gs-i10index', i10Index);
+            setTextById('gs-i10index-5y', i10Index5y);
+            setTextById('gs-updated', data['updated'], 'Google Scholar metrics last updated: ');
+
+            var citationEles = document.getElementsByClassName('show_paper_citations');
+            Array.prototype.forEach.call(citationEles, function (element) {
+                var paperId = element.getAttribute('data');
+                if (data['publications'] && data['publications'][paperId]) {
+                    var numCitations = data['publications'][paperId]['num_citations'];
+                    element.textContent = '| Citations: ' + numCitations;
+                }
             });
         });
     })

@@ -1,0 +1,54 @@
+name: Update Google Scholar Stats
+
+on:
+  schedule:
+    - cron: "0 20 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: google-scholar-stats
+  cancel-in-progress: true
+
+jobs:
+  update-google-scholar-stats:
+    runs-on: ubuntu-latest
+    env:
+      GOOGLE_SCHOLAR_ID: C_PHTMsAAAAJ
+
+    steps:
+      - name: Check out site
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install crawler dependencies
+        run: python -m pip install -r google_scholar_crawler/requirements.txt
+
+      - name: Fetch Google Scholar profile
+        run: python google_scholar_crawler/main.py
+
+      - name: Publish stats branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          publish_dir="$(mktemp -d)"
+          cp results/gs_data.json "$publish_dir/gs_data.json"
+          cp results/gs_data_shieldsio.json "$publish_dir/gs_data_shieldsio.json"
+          cd "$publish_dir"
+          git init
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b google-scholar-stats
+          git add gs_data.json gs_data_shieldsio.json
+          git commit -m "Update Google Scholar stats"
+          git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git push --force origin google-scholar-stats
