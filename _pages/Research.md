@@ -356,56 +356,56 @@ author_profile: true
   </section>
 
   <nav class="research-nav" aria-label="Research directions">
-    <a href="#ai-education">人工智能教育应用</a>
-    <a href="#social-media-learning">社交媒体学习</a>
-    <a href="#learning-spaces">学习空间与环境</a>
-    <a href="#programming-education">技术赋能的编程教育</a>
-    <a href="#learner-modeling">学习者行为建模</a>
-    <a href="#macro-edtech">教技宏观研究</a>
-    <a href="#other-research">其他研究</a>
+    <a href="#ai-education">AI in Education</a>
+    <a href="#social-media-learning">Social Media Learning</a>
+    <a href="#learning-spaces">Learning Spaces and Environments</a>
+    <a href="#programming-education">Technology-Enabled Programming Education</a>
+    <a href="#learner-modeling">Learner Behavior Modeling</a>
+    <a href="#macro-edtech">Macro Educational Technology Research</a>
+    <a href="#other-research">Other Research</a>
   </nav>
 
   <section class="direction-grid" aria-label="Research direction map">
     <article class="direction-card" style="--accent: var(--ai);">
       <span class="index">01</span>
-      <h2>人工智能教育应用</h2>
-      <p>围绕生成式人工智能、AIGC、AI Agent、学习情感识别、AI 信任与 AI 支持的学习开展研究。</p>
+      <h2>AI in Education</h2>
+      <p>Research on generative AI, AIGC, AI agents, learning emotion recognition, AI trust, and AI-supported learning.</p>
       <a href="#ai-education">View direction</a>
     </article>
     <article class="direction-card" style="--accent: var(--social);">
       <span class="index">02</span>
-      <h2>社交媒体学习</h2>
-      <p>关注社交媒体、知识分享、网红教育与平台化学习中的学习者意向和行为机制。</p>
+      <h2>Social Media Learning</h2>
+      <p>Research on learner intention and behavioral mechanisms in social media, knowledge sharing, influencer-led education, and platform-based learning.</p>
       <a href="#social-media-learning">View direction</a>
     </article>
     <article class="direction-card" style="--accent: var(--space);">
       <span class="index">03</span>
-      <h2>学习空间与环境</h2>
-      <p>研究在线教育平台、虚拟学习环境、虚拟实验室、数字艺术空间与技术支持学习环境。</p>
+      <h2>Learning Spaces and Environments</h2>
+      <p>Research on online education platforms, virtual learning environments, virtual laboratories, digital art spaces, and technology-supported learning environments.</p>
       <a href="#learning-spaces">View direction</a>
     </article>
     <article class="direction-card" style="--accent: var(--programming);">
       <span class="index">04</span>
-      <h2>技术赋能的编程教育</h2>
-      <p>聚焦 AI Agent、ChatGPT、MetaClassroom 与协作学习对编程教育的支持。</p>
+      <h2>Technology-Enabled Programming Education</h2>
+      <p>Research on how AI agents, ChatGPT, MetaClassroom, and collaborative learning support programming education.</p>
       <a href="#programming-education">View direction</a>
     </article>
     <article class="direction-card" style="--accent: var(--modeling);">
       <span class="index">05</span>
-      <h2>学习者行为建模</h2>
-      <p>解释学习者在 AIGC、社交媒体、新型学习空间中的采纳、持续使用与行为意向。</p>
+      <h2>Learner Behavior Modeling</h2>
+      <p>Research explaining learners' adoption, continuance use, and behavioral intention in AIGC, social media, and emerging learning spaces.</p>
       <a href="#learner-modeling">View direction</a>
     </article>
     <article class="direction-card" style="--accent: var(--macro);">
       <span class="index">06</span>
-      <h2>教技宏观研究</h2>
-      <p>包含方法学评估、指南建设、框架设计、政策分析与全球教育技术趋势研究。</p>
+      <h2>Macro Educational Technology Research</h2>
+      <p>Research on methodological evaluation, guideline construction, framework design, policy analysis, and global educational technology trends.</p>
       <a href="#macro-edtech">View direction</a>
     </article>
     <article class="direction-card" style="--accent: var(--other);">
       <span class="index">07</span>
-      <h2>其他研究</h2>
-      <p>收纳与教育评价、教师培训、领导力、机器人信任、志愿者、音乐教育等相关的交叉研究。</p>
+      <h2>Other Research</h2>
+      <p>Interdisciplinary studies related to educational evaluation, teacher training, leadership, robotics trust, volunteering, music education, and dance education.</p>
       <a href="#other-research">View direction</a>
     </article>
   </section>
@@ -423,7 +423,7 @@ author_profile: true
   </section>
 
   <section class="research-section" id="ai-education">
-    <h2>人工智能教育应用</h2>
+    <h2>AI in Education</h2>
     <p class="section-lead">This direction examines the educational use of generative AI, AIGC, AI agents, emotion recognition, AI trustworthiness, and AI-supported learning.</p>
     <div class="paper-list">
       <article class="paper-card" style="--accent: var(--ai);"><h3>Factors Influencing University Students' Behavioral Intention to Use Generative Artificial Intelligence</h3><p>Wang, C. L., Wang, H. M., Li, Y. Y., Dai, J., Gu, X. Q. &amp; Yu, T.* (2024). <em>International Journal of Human-Computer Interaction</em>.</p><div class="paper-tags"><span>SSCI Q1</span><span>SCIE Q1</span><span>CCF-B</span></div></article>
@@ -444,7 +444,7 @@ author_profile: true
   </section>
 
   <section class="research-section" id="social-media-learning">
-    <h2>社交媒体学习</h2>
+    <h2>Social Media Learning</h2>
     <p class="section-lead">This direction focuses on social media learning, knowledge sharing, influencer-led education, and platform-based learning behaviors.</p>
     <div class="paper-list">
       <article class="paper-card" style="--accent: var(--social);"><h3>Understanding the Continuance Intention of College Students Toward New E-learning Spaces</h3><p>Wang, C. L., Dai, J., Zhu, K. K., Yu, T.* &amp; Gu, X. Q. (2023). <em>International Journal of Human-Computer Interaction</em>.</p><div class="paper-tags"><span>SSCI Q1</span><span>SCIE Q1</span><span>CCF-B</span></div></article>
@@ -454,7 +454,7 @@ author_profile: true
   </section>
 
   <section class="research-section" id="learning-spaces">
-    <h2>学习空间与环境</h2>
+    <h2>Learning Spaces and Environments</h2>
     <p class="section-lead">This direction studies e-learning spaces, online education platforms, virtual learning environments, virtual laboratories, and technology-supported learning environments.</p>
     <div class="paper-list">
       <article class="paper-card" style="--accent: var(--space);"><h3>Understanding the Continuance Intention of College Students Toward New E-learning Spaces</h3><p>Wang, C. L., Dai, J., Zhu, K. K., Yu, T.* &amp; Gu, X. Q. (2023). <em>International Journal of Human-Computer Interaction</em>.</p><div class="paper-tags"><span>SSCI Q1</span><span>SCIE Q1</span><span>CCF-B</span></div></article>
@@ -469,7 +469,7 @@ author_profile: true
   </section>
 
   <section class="research-section" id="programming-education">
-    <h2>技术赋能的编程教育</h2>
+    <h2>Technology-Enabled Programming Education</h2>
     <p class="section-lead">This direction explores AI-supported programming education, including MetaClassroom, AI-agent-supported collaborative learning, and ChatGPT-assisted programming problem solving.</p>
     <div class="paper-list">
       <article class="paper-card" style="--accent: var(--programming);"><h3>MetaClassroom: A New Paradigm and Experience for Programming Education</h3><p>Wang, C. L., Chen, X. J., Li, Y. F., Wang, P. J., Wang, H. M. &amp; Li, Y. Y.* (2025). <em>Journal of Educational Computing Research</em>.</p><div class="paper-tags"><span>SSCI Q1</span><span>中科院一区 Top</span></div></article>
@@ -479,7 +479,7 @@ author_profile: true
   </section>
 
   <section class="research-section" id="learner-modeling">
-    <h2>学习者行为建模</h2>
+    <h2>Learner Behavior Modeling</h2>
     <p class="section-lead">This direction models adoption intention, continuance intention, behavioral intention, and knowledge-sharing mechanisms across AI and digital learning contexts.</p>
     <div class="paper-list">
       <article class="paper-card" style="--accent: var(--modeling);"><h3>Deconstructing University Learners' Adoption Intention towards AIGC Technology</h3><p>Wang, C. L., Chen, X. J.*, Hu, Z. B., Jin, S. &amp; Gu, X. Q. (2025). <em>Journal of Computer Assisted Learning</em>.</p><div class="paper-tags"><span>SSCI Q1</span><span>Adoption intention</span></div></article>
@@ -490,7 +490,7 @@ author_profile: true
   </section>
 
   <section class="research-section" id="macro-edtech">
-    <h2>教技宏观研究</h2>
+    <h2>Macro Educational Technology Research</h2>
     <p class="section-lead">This direction covers macro-level educational technology research, including methodological evaluation, guideline construction, framework design, policy analysis, and field mapping.</p>
     <div class="paper-list">
       <article class="paper-card" style="--accent: var(--macro);"><h3>The journey of challenges and victories: transformation action framework in the GenAI era</h3><p>Wang, C. L., Chen, Y. F., Hu, Z. B., Li, Y. Y., &amp; Gu, X. Q. (2025). <em>Educational Technology Research and Development</em>.</p><div class="paper-tags"><span>SSCI Q1</span><span>Framework design</span></div></article>
@@ -501,7 +501,7 @@ author_profile: true
   </section>
 
   <section class="research-section" id="other-research">
-    <h2>其他研究</h2>
+    <h2>Other Research</h2>
     <p class="section-lead">This section includes interdisciplinary studies that connect educational evaluation, teacher training, leadership theory, robotics, volunteering, emergency remote teaching, music education, and dance education.</p>
     <div class="paper-list">
       <article class="paper-card" style="--accent: var(--other);"><h3>Assessment as learning: Evidence based on meta-analysis and quantitative ethnography research</h3><p>Liu, Y. C., Xu, G. R., Yuan, S., Zhou, C., &amp; Wang, C. L.* (2024). <em>Studies in Educational Evaluation</em>.</p><div class="paper-tags"><span>SSCI Q1</span><span>Corresponding Author</span></div></article>
