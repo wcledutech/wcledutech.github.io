@@ -395,7 +395,6 @@ redirect_from:
         <small>Profile metric</small>
       </article>
     </div>
-    <p class="scholar-meta" id="gs-updated">Google Scholar metrics update automatically when scheduled data is available.</p>
   </section>
 
   <section class="about-section" id="honors">
