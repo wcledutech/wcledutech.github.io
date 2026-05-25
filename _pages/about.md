@@ -317,6 +317,42 @@ redirect_from:
 </style>
 
 <div class="about-page">
+  <section class="about-section" id="profile">
+    <h2>Profile</h2>
+    <p class="section-lead">
+      My work connects educational technology, artificial intelligence, learning environments, programming education,
+      and learner behavior modeling.
+    </p>
+    <div class="profile-grid">
+      <article class="about-card" style="--accent: var(--teal);">
+        <h3>Academic Background</h3>
+        <p>
+          Chengliang Wang is pursuing a PhD under the supervision of
+          <a href="https://scholar.google.com/citations?user=w911YWwAAAAJ&amp;hl=en" target="_blank" rel="noopener">Prof. Herb Marsh</a>
+          and <a href="https://scholar.google.com/citations?user=rixoumgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Prof. Jiesi Guo</a>.
+          He earned a Master's degree in Educational Technology from East China Normal University and graduated early under the supervision of
+          <a href="https://scholar.google.com/citations?user=231rZmwAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener">Prof. Gu Xiaoqing</a>.
+        </p>
+        <p>
+          As a master's student, he received the 2024 ECNU President's Scholarship, the highest academic honor at the university,
+          becoming the first master's student in the history of the Faculty of Education to receive this distinction.
+        </p>
+      </article>
+
+      <article class="about-card" style="--accent: var(--plum);">
+        <h3>Research Focus</h3>
+        <p>
+          His research interests include technology-supported programming instruction, digital learning environment construction,
+          AI literacy education, educational technology philosophy, AI in education, and learner behavior modeling.
+        </p>
+        <div class="tag-row">
+          <span>AI in Education</span><span>Programming Education</span><span>Learning Environments</span>
+          <span>Learner Modeling</span><span>Educational Technology</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
   <section class="about-section" id="scholar-metrics">
     <h2>Scholar Metrics</h2>
     <p class="section-lead">
@@ -360,42 +396,6 @@ redirect_from:
       </article>
     </div>
     <p class="scholar-meta" id="gs-updated">Google Scholar metrics update automatically when scheduled data is available.</p>
-  </section>
-
-  <section class="about-section" id="profile">
-    <h2>Profile</h2>
-    <p class="section-lead">
-      My work connects educational technology, artificial intelligence, learning environments, programming education,
-      and learner behavior modeling.
-    </p>
-    <div class="profile-grid">
-      <article class="about-card" style="--accent: var(--teal);">
-        <h3>Academic Background</h3>
-        <p>
-          Chengliang Wang is pursuing a PhD under the supervision of
-          <a href="https://scholar.google.com/citations?user=w911YWwAAAAJ&amp;hl=en" target="_blank" rel="noopener">Prof. Herb Marsh</a>
-          and <a href="https://scholar.google.com/citations?user=rixoumgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Prof. Jiesi Guo</a>.
-          He earned a Master's degree in Educational Technology from East China Normal University and graduated early under the supervision of
-          <a href="https://scholar.google.com/citations?user=231rZmwAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener">Prof. Gu Xiaoqing</a>.
-        </p>
-        <p>
-          As a master's student, he received the 2024 ECNU President's Scholarship, the highest academic honor at the university,
-          becoming the first master's student in the history of the Faculty of Education to receive this distinction.
-        </p>
-      </article>
-
-      <article class="about-card" style="--accent: var(--plum);">
-        <h3>Research Focus</h3>
-        <p>
-          His research interests include technology-supported programming instruction, digital learning environment construction,
-          AI literacy education, educational technology philosophy, AI in education, and learner behavior modeling.
-        </p>
-        <div class="tag-row">
-          <span>AI in Education</span><span>Programming Education</span><span>Learning Environments</span>
-          <span>Learner Modeling</span><span>Educational Technology</span>
-        </div>
-      </article>
-    </div>
   </section>
 
   <section class="about-section" id="honors">
