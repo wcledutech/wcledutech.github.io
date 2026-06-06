@@ -215,7 +215,7 @@ Additionally, <a href="https://scholar.google.com/citations?user=Ra8fbcYAAAAJ&hl
 ## Routine
 
 - <del>Feb 19                   Arrive in Sydney</del>
-- May 29 - Jun 04          Hong Kong (GCCCE @ CUHK)
+- <del>May 29 - Jun 04          Hong Kong (GCCCE @ CUHK)</del>
 - Jun 30 - Jul 02          Shanghai Visit
 - Jul 02 - Jul 23          Shaoxing for holiday
 - Jul 24 - Sept 30         Sydney for my research
