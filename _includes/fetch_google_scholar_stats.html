@@ -24,7 +24,10 @@
             }
         }
 
-        $.getJSON(gsDataBaseUrl + "google-scholar-stats/gs_data.json", function (data) {
+        var dailyCacheKey = new Date().toISOString().slice(0, 10);
+        var statsUrl = gsDataBaseUrl + "google-scholar-stats/gs_data.json?v=" + dailyCacheKey;
+
+        $.getJSON(statsUrl, function (data) {
             var totalCitation = getMetric(data, ['citedby', 'citations', 'total_citations']);
             var totalCitation5y = getMetric(data, ['citedby5y', 'citedby_5y', 'citations5y']);
             var hIndex = getMetric(data, ['hindex', 'h_index']);
@@ -49,6 +52,10 @@
                     element.textContent = '| Citations: ' + numCitations;
                 }
             });
+        }).fail(function (_jqxhr, textStatus, error) {
+            if (window.console && console.warn) {
+                console.warn('Google Scholar metrics could not be loaded:', textStatus, error);
+            }
         });
     })
 </script>

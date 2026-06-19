@@ -361,24 +361,24 @@ redirect_from:
     <div class="scholar-grid" aria-label="Google Scholar and ESI metrics">
       <article class="scholar-metric">
         <div>
-          <strong id="gs-citations">2910</strong>
+          <strong id="gs-citations">3065</strong>
           <span>Total citations</span>
         </div>
-        <small>Since 2021: <span id="gs-citations-5y">2908</span></small>
+        <small>Since 2021: <span id="gs-citations-5y">3064</span></small>
       </article>
       <article class="scholar-metric">
         <div>
-          <strong id="gs-hindex">23</strong>
+          <strong id="gs-hindex">24</strong>
           <span>h-index</span>
         </div>
-        <small>Since 2021: <span id="gs-hindex-5y">23</span></small>
+        <small>Since 2021: <span id="gs-hindex-5y">24</span></small>
       </article>
       <article class="scholar-metric">
         <div>
-          <strong id="gs-i10index">44</strong>
+          <strong id="gs-i10index">45</strong>
           <span>i10-index</span>
         </div>
-        <small>Since 2021: <span id="gs-i10index-5y">44</span></small>
+        <small>Since 2021: <span id="gs-i10index-5y">45</span></small>
       </article>
       <article class="scholar-metric">
         <div>
