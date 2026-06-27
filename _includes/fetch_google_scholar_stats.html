@@ -1,10 +1,5 @@
 <script>
     $(document).ready(function () {
-        {% if site.google_scholar_stats_use_cdn %}
-        var gsDataBaseUrl = 'https://cdn.jsdelivr.net/gh/{{ site.repository }}@'
-        {% else %}
-        var gsDataBaseUrl = 'https://raw.githubusercontent.com/{{ site.repository }}/'
-        {% endif %}
         function getMetric(data, keys) {
             for (var i = 0; i < keys.length; i += 1) {
                 if (data[keys[i]] !== undefined && data[keys[i]] !== null) {
@@ -24,10 +19,7 @@
             }
         }
 
-        var dailyCacheKey = new Date().toISOString().slice(0, 10);
-        var statsUrl = gsDataBaseUrl + "google-scholar-stats/gs_data.json?v=" + dailyCacheKey;
-
-        $.getJSON(statsUrl, function (data) {
+        function applyScholarMetrics(data) {
             var totalCitation = getMetric(data, ['citedby', 'citations', 'total_citations']);
             var totalCitation5y = getMetric(data, ['citedby5y', 'citedby_5y', 'citations5y']);
             var hIndex = getMetric(data, ['hindex', 'h_index']);
@@ -52,10 +44,35 @@
                     element.textContent = '| Citations: ' + numCitations;
                 }
             });
-        }).fail(function (_jqxhr, textStatus, error) {
-            if (window.console && console.warn) {
-                console.warn('Google Scholar metrics could not be loaded:', textStatus, error);
+        }
+
+        function loadScholarMetrics(urls, index) {
+            if (index >= urls.length) {
+                if (window.console && console.warn) {
+                    console.warn('Google Scholar metrics could not be loaded from any source.');
+                }
+                return;
             }
-        });
-    })
+
+            $.getJSON(urls[index], applyScholarMetrics).fail(function (_jqxhr, textStatus, error) {
+                if (window.console && console.warn) {
+                    console.warn('Google Scholar metrics source failed:', urls[index], textStatus, error);
+                }
+                loadScholarMetrics(urls, index + 1);
+            });
+        }
+
+        var repository = '{{ site.repository }}';
+        var dailyCacheKey = new Date().toISOString().slice(0, 10);
+        var statsUrls = [
+            'https://raw.githubusercontent.com/' + repository + '/google-scholar-stats/gs_data.json?v=' + dailyCacheKey,
+            'https://cdn.jsdelivr.net/gh/' + repository + '@google-scholar-stats/gs_data.json?v=' + dailyCacheKey
+        ];
+
+        {% if site.google_scholar_stats_use_cdn %}
+        statsUrls.reverse();
+        {% endif %}
+
+        loadScholarMetrics(statsUrls, 0);
+    });
 </script>
