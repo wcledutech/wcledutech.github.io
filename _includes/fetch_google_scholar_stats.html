@@ -19,6 +19,42 @@
             }
         }
 
+        function parseMetricNumber(value) {
+            if (value === null || value === undefined || value === '') {
+                return null;
+            }
+            var cleaned = String(value).replace(/,/g, '').trim();
+            if (!cleaned || !/^\d+$/.test(cleaned)) {
+                return null;
+            }
+            return Number(cleaned);
+        }
+
+        function currentMetricNumber(id) {
+            var element = document.getElementById(id);
+            return element ? parseMetricNumber(element.textContent) : null;
+        }
+
+        function monotonicMetric(id, remoteValue, fallbackId) {
+            var remoteNumber = parseMetricNumber(remoteValue);
+            if (remoteNumber === null) {
+                return null;
+            }
+
+            var currentNumber = currentMetricNumber(id);
+            var fallbackNumber = fallbackId ? currentMetricNumber(fallbackId) : null;
+            var floorNumber = Math.max(
+                currentNumber === null ? -Infinity : currentNumber,
+                fallbackNumber === null ? -Infinity : fallbackNumber
+            );
+
+            return remoteNumber < floorNumber ? floorNumber : remoteNumber;
+        }
+
+        function setMetricById(id, value, fallbackId) {
+            setTextById(id, monotonicMetric(id, value, fallbackId));
+        }
+
         function applyScholarMetrics(data) {
             var totalCitation = getMetric(data, ['citedby', 'citations', 'total_citations']);
             var totalCitation5y = getMetric(data, ['citedby5y', 'citedby_5y', 'citations5y']);
@@ -27,13 +63,13 @@
             var i10Index = getMetric(data, ['i10index', 'i10_index']);
             var i10Index5y = getMetric(data, ['i10index5y', 'i10_index5y']);
 
-            setTextById('total_cit', totalCitation);
-            setTextById('gs-citations', totalCitation);
-            setTextById('gs-citations-5y', totalCitation5y);
-            setTextById('gs-hindex', hIndex);
-            setTextById('gs-hindex-5y', hIndex5y);
-            setTextById('gs-i10index', i10Index);
-            setTextById('gs-i10index-5y', i10Index5y);
+            setMetricById('gs-citations', totalCitation);
+            setMetricById('gs-citations-5y', totalCitation5y);
+            setMetricById('gs-hindex', hIndex);
+            setMetricById('gs-hindex-5y', hIndex5y);
+            setMetricById('gs-i10index', i10Index);
+            setMetricById('gs-i10index-5y', i10Index5y);
+            setMetricById('total_cit', totalCitation, 'gs-citations');
             setTextById('gs-updated', data['updated'], 'Google Scholar metrics last updated: ');
 
             var citationEles = document.getElementsByClassName('show_paper_citations');

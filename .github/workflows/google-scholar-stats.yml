@@ -56,6 +56,7 @@ jobs:
           SCHOLAR_FETCH_ATTEMPTS: 2
           SCHOLARLY_TIMEOUT_SECONDS: 150
           PROFILE_PAGE_TIMEOUT_SECONDS: 30
+          MAX_PREVIOUS_DATA_AGE_DAYS: 3
         run: python google_scholar_crawler/main.py
 
       - name: Publish stats branch
@@ -75,3 +76,23 @@ jobs:
           git commit -m "Update Google Scholar stats"
           git remote add origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git push --force origin google-scholar-stats
+
+      - name: Fail loudly if Scholar metrics are stale
+        run: |
+          python - <<'PY'
+          import json
+          import sys
+
+          with open("results/gs_data.json", "r", encoding="utf-8") as infile:
+              data = json.load(infile)
+
+          status = data.get("update_status")
+          if data.get("metric_regression_guard"):
+              print("::warning::Google Scholar returned lower metrics than the previous published data. The no-downgrade guard kept the previous values.")
+
+          if status == "stale-previous-data-fallback":
+              age = data.get("fallback_age_days")
+              max_age = data.get("fallback_max_age_days")
+              print(f"::error::Google Scholar metrics have not refreshed for {age} days, exceeding the {max_age}-day stale-data limit.")
+              sys.exit(1)
+          PY

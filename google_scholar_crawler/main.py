@@ -8,10 +8,6 @@ from multiprocessing import Process, Queue
 from pathlib import Path
 from queue import Empty
 
-import requests
-from bs4 import BeautifulSoup
-
-
 try:
     sys.stdout.reconfigure(encoding="utf-8")
     sys.stderr.reconfigure(encoding="utf-8")
@@ -21,10 +17,31 @@ except AttributeError:
 RESULTS_DIR = Path("results")
 GS_DATA_PATH = RESULTS_DIR / "gs_data.json"
 SHIELDS_DATA_PATH = RESULTS_DIR / "gs_data_shieldsio.json"
+MONOTONIC_METRIC_KEYS = (
+    "citedby",
+    "citedby5y",
+    "hindex",
+    "hindex5y",
+    "i10index",
+    "i10index5y",
+)
 
 
 def utc_now():
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
+def parse_utc_datetime(value):
+    if not value:
+        return None
+    try:
+        normalized = str(value).replace("Z", "+00:00")
+        parsed = datetime.fromisoformat(normalized)
+    except ValueError:
+        return None
+    if parsed.tzinfo is None:
+        return parsed.replace(tzinfo=timezone.utc)
+    return parsed.astimezone(timezone.utc)
 
 
 def int_or_none(value):
@@ -34,6 +51,15 @@ def int_or_none(value):
     if not cleaned:
         return None
     return int(cleaned)
+
+
+def metric_int(author, key):
+    if not author:
+        return None
+    try:
+        return int_or_none(author.get(key))
+    except (TypeError, ValueError):
+        return None
 
 
 def normalize_author(author, scholar_id, source):
@@ -97,6 +123,9 @@ def fetch_with_scholarly(scholar_id, timeout_seconds):
 
 
 def fetch_metrics_from_profile_page(scholar_id, timeout_seconds):
+    import requests
+    from bs4 import BeautifulSoup
+
     url = f"https://scholar.google.com/citations?user={scholar_id}&hl=en"
     headers = {
         "User-Agent": (
@@ -144,7 +173,7 @@ def fetch_metrics_from_profile_page(scholar_id, timeout_seconds):
     return normalize_author(author, scholar_id, "profile-page")
 
 
-def load_previous_data(path):
+def load_previous_data(path, mark_as_fallback=False, max_age_days=None):
     if not path:
         return None
     previous_path = Path(path)
@@ -152,8 +181,66 @@ def load_previous_data(path):
         return None
     with previous_path.open("r", encoding="utf-8") as infile:
         author = json.load(infile)
-    author["update_status"] = "previous-data-fallback"
-    author["last_attempted"] = utc_now()
+
+    if mark_as_fallback:
+        author["update_status"] = "previous-data-fallback"
+        author["last_attempted"] = utc_now()
+        updated_at = parse_utc_datetime(author.get("updated"))
+        if updated_at and max_age_days is not None:
+            age_days = (datetime.now(timezone.utc) - updated_at).total_seconds() / 86400
+            author["fallback_age_days"] = round(age_days, 2)
+            author["fallback_max_age_days"] = max_age_days
+            if age_days > max_age_days:
+                author["update_status"] = "stale-previous-data-fallback"
+    return author
+
+
+def preserve_previous_context(author, previous_author):
+    if not previous_author:
+        return author
+
+    if not author.get("publications") and previous_author.get("publications"):
+        author["publications"] = previous_author["publications"]
+        author["publication_data_status"] = "previous-data-preserved"
+
+    for key in (
+        "name",
+        "url_picture",
+        "affiliation",
+        "organization",
+        "interests",
+        "email_domain",
+        "homepage",
+    ):
+        if not author.get(key) and previous_author.get(key):
+            author[key] = previous_author[key]
+
+    return author
+
+
+def guard_metric_regression(author, previous_author):
+    if not previous_author:
+        return author
+
+    guarded_metrics = {}
+    for key in MONOTONIC_METRIC_KEYS:
+        current_value = metric_int(author, key)
+        previous_value = metric_int(previous_author, key)
+        if previous_value is None:
+            continue
+        if current_value is None or current_value < previous_value:
+            author[key] = previous_value
+            guarded_metrics[key] = {
+                "fetched": current_value,
+                "previous": previous_value,
+                "published": previous_value,
+            }
+
+    if guarded_metrics:
+        author["metric_regression_guard"] = guarded_metrics
+        if author.get("update_status") == "fresh":
+            author["update_status"] = "fresh-guarded"
+
     return author
 
 
@@ -185,13 +272,21 @@ def main():
     attempts = int(os.environ.get("SCHOLAR_FETCH_ATTEMPTS", "3"))
     scholarly_timeout = int(os.environ.get("SCHOLARLY_TIMEOUT_SECONDS", "150"))
     page_timeout = int(os.environ.get("PROFILE_PAGE_TIMEOUT_SECONDS", "30"))
+    max_previous_age_days = float(os.environ.get("MAX_PREVIOUS_DATA_AGE_DAYS", "3"))
     previous_data_path = os.environ.get("PREVIOUS_GS_DATA_PATH")
+    previous_author = load_previous_data(previous_data_path)
 
     try:
         author = fetch_fresh_data(scholar_id, attempts, scholarly_timeout, page_timeout)
+        author = preserve_previous_context(author, previous_author)
+        author = guard_metric_regression(author, previous_author)
     except Exception as exc:
         print(f"fresh fetch failed: {exc}", file=sys.stderr)
-        author = load_previous_data(previous_data_path)
+        author = load_previous_data(
+            previous_data_path,
+            mark_as_fallback=True,
+            max_age_days=max_previous_age_days,
+        )
         if author is None:
             raise
         print("Using previous published Google Scholar stats as fallback", file=sys.stderr)
@@ -202,6 +297,9 @@ def main():
         "source": author.get("source"),
         "updated": author.get("updated"),
         "last_attempted": author.get("last_attempted"),
+        "fallback_age_days": author.get("fallback_age_days"),
+        "fallback_max_age_days": author.get("fallback_max_age_days"),
+        "metric_regression_guard": author.get("metric_regression_guard"),
         "citedby": author.get("citedby"),
         "citedby5y": author.get("citedby5y"),
         "hindex": author.get("hindex"),
