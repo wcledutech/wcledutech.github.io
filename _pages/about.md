@@ -355,9 +355,6 @@ redirect_from:
 
   <section class="about-section" id="scholar-metrics">
     <h2>Scholar Metrics</h2>
-    <p class="section-lead">
-      Google Scholar metrics are refreshed automatically when the scheduled site data workflow runs. The current values below are seeded from the latest visible profile snapshot.
-    </p>
     <div class="scholar-grid" aria-label="Google Scholar and ESI metrics">
       <article class="scholar-metric">
         <div>
@@ -399,7 +396,6 @@ redirect_from:
 
   <section class="about-section" id="honors">
     <h2>Honors, Awards, and Scholarships</h2>
-    <p class="section-lead">Selected awards and scholarships across undergraduate, master's, and doctoral stages.</p>
     <div class="award-list" style="--accent: var(--gold);">
       <div class="compact-item"><strong>2026-2028 | ACU Vice Chancellor's PhD Excellence Scholarship</strong><p>Research Training Program (RTP) Scholarships, totaling approximately 1,033,000 RMB over 3 years.</p></div>
       <div class="compact-item"><strong>2024-2025 | China National Scholarship for Postgraduate Students</strong><p>20,000 RMB.</p></div>
