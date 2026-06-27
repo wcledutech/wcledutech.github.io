@@ -358,10 +358,10 @@ redirect_from:
     <div class="scholar-grid" aria-label="Google Scholar and ESI metrics">
       <article class="scholar-metric">
         <div>
-          <strong id="gs-citations">3127</strong>
+          <strong id="gs-citations">3136</strong>
           <span>Total citations</span>
         </div>
-        <small>Since 2021: <span id="gs-citations-5y">3126</span></small>
+        <small>Since 2021: <span id="gs-citations-5y">3135</span></small>
       </article>
       <article class="scholar-metric">
         <div>
