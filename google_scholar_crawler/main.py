@@ -123,7 +123,6 @@ def fetch_with_scholarly(scholar_id, timeout_seconds):
 
 
 def fetch_metrics_from_profile_page(scholar_id, timeout_seconds):
-    import requests
     from bs4 import BeautifulSoup
 
     url = f"https://scholar.google.com/citations?user={scholar_id}&hl=en"
@@ -132,27 +131,45 @@ def fetch_metrics_from_profile_page(scholar_id, timeout_seconds):
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
             "AppleWebKit/537.36 (KHTML, like Gecko) "
             "Chrome/126.0 Safari/537.36"
-        )
+        ),
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7",
     }
-    response = requests.get(url, headers=headers, timeout=timeout_seconds)
-    response.raise_for_status()
-    soup = BeautifulSoup(response.text, "html.parser")
+
+    html = None
+    errors = []
+    for backend_name, fetcher in (
+        ("requests", fetch_profile_html_with_requests),
+        ("curl_cffi", fetch_profile_html_with_curl_cffi),
+    ):
+        try:
+            html = fetcher(url, headers, timeout_seconds)
+            print(f"Fetched lightweight metrics page with {backend_name}")
+            break
+        except Exception as exc:
+            errors.append(f"{backend_name}: {exc}")
+            print(f"{backend_name} profile fetch failed: {exc}", file=sys.stderr)
+
+    if html is None:
+        raise RuntimeError("profile page fetch failed with all backends: " + " | ".join(errors))
+
+    soup = BeautifulSoup(html, "html.parser")
 
     metrics = {}
     for row in soup.select("#gsc_rsb_st tr"):
         cells = [cell.get_text(" ", strip=True) for cell in row.find_all(["td", "th"])]
         if len(cells) < 3:
             continue
-        label = cells[0].lower()
+        label = cells[0].lower().replace(" ", "")
         total = int_or_none(cells[1])
         recent = int_or_none(cells[2])
-        if "citation" in label:
+        if "citation" in label or "引用" in label:
             metrics["citedby"] = total
             metrics["citedby5y"] = recent
-        elif "h-index" in label:
+        elif "h-index" in label or "h指数" in label or "h指數" in label:
             metrics["hindex"] = total
             metrics["hindex5y"] = recent
-        elif "i10-index" in label:
+        elif "i10-index" in label or "i10指数" in label or "i10指數" in label:
             metrics["i10index"] = total
             metrics["i10index5y"] = recent
 
@@ -171,6 +188,27 @@ def fetch_metrics_from_profile_page(scholar_id, timeout_seconds):
         **metrics,
     }
     return normalize_author(author, scholar_id, "profile-page")
+
+
+def fetch_profile_html_with_requests(url, headers, timeout_seconds):
+    import requests
+
+    response = requests.get(url, headers=headers, timeout=timeout_seconds)
+    response.raise_for_status()
+    return response.text
+
+
+def fetch_profile_html_with_curl_cffi(url, headers, timeout_seconds):
+    from curl_cffi import requests as curl_requests
+
+    response = curl_requests.get(
+        url,
+        headers=headers,
+        timeout=timeout_seconds,
+        impersonate="chrome124",
+    )
+    response.raise_for_status()
+    return response.text
 
 
 def load_previous_data(path, mark_as_fallback=False, max_age_days=None):
