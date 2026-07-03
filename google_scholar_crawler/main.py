@@ -139,8 +139,8 @@ def fetch_metrics_from_profile_page(scholar_id, timeout_seconds):
     html = None
     errors = []
     for backend_name, fetcher in (
-        ("requests", fetch_profile_html_with_requests),
         ("curl_cffi", fetch_profile_html_with_curl_cffi),
+        ("requests", fetch_profile_html_with_requests),
     ):
         try:
             html = fetcher(url, headers, timeout_seconds)
@@ -285,19 +285,19 @@ def guard_metric_regression(author, previous_author):
 def fetch_fresh_data(scholar_id, attempts, scholarly_timeout, page_timeout):
     last_error = None
     for attempt in range(1, attempts + 1):
-        print(f"Attempt {attempt}/{attempts}: fetching Google Scholar profile with scholarly")
-        try:
-            return fetch_with_scholarly(scholar_id, scholarly_timeout)
-        except Exception as exc:
-            last_error = exc
-            print(f"scholarly fetch failed: {exc}", file=sys.stderr)
-
         print(f"Attempt {attempt}/{attempts}: fetching lightweight metrics page")
         try:
             return fetch_metrics_from_profile_page(scholar_id, page_timeout)
         except Exception as exc:
             last_error = exc
             print(f"profile page fetch failed: {exc}", file=sys.stderr)
+
+        print(f"Attempt {attempt}/{attempts}: fetching Google Scholar profile with scholarly")
+        try:
+            return fetch_with_scholarly(scholar_id, scholarly_timeout)
+        except Exception as exc:
+            last_error = exc
+            print(f"scholarly fetch failed: {exc}", file=sys.stderr)
 
         if attempt < attempts:
             time.sleep(min(30, attempt * 10))
