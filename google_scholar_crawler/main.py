@@ -190,6 +190,140 @@ def fetch_metrics_from_profile_page(scholar_id, timeout_seconds):
     return normalize_author(author, scholar_id, "profile-page")
 
 
+def first_non_all_metric_value(values):
+    if not isinstance(values, dict):
+        return None
+    for key, value in values.items():
+        if str(key).lower() != "all":
+            return value
+    return None
+
+
+def metric_values_from_serpapi_table(table):
+    metrics = {}
+    for row in table or []:
+        if not isinstance(row, dict):
+            continue
+        for raw_name, values in row.items():
+            name = str(raw_name).lower().replace("-", "_").replace(" ", "_")
+            if not isinstance(values, dict):
+                continue
+            total = int_or_none(values.get("all"))
+            recent = int_or_none(first_non_all_metric_value(values))
+
+            if "citation" in name:
+                metrics["citedby"] = total
+                metrics["citedby5y"] = recent
+            elif name in {"h_index", "hindex", "indice_h"} or name.endswith("_h"):
+                metrics["hindex"] = total
+                metrics["hindex5y"] = recent
+            elif "i10" in name:
+                metrics["i10index"] = total
+                metrics["i10index5y"] = recent
+    return metrics
+
+
+def serpapi_article_to_publication(article):
+    citation_id = article.get("citation_id")
+    if not citation_id:
+        return None, None
+
+    cited_by = article.get("cited_by") or {}
+    link = cited_by.get("link") or ""
+    cites_id = []
+    if "cites=" in link:
+        cites_id = [link.split("cites=", 1)[1].split("&", 1)[0]]
+
+    publication = {
+        "container_type": "Publication",
+        "source": "SERPAPI_AUTHOR_ARTICLE",
+        "bib": {
+            "title": article.get("title", ""),
+            "author": article.get("authors", ""),
+            "citation": article.get("publication", ""),
+            "pub_year": str(article.get("year", "")),
+        },
+        "filled": False,
+        "author_pub_id": citation_id,
+        "num_citations": int_or_none(cited_by.get("value")) or 0,
+    }
+    if link:
+        publication["citedby_url"] = link
+    if cites_id:
+        publication["cites_id"] = cites_id
+    return citation_id, publication
+
+
+def parse_serpapi_author_response(data, scholar_id):
+    if data.get("error"):
+        raise RuntimeError(data["error"])
+
+    author_data = data.get("author") or {}
+    cited_by = data.get("cited_by") or {}
+    metrics = metric_values_from_serpapi_table(cited_by.get("table"))
+    required = ["citedby", "hindex", "i10index"]
+    missing = [key for key in required if metrics.get(key) is None]
+    if missing:
+        raise RuntimeError(f"SerpApi response did not expose metrics: {', '.join(missing)}")
+
+    publications = {}
+    for article in data.get("articles") or []:
+        citation_id, publication = serpapi_article_to_publication(article)
+        if citation_id and publication:
+            publications[citation_id] = publication
+
+    interests = []
+    for interest in author_data.get("interests") or []:
+        if isinstance(interest, dict) and interest.get("title"):
+            interests.append(interest["title"])
+        elif isinstance(interest, str):
+            interests.append(interest)
+
+    cites_per_year = {}
+    for item in cited_by.get("graph") or []:
+        year = item.get("year")
+        citations = int_or_none(item.get("citations"))
+        if year and citations is not None:
+            cites_per_year[str(year)] = citations
+
+    author = {
+        "container_type": "Author",
+        "filled": ["basics", "indices", "counts", "publications"],
+        "scholar_id": scholar_id,
+        "name": author_data.get("name", ""),
+        "url_picture": author_data.get("thumbnail", ""),
+        "affiliation": author_data.get("affiliations", ""),
+        "interests": interests,
+        "email_domain": author_data.get("email", ""),
+        "publications": publications,
+        "cites_per_year": cites_per_year,
+        "serpapi_search_metadata": data.get("search_metadata", {}),
+        **metrics,
+    }
+    return normalize_author(author, scholar_id, "serpapi")
+
+
+def fetch_with_serpapi(scholar_id, api_key, timeout_seconds):
+    if not api_key:
+        raise RuntimeError("SERPAPI_KEY is not configured")
+
+    import requests
+
+    response = requests.get(
+        "https://serpapi.com/search.json",
+        params={
+            "engine": "google_scholar_author",
+            "author_id": scholar_id,
+            "hl": "en",
+            "num": "100",
+            "api_key": api_key,
+        },
+        timeout=timeout_seconds,
+    )
+    response.raise_for_status()
+    return parse_serpapi_author_response(response.json(), scholar_id)
+
+
 def fetch_profile_html_with_requests(url, headers, timeout_seconds):
     import requests
 
@@ -282,9 +416,19 @@ def guard_metric_regression(author, previous_author):
     return author
 
 
-def fetch_fresh_data(scholar_id, attempts, scholarly_timeout, page_timeout):
+def fetch_fresh_data(scholar_id, attempts, scholarly_timeout, page_timeout, serpapi_key, serpapi_timeout):
     last_error = None
     for attempt in range(1, attempts + 1):
+        if serpapi_key:
+            print(f"Attempt {attempt}/{attempts}: fetching Google Scholar profile with SerpApi")
+            try:
+                return fetch_with_serpapi(scholar_id, serpapi_key, serpapi_timeout)
+            except Exception as exc:
+                last_error = exc
+                print(f"SerpApi fetch failed: {exc}", file=sys.stderr)
+        elif attempt == 1:
+            print("SERPAPI_KEY is not configured; skipping SerpApi primary source")
+
         print(f"Attempt {attempt}/{attempts}: fetching lightweight metrics page")
         try:
             return fetch_metrics_from_profile_page(scholar_id, page_timeout)
@@ -310,12 +454,21 @@ def main():
     attempts = int(os.environ.get("SCHOLAR_FETCH_ATTEMPTS", "3"))
     scholarly_timeout = int(os.environ.get("SCHOLARLY_TIMEOUT_SECONDS", "150"))
     page_timeout = int(os.environ.get("PROFILE_PAGE_TIMEOUT_SECONDS", "30"))
+    serpapi_key = os.environ.get("SERPAPI_KEY", "").strip()
+    serpapi_timeout = int(os.environ.get("SERPAPI_TIMEOUT_SECONDS", "45"))
     max_previous_age_days = float(os.environ.get("MAX_PREVIOUS_DATA_AGE_DAYS", "3"))
     previous_data_path = os.environ.get("PREVIOUS_GS_DATA_PATH")
     previous_author = load_previous_data(previous_data_path)
 
     try:
-        author = fetch_fresh_data(scholar_id, attempts, scholarly_timeout, page_timeout)
+        author = fetch_fresh_data(
+            scholar_id,
+            attempts,
+            scholarly_timeout,
+            page_timeout,
+            serpapi_key,
+            serpapi_timeout,
+        )
         author = preserve_previous_context(author, previous_author)
         author = guard_metric_regression(author, previous_author)
     except Exception as exc:

@@ -56,6 +56,8 @@ jobs:
           SCHOLAR_FETCH_ATTEMPTS: 3
           SCHOLARLY_TIMEOUT_SECONDS: 90
           PROFILE_PAGE_TIMEOUT_SECONDS: 30
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+          SERPAPI_TIMEOUT_SECONDS: 45
           MAX_PREVIOUS_DATA_AGE_DAYS: 3
         run: python google_scholar_crawler/main.py
 
