@@ -286,7 +286,19 @@ author_profile: true
 }
 
 .method-group ul {
-  padding: 0 1rem 1rem;
+  gap: 1.1rem;
+  padding: 1.15rem 1.2rem 1.25rem;
+}
+
+.method-group li {
+  padding: 0 0 0 1.65rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  font-size: .98rem;
+  line-height: 1.75;
+  text-indent: -1.65rem;
 }
 
 @media (max-width: 900px) {
