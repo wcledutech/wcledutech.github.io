@@ -194,6 +194,25 @@ author_profile: true
   padding: 1rem;
 }
 
+#corresponding-author-publications ul,
+#other-author-publications ul,
+#conference-publications ul {
+  gap: 1.1rem;
+  padding: 1.15rem 1.2rem 1.25rem;
+}
+
+#corresponding-author-publications li,
+#other-author-publications li,
+#conference-publications li {
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  font-size: .98rem;
+  line-height: 1.75;
+}
+
 .method-section {
   margin-top: 3rem;
   padding-top: 1.15rem;
