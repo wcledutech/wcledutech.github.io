@@ -55,12 +55,12 @@ author_profile: true
   line-height: 1.05;
 }
 
-.publication-hero p:last-of-type {
-  max-width: 920px;
+.publication-hero-copy {
+  max-width: 1220px;
   margin: 1rem 0 0;
   color: rgba(255,255,255,.9);
-  font-size: clamp(1.05rem, 2vw, 1.35rem);
-  line-height: 1.55;
+  font-size: clamp(.98rem, 1.45vw, 1.16rem);
+  line-height: 1.62;
 }
 
 .publication-metrics {
@@ -321,7 +321,8 @@ author_profile: true
 <section class="publication-hero">
   <p class="publication-kicker">Publication Portfolio</p>
   <h1>Publications</h1>
-  <p>Selected journal articles and conference papers across AI in education, learning environments, learner modeling, programming education, and educational technology research methods.</p>
+  <p class="publication-hero-copy">Chengliang Wang’s recent research takes the development of intelligent learning environments and the vertical design of AI Agents as its starting point, anchored by three core foci: learner experience, behavioral modeling, and cognitive development. Through this framework, he explores the empowering potential of cutting-edge intelligent technologies across teaching, learning, administration, and educational assessment. Furthermore, he has actively advanced the cultivation of AI literacy among students and teachers, alongside the development of related curricula.</p>
+  <p class="publication-hero-copy">As a first or corresponding author, Wang has published 31 SSCI-indexed papers, 18 of which are ranked in Q1 and Q2 according to the 2025 Chinese Academy of Sciences (CAS) journal ranking system. Proficient in over twenty research methods commonly utilized in the social sciences, his work has been accepted by prominent journals including the Journal of Educational Computing Research, Journal of Computer Assisted Learning, Educational Technology Research and Development, British Journal of Educational Technology, and Education and Information Technologies. Notably, 15 of his publications have been recognized as ESI Top 1% Highly Cited Papers, with 5 previously designated as ESI Top 0.1% Hot Papers.</p>
   <div class="publication-metrics" aria-label="Publication overview">
     <div class="publication-metric"><strong>57</strong><span>SSCI/SCI papers</span></div>
     <div class="publication-metric"><strong>31</strong><span>First-author and corresponding-author studies</span></div>
