@@ -323,8 +323,8 @@ author_profile: true
   <h1>Publications</h1>
   <p>Selected journal articles and conference papers across AI in education, learning environments, learner modeling, programming education, and educational technology research methods.</p>
   <div class="publication-metrics" aria-label="Publication overview">
-    <div class="publication-metric"><strong>56</strong><span>SSCI/SCI papers</span></div>
-    <div class="publication-metric"><strong>30</strong><span>First-author and corresponding-author studies</span></div>
+    <div class="publication-metric"><strong>57</strong><span>SSCI/SCI papers</span></div>
+    <div class="publication-metric"><strong>31</strong><span>First-author and corresponding-author studies</span></div>
     <div class="publication-metric"><strong>15</strong><span>ESI 1% highly cited papers</span></div>
     <div class="publication-metric"><strong>5</strong><span>ESI 0.1% hot papers</span></div>
   </div>
@@ -348,6 +348,7 @@ author_profile: true
 - Jing, Y. H., Wang, H. M., Chen, X. J., & Wang, C. L.* (2024). What factors will affect the effectiveness of using ChatGPT to solve programming problems? A quasi-experimental study. *Humanities & Social Sciences Communications*, 11, 319. [https://doi.org/10.1057/s41599-024-02751-w](https://doi.org/10.1057/s41599-024-02751-w) (SSCI Q1; AHCI; ESI 0.1 % hot paper🔥 in 2025; ESI 1% highly cited paper🏆)
 - Yu, T., Dai, J., Chen, X. J., & Wang, C. L*. (2026). From information evaluation to technology use: Generative AI adoption in Chinese business schools. *The International Journal of Management Education*, 24(3), 101430. [https://doi.org/10.1016/j.ijme.2026.101430](https://doi.org/10.1016/j.ijme.2026.101430) (SSCI Q1)
 - Yu, T., Dai, J., Chen, X. J., & Wang, C. L.* (2026). To use or not to use? Generative AI adoption in Chinese business schools. *The International Journal of Management Education*, 24(1), 101323. [https://doi.org/10.1016/j.ijme.2025.101323](https://doi.org/10.1016/j.ijme.2025.101323) (SSCI Q1)
+- Jiang, Y., & Wang, C. L.* (2026). Reshaping the language learning landscape: Factors influencing learners’ use of open-source text-to-video AI (Open-Sora) in second language acquisition. *Journal of Computer Assisted Learning*, 42(4), e70277. [https://doi.org/10.1002/jcal.70277](https://doi.org/10.1002/jcal.70277) (SSCI Q1)
 - Chen, X. J., Yu, T., Jian, D., Jing, Y. H.* & Wang, C. L. (2025). Unveiling Learners’ Intentions toward Influencer-led Education: An Integration of Qualitative and Quantitative Analysis. *Interactive Learning Environments*. [https://doi.org/10.1080/10494820.2024.2444533](https://doi.org/10.1080/10494820.2024.2444533) (SSCI Q1; ESI 1% highly cited paper🏆)
 - Dai, J., Zhang, X., & Wang, C. L.* (2024). A metaanalysis of learners’ continuance intention toward online education platforms. *Education and Information Technologies*, 29, 21833-21868. [https://doi.org/10.1007/s10639-024-12654-7](https://doi.org/10.1007/s10639-024-12654-7) (SSCI Q1; ESI 0.1 % hot paper; ESI 1% highly cited paper🏆)
 - Shang, X., Liu, Z., Gong, C., He, Z., & Wang, C. L.* (2025). From Perception to Trust: The Multidimensional Landscape of Anthropomorphism in Robotics. *International Journal of Human-Computer Interaction*, 1-23. [https://doi.org/10.1080/10447318.2025.2504198](https://doi.org/10.1080/10447318.2025.2504198) (SSCI Q1; SCIE Q1; CCF-B)
@@ -454,12 +455,13 @@ author_profile: true
 </details>
 
 <details class="method-group" markdown="1">
-<summary>Structural Equation Modeling <span class="method-count">20 studies</span></summary>
+<summary>Structural Equation Modeling <span class="method-count">21 studies</span></summary>
 
 - Wang, C. L., Dai, J., Zhu K. K., Yu, T., & Gu, X. Q. (2023). Understanding the Continuance Intention of College Students Toward New E-learning Spaces Based on an Integrated Model of the TAM and TTF. *International Journal of Human-Computer Interaction*, 40(24), 8419-8432. [https://doi.org/10.1080/10447318.2023.2291609](https://doi.org/10.1080/10447318.2023.2291609)
 - Wang, C. L., Wang, H. M., Li Y. Y., Dai, J., Gu, X. Q., & Yu, T. (2024). Factors Influencing University Students' Behavioral Intention to Use Generative Artificial Intelligence: Integrating the Theory of Planned Behavior and AI Literacy. *International Journal of Human-Computer Interaction*, 41(11), 6649-6671. [https://doi.org/10.1080/10447318.2024.2383033](https://doi.org/10.1080/10447318.2024.2383033)
 - Yu, T., Dai, J., Chen, X. J., & Wang, C. L. (2026). From information evaluation to technology use: Generative AI adoption in Chinese business schools. *The International Journal of Management Education*, 24(3), 101430. [https://doi.org/10.1016/j.ijme.2026.101430](https://doi.org/10.1016/j.ijme.2026.101430)
 - Yu, T., Dai, J., Chen, X. J., & Wang, C. L. (2026). To use or not to use? Generative AI adoption in Chinese business schools. *The International Journal of Management Education*, 24(1), 101323. [https://doi.org/10.1016/j.ijme.2025.101323](https://doi.org/10.1016/j.ijme.2025.101323)
+- Jiang, Y., & Wang, C. L. (2026). Reshaping the language learning landscape: Factors influencing learners’ use of open-source text-to-video AI (Open-Sora) in second language acquisition. *Journal of Computer Assisted Learning*, 42(4), e70277. [https://doi.org/10.1002/jcal.70277](https://doi.org/10.1002/jcal.70277)
 - Wang, J. Y., Wang, H. M., Yang, J. W., & Wang, C. L. (2026). Academic transformation in the era of artificial intelligence: Drivers of university faculty adoption of GenAI based on the UTAUT model. *Humanities and Social Sciences Communications*, 13, xxxx. [https://doi.org/10.1057/s41599-026-07606-0](https://doi.org/10.1057/s41599-026-07606-0)
 - Yu, T., Dai, J., & Wang, C. L. (2023). Adoption of blended learning: Chinese university students' perspectives. *Humanities & Social Sciences Communications*, 10, 390. [https://doi.org/10.1057/s41599-023-01904-7](https://doi.org/10.1057/s41599-023-01904-7)
 - Yu, T., Teoh, A. P., & Wang, C. L. (2026). Integrating explanation and prediction: A PLS-MGA-ANN study of drone food delivery continuance intention. *International Journal of Hospitality Management*, 137, 104703. [https://doi.org/10.1016/j.ijhm.2026.104703](https://doi.org/10.1016/j.ijhm.2026.104703)
