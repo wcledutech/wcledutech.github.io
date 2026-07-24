@@ -379,7 +379,7 @@ redirect_from:
       </article>
       <article class="scholar-metric">
         <div>
-          <strong>15</strong>
+          <strong>18</strong>
           <span>ESI 1% highly cited papers</span>
         </div>
         <small>Profile metric</small>
