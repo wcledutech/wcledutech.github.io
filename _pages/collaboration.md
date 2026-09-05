@@ -217,8 +217,11 @@ Additionally, <a href="https://scholar.google.com/citations?user=Ra8fbcYAAAAJ&hl
 - <del>Feb 19                   Arrive in Sydney</del>
 - <del>May 29 - Jun 04          Hong Kong (GCCCE @ CUHK)</del>
 - <del>Jun 30 - Jul 02          Shanghai Visit</del>
-- Jul 02 - Jul 18          Shaoxing for holiday
-- Jul 18 - Jul 23          Shanghai for WAIC (World Artificial Intelligence Conference)
+- <del>Jul 02 - Jul 18          Shaoxing for holiday</del>
+- <del>Jul 18 - Jul 23          Shanghai for WAIC (World Artificial Intelligence Conference)</del>
 - Jul 24 - Sept 30         Sydney for my research
+- Nov 30 - Dec 05, 2026    New Zealand for ICCE 2026
+- Dec 06 - Dec 30, 2026    Travel in New Zealand and Australia (please contact me if interested in joining)
+- Dec 31, 2026 - Feb 15, 2027    Return to China
 
 </div>
