@@ -1,12 +1,12 @@
 <!-- begin SEO -->
 {% assign canonical_url = page.url | replace: "index.html", "" | absolute_url %}
-{% assign seo_title = page.citation_title | default: page.title | strip_html | strip_newlines | strip %}
+{% assign seo_title = page.seo_title | default: page.citation_title | default: page.title | strip_html | strip_newlines | strip %}
 {% if seo_title == empty %}
   {% assign seo_title = site.title | append: " - Homepage" %}
 {% else %}
   {% assign seo_title = seo_title | append: " | " | append: site.title %}
 {% endif %}
-{% assign seo_description = page.description | default: page.excerpt | default: site.description | markdownify | strip_html | strip_newlines | strip %}
+{% assign content_description = page.description | default: page.excerpt | default: site.description | markdownify | strip_html | strip_newlines | strip %}{% assign seo_description = page.seo_description | default: content_description | strip_html | strip_newlines | strip %}
 {% assign author_id = "/#person" | absolute_url %}
 {% assign website_id = "/#website" | absolute_url %}
 {% assign page_id = canonical_url | append: "#webpage" %}
@@ -91,7 +91,7 @@
       "url": {{ canonical_url | jsonify }},
       "headline": {{ page.citation_title | jsonify }},
       "name": {{ page.citation_title | jsonify }},
-      "description": {{ seo_description | jsonify }},
+      "description": {{ content_description | jsonify }},
       "mainEntityOfPage": {"@id": {{ page_id | jsonify }}},
       "author": [
         {% for citation_author in page.citation_authors %}

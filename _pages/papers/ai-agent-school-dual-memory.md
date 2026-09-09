@@ -3,6 +3,8 @@ layout: "publication"
 permalink: "/papers/ai-agent-school-dual-memory/"
 title: "Evolution in Simulation: AI-Agent School with Dual Memory for High-Fidelity Educational Dynamics"
 excerpt: "AI-Agent School models educational interactions through an experience-reflection-optimization cycle and a dual memory architecture. Its experience and knowledge bases combine short- and long-term memory. The work examines how agents evolve through simulated school interactions, providing a computational approach to studying educational dynamics."
+seo_title: "AI-Agent School: Dual Memory Simulation"
+seo_description: "AI-Agent School uses dual memory and an experience-reflection-optimization cycle to simulate educational interactions with large language model agents."
 author_profile: true
 highlight_slug: "ai-agent-school-dual-memory"
 citation_title: "Evolution in Simulation: AI-Agent School with Dual Memory for High-Fidelity Educational Dynamics"

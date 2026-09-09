@@ -3,6 +3,8 @@ layout: "publication"
 permalink: "/papers/genai-agents-education-systematic-review/"
 title: "GenAI-agents in education: a systematic review of macro-level trends, educational roles, theoretical foundations and future agendas"
 excerpt: "This systematic review organizes research on generative-AI agents in education around macro-level trends, educational roles, theoretical foundations and future agendas. It provides a literature-synthesis entry point for examining how educational agents are conceptualized and studied across learning settings."
+seo_title: "GenAI Agents in Education: Systematic Review"
+seo_description: "A systematic review of 33 empirical studies maps GenAI agents' educational roles, theoretical foundations and future research directions."
 author_profile: true
 highlight_slug: "genai-agents-education-systematic-review"
 citation_title: "GenAI-agents in education: a systematic review of macro-level trends, educational roles, theoretical foundations and future agendas"

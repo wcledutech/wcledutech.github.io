@@ -3,6 +3,8 @@ layout: "publication"
 permalink: "/papers/generative-ai-education-policy-framework/"
 title: "The journey of challenges and victories: exploring the transformation action framework in the GenAI era from multifaceted policies"
 excerpt: "This study synthesizes 11 policy and guideline documents through meta-ethnography. Its framework connects macro-level social and workforce change, meso-level educational organization and pedagogical logic, and micro-level teaching and learning scenarios. It offers a way to examine how generative AI policy relates to changes in educational practice."
+seo_title: "GenAI Education Policy: Meta-Ethnography"
+seo_description: "A meta-ethnographic synthesis of 11 policy documents develops a framework linking societal, institutional and classroom change."
 author_profile: true
 highlight_slug: "generative-ai-education-policy-framework"
 citation_title: "The journey of challenges and victories: exploring the transformation action framework in the GenAI era from multifaceted policies"

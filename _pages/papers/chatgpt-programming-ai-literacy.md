@@ -3,6 +3,8 @@ layout: "publication"
 permalink: "/papers/chatgpt-programming-ai-literacy/"
 title: "What factors will affect the effectiveness of using ChatGPT to solve programming problems? A quasi-experimental study"
 excerpt: "Using Python graphing tasks, this quasi-experimental study examines why learners differ in their effectiveness when using ChatGPT to solve programming problems. AI literacy, programming knowledge and understanding of ChatGPT are associated with effective use. The study connects the design of AI-supported programming activities with learners' existing capabilities."
+seo_title: "ChatGPT Programming: Learner Factors"
+seo_description: "A quasi-experiment using Python graphing tasks examines how AI literacy, programming knowledge and ChatGPT understanding relate to effective use."
 author_profile: true
 highlight_slug: "chatgpt-programming-ai-literacy"
 citation_title: "What factors will affect the effectiveness of using ChatGPT to solve programming problems? A quasi-experimental study"
