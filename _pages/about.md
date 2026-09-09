@@ -107,6 +107,7 @@ redirect_from:
   border-top: 1px solid var(--line);
 }
 
+.about-section h1,
 .about-section h2,
 .about-card h2,
 .about-card h3 {
@@ -114,9 +115,19 @@ redirect_from:
   border: 0;
 }
 
+.about-section h1,
 .about-section h2 {
   font-size: clamp(1.28rem, 2vw, 1.72rem);
   line-height: 1.2;
+}
+
+.about-section h1 {
+  padding: 0;
+  font-family: inherit;
+}
+
+.about-section h1::before {
+  content: none;
 }
 
 .section-lead {
@@ -318,7 +329,7 @@ redirect_from:
 
 <div class="about-page">
   <section class="about-section" id="profile">
-    <h2>Profile</h2>
+    <h1>Profile</h1>
     <!-- visibility-entry --><p><a href="{{ '/research-highlights/' | relative_url }}">Research highlights and paper summaries</a> · <a href="{{ '/resources/' | relative_url }}">Research resources</a> · <a href="{{ '/zh/' | relative_url }}">中文介绍</a></p>
     <p class="section-lead">
       My work connects educational technology, artificial intelligence, learning environments, programming education,
