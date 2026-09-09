@@ -1,75 +1,119 @@
 <!-- begin SEO -->
-{% if site.url %}
-  {% assign seo_url = site.url %}
+{% assign canonical_url = page.url | replace: "index.html", "" | absolute_url %}
+{% assign seo_title = page.citation_title | default: page.title | strip_html | strip_newlines | strip %}
+{% if seo_title == empty %}
+  {% assign seo_title = site.title | append: " - Homepage" %}
+{% else %}
+  {% assign seo_title = seo_title | append: " | " | append: site.title %}
 {% endif %}
-{% assign seo_url = seo_url | default: site.github.url %}
+{% assign seo_description = page.description | default: page.excerpt | default: site.description | markdownify | strip_html | strip_newlines | strip %}
+{% assign author_id = "/#person" | absolute_url %}
+{% assign website_id = "/#website" | absolute_url %}
+{% assign page_id = canonical_url | append: "#webpage" %}
 
-{% if site.url %}
-  {% assign canonical_url = page.url | replace: "index.html", "" | prepend: site.url %}
-{% endif %}
-
-<title>{{ site.title }} - Homepage</title>
-
-{% assign seo_description = page.description | default: page.excerpt | default: site.description %}
-{% if seo_description %}
-  {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}
-{% endif %}
-
-{% assign seo_author = page.author | default: page.author[0] | default: site.author[0] %}
-{% if seo_author %}
-  {% if seo_author.twitter %}
-    {% assign seo_author_twitter = seo_author.twitter %}
-  {% else %}
-    {% if site.data.authors and site.data.authors[seo_author] %}
-      {% assign seo_author_twitter = site.data.authors[seo_author].twitter  %}
-    {% else %}
-      {% assign seo_author_twitter = seo_author  %}
-    {% endif %}
-  {% endif %}
-  {% assign seo_author_twitter = seo_author_twitter | replace: "@", "" %}
-{% endif %}
-
-<meta property="og:locale" content="en">
-<meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:title" content="{{ site.title }}">
-
-{% if seo_url %}
-  <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
-  <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
-{% endif %}
-
-{% if page.excerpt %}
-  <meta property="og:description" content="{{ seo_description }}">
-{% endif %}
-
+<title>{{ seo_title | escape_once }}</title>
+<meta name="description" content="{{ seo_description | escape_once }}">
+<meta property="og:locale" content="{{ page.locale | default: 'en_US' | escape_once }}">
+<meta property="og:site_name" content="{{ site.title | escape_once }}">
+<meta property="og:title" content="{{ seo_title | escape_once }}">
+<meta property="og:description" content="{{ seo_description | escape_once }}">
+<meta property="og:type" content="{% if page.citation_title %}article{% else %}website{% endif %}">
+<link rel="canonical" href="{{ canonical_url | escape_once }}">
+<meta property="og:url" content="{{ canonical_url | escape_once }}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ seo_title | escape_once }}">
+<meta name="twitter:description" content="{{ seo_description | escape_once }}">
 {% if site.twitter.username %}
-  <meta name="twitter:site" content="@{{ site.twitter.username | replace: "@", "" }}">
-  <meta name="twitter:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
-  <meta name="twitter:description" content="{{ seo_description }}">
-  <meta name="twitter:url" content="{{ canonical_url }}">
-
-  {% if seo_author_twitter %}
-    <meta name="twitter:creator" content="@{{ seo_author_twitter }}">
-  {% endif %}
+  <meta name="twitter:site" content="@{{ site.twitter.username | replace: '@', '' | escape_once }}">
 {% endif %}
 
-{% if site.facebook %}
-  {% if site.facebook.publisher %}
-    <meta property="article:publisher" content="{{ site.facebook.publisher }}">
-  {% endif %}
-
-  {% if site.facebook.app_id %}
-    <meta property="fb:app_id" content="{{ site.facebook.app_id }}">
-  {% endif %}
+{% if page.citation_title %}
+  <meta name="citation_title" content="{{ page.citation_title | escape_once }}">
+  {% for citation_author in page.citation_authors %}
+    <meta name="citation_author" content="{{ citation_author | escape_once }}">
+  {% endfor %}
+  {% if page.citation_publication_date %}<meta name="citation_publication_date" content="{{ page.citation_publication_date | replace: '-', '/' | escape_once }}">{% endif %}
+  {% if page.citation_journal_title %}<meta name="citation_journal_title" content="{{ page.citation_journal_title | escape_once }}">{% endif %}
+  {% if page.citation_conference_title %}<meta name="citation_conference_title" content="{{ page.citation_conference_title | escape_once }}">{% endif %}
+  {% if page.citation_doi %}<meta name="citation_doi" content="{{ page.citation_doi | escape_once }}">{% endif %}
+  {% if page.citation_volume %}<meta name="citation_volume" content="{{ page.citation_volume | escape_once }}">{% endif %}
+  {% if page.citation_issue %}<meta name="citation_issue" content="{{ page.citation_issue | escape_once }}">{% endif %}
+  {% if page.citation_firstpage %}<meta name="citation_firstpage" content="{{ page.citation_firstpage | escape_once }}">{% endif %}
+  {% if page.citation_lastpage %}<meta name="citation_lastpage" content="{{ page.citation_lastpage | escape_once }}">{% endif %}
+  {% if page.citation_issn %}<meta name="citation_issn" content="{{ page.citation_issn | escape_once }}">{% endif %}
+  {% if page.citation_pdf_url and page.citation_pdf_url != empty %}<meta name="citation_pdf_url" content="{{ page.citation_pdf_url | absolute_url | escape_once }}">{% endif %}
+  <meta name="citation_abstract_html_url" content="{{ canonical_url | escape_once }}">
 {% endif %}
 
-{% if site.google_site_verification %}
-  <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
-{% endif %}
-{% if site.bing_site_verification %}
-  <meta name="msvalidate.01" content="{{ site.bing_site_verification }}">
-{% endif %}
-{% if site.baidu_site_verification %}
-  <meta name="baidu-site-verification" content="{{ site.baidu_site_verification }}" />
-{% endif %}
+{% capture structured_data %}
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": {{ website_id | jsonify }},
+      "url": {{ "/" | absolute_url | jsonify }},
+      "name": {{ site.title | jsonify }}
+    },
+    {
+      "@type": {% if page.url == "/" %}"ProfilePage"{% else %}"WebPage"{% endif %},
+      "@id": {{ page_id | jsonify }},
+      "url": {{ canonical_url | jsonify }},
+      "name": {{ seo_title | jsonify }},
+      "description": {{ seo_description | jsonify }},
+      "isPartOf": {"@id": {{ website_id | jsonify }}}
+      {% if page.url == "/" %}, "mainEntity": {"@id": {{ author_id | jsonify }}}{% endif %}
+      {% if page.citation_title %}, "mainEntity": {"@id": {{ canonical_url | append: "#article" | jsonify }}}{% endif %}
+    }
+    {% if page.url == "/" %},
+    {
+      "@type": "Person",
+      "@id": {{ author_id | jsonify }},
+      "name": {{ site.author.name | jsonify }},
+      "url": {{ site.author.uri | jsonify }},
+      "description": {{ site.description | jsonify }},
+      "affiliation": {
+        "@type": "EducationalOrganization",
+        "name": {{ site.author.affiliation.name | jsonify }},
+        "url": {{ site.author.affiliation.url | jsonify }}
+      },
+      "sameAs": [
+        {{ site.author.orcid | jsonify }},
+        {{ site.author.googlescholar | jsonify }},
+        {{ site.author.github | prepend: "https://github.com/" | jsonify }}
+      ]
+    }
+    {% endif %}
+    {% if page.citation_title %},
+    {
+      "@type": "ScholarlyArticle",
+      "@id": {{ canonical_url | append: "#article" | jsonify }},
+      "url": {{ canonical_url | jsonify }},
+      "headline": {{ page.citation_title | jsonify }},
+      "name": {{ page.citation_title | jsonify }},
+      "description": {{ seo_description | jsonify }},
+      "mainEntityOfPage": {"@id": {{ page_id | jsonify }}},
+      "author": [
+        {% for citation_author in page.citation_authors %}
+          {"@type": "Person", "name": {{ citation_author | jsonify }}{% if citation_author == site.author.name %}, "@id": {{ author_id | jsonify }}{% endif %}}{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
+      {% if page.citation_publication_date %}, "datePublished": {{ page.citation_publication_date | replace: '/', '-' | jsonify }}{% endif %}
+      {% if page.citation_journal_title %}, "isPartOf": {"@type": "Periodical", "name": {{ page.citation_journal_title | jsonify }}}{% endif %}
+      {% if page.citation_doi %},
+        "identifier": {"@type": "PropertyValue", "propertyID": "DOI", "value": {{ page.citation_doi | jsonify }}},
+        "sameAs": {{ page.citation_doi | prepend: "https://doi.org/" | jsonify }}
+      {% endif %}
+    }
+    {% endif %}
+  ]
+}
+{% endcapture %}
+<script type="application/ld+json">{{ structured_data | strip | replace: '</', '<\/' }}</script>
+
+{% if site.facebook.publisher %}<meta property="article:publisher" content="{{ site.facebook.publisher | escape_once }}">{% endif %}
+{% if site.facebook.app_id %}<meta property="fb:app_id" content="{{ site.facebook.app_id | escape_once }}">{% endif %}
+{% if site.google_site_verification %}<meta name="google-site-verification" content="{{ site.google_site_verification | escape_once }}">{% endif %}
+{% if site.bing_site_verification %}<meta name="msvalidate.01" content="{{ site.bing_site_verification | escape_once }}">{% endif %}
+{% if site.baidu_site_verification %}<meta name="baidu-site-verification" content="{{ site.baidu_site_verification | escape_once }}">{% endif %}
 <!-- end SEO -->

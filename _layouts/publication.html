@@ -1,0 +1,22 @@
+---
+layout: default
+---
+{% assign paper = site.data.research_highlights | where: "slug", page.highlight_slug | first %}
+<link rel="stylesheet" href="{{ '/assets/css/research-highlights.css' | relative_url }}">
+<div class="research-detail">
+  <nav aria-label="Breadcrumb"><a href="{{ '/research-highlights/' | relative_url }}">Research highlights</a> / {{ paper.topic | escape }}</nav>
+  <header><p class="research-label">{{ paper.journal | escape }} · {{ paper.year }}</p><h1>{{ paper.title | escape }}</h1>
+    <p class="research-authors">{{ paper.authors | join: ', ' | escape }}</p>
+    <p><a href="{{ paper.source_url | escape }}">DOI: {{ paper.doi | escape }}</a></p>
+    <p class="research-dates">{% if paper.published_online %}First published online: {{ paper.published_online }}.{% endif %}{% if paper.published_print %} Issue publication: {{ paper.published_print }}.{% endif %}</p>
+  </header>
+  <section><h2>Research summary</h2><p>{{ paper.summary | escape }}</p><p class="research-method"><strong>Study design.</strong> {{ paper.method | escape }}</p></section>
+  {% if paper.abstract != '' %}<section><h2>Abstract</h2><p>{{ paper.abstract | escape }}</p><p><a href="{{ paper.source | escape }}">Published abstract and original article</a></p></section>{% endif %}
+  <section><h2>Research context</h2><h3>{{ paper.question | escape }}</h3><p>{{ paper.context | escape }}</p><p class="research-keywords">{{ paper.keywords | join: ' · ' | escape }}</p></section>
+  <section lang="zh-Hans"><h2>中文研究介绍</h2><p>{{ paper.summary_zh | escape }}</p></section>
+  <section><h2>Read and cite</h2><div class="research-actions"><a href="{{ paper.source_url | escape }}">Publisher article</a>{% for resource in paper.resources %}<a href="{{ resource.url | escape }}">{{ resource.label | escape }}</a>{% endfor %}<a download href="{{ '/assets/citations/' | append: paper.slug | append: '.bib' | relative_url }}">Download BibTeX</a><a download href="{{ '/assets/citations/' | append: paper.slug | append: '.ris' | relative_url }}">Download RIS</a></div>
+    <p class="research-citation">{{ paper.citation_text | escape }}</p>
+  </section>
+  <section><h2>Related research</h2><ul class="research-related">{% for related in site.data.research_highlights %}{% if related.topic == paper.topic and related.slug != paper.slug %}<li><a href="{{ related.url | relative_url }}">{{ related.title | escape }}</a></li>{% endif %}{% endfor %}</ul></section>
+  <p><a href="{{ '/publications/' | relative_url }}">All publications</a> · <a href="{{ '/resources/' | relative_url }}">Research resources</a> · <a href="https://orcid.org/0000-0003-2208-3508">Chengliang Wang on ORCID</a></p>
+</div>

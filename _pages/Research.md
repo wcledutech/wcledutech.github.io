@@ -2,7 +2,7 @@
 layout: default
 permalink: /Research/
 title: "Research Directions"
-excerpt: ""
+excerpt: "Research directions connecting generative AI, intelligent learning environments, programming education and learner behavior modeling."
 author_profile: true
 research_sidebar_nav: true
 ---

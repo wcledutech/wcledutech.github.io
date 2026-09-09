@@ -7,7 +7,9 @@
 
 # Site Settings
 title                    : "Chengliang Wang"
-description              : ""
+description              : "Chengliang Wang studies artificial intelligence in education, programming education, digital learning environments, and learner behavior modeling."
+url                      : "https://wcledutech.github.io"
+baseurl                  : ""
 repository               : "wcledutech/wcledutech.github.io"
 google_scholar_stats_use_cdn : false
 
@@ -27,17 +29,20 @@ author:
   location         : 
   employer         :
   pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=C_PHTMsAAAAJ&hl"
+  googlescholar    : "https://scholar.google.com/citations?user=C_PHTMsAAAAJ&hl=en"
   email            : "wcledutech@gmail.com"
   researchgate     :  "https://www.researchgate.net/profile/Chengliang-Wang-5?ev=hdr_xprf"
-  uri              :
+  uri              : "https://wcledutech.github.io/"
+  affiliation:
+    name           : "Australian Catholic University"
+    url            : "https://www.acu.edu.au/"
   bitbucket        :
   codepen          :
   dribbble         :
   flickr           :
   facebook         :
   foursquare       :
-  github           : # e.g., "github username"
+  github           : "wcledutech"
   google_plus      :
   keybase          :
   instagram        :
@@ -126,6 +131,18 @@ defaults:
     values:
       layout: default
       author_profile: true
+  - scope:
+      path: "_pages/Research.md"
+    values:
+      description: "Explore Chengliang Wang's research on AI in education, programming instruction, digital learning environments, AI literacy, and learner behavior modeling."
+  - scope:
+      path: "_pages/publications.md"
+    values:
+      description: "Publications by Chengliang Wang on educational technology, artificial intelligence in education, programming education, and learning environments."
+  - scope:
+      path: "_pages/collaboration.md"
+    values:
+      description: "Research collaboration interests and contact information for Chengliang Wang in educational technology and artificial intelligence in education."
 
 
 # Sass/SCSS

@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: ""
-excerpt: ""
+excerpt: "Chengliang Wang studies AI in education, programming instruction, learning environments and learner behavior at Australian Catholic University."
 author_profile: true
 about_sidebar_nav: true
 redirect_from:
@@ -319,6 +319,7 @@ redirect_from:
 <div class="about-page">
   <section class="about-section" id="profile">
     <h2>Profile</h2>
+    <!-- visibility-entry --><p><a href="{{ '/research-highlights/' | relative_url }}">Research highlights and paper summaries</a> · <a href="{{ '/resources/' | relative_url }}">Research resources</a> · <a href="{{ '/zh/' | relative_url }}">中文介绍</a></p>
     <p class="section-lead">
       My work connects educational technology, artificial intelligence, learning environments, programming education,
       and learner behavior modeling.
@@ -355,27 +356,28 @@ redirect_from:
 
   <section class="about-section" id="scholar-metrics">
     <h2>Scholar Metrics</h2>
+    <p id="gs-updated">Google Scholar metrics snapshot: {{ site.data.scholar_snapshot.updated }} ({{ site.data.scholar_snapshot.source }}).</p>
     <div class="scholar-grid" aria-label="Google Scholar and ESI metrics">
       <article class="scholar-metric">
         <div>
-          <strong id="gs-citations">3190</strong>
+          <strong id="gs-citations">{{ site.data.scholar_snapshot.citedby }}</strong>
           <span>Total citations</span>
         </div>
-        <small>Since 2021: <span id="gs-citations-5y">3189</span></small>
+        <small>Since 2021: <span id="gs-citations-5y">{{ site.data.scholar_snapshot.citedby5y }}</span></small>
       </article>
       <article class="scholar-metric">
         <div>
-          <strong id="gs-hindex">25</strong>
+          <strong id="gs-hindex">{{ site.data.scholar_snapshot.hindex }}</strong>
           <span>h-index</span>
         </div>
-        <small>Since 2021: <span id="gs-hindex-5y">25</span></small>
+        <small>Since 2021: <span id="gs-hindex-5y">{{ site.data.scholar_snapshot.hindex5y }}</span></small>
       </article>
       <article class="scholar-metric">
         <div>
-          <strong id="gs-i10index">45</strong>
+          <strong id="gs-i10index">{{ site.data.scholar_snapshot.i10index }}</strong>
           <span>i10-index</span>
         </div>
-        <small>Since 2021: <span id="gs-i10index-5y">45</span></small>
+        <small>Since 2021: <span id="gs-i10index-5y">{{ site.data.scholar_snapshot.i10index5y }}</span></small>
       </article>
       <article class="scholar-metric">
         <div>

@@ -2,7 +2,7 @@
 layout: default
 permalink: /collaboration/
 title: "Collaboration"
-excerpt: ""
+excerpt: "Research collaboration and academic resources from Chengliang Wang in AI in education, learning environments and education research methods."
 author_profile: true
 ---
 

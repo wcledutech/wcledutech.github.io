@@ -30,29 +30,10 @@
             return Number(cleaned);
         }
 
-        function currentMetricNumber(id) {
-            var element = document.getElementById(id);
-            return element ? parseMetricNumber(element.textContent) : null;
-        }
-
-        function monotonicMetric(id, remoteValue, fallbackId) {
-            var remoteNumber = parseMetricNumber(remoteValue);
-            if (remoteNumber === null) {
-                return null;
-            }
-
-            var currentNumber = currentMetricNumber(id);
-            var fallbackNumber = fallbackId ? currentMetricNumber(fallbackId) : null;
-            var floorNumber = Math.max(
-                currentNumber === null ? -Infinity : currentNumber,
-                fallbackNumber === null ? -Infinity : fallbackNumber
-            );
-
-            return remoteNumber < floorNumber ? floorNumber : remoteNumber;
-        }
-
-        function setMetricById(id, value, fallbackId) {
-            setTextById(id, monotonicMetric(id, value, fallbackId));
+        function setMetricById(id, value) {
+            // Citation databases can correct counts downward. Display the
+            // retrieved value, retaining the dated snapshot only on missing data.
+            setTextById(id, parseMetricNumber(value));
         }
 
         function applyScholarMetrics(data) {
@@ -69,8 +50,10 @@
             setMetricById('gs-hindex-5y', hIndex5y);
             setMetricById('gs-i10index', i10Index);
             setMetricById('gs-i10index-5y', i10Index5y);
-            setMetricById('total_cit', totalCitation, 'gs-citations');
-            setTextById('gs-updated', data['updated'], 'Google Scholar metrics last updated: ');
+            setMetricById('total_cit', totalCitation);
+            if (data['updated']) {
+                setTextById('gs-updated', data['updated'] + (data['source'] ? ' (' + data['source'] + ')' : ''), 'Google Scholar metrics snapshot: ');
+            }
 
             var citationEles = document.getElementsByClassName('show_paper_citations');
             Array.prototype.forEach.call(citationEles, function (element) {
