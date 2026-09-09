@@ -7,7 +7,16 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', "{{ site.google_analytics_id }}");
+  var academicAnalyticsConfig = {};
+  try {
+    if (window.sessionStorage.getItem('academic_analytics_debug') === '1') {
+      academicAnalyticsConfig.debug_mode = true;
+    }
+  } catch (error) {
+    // Measurement remains available when browser storage is unavailable.
+  }
+  gtag('config', {{ site.google_analytics_id | jsonify }}, academicAnalyticsConfig);
 </script>
+<script defer src="{{ '/assets/js/citation-analytics.js' | relative_url }}"></script>
 
 {% endif %}
