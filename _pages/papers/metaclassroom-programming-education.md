@@ -4,7 +4,7 @@ permalink: "/papers/metaclassroom-programming-education/"
 title: "MetaClassroom: A New Paradigm and Experience for Programming Education"
 excerpt: "MetaClassroom connects immersive programming activities with three-dimensional learning progression. A quasi-experimental comparison with traditional classrooms reported improvements in programming achievement, self-regulated learning, learning beliefs and motivation. The study examines how a designed learning environment can connect teaching, learning and assessment."
 seo_title: "MetaClassroom for Programming Education"
-seo_description: "A quasi-experimental study of MetaClassroom examines programming achievement, self-regulated learning, beliefs and motivation."
+seo_description: "A quasi-experimental study of a virtual immersive programming environment examines achievement, self-regulated learning, beliefs and motivation."
 author_profile: true
 highlight_slug: "metaclassroom-programming-education"
 citation_title: "MetaClassroom: A New Paradigm and Experience for Programming Education"

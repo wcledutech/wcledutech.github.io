@@ -331,6 +331,7 @@ redirect_from:
   <section class="about-section" id="profile">
     <h1>Profile</h1>
     <!-- visibility-entry --><p><a href="{{ '/research-highlights/' | relative_url }}">Research highlights and paper summaries</a> · <a href="{{ '/resources/' | relative_url }}">Research resources</a> · <a href="{{ '/zh/' | relative_url }}">中文介绍</a></p>
+    <p><a href="{{ '/research-highlights/#research-guides' | relative_url }}">Research guides: AI and self-regulated learning, programming agents, and GenAI adoption</a></p>
     <p class="section-lead">
       My work connects educational technology, artificial intelligence, learning environments, programming education,
       and learner behavior modeling.

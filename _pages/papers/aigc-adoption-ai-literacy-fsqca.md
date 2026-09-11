@@ -4,7 +4,7 @@ permalink: "/papers/aigc-adoption-ai-literacy-fsqca/"
 title: "Deconstructing University Learners' Adoption Intention Towards AIGC Technology: A Mixed-Methods Study Using ChatGPT as an Example"
 excerpt: "This mixed-methods study examines university learners' intentions to adopt AIGC technology using ChatGPT as its example. Exploratory activities and interviews inform a decision framework, followed by fuzzy-set qualitative comparative analysis of 233 valid questionnaires. Six configurations are associated with high adoption intention, with AI literacy and perceived behavioural control playing prominent roles."
 seo_title: "University AIGC Adoption Intentions: fsQCA"
-seo_description: "A mixed-methods ChatGPT study uses interviews and fsQCA of 233 questionnaires to examine university learners' AIGC adoption intentions."
+seo_description: "University learners' GenAI adoption intentions: AI literacy and fsQCA evidence from 233 questionnaires and exploratory interviews."
 author_profile: true
 highlight_slug: "aigc-adoption-ai-literacy-fsqca"
 citation_title: "Deconstructing University Learners' Adoption Intention Towards AIGC Technology: A Mixed-Methods Study Using ChatGPT as an Example"

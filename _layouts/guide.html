@@ -1,0 +1,36 @@
+---
+layout: default
+---
+{% assign guide = site.data.research_guides | where: "slug", page.guide_slug | first %}
+<link rel="stylesheet" href="{{ '/assets/css/research-guides.css' | relative_url }}">
+<div class="research-guide">
+  <nav class="guide-breadcrumb" aria-label="Breadcrumb"><a href="{{ '/research-highlights/#research-guides' | relative_url }}">Research highlights</a> / Research guide</nav>
+  <header class="guide-header">
+    <p class="guide-label">Research guide · English / <span lang="zh-Hans">中文</span></p>
+    <h1>{{ page.title | escape }}</h1>
+    <p class="guide-subtitle" lang="zh-Hans">{{ guide.title_zh | escape }}</p>
+  </header>
+  <nav class="guide-jump" aria-label="Guide sections">
+    <a href="#english" lang="en">English</a>
+    <a href="#chinese" lang="zh-Hans">中文导读</a>
+    <a href="#references" lang="en">References</a>
+    <a href="#related-papers" lang="en">Paper summaries</a>
+  </nav>
+  <div class="guide-body">{{ content }}</div>
+  <section id="related-papers" class="guide-related" lang="en" aria-labelledby="related-papers-title">
+    <h2 id="related-papers-title">Explore the papers</h2>
+    <p>Study summaries, published abstracts and citation downloads.</p>
+    <ul>
+      {% for slug in guide.paper_slugs %}{% assign paper = site.data.research_highlights | where: "slug", slug | first %}
+      <li><a href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a><span>{{ paper.journal | escape }} · {{ paper.year }}</span></li>
+      {% endfor %}
+    </ul>
+  </section>
+  <p class="guide-footer"><a href="{{ '/research-highlights/#research-guides' | relative_url }}">All research guides</a> · <a href="{{ '/publications/' | relative_url }}">Publication list</a></p>
+</div>
+<script>
+// Keep native fragment navigation on these links when the site-wide smooth-scroll plugin is active.
+document.querySelectorAll('.guide-jump a').forEach(function(link){
+  link.addEventListener('click',function(event){event.stopImmediatePropagation();},true);
+});
+</script>

@@ -1,0 +1,24 @@
+.research-guide,.guide-entry-section{font-family:"Times New Roman",Times,serif;color:#172033;text-align:center;line-height:1.75;overflow-wrap:anywhere}
+.research-guide *,.guide-entry-section *{box-sizing:border-box;font-family:inherit;min-width:0}
+.research-guide{max-width:880px;margin:0 auto;font-size:20px}
+.research-guide h1{font-size:clamp(1.55rem,2.8vw,2.2rem);line-height:1.3;margin:.75rem auto;max-width:850px}
+.research-guide h2,.guide-entry-section h2{color:#0f766e;border:0;font-size:1.45rem;line-height:1.4}
+.research-guide p{margin:1.1rem auto;max-width:810px}
+.guide-label{color:#0f766e;font-weight:700}
+.guide-breadcrumb,.guide-footer{font-size:1rem}
+.guide-subtitle{color:#455e6c;font-size:1.08rem;line-height:1.65}
+.guide-jump{display:flex;flex-wrap:wrap;justify-content:center;gap:.65rem;margin:1.5rem auto}
+.guide-jump a{display:block;padding:.45rem .85rem;border:1px solid #acc9c5;border-radius:5px;background:#f4f9f8;color:#124d61;text-decoration:none}
+.guide-body>section,.guide-related{padding:1.5rem 0;border-top:1px solid #d5e2e0;margin:1.5rem auto;scroll-margin-top:1rem}
+.guide-body [lang="zh-Hans"]{line-height:1.95}
+.guide-reference-list ul,.guide-related ul,.guide-entry-list{list-style:none;padding:0;margin:1rem 0}
+.guide-reference-list li{margin:1.3rem auto;max-width:810px}
+.research-guide code{font-family:inherit;white-space:normal;overflow-wrap:anywhere;background:transparent}
+.guide-related li{padding:1rem;border:1px solid #dce6e7;background:#f5f9fa;border-radius:6px;margin:.85rem auto}
+.guide-related li span{display:block;color:#526474;margin-top:.4rem}
+.guide-entry-section{margin:1.5rem auto;padding:1.3rem 0;border-top:1px solid #d5e2e0}
+.guide-entry-list li{padding:1rem;margin:1rem auto;border:1px solid #dce6e7;border-radius:7px;background:#f5f9fa}
+.guide-entry-list h3{font-size:1.23rem;line-height:1.45;margin:.3rem auto;color:#124d61}
+.guide-entry-list p{margin:.6rem auto;max-width:850px}
+.research-guide a:focus-visible,.guide-entry-section a:focus-visible{outline:3px solid #0f766e;outline-offset:3px}
+@media(max-width:650px){.research-guide{padding:0 .2rem}.guide-jump{gap:.5rem}.guide-jump a{padding:.4rem .6rem}.guide-related li,.guide-entry-list li{padding:.8rem .6rem}.research-guide h1{font-size:1.55rem}.guide-body>section{padding-top:1.1rem}}

@@ -1,0 +1,53 @@
+[
+  {
+    "slug": "ai-self-regulated-learning",
+    "url": "/guides/ai-self-regulated-learning/",
+    "title": "AI and self-regulated learning: connecting support, learner readiness and independent performance",
+    "title_zh": "AI与自我调节学习：连接学习支持、学习者基础与独立表现",
+    "description": "Connect evidence on AI-supported self-regulated learning, learner readiness and programming environments to design phase-sensitive studies.",
+    "description_zh": "综合AI自我调节学习元分析、编程准实验与智能体综述，连接学习阶段、学习者基础和独立表现的评价。",
+    "short_title": "AI and self-regulated learning",
+    "short_title_zh": "AI与自我调节学习",
+    "seo_title": "AI and Self-Regulated Learning",
+    "paper_slugs": [
+      "ai-self-regulated-learning-meta-analysis",
+      "metaclassroom-programming-education",
+      "chatgpt-programming-ai-literacy",
+      "genai-agents-education-systematic-review"
+    ]
+  },
+  {
+    "slug": "agents-programming-education",
+    "url": "/guides/agents-programming-education/",
+    "title": "Agents in programming education: connecting learner readiness, collaboration and learning design",
+    "title_zh": "智能体与编程教育：连接学习者基础、协作过程与教学设计",
+    "description": "Read evidence on AI agents, ChatGPT learner readiness and immersive programming to design studies of collaboration and programming learning.",
+    "description_zh": "连接AI智能体协作编程、ChatGPT使用基础与沉浸式课堂证据，明确成绩、自我效能和认知负荷的评价。",
+    "short_title": "AI agents in programming education",
+    "short_title_zh": "智能体与编程教育",
+    "seo_title": "AI Agents in Programming Education",
+    "paper_slugs": [
+      "ai-agents-collaborative-programming",
+      "chatgpt-programming-ai-literacy",
+      "metaclassroom-programming-education",
+      "genai-agents-education-systematic-review"
+    ]
+  },
+  {
+    "slug": "genai-literacy-adoption",
+    "url": "/guides/genai-literacy-adoption/",
+    "title": "Generative AI literacy and adoption: connecting learner capability, intention and educational context",
+    "title_zh": "生成式AI素养与采用：连接学习能力、采纳意愿与教育情境",
+    "description": "Connect AI literacy, ChatGPT adoption intentions, task effectiveness and education policy through complementary empirical and synthesis studies.",
+    "description_zh": "综合ChatGPT采纳意愿、编程任务效果、AIGC教育综述与政策研究，明确能力、意愿和教育情境之间的研究问题。",
+    "short_title": "AI literacy and GenAI adoption",
+    "short_title_zh": "生成式AI素养与采用",
+    "seo_title": "AI Literacy, GenAI Adoption and fsQCA",
+    "paper_slugs": [
+      "aigc-adoption-ai-literacy-fsqca",
+      "chatgpt-programming-ai-literacy",
+      "aigc-education-systematic-review",
+      "generative-ai-education-policy-framework"
+    ]
+  }
+]
