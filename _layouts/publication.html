@@ -2,22 +2,95 @@
 layout: default
 ---
 {% assign paper = site.data.research_highlights | where: "slug", page.highlight_slug | first %}
-<link rel="stylesheet" href="{{ '/assets/css/research-highlights.css' | relative_url }}">
-<div class="research-detail">
-  <nav aria-label="Breadcrumb"><a href="{{ '/research-highlights/' | relative_url }}">Research highlights</a> / {{ paper.topic | escape }}</nav>
-  <header><p class="research-label">{{ paper.journal | escape }} · {{ paper.year }}</p><h1>{{ paper.title | escape }}</h1>
-    <p class="research-authors">{{ paper.authors | join: ', ' | escape }}</p>
-    {% if paper.corresponding_authors.size > 0 %}<p class="research-correspondence"><strong>Corresponding author{% if paper.corresponding_authors.size > 1 %}s{% endif %}:</strong> {{ paper.corresponding_authors | join: ', ' | escape }}</p>{% endif %}
-    <p><a href="{{ paper.source_url | escape }}">DOI: {{ paper.doi | escape }}</a></p>
-    <p class="research-dates">{% if paper.published_online %}First published online: {{ paper.published_online }}.{% endif %}{% if paper.published_print %} Issue publication: {{ paper.published_print }}.{% endif %}</p>
+<link rel="stylesheet" href="{{ '/assets/css/paper-detail.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+<div class="paper-detail" id="paper-top">
+  <nav class="paper-breadcrumb" aria-label="Breadcrumb">
+    <a href="{{ '/research-highlights/' | relative_url }}"><i class="fas fa-arrow-left" aria-hidden="true"></i> Research highlights</a>
+    <span>{{ paper.topic | escape }}</span>
+  </nav>
+
+  <header class="paper-header">
+    <p class="paper-journal">{{ paper.journal | escape }} <span aria-hidden="true">·</span> {{ paper.year }}</p>
+    <h1>{{ paper.title | escape }}</h1>
+    <p class="paper-authors">{% for author in paper.authors %}{% if author == 'Chengliang Wang' or author == 'Chenliang Wang' %}<strong>{{ author | escape }}</strong>{% else %}{{ author | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+    {% if paper.corresponding_authors.size > 0 %}<p class="paper-correspondence"><strong>Corresponding author{% if paper.corresponding_authors.size > 1 %}s{% endif %}:</strong> {{ paper.corresponding_authors | join: ', ' | escape }}</p>{% endif %}
+    <p class="paper-doi"><span>DOI</span> <a href="{{ paper.source_url | escape }}">{{ paper.doi | escape }}</a></p>
+    {% if paper.published_online or paper.published_print %}
+    <p class="paper-dates">{% if paper.published_online %}<span>First published online: {{ paper.published_online }}.</span>{% endif %}{% if paper.published_print %}<span>Issue publication: {{ paper.published_print }}.</span>{% endif %}</p>
+    {% endif %}
+    <div class="paper-header-actions">
+      <a class="paper-button paper-button-primary" href="{{ paper.source_url | escape }}"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Publisher article</a>
+      <a class="paper-button" href="#read-and-cite"><i class="fas fa-quote-left" aria-hidden="true"></i> Read and cite</a>
+    </div>
   </header>
-  <section><h2>Research summary</h2><p>{{ paper.summary | escape }}</p><p class="research-method"><strong>Study design.</strong> {{ paper.method | escape }}</p></section>
-  <section><h2>Abstract</h2>{% if paper.abstract != '' %}<p>{{ paper.abstract | escape }}</p>{% endif %}<p><a href="{{ paper.source | escape }}">Published abstract and original article</a>{% if paper.abstract_license %} · &copy; {{ paper.year }} The Author(s). <a href="{{ paper.abstract_license_url | escape }}">{{ paper.abstract_license | escape }}</a>{% endif %}</p></section>
-  <section><h2>Research context</h2><h3>{{ paper.question | escape }}</h3><p>{{ paper.context | escape }}</p><p class="research-keywords">{{ paper.keywords | join: ' · ' | escape }}</p></section>
-  <section lang="zh-Hans"><h2>中文研究介绍</h2><p>{{ paper.summary_zh | escape }}</p></section>
-  <section><h2>Read and cite</h2><div class="research-actions"><a href="{{ paper.source_url | escape }}">Publisher article</a>{% for resource in paper.resources %}<a href="{{ resource.url | escape }}">{{ resource.label | escape }}</a>{% endfor %}<a download href="{{ '/assets/citations/' | append: paper.slug | append: '.bib' | relative_url }}">Download BibTeX</a><a download href="{{ '/assets/citations/' | append: paper.slug | append: '.ris' | relative_url }}">Download RIS</a></div>
-    <p class="research-citation">{{ paper.citation_text | escape }}</p>
-  </section>
-  <section><h2>Related research</h2><ul class="research-related">{% for related in site.data.research_highlights %}{% if related.topic == paper.topic and related.slug != paper.slug %}<li><a href="{{ related.url | relative_url }}">{{ related.title | escape }}</a></li>{% endif %}{% endfor %}</ul></section>
-  <p><a href="{{ '/publications/' | relative_url }}">All publications</a> · <a href="{{ '/resources/' | relative_url }}">Research resources</a> · <a href="https://orcid.org/0000-0003-2208-3508">Chengliang Wang on ORCID</a></p>
+
+  <div class="paper-reading-layout">
+    <nav class="paper-toc" aria-labelledby="paper-toc-title">
+      <h2 id="paper-toc-title">On this page</h2>
+      <ol>
+        <li><a href="#research-summary">Research summary</a></li>
+        <li><a href="#abstract">Abstract</a></li>
+        <li><a href="#research-context">Research context</a></li>
+        <li><a href="#chinese-summary" lang="zh-Hans">中文研究介绍</a></li>
+        <li><a href="#read-and-cite">Read and cite</a></li>
+        <li><a href="#related-research">Related research</a></li>
+      </ol>
+    </nav>
+
+    <div class="paper-reading-column">
+      <section class="paper-section" id="research-summary" aria-labelledby="research-summary-title">
+        <h2 id="research-summary-title">Research summary</h2>
+        <p class="paper-summary">{{ paper.summary | escape }}</p>
+        <div class="paper-method"><h3>Study design.</h3><p>{{ paper.method | escape }}</p></div>
+      </section>
+
+      <section class="paper-section" id="abstract" aria-labelledby="abstract-title">
+        <h2 id="abstract-title">Abstract</h2>
+        {% if paper.abstract != '' %}<p class="paper-abstract">{{ paper.abstract | escape }}</p>{% endif %}
+        <p class="paper-source"><a href="{{ paper.source | escape }}">Published abstract and original article <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+        {% if paper.abstract_license %}<p class="paper-license">&copy; {{ paper.year }} The Author(s). <a href="{{ paper.abstract_license_url | escape }}">{{ paper.abstract_license | escape }}</a></p>{% endif %}
+      </section>
+
+      <section class="paper-section" id="research-context" aria-labelledby="research-context-title">
+        <h2 id="research-context-title">Research context</h2>
+        <h3 class="paper-question">{{ paper.question | escape }}</h3>
+        <p class="paper-context">{{ paper.context | escape }}</p>
+        <p class="paper-keywords">{{ paper.keywords | join: ' · ' | escape }}</p>
+      </section>
+
+      <section class="paper-section paper-chinese" id="chinese-summary" lang="zh-Hans" aria-labelledby="chinese-summary-title">
+        <h2 id="chinese-summary-title">中文研究介绍</h2>
+        <p>{{ paper.summary_zh | escape }}</p>
+      </section>
+
+      <section class="paper-section" id="read-and-cite" aria-labelledby="read-and-cite-title">
+        <h2 id="read-and-cite-title">Read and cite</h2>
+        <p class="paper-citation">{{ paper.citation_text | escape }}</p>
+        <div class="paper-downloads">
+          <a class="paper-button" download href="{{ '/assets/citations/' | append: paper.slug | append: '.bib' | relative_url }}"><i class="fas fa-download" aria-hidden="true"></i> Download BibTeX</a>
+          <a class="paper-button" download href="{{ '/assets/citations/' | append: paper.slug | append: '.ris' | relative_url }}"><i class="fas fa-download" aria-hidden="true"></i> Download RIS</a>
+        </div>
+        <ul class="paper-resources">
+          <li><a href="{{ paper.source_url | escape }}">Publisher article <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></li>
+          {% for resource in paper.resources %}<li><a href="{{ resource.url | escape }}">{{ resource.label | escape }} <i class="fas {% if resource.kind == 'supplement' %}fa-folder-open{% else %}fa-external-link-alt{% endif %}" aria-hidden="true"></i></a></li>{% endfor %}
+        </ul>
+      </section>
+
+      <section class="paper-section" id="related-research" aria-labelledby="related-research-title">
+        <h2 id="related-research-title">Related research</h2>
+        <ul class="paper-related">
+          {% for related in site.data.research_highlights %}{% if related.topic == paper.topic and related.slug != paper.slug %}
+          <li><p>{{ related.journal | escape }} <span aria-hidden="true">·</span> {{ related.year }}</p><h3><a href="{{ related.url | relative_url }}">{{ related.title | escape }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a></h3></li>
+          {% endif %}{% endfor %}
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <nav class="paper-footer" aria-label="More research">
+    <a href="{{ '/publications/' | relative_url }}"><i class="fas fa-book-open" aria-hidden="true"></i> All publications</a>
+    <a href="{{ '/resources/' | relative_url }}">Research resources <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+    <a href="https://orcid.org/0000-0003-2208-3508">Chengliang Wang on ORCID <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+  </nav>
 </div>
+<script src="{{ '/assets/js/paper-detail.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
