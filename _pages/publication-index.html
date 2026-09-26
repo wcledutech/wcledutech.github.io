@@ -19,6 +19,8 @@ author_profile: true
     <p class="index-overview"><span>{{ site.data.publication_index.size }} records</span><span>{{ publication_years.last.name }}&ndash;{{ publication_years.first.name }}</span></p>
   </header>
 
+  <p class="index-legend"><span><sup>#</sup> Co-first authors</span><span><sup>*</sup> Corresponding authors</span><span><span class="index-award-icon" aria-hidden="true">&#127942;</span> Highly cited paper</span><span><span class="index-award-icon" aria-hidden="true">&#128293;</span> Hot paper</span></p>
+
   <form class="index-controls" id="publication-filters" role="search" hidden>
     <div class="index-field index-search-field">
       <label for="publication-search">Search publications</label>
@@ -71,8 +73,8 @@ author_profile: true
         <li class="index-entry" data-year="{{ paper.year }}" data-type="{{ paper.category | escape }}">
           <article>
             <p class="index-entry-type">{{ type_label | strip }}</p>
-            <h3><a href="{{ paper.url | escape }}">{{ paper.title | escape_once }}</a></h3>
-            <p class="index-entry-authors">{% for author in paper.authors %}{% if author == 'Chengliang Wang' or author == 'Chenliang Wang' %}<strong>{{ author | escape }}</strong>{% else %}{{ author | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+            <h3>{% if paper.highly_cited %}<span class="index-award-icon index-highly-cited" role="img" aria-label="ESI Top 1% Highly Cited Paper" title="ESI Top 1% Highly Cited Paper">&#127942;</span> {% endif %}<a href="{{ paper.url | escape }}">{{ paper.title | escape_once }}</a>{% if paper.hot_paper_years.size > 0 %} <span class="index-hot-paper" title="ESI Top 0.1% Hot Paper in {{ paper.hot_paper_years | join: '/' }}">[<span class="index-award-icon" role="img" aria-label="Hot paper">&#128293;</span>in {{ paper.hot_paper_years | join: '/' }}]</span>{% endif %}</h3>
+            <p class="index-entry-authors">{% for author in paper.authors %}<span class="index-author">{% if author == 'Chengliang Wang' or author == 'Chenliang Wang' or author == 'Cheng-liang Wang' %}<strong>{{ author | escape }}</strong>{% else %}{{ author | escape }}{% endif %}{% if paper.co_first_authors contains author %}<sup class="index-author-marker" title="Co-first author" aria-label="Co-first author">#</sup>{% endif %}{% if paper.corresponding_authors contains author %}<sup class="index-author-marker" title="Corresponding author" aria-label="Corresponding author">*</sup>{% endif %}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
             <p class="index-entry-venue"><em>{{ paper.journal | escape_once }}</em></p>
             <p class="index-entry-doi"><a href="{{ paper.url | escape }}"><span class="index-doi-label">DOI</span> <span>{{ paper.doi | escape }}</span><i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
           </article>

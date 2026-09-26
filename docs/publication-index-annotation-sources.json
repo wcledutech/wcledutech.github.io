@@ -1,0 +1,1200 @@
+{
+  "checked_at": "2026-09-26T13:55:04.381Z",
+  "scholar_url": "https://scholar.google.com/citations?user=C_PHTMsAAAAJ&hl=en&pagesize=100",
+  "records": [
+    {
+      "doi": "10.1007/978-3-032-29791-4_24",
+      "title": "\"My culture is as good as yours\": Designing an AI agent to support intercultural understanding in rural EFL classrooms",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:u_35RYKgDlwC",
+      "scholar_byline": "Y Pian, F Yang, ZF Di, CL Wang",
+      "role_source": "Publisher / author manuscript; see index annotation notes",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Yang Pian"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1057/s41599-026-07606-0",
+      "title": "Academic transformation in the era of artificial intelligence: drivers of university faculty adoption of GenAI based on the UTAUT model",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:HoB7MX3m0LUC",
+      "scholar_byline": "JY Wang, HM Wang, JW Yang*, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Junwu Yang",
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1111/bjet.70058",
+      "title": "AI support in self-regulated learning: A decade of technological evolution and meta-analysis",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:2P1L_qKh6hAC",
+      "scholar_byline": "J Xu, YY Luo, CL Wang, MJ Wang, YH Wu",
+      "role_source": "docs/paper-author-roles.md",
+      "co_first_authors": [
+        "Jun Xu",
+        "Yuying Luo"
+      ],
+      "corresponding_authors": [
+        "Yonghe Wu"
+      ],
+      "highly_cited": true,
+      "hot_paper_years": [],
+      "award_source": "Google Scholar plus author update in this task, 26-27 September 2026"
+    },
+    {
+      "doi": "10.1007/s10791-026-10445-x",
+      "title": "Bibliometric mapping and evolutionary logic of large language models reshaping medical education 2022–2026",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:bFI3QPDXJZMC",
+      "scholar_byline": "X Ling, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1080/10494820.2026.2713873",
+      "title": "Configurational pathways of programming learning beliefs and self-efficacy among college students using intelligent agents: evidence from GenAI literacy and agent usage experience",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:_xSYboBqXhAC",
+      "scholar_byline": "J Yang, H Wang, M Chen, X Chen, JY Wang*, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Jingyao Wang",
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1007/s00371-025-04265-1",
+      "title": "Enhancing real-time facial emotion recognition in classrooms via Attention-ResNet optimization",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:vV6vV6tmYwMC",
+      "scholar_byline": "HM Wang, CL Wang, HX Xu, CJ Bao, XL Xu",
+      "role_source": "Publisher / author manuscript; see index annotation notes",
+      "co_first_authors": [
+        "Haoming Wang",
+        "Chenliang Wang"
+      ],
+      "corresponding_authors": [
+        "Xianlong Xu"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1080/13675567.2025.2520550",
+      "title": "Factors influencing the adoption of generative AI in supply chain management: an empirical study based on task-technology fit and the theory of planned behaviour",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:isC4tDSrTZIC",
+      "scholar_byline": "J Chen, J Dai, T Yu*, CL Wang",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Teng Yu"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1016/j.ijme.2026.101430",
+      "title": "From information evaluation to technology use: Generative AI adoption in Chinese business schools",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:g5m5HwL7SMYC",
+      "scholar_byline": "T Yu, J Dai, XJ Chen, CL Wang*",
+      "role_source": "docs/paper-author-roles.md",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1080/10447318.2025.2504198",
+      "title": "From Perception to Trust: The Multidimensional Landscape of Anthropomorphism in Robotics",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:iH-uZ7U-co4C",
+      "scholar_byline": "XR Shang, ZJ Liu, C Gong, ZY He, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1080/10494820.2026.2672562",
+      "title": "GenAI-agents in education: a systematic review of macro-level trends, educational roles, theoretical foundations and future agendas",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:SeFeTyx0c_EC",
+      "scholar_byline": "XC Liu, QW Tang, WT Wu, XJ Chen, CL Wang*",
+      "role_source": "docs/paper-author-roles.md",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1080/0144929x.2025.2551579",
+      "title": "How do virtual influencers drive impulsive buying behaviour in e-commerce live streaming: the effects of parasocial relationship and influencer-product fit",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:GnPB-g6toBAC",
+      "scholar_byline": "T Yu, AP Teoh, JY Liao*, CL Wang",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Junyun Liao"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1080/10447318.2026.2692021",
+      "title": "Human-AI Collaborative Learning Ecosystem: Effects of Multi-Agent-Based Programming Learning on Learning Outcomes, Computational Thinking, and Behavioral Patterns in Higher Education",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:rO6llkc54NcC",
+      "scholar_byline": "ZH Xiao, HM Wang*, S Jin, YT Lai, Y Cao, YX Zhang, CL Wang*",
+      "role_source": "docs/paper-author-roles.md",
+      "co_first_authors": [
+        "Zihan Xiao",
+        "Haoming Wang"
+      ],
+      "corresponding_authors": [
+        "Haoming Wang",
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1016/j.ijhm.2026.104703",
+      "title": "Integrating explanation and prediction: A PLS-MGA-ANN study of drone food delivery continuance intention",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:M05iB0D1s5AC",
+      "scholar_byline": "T Yu, AP Teoh, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1108/ijchm-08-2025-1167",
+      "title": "Quality, norms and privacy in AI chatbot adoption: a multigroup analysis",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:ldfaerwXgEUC",
+      "scholar_byline": "T Yu, AP Teoh, QY Tu, CL Wang",
+      "role_source": "Publisher / author manuscript; see index annotation notes",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Qiuyang Tu"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1007/s10791-026-10349-w",
+      "title": "Research landscape thematic evolution and future trends of artificial intelligence in medical education from 2015 to 2025",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:D03iK_w7-QYC",
+      "scholar_byline": "X Ling, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1002/jcal.70277",
+      "title": "Reshaping the Language Learning Landscape: Factors Influencing Learners' Use of Open-Source Text-to-Video AI (Open-Sora) in Second Language Acquisition",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:ZHo1McVdvXMC",
+      "scholar_byline": "Y Jiang, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1080/10447318.2025.2526575",
+      "title": "Show Your Palm to Pay: Are Customers Ready for Palm Print Recognition Technology in Retail Stores in China?",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:NMxIlDl6LWMC",
+      "scholar_byline": "T Yu, AP Teoh, JY Liao*, CL Wang",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Junyun Liao"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.2139/ssrn.6968861",
+      "title": "Sociotechnical Turn in Interactive Learning Environments Research: Knowledge Structures from Multi-Database Topic Modeling (2000-2026)",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:zA6iFVUQeVQC",
+      "scholar_byline": "C Wang, Y Li, X Liu, W Zhang, T Yu, Y Lin",
+      "role_source": "Publisher / author manuscript; see index annotation notes",
+      "co_first_authors": [
+        "Chengliang Wang",
+        "Yuanyuan Li"
+      ],
+      "corresponding_authors": [
+        "Chengliang Wang",
+        "Yupeng Lin"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1016/j.ijme.2025.101323",
+      "title": "To use or not to use? Generative AI adoption in Chinese business schools",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:RYcK_YlVTxYC",
+      "scholar_byline": "T Yu, J Dai, XJ Chen, CL Wang*",
+      "role_source": "docs/paper-author-roles.md",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": true,
+      "hot_paper_years": [
+        2026
+      ],
+      "award_source": "Google Scholar profile title"
+    },
+    {
+      "doi": "10.1108/ajim-01-2026-0111",
+      "title": "Trust the messenger, then the message: unpacking the cross-route logic of danmaku engagement",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:f2IySw72cVMC",
+      "scholar_byline": "J Xu, YY Luo, CL Wang, HN Wu",
+      "role_source": "Publisher / author manuscript; see index annotation notes",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Yuying Luo"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1108/ijchm-02-2026-0155",
+      "title": "Virtual streamers, real purchases: The roles of anthropomorphism, interactivity, and presence in e-commerce live streaming",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:pyW8ca7W8N0C",
+      "scholar_byline": "T Yu, ZK Zeng, T Liu, CL Wang",
+      "role_source": "Publisher / author manuscript; see index annotation notes",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Teng Liu"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1080/19368623.2026.2616771",
+      "title": "What drives the continuance intention of service robots in the hospitality industry? An integrated model of motivated consumer innovativeness and extended technology continuance theory",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:70eg2SAEIzsC",
+      "scholar_byline": "T Yu, AP Teoh, J Liao, C Wang",
+      "role_source": "Publisher / author manuscript; see index annotation notes",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Junyun Liao"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1002/rev3.70044",
+      "title": "Application of AI in engineering education: A bibliometric study",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:mB3voiENLucC",
+      "scholar_byline": "YD Liu, YH Jing, J Li, J Dai, ZB Hu, CL Wang",
+      "role_source": "Publisher / author manuscript; see index annotation notes",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Yuhui Jing"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1177/21582440251339961",
+      "title": "Before and After: How Did the Pandemic Reshape Virtual Laboratory Research?",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:bEWYMUwI8FkC",
+      "scholar_byline": "JY Wang, YY Li, XJ Chen, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": true,
+      "hot_paper_years": [],
+      "award_source": "Google Scholar profile title"
+    },
+    {
+      "doi": "10.1108/ijchm-03-2024-0358",
+      "title": "Can virtual influencers affect purchase intentions in tourism and hospitality e-commerce live streaming? An empirical study in China",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:3s1wT3WcHBgC",
+      "scholar_byline": "T Yu, AP Teoh, Q Bian, J Liao, C Wang",
+      "role_source": "Publisher / author manuscript; see index annotation notes",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Junyun Liao"
+      ],
+      "highly_cited": true,
+      "hot_paper_years": [
+        2026
+      ],
+      "award_source": "Google Scholar profile title"
+    },
+    {
+      "doi": "10.1111/jcal.13117",
+      "title": "Deconstructing University Learners' Adoption Intention Towards AIGC Technology: A Mixed-Methods Study Using ChatGPT as an Example",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:qUcmZB5y_30C",
+      "scholar_byline": "CL Wang, XJ Chen*, ZB Hu, S Jin, XQ Gu",
+      "role_source": "docs/paper-author-roles.md",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Xiaojiao Chen"
+      ],
+      "highly_cited": true,
+      "hot_paper_years": [
+        2025
+      ],
+      "award_source": "Google Scholar profile title"
+    },
+    {
+      "doi": "10.1016/j.techsoc.2025.102949",
+      "title": "Determinants of switching intention to adopt electric vehicles: A comparative analysis of China and Malaysia",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:r0BpntZqJG4C",
+      "scholar_byline": "T Yu, AP Teoh, JY Liao*, CL Wang",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Junyun Liao"
+      ],
+      "highly_cited": true,
+      "hot_paper_years": [],
+      "award_source": "Google Scholar profile title"
+    },
+    {
+      "doi": "10.1109/icetc66579.2025.11387501",
+      "title": "Empowering higher education with Extended Reality technology: a bibliometric perspective",
+      "scholar_url": null,
+      "scholar_byline": null,
+      "role_source": "Publisher / author manuscript; see index annotation notes",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Decheng Mao"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1057/s41599-025-04616-2",
+      "title": "Empowering music education with technology: a bibliometric perspective",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:e5wmG9Sq2KIC",
+      "scholar_byline": "Y Ma, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1177/13621688251391412",
+      "title": "Enhancing English language learning through moral dilemmas: A comparative study of GPT and human-written stories",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:35N4QoGY0k4C",
+      "scholar_byline": "JQ Wang, CL Wang, T Xiao, XY Zhang",
+      "role_source": "Publisher / author manuscript; see index annotation notes",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Xinyu Zhang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.18653/v1/2025.findings-emnlp.312",
+      "title": "Evolution in Simulation: AI-Agent School with Dual Memory for High-Fidelity Educational Dynamics",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:J_g5lzvAfSwC",
+      "scholar_byline": "S Jin, HM Wang*, Z Gao, Y Yang, B Chunjia, CL Wang*",
+      "role_source": "docs/paper-author-roles.md",
+      "co_first_authors": [
+        "Sheng Jin",
+        "Haoming Wang"
+      ],
+      "corresponding_authors": [
+        "Haoming Wang",
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1080/10548408.2025.2455421",
+      "title": "Factors influencing behavioral intention to use facial recognition payment in the restaurant industry: a comparative analysis of China and Malaysia",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:-f6ydRqryjwC",
+      "scholar_byline": "T Yu, AP Teoh, J Liao*, CL Wang",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Junyun Liao"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1080/10447318.2024.2383033",
+      "title": "Factors Influencing University Students’ Behavioral Intention to Use Generative Artificial Intelligence: Integrating the Theory of Planned Behavior and AI Literacy",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:JV2RwH3_ST0C",
+      "scholar_byline": "CL Wang, HM Wang, YY Li, J Dai, XQ Gu, T Yu*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Teng Yu"
+      ],
+      "highly_cited": true,
+      "hot_paper_years": [
+        2025,
+        2026
+      ],
+      "award_source": "Google Scholar profile title"
+    },
+    {
+      "doi": "10.1108/bfj-11-2024-1178",
+      "title": "Fuel for the mind: exploring coffee’s impact on university learning performance and experience",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:ns9cj8rnVeAC",
+      "scholar_byline": "JY Wang, XJ Chen, ZH Hu, JW Yang, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1007/s10639-025-13487-8",
+      "title": "Impact of AI-agent-supported collaborative learning on the learning outcomes of University programming courses",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:RHpTSmoSYBkC",
+      "scholar_byline": "HM Wang#, CL Wang#, Z Chen, F Liu, CJ Bao, XL Xu*",
+      "role_source": "docs/paper-author-roles.md",
+      "co_first_authors": [
+        "Haoming Wang",
+        "Chengliang Wang"
+      ],
+      "corresponding_authors": [
+        "Xianlong Xu"
+      ],
+      "highly_cited": true,
+      "hot_paper_years": [
+        2026
+      ],
+      "award_source": "Google Scholar plus author update in this task, 26-27 September 2026"
+    },
+    {
+      "doi": "10.30191/ets.202501_28(1).sp02",
+      "title": "Instructional design guidelines for virtual reality-based teacher training: A meta-analysis",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:ZeXyd9-uunAC",
+      "scholar_byline": "Y Li, CL Wang, X Gu*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Xiaoqing Gu"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.22318/icls2025.764364",
+      "title": "Knowledge Mapping and Trend Analysis of AI Agents in Education: A Bibliometric Study from 2004-2024",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:k_IJM867U9cC",
+      "scholar_byline": "H Wang, Z Xiao, L Yutong, C Bao, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1177/07356331251322470",
+      "title": "MetaClassroom: A New Paradigm and Experience for Programming Education",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:TQgYirikUcIC",
+      "scholar_byline": "CL Wang, XJ Chen, YF Li, PJ Wang, HM Wang, YY Li*",
+      "role_source": "docs/paper-author-roles.md",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Yuanyuan Li"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1145/3786995.3787000",
+      "title": "ModuSwarm: A Customizable and Scalable Framework for Human-Swarm Interaction",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:pqnbT2bcN3wC",
+      "scholar_byline": "Y Yang, Z Gao, K Nie, H Wang, C Wang, K Zhao",
+      "role_source": "Author confirmed no co-first or corresponding author designation on 27 September 2026",
+      "co_first_authors": [],
+      "corresponding_authors": [],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1007/s12144-025-08052-y",
+      "title": "Motivation and mechanism of university volunteers’ participation in major sport events: a grounded theory study on volunteers for the Hangzhou Asian games",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:maZDTaKrznsC",
+      "scholar_byline": "J Chen, YL Tang*, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Yulong Tang",
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1038/d41586-025-03783-1",
+      "title": "Panels of peers are needed to gauge AI’s trustworthiness — experts are not enough",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:lSLTfruPkqcC",
+      "scholar_byline": "C Cheng, J Dai*, L Yan, CL Wang",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Jian Dai"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1007/978-3-031-99261-2_20",
+      "title": "Prediction of Online Mathematics Test Efficiency Based on Stacked Integrated Models: A Case Study of NAEP Data",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:YFjsv_pBGBYC",
+      "scholar_byline": "CL Wang, HM Wang*, YT Lai, ZH Xiao, XL Xu",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Haoming Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.22318/icls2025.986726",
+      "title": "The Future Landscape of Education: Constructing an Analytical and Application Framework for Generative Artificial Intelligence in Higher Education",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:TFP_iSt0sucC",
+      "scholar_byline": "Z Xiao, CL Wang, Y Lai, H Wang, X Gu",
+      "role_source": "Author confirmed no co-first or corresponding author designation on 27 September 2026",
+      "co_first_authors": [],
+      "corresponding_authors": [],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1080/10494820.2025.2472288",
+      "title": "The journey of challenges and triumphs: a systematic literature review of the dynamic evolution of human-centered artificial intelligence in education",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:_Qo2XoVZTnwC",
+      "scholar_byline": "XJ Chen, ZB Hu, YY Li, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": true,
+      "hot_paper_years": [
+        2026
+      ],
+      "award_source": "Google Scholar profile title"
+    },
+    {
+      "doi": "10.1007/s11423-025-10535-5",
+      "title": "The journey of challenges and victories: exploring the transformation action framework in the GenAI era from multifaceted policies",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:a0OBvERweLwC",
+      "scholar_byline": "C Wang, Y Chen, Z Hu, Y Li, X Gu",
+      "role_source": "docs/paper-author-roles.md",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Xiaoqing Gu"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1108/ijmce-07-2023-0064",
+      "title": "The role of teachers’ direct and emotional mentoring in shaping undergraduates’ research aspirations: a social cognitive career theory perspective",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:qxL8FJ1GzNcC",
+      "scholar_byline": "H Li, J Xu*, Y Luo, CL Wang",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Jun Xu"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1080/14647893.2025.2570912",
+      "title": "Thinking outside the box: a systematic review of gamification trends in children’s dance education",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:RGFaLdJalmkC",
+      "scholar_byline": "WS Liu, LJ Chen, XT Zhong, W Liu, XJ Chen, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1080/10494820.2024.2335481",
+      "title": "Unleashing the power of virtual learning environment: exploring the impact on learning outcomes through a meta-analysis",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:3fE2CSJIrl8C",
+      "scholar_byline": "Y Jing, J Dai, CL Wang, S Shen, R Shadiev*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Rustam Shadiev"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1080/10494820.2024.2444533",
+      "title": "Unveiling learners’ intentions toward influencer-led education: an integration of qualitative and quantitative analysis",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:hFOr9nPyWt4C",
+      "scholar_byline": "XJ Chen, T Yu, J Dai, YH Jing*, CL Wang",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Yuhui Jing"
+      ],
+      "highly_cited": true,
+      "hot_paper_years": [],
+      "award_source": "Google Scholar profile title"
+    },
+    {
+      "doi": "10.1007/s11116-025-10667-w",
+      "title": "What drives continuance intention to use electric vehicles: an extension of expectation-confirmation model",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:BqipwSGYUEgC",
+      "scholar_byline": "T Yu, AP Teoh, Q Bian, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1007/s12144-025-07813-z",
+      "title": "What drives learners’ behavioral intention to share knowledge on social media: evidence from a fuzzy-set qualitative comparative analysis (FsQCA)",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:j3f4tGmQtD8C",
+      "scholar_byline": "CL Wang, XJ Chen, T Yu*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Teng Yu"
+      ],
+      "highly_cited": true,
+      "hot_paper_years": [],
+      "award_source": "Google Scholar profile title"
+    },
+    {
+      "doi": "10.1080/10447318.2025.2487721",
+      "title": "What Drives Purchase Intention in Live Streaming E-Commerce? The Perspectives of Virtual Streamers",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:4JMBOYKVnBMC",
+      "scholar_byline": "T Yu, AP Teoh, Q Bian, JY Liao*, CL Wang",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Junyun Liao"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1111/jcal.12934",
+      "title": "A bibliometric analysis of studies on technology-supported learning environments: Hot topics and frontier evolution",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:LkGwnXOMwfcC",
+      "scholar_byline": "Y Jing, CL Wang, Z Chen, S Shen, R Shadiev*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Rustam Shadiev"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1007/s10639-024-12654-7",
+      "title": "A meta-analysis of learners’ continuance intention toward online education platforms",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:yD5IFk8b50cC",
+      "scholar_byline": "J Dai, X Zhang, CL Wang",
+      "role_source": "Publisher / author manuscript; see index annotation notes",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": true,
+      "hot_paper_years": [
+        2024
+      ],
+      "award_source": "Google Scholar profile title"
+    },
+    {
+      "doi": "10.1002/cb.2385",
+      "title": "Acceptance of or resistance to facial recognition payment: A systematic review",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:4TOpqqG69KYC",
+      "scholar_byline": "T Yu, CL Wang, Q Bian, AP Teoh*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Ai Ping Teoh"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1088/1742-6596/2722/1/012008",
+      "title": "Algorithm Selection and Application for Robot Path Planning Problems",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:KlAtU1dfN6UC",
+      "scholar_byline": "X Chen, L Chen, L Fu, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1016/j.dib.2024.111147",
+      "title": "Annotated emotional image datasets of Chinese university students in real classrooms for deep learning",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:mVmsd5A6BfQC",
+      "scholar_byline": "CL Wang, HM Wang*, ZH Hu, XJ Chen",
+      "role_source": "docs/paper-author-roles.md",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Haoming Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1016/j.stueduc.2024.101423",
+      "title": "Assessment as learning: Evidence based on meta-analysis and quantitative ethnography research",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:9ZlFYXVOiuMC",
+      "scholar_byline": "YC Liu, GR Xu, S Yuan, C Zhou, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1007/s10639-023-12178-6",
+      "title": "Bibliometric mapping techniques in educational technology research: A systematic literature review",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:zYLM7Y9cAGgC",
+      "scholar_byline": "Y Jing, CL Wang, Y Chen, H Wang, T Yu, R Shadiev*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Rustam Shadiev"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.22318/icls2024.604132",
+      "title": "Constructing an Action Model for Educational Systems in Response to Pandemics: A Textual Grounded Analysis",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:ULOm3_A8WrAC",
+      "scholar_byline": "Y Chen, H Wang, X Chen, Z Wu, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1057/s41599-024-03910-9",
+      "title": "Convenient or risky? Investigating the behavioral intention to use facial recognition payment in smart hospitals",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:dhFuZR0502QC",
+      "scholar_byline": "T Yu, AP Teoh*, CL Wang, Q Bian",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Ai Ping Teoh"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1057/s41599-024-02718-x",
+      "title": "Digital art exhibitions and psychological well-being in Chinese Generation Z: An analysis based on the S-O-R framework",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:UebtZRa9Y70C",
+      "scholar_byline": "Y Xia, Y Deng, X Tao, S Zhang, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": true,
+      "hot_paper_years": [],
+      "award_source": "Google Scholar profile title"
+    },
+    {
+      "doi": "10.1057/s41599-024-02717-y",
+      "title": "Education reform and change driven by digital technology: a bibliometric study from a global perspective",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:fPk4N6BV_jEC",
+      "scholar_byline": "CL Wang, XJ Chen, T Yu, YD Liu, YH Jing*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Yuhui Jing"
+      ],
+      "highly_cited": true,
+      "hot_paper_years": [
+        2025,
+        2026
+      ],
+      "award_source": "Google Scholar profile title"
+    },
+    {
+      "doi": "10.1007/s10639-024-12549-7",
+      "title": "Empowering education development through AIGC: A systematic literature review",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:4OULZ7Gr8RgC",
+      "scholar_byline": "XJ Chen, ZB Hu, CL Wang*",
+      "role_source": "docs/paper-author-roles.md",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": true,
+      "hot_paper_years": [
+        2025,
+        2026
+      ],
+      "award_source": "Google Scholar profile title"
+    },
+    {
+      "doi": "10.1177/21582440241285763",
+      "title": "Evolution and Current Research Status of Educational Leadership Theory: A Content Analysis-Based Study",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:4DMP91E08xMC",
+      "scholar_byline": "T Peng, CL Wang, J Xu, J Dai, T Yu*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Teng Yu"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1080/10494820.2024.2370477",
+      "title": "Factors influencing continuance intention in blended learning among business school students in China: based on grounded theory and FsQCA",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:YOwf2qJgpHMC",
+      "scholar_byline": "T Yu, J Dai, X Chen, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": true,
+      "hot_paper_years": [],
+      "award_source": "Google Scholar profile title"
+    },
+    {
+      "doi": "10.1057/s41599-024-03658-2",
+      "title": "Knowledge mapping and evolution of research on older adults’ technology acceptance: a bibliometric study from 2013 to 2023",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:M3ejUd6NZC8C",
+      "scholar_byline": "X Shang, Z Liu, C Gong, Z Hu, Y Wu, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1145/3704137.3704189",
+      "title": "The Development and Alleviation of Humanistic Artificial Intelligence in the Digital Age Education: A Content Analysis research",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:R3hNpaxXUhUC",
+      "scholar_byline": "XJ Chen, ZB Hu, YH Jing, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1016/j.heliyon.2024.e29477",
+      "title": "The development and evolution of the research topic on the mental health of college students: A bibliometric review based on CiteSpace and VOSviewer",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:kNdYIx-mwKoC",
+      "scholar_byline": "J Chen, Y Liu*, K Zhu, J Dai, CL Wang",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Yidan Liu"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1080/10447318.2023.2291609",
+      "title": "Understanding the Continuance Intention of College Students toward New E-Learning Spaces Based on an Integrated Model of the TAM and TTF",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:cFHS6HbyZ2cC",
+      "scholar_byline": "CL Wang, J Dai, KK Zhu, T Yu, XQ Gu",
+      "role_source": "Publisher / author manuscript; see index annotation notes",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Teng Yu"
+      ],
+      "highly_cited": true,
+      "hot_paper_years": [
+        2024,
+        2025
+      ],
+      "award_source": "Google Scholar profile title"
+    },
+    {
+      "doi": "10.1057/s41599-024-02751-w",
+      "title": "What factors will affect the effectiveness of using ChatGPT to solve programming problems? A quasi-experimental study",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:dfsIfKJdRG4C",
+      "scholar_byline": "YH Jing, HM Wang, XJ Chen, CL Wang*",
+      "role_source": "docs/paper-author-roles.md",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": true,
+      "hot_paper_years": [
+        2025
+      ],
+      "award_source": "Google Scholar profile title"
+    },
+    {
+      "doi": "10.1145/3702163.3702174",
+      "title": "XR Technologies in vocational education and training research (2000-2024): A Bibliometric Review",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:hC7cP41nSMkC",
+      "scholar_byline": "Y Xu, D Mao, C Wang",
+      "role_source": "Author confirmed no co-first or corresponding author designation on 27 September 2026",
+      "co_first_authors": [],
+      "corresponding_authors": [],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.2991/978-94-6463-012-1_19",
+      "title": "A Learning Analytics Model Based on Expression Recognition and Affective Computing: Review of Techniques and Survey of Acceptance",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:IjCSPb-OGe4C",
+      "scholar_byline": "CL Wang, J Dai, Y Chen, X Zhang, L Xu*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Liujie Xu"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1057/s41599-023-01904-7",
+      "title": "Adoption of blended learning: Chinese university students’ perspectives",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:qjMakFHDy7sC",
+      "scholar_byline": "T Yu, J Dai, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": true,
+      "hot_paper_years": [],
+      "award_source": "Google Scholar profile title"
+    },
+    {
+      "doi": "10.3389/fpsyg.2022.1079955",
+      "title": "Development and status of moral education research: Visual analysis based on knowledge graph",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:2osOgNQ5qMEC",
+      "scholar_byline": "J Chen, Y Liu*, J Dai, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Yidan Liu",
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1177/21582440231210551",
+      "title": "Factors Influencing University Students’ Behavioral Intention to Use Electric Car-Sharing Services in Guangzhou, China",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:Y0pCki6q_DkC",
+      "scholar_byline": "T Yu, Y Zhang, AP Teoh, A Wang, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.3390/su15043115",
+      "title": "Research Landscape of Adaptive Learning in Education: A Bibliometric Study on Research Publications from 2000 to 2022",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:u-x6o8ySG0sC",
+      "scholar_byline": "Y Jing, L Zhao*, K Zhu, H Wang, CL Wang*, Q Xia",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Leying Zhao",
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1145/3629296.3629370",
+      "title": "The Application Landscape and Research Status of Artificial Intelligence in Language Learning: A Visual Analysis",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:ufrVoPGSRksC",
+      "scholar_byline": "X Chen, K Zhu, Y Jing, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1177/21582440231212160",
+      "title": "The Implementation Path and Problems Encountered During Emergency Remote Teaching in Vocational Colleges: A Qualitative Study in China",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:YsMSGLbcyi4C",
+      "scholar_byline": "Y Jing, X Chen, K Zhu, S Shen, CL Wang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.1109/icccbda55098.2022.9778874",
+      "title": "Big Data and Data Mining in Education: A Bibliometrics Study from 2010 to 2022",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:u5HHmVD_uO8C",
+      "scholar_byline": "CL Wang, J Dai, L Xu*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Liu-jie Xu"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.3389/fpsyg.2022.883150",
+      "title": "Knowledge Mapping of Volunteer Motivation: A Bibliometric Analysis and Cross-Cultural Comparative Study",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:d1gkVwhDpl0C",
+      "scholar_byline": "J Chen, CL Wang, Y Tang*",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Yulong Tang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    },
+    {
+      "doi": "10.3389/fpsyg.2022.839982",
+      "title": "Video Playback Speed Influence on Learning Effect From the Perspective of Personalized Adaptive Learning: A Study Based on Cognitive Load Theory",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:UeHWp8X0CEIC",
+      "scholar_byline": "CY Mo, CL Wang*, J Dai, P Jin",
+      "role_source": "Google Scholar profile byline",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Chengliang Wang"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null
+    }
+  ]
+}

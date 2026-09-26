@@ -32,6 +32,12 @@
 .publication-index .index-header h1 { margin: 0; font-size: 38px; line-height: 1.2; font-weight: 700; }
 .publication-index .index-overview { display: flex; gap: 0; margin: 0; color: var(--index-muted); font-size: 15px; white-space: nowrap; }
 .publication-index .index-overview span + span { margin-left: 16px; padding-left: 16px; border-left: 1px solid var(--index-rule); }
+.publication-index .index-legend { display: flex; flex-wrap: wrap; gap: 5px 22px; margin: 16px 0 0; color: var(--index-muted); font-size: 13px; line-height: 1.6; }
+.publication-index .index-legend > span { white-space: nowrap; }
+.publication-index .index-legend sup { color: var(--index-ink); }
+.publication-index .index-award-icon { font-family: "Segoe UI Emoji", "Apple Color Emoji", "Noto Color Emoji", sans-serif; font-style: normal; font-weight: 400; }
+.publication-index .index-highly-cited { font-size: 0.85em; }
+.publication-index .index-hot-paper { display: inline-block; color: var(--index-body); font-size: 15px; font-weight: 400; white-space: nowrap; }
 
 .publication-index .index-controls { display: grid; grid-template-columns: minmax(0, 1fr) 128px 192px; gap: 16px; padding: 25px 0 22px; margin: 0; }
 .publication-index .index-field label { display: block; margin: 0 0 8px; color: var(--index-body); font-size: 14px; font-weight: 400; }
@@ -70,6 +76,8 @@
 .publication-index .index-entry h3 a:hover { color: var(--index-accent); }
 .publication-index .index-entry-authors { margin: 0 0 5px; color: var(--index-body); font-size: 16px; line-height: 1.55; }
 .publication-index .index-entry-authors strong { color: var(--index-ink); font-weight: 700; }
+.publication-index .index-author { display: inline-block; max-width: 100%; }
+.publication-index .index-author-marker { margin-left: 1px; color: var(--index-ink); font-size: 0.75em; line-height: 0; }
 .publication-index .index-entry-venue { margin: 0; color: var(--index-body); font-size: 16px; line-height: 1.55; }
 .publication-index .index-entry-doi { margin: 11px 0 0; font-size: 13px; line-height: 1.5; }
 .publication-index .index-entry-doi a { display: inline; overflow-wrap: anywhere; }
