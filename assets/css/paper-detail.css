@@ -37,6 +37,10 @@
 .paper-detail .paper-header h1 { max-width: 960px; font-size: 36px; font-weight: 700; line-height: 1.2; text-wrap: pretty; }
 .paper-detail .paper-authors { max-width: 840px; margin: 22px 0 10px; font-size: 18px; line-height: 1.65; }
 .paper-authors strong { color: var(--paper-ink); }
+.paper-author { display: inline-block; }
+.paper-author-marker { color: var(--paper-ink); font-size: .75em; font-weight: 700; line-height: 0; }
+.paper-detail .paper-author-legend { display: flex; flex-wrap: wrap; gap: 4px 20px; margin: 0 0 10px; color: var(--paper-muted); font-size: 14px; line-height: 1.6; }
+.paper-author-legend sup { color: var(--paper-ink); font-weight: 700; }
 .paper-detail .paper-correspondence { margin: 0 0 12px; font-size: 15px; line-height: 1.6; }
 .paper-detail .paper-doi { margin: 12px 0; font-size: 15px; line-height: 1.7; overflow-wrap: anywhere; }
 .paper-doi > span { margin-right: 8px; color: var(--paper-muted); }
