@@ -159,8 +159,7 @@ redirect_from:
 
 .about-page .profile-destinations {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 28px;
+  grid-template-columns: minmax(0, 1fr);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -267,8 +266,6 @@ redirect_from:
 
 @media (max-width: 620px) {
   .about-page #profile > h1 { font-size: 28px; }
-  .about-page .profile-destinations { grid-template-columns: 1fr; gap: 0; }
-  .about-page .profile-destination + .profile-destination { border-top: 1px solid var(--line); }
   .about-page .profile-destination { min-height: 72px; }
   .about-page .profile-guides { grid-template-columns: 1fr; gap: 10px; }
   .about-page .profile-guides ul { display: grid; gap: 4px; }
@@ -476,11 +473,6 @@ redirect_from:
         <a class="profile-destination" href="{{ '/research-highlights/' | relative_url }}">
           <i class="fas fa-file-alt" aria-hidden="true"></i>
           <span><strong>Research highlights</strong><small>Paper summaries</small></span>
-          <i class="fas fa-arrow-right" aria-hidden="true"></i>
-        </a>
-        <a class="profile-destination" href="{{ '/resources/' | relative_url }}">
-          <i class="fas fa-folder-open" aria-hidden="true"></i>
-          <span><strong>Research resources</strong></span>
           <i class="fas fa-arrow-right" aria-hidden="true"></i>
         </a>
       </div>
