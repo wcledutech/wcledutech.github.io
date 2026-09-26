@@ -246,6 +246,62 @@
     "url": "/papers/ai-agents-collaborative-programming/"
   },
   {
+    "doi": "10.1080/10447318.2026.2692021",
+    "title": "Human-AI Collaborative Learning Ecosystem: Effects of Multi-Agent-Based Programming Learning on Learning Outcomes, Computational Thinking, and Behavioral Patterns in Higher Education",
+    "journal": "International Journal of Human–Computer Interaction",
+    "year": 2026,
+    "published_online": "2026-07-06",
+    "published_print": null,
+    "volume": null,
+    "issue": null,
+    "page": "1-22",
+    "article_number": null,
+    "authors": [
+      "Zihan Xiao",
+      "Haoming Wang",
+      "Sheng Jin",
+      "Yutong Lai",
+      "Yue Cao",
+      "Yuxi Zhang",
+      "Chengliang Wang"
+    ],
+    "corresponding_authors": ["Haoming Wang", "Chengliang Wang"],
+    "abstract": "Programming education plays a central role in computer science learning, and intelligent tutoring systems offer possibilities for enhancing instructional effectiveness. However, conventional programming instruction often faces challenges in providing support tailored to diverse cognitive processes and learner needs. This study proposes a Multi-Agent-based Programming Learning (MA-PL) approach, which leverages collaborative agent technology to provide differentiated support including algorithmic guidance, code assistance, and learning monitoring based on learners’ cognitive states and problem-solving progress. An experimental design was adopted with 54 university students randomly assigned to experimental and control groups for a 12-week intervention. Results indicated that the experimental group achieved significant improvements in learning outcomes and computational thinking, and exhibited more positive programming behavioral patterns characterized by higher-level cognitive engagement. However, the study revealed reduced autonomous construction behaviors and a shift from peer collaboration to human-AI collaboration. These findings offer empirical insights into multi-agent technology in programming education.",
+    "abstract_license": "CC BY-NC 4.0",
+    "abstract_license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+    "source_url": "https://doi.org/10.1080/10447318.2026.2692021",
+    "slug": "human-ai-collaborative-learning-ecosystem",
+    "topic": "Programming education and learning environments",
+    "short_title": "Human-AI collaboration in multi-agent programming learning",
+    "summary": "A 12-week experiment with 54 undergraduates compares Multi-Agent-based Programming Learning (MA-PL) with conventional programming instruction. Students receiving multi-agent support achieved stronger learning outcomes and computational thinking, with higher-level cognitive engagement in their programming behavior. Behavioral analysis also identified less autonomous construction and a shift from peer collaboration toward human-AI collaboration.",
+    "summary_zh": "研究将54名本科生随机分为多智能体编程学习组与常规编程教学组，开展为期12周的实验。多智能体支持组在学习成果与计算思维方面表现更好，编程行为体现出更高层次的认知参与。行为分析同时发现，自主建构行为减少，协作方式由同伴协作转向人机协作。",
+    "method": "12-week randomized experiment with 54 undergraduates (27 per group), combining learning-outcome and computational-thinking assessments with behavioral sequence analysis.",
+    "context": "The study connects multi-agent instructional design with programming performance, computational thinking and observed collaboration processes. It examines how differentiated AI support changes both learning outcomes and learners' autonomous construction and peer interaction.",
+    "keywords": [
+      "multi-agent systems",
+      "programming education",
+      "human-AI collaboration",
+      "computational thinking",
+      "behavioral sequence analysis"
+    ],
+    "question": "How does multi-agent programming support shape learning outcomes, computational thinking and patterns of human-AI collaboration?",
+    "source": "https://www.tandfonline.com/doi/full/10.1080/10447318.2026.2692021",
+    "resources": [
+      {
+        "label": "Open-access full text",
+        "url": "https://www.tandfonline.com/doi/full/10.1080/10447318.2026.2692021",
+        "kind": "fulltext"
+      },
+      {
+        "label": "Supplementary materials",
+        "url": "https://doi.org/10.6084/m9.figshare.32906675",
+        "kind": "supplement"
+      }
+    ],
+    "citation_text": "Xiao, Z., Wang, H., Jin, S., Lai, Y., Cao, Y., Zhang, Y., & Wang, C. (2026). Human-AI Collaborative Learning Ecosystem: Effects of Multi-Agent-Based Programming Learning on Learning Outcomes, Computational Thinking, and Behavioral Patterns in Higher Education. International Journal of Human–Computer Interaction, 1-22. https://doi.org/10.1080/10447318.2026.2692021",
+    "url": "/papers/human-ai-collaborative-learning-ecosystem/"
+  },
+  {
     "doi": "10.1007/s10639-024-12549-7",
     "title": "Empowering education development through AIGC: A systematic literature review",
     "journal": "Education and Information Technologies",

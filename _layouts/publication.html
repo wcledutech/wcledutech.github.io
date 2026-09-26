@@ -7,11 +7,12 @@ layout: default
   <nav aria-label="Breadcrumb"><a href="{{ '/research-highlights/' | relative_url }}">Research highlights</a> / {{ paper.topic | escape }}</nav>
   <header><p class="research-label">{{ paper.journal | escape }} · {{ paper.year }}</p><h1>{{ paper.title | escape }}</h1>
     <p class="research-authors">{{ paper.authors | join: ', ' | escape }}</p>
+    {% if paper.corresponding_authors.size > 0 %}<p class="research-correspondence"><strong>Corresponding authors:</strong> {{ paper.corresponding_authors | join: ', ' | escape }}</p>{% endif %}
     <p><a href="{{ paper.source_url | escape }}">DOI: {{ paper.doi | escape }}</a></p>
     <p class="research-dates">{% if paper.published_online %}First published online: {{ paper.published_online }}.{% endif %}{% if paper.published_print %} Issue publication: {{ paper.published_print }}.{% endif %}</p>
   </header>
   <section><h2>Research summary</h2><p>{{ paper.summary | escape }}</p><p class="research-method"><strong>Study design.</strong> {{ paper.method | escape }}</p></section>
-  {% if paper.abstract != '' %}<section><h2>Abstract</h2><p>{{ paper.abstract | escape }}</p><p><a href="{{ paper.source | escape }}">Published abstract and original article</a></p></section>{% endif %}
+  {% if paper.abstract != '' %}<section><h2>Abstract</h2><p>{{ paper.abstract | escape }}</p><p><a href="{{ paper.source | escape }}">Published abstract and original article</a>{% if paper.abstract_license %} · &copy; {{ paper.year }} The Author(s). <a href="{{ paper.abstract_license_url | escape }}">{{ paper.abstract_license | escape }}</a>{% endif %}</p></section>{% endif %}
   <section><h2>Research context</h2><h3>{{ paper.question | escape }}</h3><p>{{ paper.context | escape }}</p><p class="research-keywords">{{ paper.keywords | join: ' · ' | escape }}</p></section>
   <section lang="zh-Hans"><h2>中文研究介绍</h2><p>{{ paper.summary_zh | escape }}</p></section>
   <section><h2>Read and cite</h2><div class="research-actions"><a href="{{ paper.source_url | escape }}">Publisher article</a>{% for resource in paper.resources %}<a href="{{ resource.url | escape }}">{{ resource.label | escape }}</a>{% endfor %}<a download href="{{ '/assets/citations/' | append: paper.slug | append: '.bib' | relative_url }}">Download BibTeX</a><a download href="{{ '/assets/citations/' | append: paper.slug | append: '.ris' | relative_url }}">Download RIS</a></div>
