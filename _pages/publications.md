@@ -176,6 +176,14 @@ author_profile: true
   overflow-wrap: anywhere;
 }
 
+.publication-hero-action .publication-action-note {
+  display: block;
+  margin-top: 3px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
 .publication-hero-action .fas {
   flex: 0 0 18px;
   font-family: "Font Awesome 5 Free";
@@ -427,7 +435,7 @@ author_profile: true
   <p class="publication-kicker">Publication Portfolio</p>
   <h1>Publications</h1>
   <nav class="publication-hero-actions" aria-label="Explore publications">
-    <!-- visibility-index --><a class="publication-hero-action" href="{{ '/publication-index/' | relative_url }}" title="Search the complete publication index"><i class="fas fa-search" aria-hidden="true"></i><span>Search publications</span><i class="fas fa-arrow-right publication-action-arrow" aria-hidden="true"></i></a>
+    <!-- visibility-index --><a class="publication-hero-action" href="{{ '/publication-index/' | relative_url }}" title="Search the complete publication index"><i class="fas fa-search" aria-hidden="true"></i><span>Search publications<small class="publication-action-note">(order by year)</small></span><i class="fas fa-arrow-right publication-action-arrow" aria-hidden="true"></i></a>
     <!-- visibility-highlights --><a class="publication-hero-action publication-hero-action--secondary" href="{{ '/research-highlights/' | relative_url }}" title="Study summaries, abstracts and citation downloads"><i class="fas fa-book-open" aria-hidden="true"></i><span>Research highlights</span><i class="fas fa-arrow-right publication-action-arrow" aria-hidden="true"></i></a>
   </nav>
   <p class="publication-hero-copy"><strong>Chengliang Wang</strong>’s recent research takes the development of intelligent learning environments and the vertical design of AI Agents as its starting point, anchored by three core foci: learner experience, behavioral modeling, and cognitive development. Through this framework, he explores the empowering potential of cutting-edge intelligent technologies across teaching, learning, administration, and educational assessment. Furthermore, he has actively advanced the cultivation of AI literacy among students and teachers, alongside the development of related curricula.</p>
