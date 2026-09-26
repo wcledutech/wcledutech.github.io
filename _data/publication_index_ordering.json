@@ -1,0 +1,49 @@
+{
+  "jif_year": 2025,
+  "verified_on": "2026-09-27",
+  "owner_names": ["Chengliang Wang", "Chenliang Wang", "Cheng-liang Wang"],
+  "conference_dois": [
+    "10.1007/978-3-032-29791-4_24",
+    "10.1007/978-3-031-99261-2_20",
+    "10.2991/978-94-6463-012-1_19",
+    "10.1088/1742-6596/2722/1/012008"
+  ],
+  "journal_impact_factors": {
+    "Journal of Educational Computing Research": {
+      "value": 8.5,
+      "source": "https://journals.sagepub.com/overview-metric/JEC"
+    },
+    "Education and Information Technologies": {
+      "value": 7.2,
+      "source": "https://link.springer.com/journal/10639"
+    },
+    "International Journal of Human\u2013Computer Interaction": {
+      "value": 6.1,
+      "source": "https://www.tandfonline.com/journals/hihc20/about-this-journal"
+    },
+    "Journal of Computer Assisted Learning": {
+      "value": 5.7,
+      "source": "https://onlinelibrary.wiley.com/journal/13652729/journal-metrics"
+    },
+    "Educational technology research and development": {
+      "value": 5.6,
+      "source": "https://link.springer.com/journal/11423"
+    },
+    "Humanities and Social Sciences Communications": {
+      "value": 4.8,
+      "source": "https://www.nature.com/palcomms/journal-information"
+    },
+    "The Visual Computer": {
+      "value": 3.4,
+      "source": "https://link.springer.com/journal/371"
+    },
+    "Current Psychology": {
+      "value": 2.7,
+      "source": "https://link.springer.com/journal/12144"
+    },
+    "Data in Brief": {
+      "value": 1.9,
+      "source": "https://journalinsights.elsevier.com/journals/2352-3409/downloads"
+    }
+  }
+}
