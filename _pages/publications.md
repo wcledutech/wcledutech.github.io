@@ -143,6 +143,96 @@ author_profile: true
   text-decoration: underline;
 }
 
+.publication-hero-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  max-width: 600px;
+  margin: 26px 0 28px;
+}
+
+.publication-page .publication-hero-action {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  min-height: 58px;
+  padding: 14px 18px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  background: #fff;
+  color: #174f49;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0;
+  text-decoration: none;
+  transition: background-color 160ms ease, border-color 160ms ease;
+}
+
+.publication-hero-action span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.publication-hero-action .fas {
+  flex: 0 0 18px;
+  font-family: "Font Awesome 5 Free";
+  font-size: 16px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.publication-hero-action .publication-action-arrow {
+  flex-basis: 12px;
+  margin-left: auto;
+  font-size: 12px;
+}
+
+.publication-page .publication-hero-action--secondary {
+  border-color: rgba(255, 255, 255, .65);
+  background: rgba(10, 35, 37, .4);
+  color: #fff;
+}
+
+.publication-page .publication-hero-action:hover {
+  border-color: #e7f1ee;
+  background: #e7f1ee;
+  color: #174f49;
+  text-decoration: none;
+}
+
+.publication-page .publication-hero-action--secondary:hover {
+  border-color: #fff;
+  background: rgba(10, 35, 37, .65);
+  color: #fff;
+}
+
+.publication-page .publication-hero-action:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 4px;
+}
+
+@media (max-width: 700px) {
+  .publication-hero-actions {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+    margin: 24px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .publication-page .publication-hero-action { transition: none; }
+}
+
+@media (max-width: 380px) {
+  .publication-page .publication-hero-action {
+    gap: 8px;
+    padding: 14px 12px;
+  }
+}
+
 .publication-group {
   margin: 1rem 0;
   border: 1px solid var(--line);
@@ -336,8 +426,10 @@ author_profile: true
 <section class="publication-hero">
   <p class="publication-kicker">Publication Portfolio</p>
   <h1>Publications</h1>
-  <!-- visibility-index --><p class="publication-hero-copy"><a style="color:inherit;text-decoration:underline" href="{{ '/publication-index/' | relative_url }}">Search the complete publication index</a></p>
-  <!-- visibility-highlights --><p class="publication-hero-copy"><a style="color:inherit;text-decoration:underline" href="{{ '/research-highlights/' | relative_url }}">Explore study summaries, abstracts and citation downloads</a></p>
+  <nav class="publication-hero-actions" aria-label="Explore publications">
+    <!-- visibility-index --><a class="publication-hero-action" href="{{ '/publication-index/' | relative_url }}" title="Search the complete publication index"><i class="fas fa-search" aria-hidden="true"></i><span>Search publications</span><i class="fas fa-arrow-right publication-action-arrow" aria-hidden="true"></i></a>
+    <!-- visibility-highlights --><a class="publication-hero-action publication-hero-action--secondary" href="{{ '/research-highlights/' | relative_url }}" title="Study summaries, abstracts and citation downloads"><i class="fas fa-book-open" aria-hidden="true"></i><span>Research highlights</span><i class="fas fa-arrow-right publication-action-arrow" aria-hidden="true"></i></a>
+  </nav>
   <p class="publication-hero-copy"><strong>Chengliang Wang</strong>’s recent research takes the development of intelligent learning environments and the vertical design of AI Agents as its starting point, anchored by three core foci: learner experience, behavioral modeling, and cognitive development. Through this framework, he explores the empowering potential of cutting-edge intelligent technologies across teaching, learning, administration, and educational assessment. Furthermore, he has actively advanced the cultivation of AI literacy among students and teachers, alongside the development of related curricula.</p>
   <p class="publication-hero-copy">As a first or corresponding author, <strong>Wang</strong> has published 31 SSCI-indexed papers, 18 of which are ranked in Q1 and Q2 according to the 2025 Chinese Academy of Sciences (CAS) journal ranking system. Proficient in over twenty research methods commonly utilized in the social sciences, his work has been accepted by prominent journals including the Journal of Educational Computing Research, Journal of Computer Assisted Learning, Educational Technology Research and Development, British Journal of Educational Technology, and Education and Information Technologies. Notably, 18 of his publications have been recognized as ESI Top 1% Highly Cited Papers, with 5 previously designated as ESI Top 0.1% Hot Papers.</p>
   <div class="publication-metrics" aria-label="Publication overview">
