@@ -20,11 +20,14 @@
   }
 
   var entries = Array.prototype.slice.call(root.querySelectorAll('.index-entry')).map(function (element) {
+    var searchable = element.cloneNode(true);
+    var metric = searchable.querySelector('.index-entry-jif');
+    if (metric) metric.remove();
     return {
       element: element,
       year: element.dataset.year,
       type: element.dataset.type,
-      text: normalize(element.textContent + ' ' + element.dataset.year + ' ' + element.dataset.type)
+      text: normalize(searchable.textContent + ' ' + element.dataset.year + ' ' + element.dataset.type)
     };
   });
 

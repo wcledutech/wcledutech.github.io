@@ -1,5 +1,6 @@
 {
   "jif_year": 2025,
+  "jif_release_year": 2026,
   "verified_on": "2026-09-27",
   "owner_names": ["Chengliang Wang", "Chenliang Wang", "Cheng-liang Wang"],
   "conference_dois": [
@@ -44,6 +45,114 @@
     "Data in Brief": {
       "value": 1.9,
       "source": "https://journalinsights.elsevier.com/journals/2352-3409/downloads"
+    },
+    "Discover Computing": {
+      "value": 1.9,
+      "source": "https://link.springer.com/journal/10791"
+    },
+    "British Journal of Educational Technology": {
+      "value": 13.0,
+      "source": "https://bera-journals.onlinelibrary.wiley.com/journal/14678535"
+    },
+    "International Journal of Hospitality Management": {
+      "value": 8.3,
+      "source": "https://www.sciencedirect.com/journal/international-journal-of-hospitality-management/about/insights"
+    },
+    "Aslib Journal of Information Management": {
+      "value": 3.1,
+      "source": "https://www.emeraldgrouppublishing.com/journal/ajim"
+    },
+    "International Journal of Logistics Research and Applications": {
+      "value": 5.6,
+      "source": "https://www.tandfonline.com/journals/cjol20/about-this-journal"
+    },
+    "The International Journal of Management Education": {
+      "value": 8.0,
+      "source": "https://www.sciencedirect.com/journal/the-international-journal-of-management-education/about/insights"
+    },
+    "Behaviour &amp; Information Technology": {
+      "value": 4.2,
+      "source": "https://www.tandfonline.com/journals/tbit20/about-this-journal"
+    },
+    "International Journal of Contemporary Hospitality Management": {
+      "value": 11.3,
+      "source": "https://www.emeraldgrouppublishing.com/journal/ijchm?id=ijchm"
+    },
+    "Journal of Hospitality Marketing &amp; Management": {
+      "value": 12.4,
+      "source": "https://www.researchgate.net/journal/Journal-of-Hospitality-Marketing-Management-1936-8631"
+    },
+    "Interactive Learning Environments": {
+      "value": 6.7,
+      "source": "https://www.tandfonline.com/journals/nile20/about-this-journal"
+    },
+    "Language Teaching Research": {
+      "value": 4.7,
+      "source": "https://services.sagepub.com/journal/language-teaching-research/"
+    },
+    "Educational Technology & Society": {
+      "value": 7.1,
+      "source": "https://www.j-ets.net/",
+      "note": "Publisher reports 7.076 for 2025; displayed to one decimal place, consistent with JIF reporting."
+    },
+    "Sage Open": {
+      "value": 2.4,
+      "source": "https://services.sagepub.com/journal/sage-open/"
+    },
+    "Technology in Society": {
+      "value": 12.9,
+      "source": "https://www.sciencedirect.com/journal/technology-in-society/about/insights"
+    },
+    "Journal of Travel &amp; Tourism Marketing": {
+      "value": 11.0,
+      "source": "https://www.tandfonline.com/journals/wttm20/about-this-journal"
+    },
+    "Nature": {
+      "value": 56.1,
+      "source": "https://www.nature.com/nature/journal-impact"
+    },
+    "International Journal of Mentoring and Coaching in Education": {
+      "value": 1.8,
+      "source": "https://www.emeraldgrouppublishing.com/journal/ijmce"
+    },
+    "Transportation": {
+      "value": 4.1,
+      "source": "https://link.springer.com/journal/11116"
+    },
+    "British Food Journal": {
+      "value": 4.4,
+      "source": "https://emeraldgrouppublishing.com/journal/bfj"
+    },
+    "Review of Education": {
+      "value": 4.0,
+      "source": "https://bera-journals.onlinelibrary.wiley.com/journal/20496613"
+    },
+    "Research in Dance Education": {
+      "value": 1.0,
+      "source": "https://www.tandfonline.com/journals/crid20/about-this-journal"
+    },
+    "Journal of Consumer Behaviour": {
+      "value": 7.0,
+      "source": "https://onlinelibrary.wiley.com/journal/14791838"
+    },
+    "Studies in Educational Evaluation": {
+      "value": 3.9,
+      "source": "https://www.sciencedirect.com/journal/studies-in-educational-evaluation/about/insights"
+    },
+    "Heliyon": {
+      "value": null,
+      "source": "https://www.sciencedirect.com/journal/heliyon/about/insights",
+      "status": "pending",
+      "note": "Publisher still labels its 3.6 JIF as 2024, released in 2025. Do not substitute that value for the requested 2025 JIF.",
+      "status_source": "https://retractionwatch.com/2026/08/07/clarivate-removes-hold-mega-journal-heliyon-after-internal-audit/"
+    },
+    "Frontiers in Psychology": {
+      "value": 3.8,
+      "source": "https://www.frontiersin.org/about/impact"
+    },
+    "Sustainability": {
+      "value": 4.1,
+      "source": "https://www.mdpi.com/journal/sustainability"
     }
   }
 }

@@ -79,6 +79,8 @@
 .publication-index .index-author { display: inline-block; max-width: 100%; }
 .publication-index .index-author-marker { margin-left: 1px; color: var(--index-ink); font-size: 0.75em; line-height: 0; }
 .publication-index .index-entry-venue { margin: 0; color: var(--index-body); font-size: 16px; line-height: 1.55; }
+.publication-index .index-entry-jif { display: inline-block; margin-left: 12px; font-size: 14px; font-style: normal; white-space: nowrap; }
+.publication-index .index-entry-jif strong { font-weight: 700; font-variant-numeric: tabular-nums; }
 .publication-index .index-entry-doi { margin: 11px 0 0; font-size: 13px; line-height: 1.5; }
 .publication-index .index-entry-doi a { display: inline; overflow-wrap: anywhere; }
 .publication-index .index-doi-label { margin-right: 9px; color: var(--index-muted); }

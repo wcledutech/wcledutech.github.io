@@ -46,7 +46,7 @@ def ordered_publications(papers, policy):
         # Only first/co-first journal papers use JIF as the next ordering key.
         if group == 0 and position == 1:
             journal = normalized(paper["journal"])
-            if journal not in metrics:
+            if journal not in metrics or metrics[journal] is None:
                 raise ValueError(f"Verify a {policy['jif_year']} JIF for {paper['journal']}")
             impact_factor = metrics[journal]
         return (-int(paper["year"]), group, position, -impact_factor,
