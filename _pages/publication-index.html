@@ -5,4 +5,93 @@ title: "Publication Index: Chengliang Wang"
 excerpt: "A searchable index of Chengliang Wang's publications, with complete author lists, DOI links and explicit publication types."
 author_profile: true
 ---
-<link rel="stylesheet" href="{{ '/assets/css/research-highlights.css' | relative_url }}"><div class="research-hub"><h1>Publication index</h1><p>{{ site.data.publication_index.size }} unique DOI records, based on public ORCID and publisher metadata. The 2026 additions were checked against Google Scholar and publisher metadata on 26 September 2026. Article, conference, preprint and correction records are labelled separately.</p><p><label for="publication-search">Search by title, author, journal, year or publication type</label></p><input id="publication-search" type="search" autocomplete="off"><p id="publication-count" role="status">{{ site.data.publication_index.size }} records</p>{% for paper in site.data.publication_index %}<article class="publication-index-card"><p class="research-label">{{ paper.category | replace: '-', ' ' | escape }} · {{ paper.year }}</p><h2><a href="{{ paper.url | escape }}">{{ paper.title | escape }}</a></h2><p>{{ paper.authors | join: ', ' | escape }}</p><p><em>{{ paper.journal | escape }}</em></p><p>DOI: <a href="{{ paper.url | escape }}">{{ paper.doi | escape }}</a></p></article>{% endfor %}<p><a href="{{ '/research-highlights/' | relative_url }}">Research highlights</a> · <a href="{{ '/publications/' | relative_url }}">Publications grouped by author role</a></p></div><script>(function(){var input=document.getElementById('publication-search');var cards=Array.prototype.slice.call(document.querySelectorAll('.publication-index-card'));input.addEventListener('input',function(){var q=input.value.toLowerCase().trim();var count=0;cards.forEach(function(card){var show=card.textContent.toLowerCase().indexOf(q)!==-1;card.hidden=!show;if(show)count++;});document.getElementById('publication-count').textContent=count+' records';});})();</script>
+<link rel="stylesheet" href="{{ '/assets/css/publication-index.css' | relative_url }}">
+{% assign publication_years = site.data.publication_index | group_by: 'year' | sort: 'name' | reverse %}
+{% assign publication_types = site.data.publication_index | map: 'category' | uniq | sort %}
+<div class="publication-index" id="publication-index">
+  <nav class="index-navigation" aria-label="Publication navigation">
+    <a href="{{ '/publications/' | relative_url }}"><i class="fas fa-arrow-left" aria-hidden="true"></i> Publications by author role</a>
+    <a href="{{ '/research-highlights/' | relative_url }}">Research highlights <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+  </nav>
+
+  <header class="index-header">
+    <h1>Publication index</h1>
+    <p class="index-overview"><span>{{ site.data.publication_index.size }} records</span><span>{{ publication_years.last.name }}&ndash;{{ publication_years.first.name }}</span></p>
+  </header>
+
+  <form class="index-controls" id="publication-filters" role="search" hidden>
+    <div class="index-field index-search-field">
+      <label for="publication-search">Search publications</label>
+      <div class="index-search-input">
+        <i class="fas fa-search" aria-hidden="true"></i>
+        <input id="publication-search" name="q" type="search" placeholder="Title, author, journal or DOI" autocomplete="off" aria-controls="publication-results">
+      </div>
+    </div>
+    <div class="index-field">
+      <label for="publication-year">Year</label>
+      <select id="publication-year" name="year" aria-controls="publication-results">
+        <option value="">All years</option>
+        {% for group in publication_years %}<option value="{{ group.name }}">{{ group.name }}</option>{% endfor %}
+      </select>
+    </div>
+    <div class="index-field">
+      <label for="publication-type">Publication type</label>
+      <select id="publication-type" name="type" aria-controls="publication-results">
+        <option value="">All types</option>
+        {% for type in publication_types %}
+        {% capture type_label %}{% case type %}{% when 'journal-article' %}Journal article{% when 'proceedings-article' %}Conference paper{% when 'book-chapter' %}Book chapter{% when 'journal-correspondence' %}Correspondence{% else %}{{ type | replace: '-', ' ' | capitalize }}{% endcase %}{% endcapture %}
+        <option value="{{ type | escape }}">{{ type_label | strip }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  </form>
+
+  <div class="index-results-bar">
+    <p id="publication-count" role="status" aria-live="polite" aria-atomic="true">{{ site.data.publication_index.size }} records</p>
+    <button class="index-reset" type="reset" form="publication-filters" id="publication-reset" hidden><i class="fas fa-undo" aria-hidden="true"></i> Reset filters</button>
+    <div class="index-order" id="publication-order-control" hidden>
+      <label for="publication-order">Order</label>
+      <select id="publication-order" name="order" form="publication-filters" aria-controls="publication-results">
+        <option value="newest">Newest first</option>
+        <option value="oldest">Oldest first</option>
+      </select>
+    </div>
+  </div>
+
+  <div id="publication-results">
+    {% for group in publication_years %}
+    <section class="index-year-group" data-year="{{ group.name }}" aria-labelledby="publication-year-{{ group.name }}">
+      <header class="index-year-heading">
+        <h2 id="publication-year-{{ group.name }}">{{ group.name }}</h2>
+        <p class="index-year-count">{{ group.items.size }} records</p>
+      </header>
+      <ol class="index-entries">
+        {% for paper in group.items %}
+        {% capture type_label %}{% case paper.category %}{% when 'journal-article' %}Journal article{% when 'proceedings-article' %}Conference paper{% when 'book-chapter' %}Book chapter{% when 'journal-correspondence' %}Correspondence{% else %}{{ paper.category | replace: '-', ' ' | capitalize }}{% endcase %}{% endcapture %}
+        <li class="index-entry" data-year="{{ paper.year }}" data-type="{{ paper.category | escape }}">
+          <article>
+            <p class="index-entry-type">{{ type_label | strip }}</p>
+            <h3><a href="{{ paper.url | escape }}">{{ paper.title | escape_once }}</a></h3>
+            <p class="index-entry-authors">{% for author in paper.authors %}{% if author == 'Chengliang Wang' or author == 'Chenliang Wang' %}<strong>{{ author | escape }}</strong>{% else %}{{ author | escape }}{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+            <p class="index-entry-venue"><em>{{ paper.journal | escape_once }}</em></p>
+            <p class="index-entry-doi"><a href="{{ paper.url | escape }}"><span class="index-doi-label">DOI</span> <span>{{ paper.doi | escape }}</span><i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+          </article>
+        </li>
+        {% endfor %}
+      </ol>
+    </section>
+    {% endfor %}
+  </div>
+
+  <div class="index-empty" id="publication-empty" hidden>
+    <i class="fas fa-search" aria-hidden="true"></i>
+    <h2>No matching publications</h2>
+    <button type="reset" form="publication-filters"><i class="fas fa-undo" aria-hidden="true"></i> Reset filters</button>
+  </div>
+
+  <footer class="index-footer">
+    <p>Sources: public ORCID and publisher metadata. 2026 additions verified against Google Scholar and publisher metadata on 26 September 2026.</p>
+    <a href="#publication-index">Back to top <i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+  </footer>
+</div>
+<script src="{{ '/assets/js/publication-index.js' | relative_url }}" defer></script>
