@@ -138,6 +138,143 @@ redirect_from:
   line-height: 1.62;
 }
 
+.about-page #profile > h1 {
+  margin-bottom: 12px;
+  font-size: 32px;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.about-page #profile > .section-lead {
+  max-width: 800px;
+  margin: 0 0 22px;
+  font-size: 17px;
+}
+
+.about-page .profile-links {
+  margin: 0 0 28px;
+  text-align: left;
+  letter-spacing: 0;
+}
+
+.about-page .profile-destinations {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.about-page .profile-destination {
+  display: grid;
+  grid-template-columns: 22px minmax(0, 1fr) 16px;
+  align-items: center;
+  gap: 14px;
+  min-height: 82px;
+  padding: 16px 4px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.about-page .profile-destination > .fas {
+  color: var(--teal);
+  font-size: 18px;
+}
+
+.about-page .profile-destination > .fa-arrow-right {
+  font-size: 13px;
+}
+
+.about-page .profile-destination strong {
+  display: block;
+  font-size: 19px;
+  line-height: 1.35;
+  font-weight: 700;
+}
+
+.about-page .profile-destination small {
+  display: block;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.about-page .profile-destination:hover {
+  color: var(--teal);
+  background: #f5f9f8;
+}
+
+.about-page .profile-guides {
+  display: grid;
+  grid-template-columns: 142px minmax(0, 1fr);
+  gap: 12px 20px;
+  align-items: baseline;
+  padding: 18px 4px 0;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.about-page .profile-guides-label {
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.about-page .profile-guides ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-page .profile-guides li {
+  margin: 0;
+  padding: 0;
+}
+
+.about-page .profile-guides li a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+  color: var(--teal);
+  text-decoration: none;
+}
+
+.about-page .profile-guides .fas {
+  flex: 0 0 auto;
+  font-size: 10px;
+}
+
+.about-page .profile-guides a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.about-page .profile-links a:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.about-page .profile-links :is(a, strong, small, span, li) {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  letter-spacing: 0;
+}
+
+@media (max-width: 620px) {
+  .about-page #profile > h1 { font-size: 28px; }
+  .about-page .profile-destinations { grid-template-columns: 1fr; gap: 0; }
+  .about-page .profile-destination + .profile-destination { border-top: 1px solid var(--line); }
+  .about-page .profile-destination { min-height: 72px; }
+  .about-page .profile-guides { grid-template-columns: 1fr; gap: 10px; }
+  .about-page .profile-guides ul { display: grid; gap: 4px; }
+  .about-page .profile-guides li a { padding: 7px 0; }
+}
+
 .profile-grid,
 .card-grid,
 .timeline-grid {
@@ -330,12 +467,32 @@ redirect_from:
 <div class="about-page">
   <section class="about-section" id="profile">
     <h1>Profile</h1>
-    <!-- visibility-entry --><p><a href="{{ '/research-highlights/' | relative_url }}">Research highlights and paper summaries</a> · <a href="{{ '/resources/' | relative_url }}">Research resources</a> · <a href="{{ '/zh/' | relative_url }}">中文介绍</a></p>
-    <p><a href="{{ '/research-highlights/#research-guides' | relative_url }}">Research guides: AI and self-regulated learning, programming agents, and GenAI adoption</a></p>
     <p class="section-lead">
       My work connects educational technology, artificial intelligence, learning environments, programming education,
       and learner behavior modeling.
     </p>
+    <nav class="profile-links" aria-label="Research links">
+      <div class="profile-destinations">
+        <a class="profile-destination" href="{{ '/research-highlights/' | relative_url }}">
+          <i class="fas fa-file-alt" aria-hidden="true"></i>
+          <span><strong>Research highlights</strong><small>Paper summaries</small></span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+        <a class="profile-destination" href="{{ '/resources/' | relative_url }}">
+          <i class="fas fa-folder-open" aria-hidden="true"></i>
+          <span><strong>Research resources</strong></span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+      <div class="profile-guides">
+        <a class="profile-guides-label" href="{{ '/research-highlights/#research-guides' | relative_url }}">Research guides</a>
+        <ul>
+          {% for guide in site.data.research_guides %}
+          <li><a href="{{ guide.url | relative_url }}"><span>{{ guide.short_title | escape }}</span><i class="fas fa-arrow-right" aria-hidden="true"></i></a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </nav>
     <div class="profile-grid">
       <article class="about-card" style="--accent: var(--teal);">
         <h3>Academic Background</h3>
