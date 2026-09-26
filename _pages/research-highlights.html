@@ -12,14 +12,9 @@ author_profile: true
 <div class="research-hub research-highlights-page">
   <header class="highlights-header">
     <h1>Research highlights</h1>
-    <p>Explore research questions, study designs and findings across four connected areas of educational technology.</p>
   </header>
 
-  <section id="research-guides" class="guide-entry-section" aria-labelledby="research-guides-title">
-    <div class="highlights-section-heading">
-      <h2 id="research-guides-title">Research guides</h2>
-      <p>Bilingual guides connect findings across studies, research designs and questions for future work.</p>
-    </div>
+  <section id="research-guides" class="guide-entry-section" aria-label="Research guides">
     <ul class="guide-entry-list">
       {% for guide in site.data.research_guides %}
       <li class="highlight-guide">
@@ -27,7 +22,7 @@ author_profile: true
           <span>0{{ forloop.index }}</span>
           <i class="fas {% cycle 'fa-layer-group', 'fa-code', 'fa-lightbulb' %}"></i>
         </div>
-        <h3><a href="{{ guide.url | relative_url }}">{{ guide.short_title | escape }}</a></h3>
+        <h2><a href="{{ guide.url | relative_url }}">{{ guide.short_title | escape }}</a></h2>
         <p class="highlight-guide-description">{{ guide.description | escape }}</p>
         <div class="highlight-guide-links">
           <a href="{{ guide.url | relative_url }}#english">Read research guide <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
@@ -37,18 +32,6 @@ author_profile: true
       {% endfor %}
     </ul>
   </section>
-
-  <div class="highlights-search" role="search" aria-labelledby="research-search-label">
-    <label id="research-search-label" for="research-search">Find a topic, method or paper</label>
-    <div class="highlights-search-row">
-      <div class="highlights-search-field">
-        <i class="fas fa-search" aria-hidden="true"></i>
-        <input id="research-search" type="search" placeholder="Try AI literacy, programming, meta-analysis or agents" autocomplete="off" aria-controls="research-results">
-        <button id="research-search-clear" type="button" aria-label="Clear search" title="Clear search" hidden><i class="fas fa-times" aria-hidden="true"></i></button>
-      </div>
-      <p id="research-count" role="status" aria-live="polite" aria-atomic="true">{{ site.data.research_highlights | size }} selected studies</p>
-    </div>
-  </div>
 
   <div id="research-results">
     {% assign groups = site.data.research_highlights | group_by: 'topic' %}
@@ -71,7 +54,6 @@ author_profile: true
       </div>
     </section>
     {% endfor %}
-    <p id="research-empty" class="highlights-empty" hidden>No studies found.</p>
   </div>
 
   <nav class="highlights-footer" aria-label="More research">
@@ -80,4 +62,3 @@ author_profile: true
     <a href="{{ '/zh/' | relative_url }}" lang="zh-Hans"><i class="fas fa-language" aria-hidden="true"></i> 中文介绍 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
   </nav>
 </div>
-<script src="{{ '/assets/js/research-highlights.js' | relative_url }}" defer></script>
