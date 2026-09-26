@@ -2,35 +2,39 @@
 layout: default
 ---
 {% assign guide = site.data.research_guides | where: "slug", page.guide_slug | first %}
-<link rel="stylesheet" href="{{ '/assets/css/research-guides.css' | relative_url }}">
+{% assign title_parts = page.title | split: ': ' %}
+<link rel="stylesheet" href="{{ '/assets/css/research-guides.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 <div class="research-guide">
-  <nav class="guide-breadcrumb" aria-label="Breadcrumb"><a href="{{ '/research-highlights/#research-guides' | relative_url }}">Research highlights</a> / Research guide</nav>
+  <nav class="guide-breadcrumb" aria-label="Breadcrumb"><a href="{{ '/research-highlights/#research-guides' | relative_url }}"><i class="fas fa-arrow-left" aria-hidden="true"></i> Research highlights</a></nav>
   <header class="guide-header">
-    <p class="guide-label">Research guide · English / <span lang="zh-Hans">中文</span></p>
-    <h1>{{ page.title | escape }}</h1>
-    <p class="guide-subtitle" lang="zh-Hans">{{ guide.title_zh | escape }}</p>
+    <p class="guide-label">Research guide</p>
+    <h1>{{ title_parts | first | escape }}{% if title_parts.size > 1 %}<span class="guide-subtitle">{{ title_parts | last | capitalize | escape }}</span>{% endif %}</h1>
   </header>
-  <nav class="guide-jump" aria-label="Guide sections">
-    <a href="#english" lang="en">English</a>
-    <a href="#chinese" lang="zh-Hans">中文导读</a>
-    <a href="#references" lang="en">References</a>
-    <a href="#related-papers" lang="en">Paper summaries</a>
-  </nav>
-  <div class="guide-body">{{ content }}</div>
-  <section id="related-papers" class="guide-related" lang="en" aria-labelledby="related-papers-title">
-    <h2 id="related-papers-title">Explore the papers</h2>
-    <p>Study summaries, published abstracts and citation downloads.</p>
-    <ul>
-      {% for slug in guide.paper_slugs %}{% assign paper = site.data.research_highlights | where: "slug", slug | first %}
-      <li><a href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a><span>{{ paper.journal | escape }} · {{ paper.year }}</span></li>
-      {% endfor %}
-    </ul>
-  </section>
-  <p class="guide-footer"><a href="{{ '/research-highlights/#research-guides' | relative_url }}">All research guides</a> · <a href="{{ '/publications/' | relative_url }}">Publication list</a></p>
+  <div class="guide-reading-layout">
+    <nav class="guide-toc" aria-labelledby="guide-toc-title">
+      <h2 id="guide-toc-title">On this page</h2>
+      <ol>
+        {% for section in guide.sections %}<li><a href="#{{ section.id }}">{{ section.title | escape }}</a></li>{% endfor %}
+        <li><a href="#references">References</a></li>
+        <li><a href="#related-papers">Explore the papers</a></li>
+      </ol>
+    </nav>
+    <div class="guide-reading-column">
+      <div class="guide-body">{{ content }}</div>
+      <section id="related-papers" class="guide-related" lang="en" aria-labelledby="related-papers-title">
+        <h2 id="related-papers-title">Explore the papers</h2>
+        <ol>
+          {% for slug in guide.paper_slugs %}{% assign paper = site.data.research_highlights | where: "slug", slug | first %}
+          <li><span class="guide-paper-number" aria-hidden="true">{{ forloop.index | prepend: '0' }}</span><div><p class="guide-paper-meta">{{ paper.journal | escape }} · {{ paper.year }}</p><h3><a href="{{ paper.url | relative_url }}">{{ paper.title | escape }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a></h3></div></li>
+          {% endfor %}
+        </ol>
+      </section>
+      <nav class="guide-more" aria-labelledby="guide-more-title">
+        <h2 id="guide-more-title">More research guides</h2>
+        <ul>{% for other in site.data.research_guides %}{% unless other.slug == guide.slug %}<li><a href="{{ other.url | relative_url }}">{{ other.short_title | escape }} <i class="fas fa-arrow-right" aria-hidden="true"></i></a></li>{% endunless %}{% endfor %}</ul>
+      </nav>
+      <p class="guide-footer"><a href="{{ '/research-highlights/#research-guides' | relative_url }}">All research guides</a><a href="{{ '/publications/' | relative_url }}">Publication list</a></p>
+    </div>
+  </div>
 </div>
-<script>
-// Keep native fragment navigation on these links when the site-wide smooth-scroll plugin is active.
-document.querySelectorAll('.guide-jump a').forEach(function(link){
-  link.addEventListener('click',function(event){event.stopImmediatePropagation();},true);
-});
-</script>
+<script src="{{ '/assets/js/research-guides.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
