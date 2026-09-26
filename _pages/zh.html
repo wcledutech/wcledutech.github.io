@@ -6,7 +6,64 @@ excerpt: "王成梁（Chengliang Wang）的教育技术研究，包括生成式�
 author_profile: true
 lang: "zh-Hans"
 locale: "zh_CN"
+topic_labels:
+  "Programming education and learning environments": "编程教育与学习环境"
+  "Generative AI policy and adoption": "生成式 AI 政策与采纳"
+  "Self-regulated learning and learning analytics": "自我调节学习与学习分析"
+  "Educational agents and simulation": "教育智能体与模拟"
 ---
-<link rel="stylesheet" href="{{ '/assets/css/research-highlights.css' | relative_url }}">
-<div class="research-hub" lang="zh-Hans"><h1>王成梁的研究</h1><p>Chengliang Wang · Australian Catholic University · Institute for Positive Psychology and Education</p><p>研究关注人工智能如何进入教学、学习与评价，结合编程教育、学习环境设计、学习者行为建模和教育政策分析。</p>
-{% for paper in site.data.research_highlights %}<article><h2><a href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a></h2><p>{{ paper.summary_zh | escape }}</p><p><a href="{{ paper.url | relative_url }}">研究介绍、原文入口与引用下载</a></p></article>{% endfor %}<p><a href="{{ '/research-highlights/' | relative_url }}">English research highlights</a> · <a href="https://scholar.google.com/citations?user=C_PHTMsAAAAJ&amp;hl=en">Google Scholar</a></p></div>
+<link rel="stylesheet" href="{{ '/assets/css/zh-research.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+{% assign groups = site.data.research_highlights | group_by: 'topic' %}
+<div class="zh-research" id="zh-research" lang="zh-Hans">
+  <nav class="zh-utility" aria-label="研究页面">
+    <a href="{{ '/research-highlights/' | relative_url }}" lang="en"><i class="fas fa-arrow-left" aria-hidden="true"></i> English research highlights</a>
+    <a href="https://scholar.google.com/citations?user=C_PHTMsAAAAJ&amp;hl=en" lang="en">Google Scholar <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+  </nav>
+
+  <header class="zh-header">
+    <h1>王成梁的研究</h1>
+    <p class="zh-name" lang="en">Chengliang Wang</p>
+    <p class="zh-affiliation" lang="en">Australian Catholic University <span aria-hidden="true">·</span> Institute for Positive Psychology and Education</p>
+    <p class="zh-introduction">研究关注人工智能如何进入教学、学习与评价，结合编程教育、学习环境设计、学习者行为建模和教育政策分析。</p>
+  </header>
+
+  <nav class="zh-topics" aria-labelledby="zh-topics-title">
+    <h2 id="zh-topics-title">研究主题</h2>
+    <ol>
+      {% for group in groups %}
+      <li><a href="#zh-topic-{{ forloop.index }}"><span class="zh-topic-number" aria-hidden="true">0{{ forloop.index }}</span><span>{{ page.topic_labels[group.name] | default: group.name | escape }}</span><i class="fas fa-arrow-down" aria-hidden="true"></i></a></li>
+      {% endfor %}
+    </ol>
+  </nav>
+
+  <div class="zh-studies">
+    {% for group in groups %}
+    <section class="zh-topic-section" id="zh-topic-{{ forloop.index }}" aria-labelledby="zh-topic-title-{{ forloop.index }}">
+      <header class="zh-topic-heading">
+        <span class="zh-topic-number" aria-hidden="true">0{{ forloop.index }}</span>
+        <h2 id="zh-topic-title-{{ forloop.index }}">{{ page.topic_labels[group.name] | default: group.name | escape }}</h2>
+        <span class="zh-topic-count">{{ group.items.size }} 篇研究</span>
+      </header>
+      {% for paper in group.items %}
+      <article class="zh-study" aria-labelledby="zh-study-{{ paper.slug }}">
+        <div class="zh-study-meta" lang="en">
+          <p class="zh-study-year">{{ paper.year }}</p>
+          <p class="zh-study-journal">{{ paper.journal | escape }}</p>
+        </div>
+        <div class="zh-study-body">
+          <h3 id="zh-study-{{ paper.slug }}" lang="en"><a href="{{ paper.url | relative_url }}">{{ paper.title | escape }}</a></h3>
+          <p class="zh-study-summary">{{ paper.summary_zh | escape }}</p>
+          <a class="zh-study-link" href="{{ paper.url | relative_url }}">研究介绍、原文入口与引用下载 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </article>
+      {% endfor %}
+    </section>
+    {% endfor %}
+  </div>
+
+  <nav class="zh-footer" aria-label="更多研究">
+    <a href="{{ '/publications/' | relative_url }}"><i class="fas fa-book-open" aria-hidden="true"></i> 完整论文列表</a>
+    <a href="#zh-research">返回顶部 <i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+  </nav>
+</div>
+<script src="{{ '/assets/js/zh-research.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
