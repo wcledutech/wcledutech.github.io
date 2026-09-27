@@ -3,6 +3,130 @@
   "jif_release_year": 2026,
   "verified_on": "2026-09-27",
   "owner_names": ["Chengliang Wang", "Chenliang Wang", "Cheng-liang Wang"],
+  "sole_last_author_priority": ["education_relevance", "jif"],
+  "education_relevance_levels": {
+    "education": 0,
+    "other": 1
+  },
+  "education_relevance": {
+    "10.1007/s10791-026-10445-x": {
+      "level": "education",
+      "reason": "Large language models in medical education."
+    },
+    "10.1007/s10791-026-10349-w": {
+      "level": "education",
+      "reason": "Artificial intelligence in medical education."
+    },
+    "10.1002/jcal.70277": {
+      "level": "education",
+      "reason": "Text-to-video AI in second language acquisition."
+    },
+    "10.1016/j.ijhm.2026.104703": {
+      "level": "other",
+      "reason": "Drone food-delivery consumer continuance, not teaching or learning."
+    },
+    "10.1016/j.ijme.2026.101430": {
+      "level": "education",
+      "reason": "Generative AI adoption in business schools."
+    },
+    "10.1016/j.ijme.2025.101323": {
+      "level": "education",
+      "reason": "Generative AI adoption in business schools."
+    },
+    "10.1080/10447318.2025.2504198": {
+      "level": "other",
+      "reason": "Anthropomorphism and trust in robotics without a central education setting."
+    },
+    "10.1080/10494820.2026.2672562": {
+      "level": "education",
+      "reason": "Generative AI agents and their educational roles."
+    },
+    "10.1057/s41599-025-04616-2": {
+      "level": "education",
+      "reason": "Technology-supported music education."
+    },
+    "10.1177/21582440251339961": {
+      "level": "education",
+      "reason": "Virtual laboratories for student experimental learning and learning outcomes.",
+      "source": "https://journals.sagepub.com/doi/10.1177/21582440251339961"
+    },
+    "10.1080/10494820.2025.2472288": {
+      "level": "education",
+      "reason": "Human-centered artificial intelligence in education."
+    },
+    "10.1007/s11116-025-10667-w": {
+      "level": "other",
+      "reason": "Electric-vehicle consumer continuance, not teaching or learning."
+    },
+    "10.1108/bfj-11-2024-1178": {
+      "level": "education",
+      "reason": "University learning performance and learning experience are the outcomes."
+    },
+    "10.1080/14647893.2025.2570912": {
+      "level": "education",
+      "reason": "Gamification in children's dance education."
+    },
+    "10.22318/icls2025.764364": {
+      "level": "education",
+      "reason": "AI agents in education."
+    },
+    "10.1007/s10639-024-12654-7": {
+      "level": "education",
+      "reason": "Learners' continued use of online education platforms."
+    },
+    "10.1007/s10639-024-12549-7": {
+      "level": "education",
+      "reason": "AIGC applications in education."
+    },
+    "10.1080/10494820.2024.2370477": {
+      "level": "education",
+      "reason": "Blended learning among business-school students."
+    },
+    "10.1057/s41599-024-02751-w": {
+      "level": "education",
+      "reason": "ChatGPT-supported programming problem solving and learning."
+    },
+    "10.1016/j.stueduc.2024.101423": {
+      "level": "education",
+      "reason": "Assessment as learning."
+    },
+    "10.1057/s41599-024-02718-x": {
+      "level": "other",
+      "reason": "Digital art exhibitions and psychological well-being, not an instructional intervention."
+    },
+    "10.1057/s41599-024-03658-2": {
+      "level": "other",
+      "reason": "Older adults' technology acceptance without a central teaching or learning focus."
+    },
+    "10.1088/1742-6596/2722/1/012008": {
+      "level": "other",
+      "reason": "Robot path-planning algorithms without an education application."
+    },
+    "10.1145/3704137.3704189": {
+      "level": "education",
+      "reason": "Humanistic artificial intelligence in education."
+    },
+    "10.22318/icls2024.604132": {
+      "level": "education",
+      "reason": "Educational systems' response to pandemics."
+    },
+    "10.1057/s41599-023-01904-7": {
+      "level": "education",
+      "reason": "Blended-learning adoption among university students."
+    },
+    "10.1177/21582440231210551": {
+      "level": "other",
+      "reason": "Students are consumers of car sharing; teaching or learning is not the outcome."
+    },
+    "10.1177/21582440231212160": {
+      "level": "education",
+      "reason": "Emergency remote teaching in vocational colleges."
+    },
+    "10.1145/3629296.3629370": {
+      "level": "education",
+      "reason": "Artificial intelligence in language learning."
+    }
+  },
   "conference_dois": [
     "10.1007/978-3-032-29791-4_24",
     "10.1007/978-3-031-99261-2_20",

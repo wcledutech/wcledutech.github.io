@@ -1,6 +1,7 @@
 """Keep the server-rendered index in its curated yearly publication order."""
 
 import argparse
+from collections import defaultdict
 import html
 import json
 from pathlib import Path
@@ -35,9 +36,28 @@ def author_position(paper, policy):
     return positions[0]
 
 
+def is_last_author(paper, policy):
+    # A first/co-first credit keeps its existing priority, even in the last slot.
+    return (paper["authors"][-1] in policy["owner_names"]
+            and author_position(paper, policy) != 1)
+
+
+def corresponding_rank(paper, policy):
+    correspondents = set(paper.get("corresponding_authors", []))
+    if not correspondents.intersection(policy["owner_names"]):
+        return 2
+    return 0 if len(correspondents) == 1 else 1
+
+
 def ordered_publications(papers, policy):
     metrics = {normalized(name): entry["value"]
                for name, entry in policy["journal_impact_factors"].items()}
+
+    def verified_jif(paper):
+        journal = normalized(paper["journal"])
+        if journal not in metrics or metrics[journal] is None:
+            raise ValueError(f"Verify a {policy['jif_year']} JIF for {paper['journal']}")
+        return metrics[journal]
 
     def key(paper):
         group = publication_group(paper, policy)
@@ -45,14 +65,37 @@ def ordered_publications(papers, policy):
         impact_factor = 0
         # Only first/co-first journal papers use JIF as the next ordering key.
         if group == 0 and position == 1:
-            journal = normalized(paper["journal"])
-            if journal not in metrics or metrics[journal] is None:
-                raise ValueError(f"Verify a {policy['jif_year']} JIF for {paper['journal']}")
-            impact_factor = metrics[journal]
+            impact_factor = verified_jif(paper)
         return (-int(paper["year"]), group, position, -impact_factor,
                 normalized(paper["title"]), paper["doi"].lower())
 
-    return sorted(papers, key=key)
+    def last_author_key(paper):
+        role = corresponding_rank(paper, policy)
+        relevance, impact_factor = 0, 0
+        if role == 0:
+            entry = policy["education_relevance"].get(paper["doi"].lower())
+            if entry is None:
+                raise ValueError(f"Review education relevance for {paper['doi']}")
+            relevance = policy["education_relevance_levels"][entry["level"]]
+            if publication_group(paper, policy) == 0:
+                impact_factor = verified_jif(paper)
+        criteria = {"education_relevance": relevance, "jif": -impact_factor}
+        return (role, *(criteria[name] for name in policy["sole_last_author_priority"]),
+                author_position(paper, policy), normalized(paper["title"]),
+                paper["doi"].lower())
+
+    ordered = sorted(papers, key=key)
+    last_author_slots = defaultdict(list)
+    for index, paper in enumerate(ordered):
+        if is_last_author(paper, policy):
+            last_author_slots[(int(paper["year"]), publication_group(paper, policy))].append(index)
+
+    # Reorder only last-author slots within a year/type, leaving all others in place.
+    for slots in last_author_slots.values():
+        last_author_papers = sorted((ordered[i] for i in slots), key=last_author_key)
+        for index, paper in zip(slots, last_author_papers):
+            ordered[index] = paper
+    return ordered
 
 
 def main():

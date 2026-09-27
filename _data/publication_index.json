@@ -23,6 +23,123 @@
     ]
   },
   {
+    "doi": "10.1016/j.ijme.2026.101430",
+    "title": "From information evaluation to technology use: Generative AI adoption in Chinese business schools",
+    "authors": [
+      "Teng Yu",
+      "Jian Dai",
+      "Xiaojiao Chen",
+      "Chengliang Wang"
+    ],
+    "year": 2026,
+    "journal": "The International Journal of Management Education",
+    "category": "journal-article",
+    "citation_text": "Yu, T., Dai, J., Chen, X., & Wang, C. (2026). From information evaluation to technology use: Generative AI adoption in Chinese business schools. The International Journal of Management Education, 24(3), 101430. https://doi.org/10.1016/j.ijme.2026.101430",
+    "url": "https://doi.org/10.1016/j.ijme.2026.101430",
+    "corresponding_authors": [
+      "Chengliang Wang"
+    ]
+  },
+  {
+    "doi": "10.1016/j.ijme.2025.101323",
+    "title": "To use or not to use? Generative AI adoption in Chinese business schools",
+    "authors": [
+      "Teng Yu",
+      "Jian Dai",
+      "Xiaojiao Chen",
+      "Chengliang Wang"
+    ],
+    "year": 2026,
+    "journal": "The International Journal of Management Education",
+    "category": "journal-article",
+    "citation_text": "Yu, T., Dai, J., Chen, X., & Wang, C. (2026). To use or not to use? Generative AI adoption in Chinese business schools. The International Journal of Management Education, 24(1), 101323. https://doi.org/10.1016/j.ijme.2025.101323",
+    "url": "https://doi.org/10.1016/j.ijme.2025.101323",
+    "corresponding_authors": [
+      "Chengliang Wang"
+    ],
+    "highly_cited": true,
+    "hot_paper_years": [
+      2026
+    ]
+  },
+  {
+    "doi": "10.1080/10494820.2026.2672562",
+    "title": "GenAI-agents in education: a systematic review of macro-level trends, educational roles, theoretical foundations and future agendas",
+    "authors": [
+      "Xingchang Liu",
+      "Qianwen Tang",
+      "Wanting Wu",
+      "Xiaojiao Chen",
+      "Chengliang Wang"
+    ],
+    "year": 2026,
+    "journal": "Interactive Learning Environments",
+    "category": "journal-article",
+    "citation_text": "Liu, X., Tang, Q., Wu, W., Chen, X., & Wang, C. (2026). GenAI-agents in education: a systematic review of macro-level trends, educational roles, theoretical foundations and future agendas. Interactive Learning Environments, 1-23. https://doi.org/10.1080/10494820.2026.2672562",
+    "url": "https://doi.org/10.1080/10494820.2026.2672562",
+    "corresponding_authors": [
+      "Chengliang Wang"
+    ]
+  },
+  {
+    "doi": "10.1111/bjet.70058",
+    "title": "AI support in self-regulated learning: A decade of technological evolution and meta-analysis",
+    "authors": [
+      "Jun Xu",
+      "Yuying Luo",
+      "Chengliang Wang",
+      "Mengji Wang",
+      "Yonghe Wu"
+    ],
+    "year": 2026,
+    "journal": "British Journal of Educational Technology",
+    "category": "journal-article",
+    "citation_text": "Xu, J., Luo, Y., Wang, C., Wang, M., & Wu, Y. (2026). AI support in self-regulated learning: A decade of technological evolution and meta-analysis. British Journal of Educational Technology, 57(5), 1191-1220. https://doi.org/10.1111/bjet.70058",
+    "url": "https://doi.org/10.1111/bjet.70058",
+    "co_first_authors": [
+      "Jun Xu",
+      "Yuying Luo"
+    ],
+    "corresponding_authors": [
+      "Yonghe Wu"
+    ],
+    "highly_cited": true
+  },
+  {
+    "doi": "10.1002/jcal.70277",
+    "title": "Reshaping the Language Learning Landscape: Factors Influencing Learners' Use of Open-Source Text-to-Video AI (Open-Sora) in Second Language Acquisition",
+    "authors": [
+      "Yang Jiang",
+      "Chengliang Wang"
+    ],
+    "year": 2026,
+    "journal": "Journal of Computer Assisted Learning",
+    "category": "journal-article",
+    "citation_text": "Jiang, Y., & Wang, C. (2026). Reshaping the Language Learning Landscape: Factors Influencing Learners' Use of Open-Source Text-to-Video AI (Open-Sora) in Second Language Acquisition. Journal of Computer Assisted Learning, 42(4), e70277. https://doi.org/10.1002/jcal.70277",
+    "url": "https://doi.org/10.1002/jcal.70277",
+    "corresponding_authors": [
+      "Chengliang Wang"
+    ]
+  },
+  {
+    "doi": "10.1108/ajim-01-2026-0111",
+    "title": "Trust the messenger, then the message: unpacking the cross-route logic of danmaku engagement",
+    "authors": [
+      "Jun Xu",
+      "Yuying Luo",
+      "Chengliang Wang",
+      "Huina Wu"
+    ],
+    "year": 2026,
+    "journal": "Aslib Journal of Information Management",
+    "category": "journal-article",
+    "citation_text": "Xu, J., Luo, Y., Wang, C., & Wu, H. (2026). Trust the messenger, then the message: unpacking the cross-route logic of danmaku engagement. Aslib Journal of Information Management, 1-26. https://doi.org/10.1108/ajim-01-2026-0111",
+    "url": "https://doi.org/10.1108/ajim-01-2026-0111",
+    "corresponding_authors": [
+      "Yuying Luo"
+    ]
+  },
+  {
     "doi": "10.1007/s10791-026-10445-x",
     "title": "Bibliometric mapping and evolutionary logic of large language models reshaping medical education 2022–2026",
     "authors": [
@@ -55,46 +172,6 @@
     ]
   },
   {
-    "doi": "10.1002/jcal.70277",
-    "title": "Reshaping the Language Learning Landscape: Factors Influencing Learners' Use of Open-Source Text-to-Video AI (Open-Sora) in Second Language Acquisition",
-    "authors": [
-      "Yang Jiang",
-      "Chengliang Wang"
-    ],
-    "year": 2026,
-    "journal": "Journal of Computer Assisted Learning",
-    "category": "journal-article",
-    "citation_text": "Jiang, Y., & Wang, C. (2026). Reshaping the Language Learning Landscape: Factors Influencing Learners' Use of Open-Source Text-to-Video AI (Open-Sora) in Second Language Acquisition. Journal of Computer Assisted Learning, 42(4), e70277. https://doi.org/10.1002/jcal.70277",
-    "url": "https://doi.org/10.1002/jcal.70277",
-    "corresponding_authors": [
-      "Chengliang Wang"
-    ]
-  },
-  {
-    "doi": "10.1111/bjet.70058",
-    "title": "AI support in self-regulated learning: A decade of technological evolution and meta-analysis",
-    "authors": [
-      "Jun Xu",
-      "Yuying Luo",
-      "Chengliang Wang",
-      "Mengji Wang",
-      "Yonghe Wu"
-    ],
-    "year": 2026,
-    "journal": "British Journal of Educational Technology",
-    "category": "journal-article",
-    "citation_text": "Xu, J., Luo, Y., Wang, C., Wang, M., & Wu, Y. (2026). AI support in self-regulated learning: A decade of technological evolution and meta-analysis. British Journal of Educational Technology, 57(5), 1191-1220. https://doi.org/10.1111/bjet.70058",
-    "url": "https://doi.org/10.1111/bjet.70058",
-    "co_first_authors": [
-      "Jun Xu",
-      "Yuying Luo"
-    ],
-    "corresponding_authors": [
-      "Yonghe Wu"
-    ],
-    "highly_cited": true
-  },
-  {
     "doi": "10.1016/j.ijhm.2026.104703",
     "title": "Integrating explanation and prediction: A PLS-MGA-ANN study of drone food delivery continuance intention",
     "authors": [
@@ -112,21 +189,22 @@
     ]
   },
   {
-    "doi": "10.1108/ajim-01-2026-0111",
-    "title": "Trust the messenger, then the message: unpacking the cross-route logic of danmaku engagement",
+    "doi": "10.1080/10447318.2025.2504198",
+    "title": "From Perception to Trust: The Multidimensional Landscape of Anthropomorphism in Robotics",
     "authors": [
-      "Jun Xu",
-      "Yuying Luo",
-      "Chengliang Wang",
-      "Huina Wu"
+      "Xianru Shang",
+      "Zijian Liu",
+      "Chen Gong",
+      "Zhengyang He",
+      "Chengliang Wang"
     ],
     "year": 2026,
-    "journal": "Aslib Journal of Information Management",
+    "journal": "International Journal of Human–Computer Interaction",
     "category": "journal-article",
-    "citation_text": "Xu, J., Luo, Y., Wang, C., & Wu, H. (2026). Trust the messenger, then the message: unpacking the cross-route logic of danmaku engagement. Aslib Journal of Information Management, 1-26. https://doi.org/10.1108/ajim-01-2026-0111",
-    "url": "https://doi.org/10.1108/ajim-01-2026-0111",
+    "citation_text": "Shang, X., Liu, Z., Gong, C., He, Z., & Wang, C. (2026). From Perception to Trust: The Multidimensional Landscape of Anthropomorphism in Robotics. International Journal of Human–Computer Interaction, 42(1), 78-100. https://doi.org/10.1080/10447318.2025.2504198",
+    "url": "https://doi.org/10.1080/10447318.2025.2504198",
     "corresponding_authors": [
-      "Yuying Luo"
+      "Chengliang Wang"
     ]
   },
   {
@@ -149,6 +227,53 @@
     ]
   },
   {
+    "doi": "10.1080/10494820.2026.2713873",
+    "title": "Configurational pathways of programming learning beliefs and self-efficacy among college students using intelligent agents: evidence from GenAI literacy and agent usage experience",
+    "authors": [
+      "Junwu Yang",
+      "Haoming Wang",
+      "Mengyao Chen",
+      "Xiaojiao Chen",
+      "Jingyao Wang",
+      "Chengliang Wang"
+    ],
+    "year": 2026,
+    "journal": "Interactive Learning Environments",
+    "category": "journal-article",
+    "citation_text": "Yang, J., Wang, H., Chen, M., Chen, X., Wang, J., & Wang, C. (2026). Configurational pathways of programming learning beliefs and self-efficacy among college students using intelligent agents: evidence from GenAI literacy and agent usage experience. Interactive Learning Environments, 1-33. https://doi.org/10.1080/10494820.2026.2713873",
+    "url": "https://doi.org/10.1080/10494820.2026.2713873",
+    "corresponding_authors": [
+      "Jingyao Wang",
+      "Chengliang Wang"
+    ]
+  },
+  {
+    "doi": "10.1080/10447318.2026.2692021",
+    "title": "Human-AI Collaborative Learning Ecosystem: Effects of Multi-Agent-Based Programming Learning on Learning Outcomes, Computational Thinking, and Behavioral Patterns in Higher Education",
+    "authors": [
+      "Zihan Xiao",
+      "Haoming Wang",
+      "Sheng Jin",
+      "Yutong Lai",
+      "Yue Cao",
+      "Yuxi Zhang",
+      "Chengliang Wang"
+    ],
+    "year": 2026,
+    "journal": "International Journal of Human–Computer Interaction",
+    "category": "journal-article",
+    "citation_text": "Xiao, Z., Wang, H., Jin, S., Lai, Y., Cao, Y., Zhang, Y., & Wang, C. (2026). Human-AI Collaborative Learning Ecosystem: Effects of Multi-Agent-Based Programming Learning on Learning Outcomes, Computational Thinking, and Behavioral Patterns in Higher Education. International Journal of Human–Computer Interaction, 1-22. https://doi.org/10.1080/10447318.2026.2692021",
+    "url": "https://doi.org/10.1080/10447318.2026.2692021",
+    "co_first_authors": [
+      "Zihan Xiao",
+      "Haoming Wang"
+    ],
+    "corresponding_authors": [
+      "Haoming Wang",
+      "Chengliang Wang"
+    ]
+  },
+  {
     "doi": "10.1080/13675567.2025.2520550",
     "title": "Factors influencing the adoption of generative AI in supply chain management: an empirical study based on task-technology fit and the theory of planned behaviour",
     "authors": [
@@ -164,24 +289,6 @@
     "url": "https://doi.org/10.1080/13675567.2025.2520550",
     "corresponding_authors": [
       "Teng Yu"
-    ]
-  },
-  {
-    "doi": "10.1016/j.ijme.2026.101430",
-    "title": "From information evaluation to technology use: Generative AI adoption in Chinese business schools",
-    "authors": [
-      "Teng Yu",
-      "Jian Dai",
-      "Xiaojiao Chen",
-      "Chengliang Wang"
-    ],
-    "year": 2026,
-    "journal": "The International Journal of Management Education",
-    "category": "journal-article",
-    "citation_text": "Yu, T., Dai, J., Chen, X., & Wang, C. (2026). From information evaluation to technology use: Generative AI adoption in Chinese business schools. The International Journal of Management Education, 24(3), 101430. https://doi.org/10.1016/j.ijme.2026.101430",
-    "url": "https://doi.org/10.1016/j.ijme.2026.101430",
-    "corresponding_authors": [
-      "Chengliang Wang"
     ]
   },
   {
@@ -239,28 +346,6 @@
     ]
   },
   {
-    "doi": "10.1016/j.ijme.2025.101323",
-    "title": "To use or not to use? Generative AI adoption in Chinese business schools",
-    "authors": [
-      "Teng Yu",
-      "Jian Dai",
-      "Xiaojiao Chen",
-      "Chengliang Wang"
-    ],
-    "year": 2026,
-    "journal": "The International Journal of Management Education",
-    "category": "journal-article",
-    "citation_text": "Yu, T., Dai, J., Chen, X., & Wang, C. (2026). To use or not to use? Generative AI adoption in Chinese business schools. The International Journal of Management Education, 24(1), 101323. https://doi.org/10.1016/j.ijme.2025.101323",
-    "url": "https://doi.org/10.1016/j.ijme.2025.101323",
-    "corresponding_authors": [
-      "Chengliang Wang"
-    ],
-    "highly_cited": true,
-    "hot_paper_years": [
-      2026
-    ]
-  },
-  {
     "doi": "10.1108/ijchm-02-2026-0155",
     "title": "Virtual streamers, real purchases: The roles of anthropomorphism, interactivity, and presence in e-commerce live streaming",
     "authors": [
@@ -294,91 +379,6 @@
     "url": "https://doi.org/10.1080/19368623.2026.2616771",
     "corresponding_authors": [
       "Junyun Liao"
-    ]
-  },
-  {
-    "doi": "10.1080/10447318.2025.2504198",
-    "title": "From Perception to Trust: The Multidimensional Landscape of Anthropomorphism in Robotics",
-    "authors": [
-      "Xianru Shang",
-      "Zijian Liu",
-      "Chen Gong",
-      "Zhengyang He",
-      "Chengliang Wang"
-    ],
-    "year": 2026,
-    "journal": "International Journal of Human–Computer Interaction",
-    "category": "journal-article",
-    "citation_text": "Shang, X., Liu, Z., Gong, C., He, Z., & Wang, C. (2026). From Perception to Trust: The Multidimensional Landscape of Anthropomorphism in Robotics. International Journal of Human–Computer Interaction, 42(1), 78-100. https://doi.org/10.1080/10447318.2025.2504198",
-    "url": "https://doi.org/10.1080/10447318.2025.2504198",
-    "corresponding_authors": [
-      "Chengliang Wang"
-    ]
-  },
-  {
-    "doi": "10.1080/10494820.2026.2672562",
-    "title": "GenAI-agents in education: a systematic review of macro-level trends, educational roles, theoretical foundations and future agendas",
-    "authors": [
-      "Xingchang Liu",
-      "Qianwen Tang",
-      "Wanting Wu",
-      "Xiaojiao Chen",
-      "Chengliang Wang"
-    ],
-    "year": 2026,
-    "journal": "Interactive Learning Environments",
-    "category": "journal-article",
-    "citation_text": "Liu, X., Tang, Q., Wu, W., Chen, X., & Wang, C. (2026). GenAI-agents in education: a systematic review of macro-level trends, educational roles, theoretical foundations and future agendas. Interactive Learning Environments, 1-23. https://doi.org/10.1080/10494820.2026.2672562",
-    "url": "https://doi.org/10.1080/10494820.2026.2672562",
-    "corresponding_authors": [
-      "Chengliang Wang"
-    ]
-  },
-  {
-    "doi": "10.1080/10494820.2026.2713873",
-    "title": "Configurational pathways of programming learning beliefs and self-efficacy among college students using intelligent agents: evidence from GenAI literacy and agent usage experience",
-    "authors": [
-      "Junwu Yang",
-      "Haoming Wang",
-      "Mengyao Chen",
-      "Xiaojiao Chen",
-      "Jingyao Wang",
-      "Chengliang Wang"
-    ],
-    "year": 2026,
-    "journal": "Interactive Learning Environments",
-    "category": "journal-article",
-    "citation_text": "Yang, J., Wang, H., Chen, M., Chen, X., Wang, J., & Wang, C. (2026). Configurational pathways of programming learning beliefs and self-efficacy among college students using intelligent agents: evidence from GenAI literacy and agent usage experience. Interactive Learning Environments, 1-33. https://doi.org/10.1080/10494820.2026.2713873",
-    "url": "https://doi.org/10.1080/10494820.2026.2713873",
-    "corresponding_authors": [
-      "Jingyao Wang",
-      "Chengliang Wang"
-    ]
-  },
-  {
-    "doi": "10.1080/10447318.2026.2692021",
-    "title": "Human-AI Collaborative Learning Ecosystem: Effects of Multi-Agent-Based Programming Learning on Learning Outcomes, Computational Thinking, and Behavioral Patterns in Higher Education",
-    "authors": [
-      "Zihan Xiao",
-      "Haoming Wang",
-      "Sheng Jin",
-      "Yutong Lai",
-      "Yue Cao",
-      "Yuxi Zhang",
-      "Chengliang Wang"
-    ],
-    "year": 2026,
-    "journal": "International Journal of Human–Computer Interaction",
-    "category": "journal-article",
-    "citation_text": "Xiao, Z., Wang, H., Jin, S., Lai, Y., Cao, Y., Zhang, Y., & Wang, C. (2026). Human-AI Collaborative Learning Ecosystem: Effects of Multi-Agent-Based Programming Learning on Learning Outcomes, Computational Thinking, and Behavioral Patterns in Higher Education. International Journal of Human–Computer Interaction, 1-22. https://doi.org/10.1080/10447318.2026.2692021",
-    "url": "https://doi.org/10.1080/10447318.2026.2692021",
-    "co_first_authors": [
-      "Zihan Xiao",
-      "Haoming Wang"
-    ],
-    "corresponding_authors": [
-      "Haoming Wang",
-      "Chengliang Wang"
     ]
   },
   {
@@ -558,19 +558,25 @@
     "highly_cited": true
   },
   {
-    "doi": "10.1057/s41599-025-04616-2",
-    "title": "Empowering music education with technology: a bibliometric perspective",
+    "doi": "10.1080/10494820.2025.2472288",
+    "title": "The journey of challenges and triumphs: a systematic literature review of the dynamic evolution of human-centered artificial intelligence in education",
     "authors": [
-      "Yidi Ma",
+      "Xiaojiao Chen",
+      "Zhebing Hu",
+      "Yuanyuan Li",
       "Chengliang Wang"
     ],
     "year": 2025,
-    "journal": "Humanities and Social Sciences Communications",
+    "journal": "Interactive Learning Environments",
     "category": "journal-article",
-    "citation_text": "Ma, Y., & Wang, C. (2025). Empowering music education with technology: a bibliometric perspective. Humanities and Social Sciences Communications, 12(1), 345. https://doi.org/10.1057/s41599-025-04616-2",
-    "url": "https://doi.org/10.1057/s41599-025-04616-2",
+    "citation_text": "Chen, X., Hu, Z., Li, Y., & Wang, C. (2025). The journey of challenges and triumphs: a systematic literature review of the dynamic evolution of human-centered artificial intelligence in education. Interactive Learning Environments, 33(8), 4906-4931. https://doi.org/10.1080/10494820.2025.2472288",
+    "url": "https://doi.org/10.1080/10494820.2025.2472288",
     "corresponding_authors": [
       "Chengliang Wang"
+    ],
+    "highly_cited": true,
+    "hot_paper_years": [
+      2026
     ]
   },
   {
@@ -609,20 +615,18 @@
     ]
   },
   {
-    "doi": "10.1007/s12144-025-08052-y",
-    "title": "Motivation and mechanism of university volunteers’ participation in major sport events: a grounded theory study on volunteers for the Hangzhou Asian games",
+    "doi": "10.1057/s41599-025-04616-2",
+    "title": "Empowering music education with technology: a bibliometric perspective",
     "authors": [
-      "Jing Chen",
-      "Yulong Tang",
+      "Yidi Ma",
       "Chengliang Wang"
     ],
     "year": 2025,
-    "journal": "Current Psychology",
+    "journal": "Humanities and Social Sciences Communications",
     "category": "journal-article",
-    "citation_text": "Chen, J., Tang, Y., & Wang, C. (2025). Motivation and mechanism of university volunteers’ participation in major sport events: a grounded theory study on volunteers for the Hangzhou Asian games. Current Psychology, 44(14), 13339-13366. https://doi.org/10.1007/s12144-025-08052-y",
-    "url": "https://doi.org/10.1007/s12144-025-08052-y",
+    "citation_text": "Ma, Y., & Wang, C. (2025). Empowering music education with technology: a bibliometric perspective. Humanities and Social Sciences Communications, 12(1), 345. https://doi.org/10.1057/s41599-025-04616-2",
+    "url": "https://doi.org/10.1057/s41599-025-04616-2",
     "corresponding_authors": [
-      "Yulong Tang",
       "Chengliang Wang"
     ]
   },
@@ -646,6 +650,25 @@
     ]
   },
   {
+    "doi": "10.1108/bfj-11-2024-1178",
+    "title": "Fuel for the mind: exploring coffee’s impact on university learning performance and experience",
+    "authors": [
+      "Jingyao Wang",
+      "Xiaojiao Chen",
+      "Zihui Hu",
+      "Junwu Yang",
+      "Chengliang Wang"
+    ],
+    "year": 2025,
+    "journal": "British Food Journal",
+    "category": "journal-article",
+    "citation_text": "Wang, J., Chen, X., Hu, Z., Yang, J., & Wang, C. (2025). Fuel for the mind: exploring coffee’s impact on university learning performance and experience. British Food Journal, 127(12), 4767-4788. https://doi.org/10.1108/bfj-11-2024-1178",
+    "url": "https://doi.org/10.1108/bfj-11-2024-1178",
+    "corresponding_authors": [
+      "Chengliang Wang"
+    ]
+  },
+  {
     "doi": "10.1177/21582440251339961",
     "title": "Before and After: How Did the Pandemic Reshape Virtual Laboratory Research?",
     "authors": [
@@ -663,6 +686,62 @@
       "Chengliang Wang"
     ],
     "highly_cited": true
+  },
+  {
+    "doi": "10.1080/14647893.2025.2570912",
+    "title": "Thinking outside the box: a systematic review of gamification trends in children’s dance education",
+    "authors": [
+      "Weishan Liu",
+      "Lijiao Chen",
+      "Xintong Zhong",
+      "Wen Liu",
+      "Xiaojiao Chen",
+      "Chengliang Wang"
+    ],
+    "year": 2025,
+    "journal": "Research in Dance Education",
+    "category": "journal-article",
+    "citation_text": "Liu, W., Chen, L., Zhong, X., Liu, W., Chen, X., & Wang, C. (2025). Thinking outside the box: a systematic review of gamification trends in children’s dance education. Research in Dance Education, 1-30. https://doi.org/10.1080/14647893.2025.2570912",
+    "url": "https://doi.org/10.1080/14647893.2025.2570912",
+    "corresponding_authors": [
+      "Chengliang Wang"
+    ]
+  },
+  {
+    "doi": "10.1007/s11116-025-10667-w",
+    "title": "What drives continuance intention to use electric vehicles: an extension of expectation-confirmation model",
+    "authors": [
+      "Teng Yu",
+      "Ai Ping Teoh",
+      "Qing Bian",
+      "Chengliang Wang"
+    ],
+    "year": 2025,
+    "journal": "Transportation",
+    "category": "journal-article",
+    "citation_text": "Yu, T., Teoh, A. P., Bian, Q., & Wang, C. (2025). What drives continuance intention to use electric vehicles: an extension of expectation-confirmation model. Transportation. https://doi.org/10.1007/s11116-025-10667-w",
+    "url": "https://doi.org/10.1007/s11116-025-10667-w",
+    "corresponding_authors": [
+      "Chengliang Wang"
+    ]
+  },
+  {
+    "doi": "10.1007/s12144-025-08052-y",
+    "title": "Motivation and mechanism of university volunteers’ participation in major sport events: a grounded theory study on volunteers for the Hangzhou Asian games",
+    "authors": [
+      "Jing Chen",
+      "Yulong Tang",
+      "Chengliang Wang"
+    ],
+    "year": 2025,
+    "journal": "Current Psychology",
+    "category": "journal-article",
+    "citation_text": "Chen, J., Tang, Y., & Wang, C. (2025). Motivation and mechanism of university volunteers’ participation in major sport events: a grounded theory study on volunteers for the Hangzhou Asian games. Current Psychology, 44(14), 13339-13366. https://doi.org/10.1007/s12144-025-08052-y",
+    "url": "https://doi.org/10.1007/s12144-025-08052-y",
+    "corresponding_authors": [
+      "Yulong Tang",
+      "Chengliang Wang"
+    ]
   },
   {
     "doi": "10.1016/j.techsoc.2025.102949",
@@ -720,28 +799,6 @@
     ]
   },
   {
-    "doi": "10.1080/10494820.2025.2472288",
-    "title": "The journey of challenges and triumphs: a systematic literature review of the dynamic evolution of human-centered artificial intelligence in education",
-    "authors": [
-      "Xiaojiao Chen",
-      "Zhebing Hu",
-      "Yuanyuan Li",
-      "Chengliang Wang"
-    ],
-    "year": 2025,
-    "journal": "Interactive Learning Environments",
-    "category": "journal-article",
-    "citation_text": "Chen, X., Hu, Z., Li, Y., & Wang, C. (2025). The journey of challenges and triumphs: a systematic literature review of the dynamic evolution of human-centered artificial intelligence in education. Interactive Learning Environments, 33(8), 4906-4931. https://doi.org/10.1080/10494820.2025.2472288",
-    "url": "https://doi.org/10.1080/10494820.2025.2472288",
-    "corresponding_authors": [
-      "Chengliang Wang"
-    ],
-    "highly_cited": true,
-    "hot_paper_years": [
-      2026
-    ]
-  },
-  {
     "doi": "10.1108/ijmce-07-2023-0064",
     "title": "The role of teachers’ direct and emotional mentoring in shaping undergraduates’ research aspirations: a social cognitive career theory perspective",
     "authors": [
@@ -757,24 +814,6 @@
     "url": "https://doi.org/10.1108/ijmce-07-2023-0064",
     "corresponding_authors": [
       "Jun Xu"
-    ]
-  },
-  {
-    "doi": "10.1007/s11116-025-10667-w",
-    "title": "What drives continuance intention to use electric vehicles: an extension of expectation-confirmation model",
-    "authors": [
-      "Teng Yu",
-      "Ai Ping Teoh",
-      "Qing Bian",
-      "Chengliang Wang"
-    ],
-    "year": 2025,
-    "journal": "Transportation",
-    "category": "journal-article",
-    "citation_text": "Yu, T., Teoh, A. P., Bian, Q., & Wang, C. (2025). What drives continuance intention to use electric vehicles: an extension of expectation-confirmation model. Transportation. https://doi.org/10.1007/s11116-025-10667-w",
-    "url": "https://doi.org/10.1007/s11116-025-10667-w",
-    "corresponding_authors": [
-      "Chengliang Wang"
     ]
   },
   {
@@ -798,25 +837,6 @@
     "highly_cited": true,
     "hot_paper_years": [
       2026
-    ]
-  },
-  {
-    "doi": "10.1108/bfj-11-2024-1178",
-    "title": "Fuel for the mind: exploring coffee’s impact on university learning performance and experience",
-    "authors": [
-      "Jingyao Wang",
-      "Xiaojiao Chen",
-      "Zihui Hu",
-      "Junwu Yang",
-      "Chengliang Wang"
-    ],
-    "year": 2025,
-    "journal": "British Food Journal",
-    "category": "journal-article",
-    "citation_text": "Wang, J., Chen, X., Hu, Z., Yang, J., & Wang, C. (2025). Fuel for the mind: exploring coffee’s impact on university learning performance and experience. British Food Journal, 127(12), 4767-4788. https://doi.org/10.1108/bfj-11-2024-1178",
-    "url": "https://doi.org/10.1108/bfj-11-2024-1178",
-    "corresponding_authors": [
-      "Chengliang Wang"
     ]
   },
   {
@@ -876,26 +896,6 @@
     "url": "https://doi.org/10.1002/rev3.70044",
     "corresponding_authors": [
       "Yuhui Jing"
-    ]
-  },
-  {
-    "doi": "10.1080/14647893.2025.2570912",
-    "title": "Thinking outside the box: a systematic review of gamification trends in children’s dance education",
-    "authors": [
-      "Weishan Liu",
-      "Lijiao Chen",
-      "Xintong Zhong",
-      "Wen Liu",
-      "Xiaojiao Chen",
-      "Chengliang Wang"
-    ],
-    "year": 2025,
-    "journal": "Research in Dance Education",
-    "category": "journal-article",
-    "citation_text": "Liu, W., Chen, L., Zhong, X., Liu, W., Chen, X., & Wang, C. (2025). Thinking outside the box: a systematic review of gamification trends in children’s dance education. Research in Dance Education, 1-30. https://doi.org/10.1080/14647893.2025.2570912",
-    "url": "https://doi.org/10.1080/14647893.2025.2570912",
-    "corresponding_authors": [
-      "Chengliang Wang"
     ]
   },
   {
@@ -1295,25 +1295,6 @@
     "highly_cited": true
   },
   {
-    "doi": "10.1016/j.heliyon.2024.e29477",
-    "title": "The development and evolution of the research topic on the mental health of college students: A bibliometric review based on CiteSpace and VOSviewer",
-    "authors": [
-      "Jingying Chen",
-      "Yidan Liu",
-      "Keke Zhu",
-      "Jian Dai",
-      "Chengliang Wang"
-    ],
-    "year": 2024,
-    "journal": "Heliyon",
-    "category": "journal-article",
-    "citation_text": "Chen, J., Liu, Y., Zhu, K., Dai, J., & Wang, C. (2024). The development and evolution of the research topic on the mental health of college students: A bibliometric review based on CiteSpace and VOSviewer. Heliyon, 10(8), e29477. https://doi.org/10.1016/j.heliyon.2024.e29477",
-    "url": "https://doi.org/10.1016/j.heliyon.2024.e29477",
-    "corresponding_authors": [
-      "Yidan Liu"
-    ]
-  },
-  {
     "doi": "10.1057/s41599-024-03658-2",
     "title": "Knowledge mapping and evolution of research on older adults’ technology acceptance: a bibliometric study from 2013 to 2023",
     "authors": [
@@ -1334,35 +1315,22 @@
     ]
   },
   {
-    "doi": "10.1145/3702163.3702174",
-    "title": "XR Technologies in vocational education and training research (2000-2024): A Bibliometric Review",
+    "doi": "10.1016/j.heliyon.2024.e29477",
+    "title": "The development and evolution of the research topic on the mental health of college students: A bibliometric review based on CiteSpace and VOSviewer",
     "authors": [
-      "Ye Xu",
-      "Decheng Mao",
+      "Jingying Chen",
+      "Yidan Liu",
+      "Keke Zhu",
+      "Jian Dai",
       "Chengliang Wang"
     ],
     "year": 2024,
-    "journal": "Proceedings of the 2024 16th International Conference on Education Technology and Computers",
-    "category": "proceedings-article",
-    "citation_text": "Xu, Y., Mao, D., & Wang, C. (2024). XR Technologies in vocational education and training research (2000-2024): A Bibliometric Review. Proceedings of the 2024 16th International Conference on Education Technology and Computers, 76-83. https://doi.org/10.1145/3702163.3702174",
-    "url": "https://doi.org/10.1145/3702163.3702174"
-  },
-  {
-    "doi": "10.1088/1742-6596/2722/1/012008",
-    "title": "Algorithm Selection and Application for Robot Path Planning Problems",
-    "authors": [
-      "Xiaojiao Chen",
-      "Ling Chen",
-      "Lantian Fu",
-      "Chengliang Wang"
-    ],
-    "year": 2024,
-    "journal": "Journal of Physics: Conference Series",
+    "journal": "Heliyon",
     "category": "journal-article",
-    "citation_text": "Chen, X., Chen, L., Fu, L., & Wang, C. (2024). Algorithm Selection and Application for Robot Path Planning Problems. Journal of Physics: Conference Series, 2722(1), 012008. https://doi.org/10.1088/1742-6596/2722/1/012008",
-    "url": "https://doi.org/10.1088/1742-6596/2722/1/012008",
+    "citation_text": "Chen, J., Liu, Y., Zhu, K., Dai, J., & Wang, C. (2024). The development and evolution of the research topic on the mental health of college students: A bibliometric review based on CiteSpace and VOSviewer. Heliyon, 10(8), e29477. https://doi.org/10.1016/j.heliyon.2024.e29477",
+    "url": "https://doi.org/10.1016/j.heliyon.2024.e29477",
     "corresponding_authors": [
-      "Chengliang Wang"
+      "Yidan Liu"
     ]
   },
   {
@@ -1403,6 +1371,38 @@
     ]
   },
   {
+    "doi": "10.1088/1742-6596/2722/1/012008",
+    "title": "Algorithm Selection and Application for Robot Path Planning Problems",
+    "authors": [
+      "Xiaojiao Chen",
+      "Ling Chen",
+      "Lantian Fu",
+      "Chengliang Wang"
+    ],
+    "year": 2024,
+    "journal": "Journal of Physics: Conference Series",
+    "category": "journal-article",
+    "citation_text": "Chen, X., Chen, L., Fu, L., & Wang, C. (2024). Algorithm Selection and Application for Robot Path Planning Problems. Journal of Physics: Conference Series, 2722(1), 012008. https://doi.org/10.1088/1742-6596/2722/1/012008",
+    "url": "https://doi.org/10.1088/1742-6596/2722/1/012008",
+    "corresponding_authors": [
+      "Chengliang Wang"
+    ]
+  },
+  {
+    "doi": "10.1145/3702163.3702174",
+    "title": "XR Technologies in vocational education and training research (2000-2024): A Bibliometric Review",
+    "authors": [
+      "Ye Xu",
+      "Decheng Mao",
+      "Chengliang Wang"
+    ],
+    "year": 2024,
+    "journal": "Proceedings of the 2024 16th International Conference on Education Technology and Computers",
+    "category": "proceedings-article",
+    "citation_text": "Xu, Y., Mao, D., & Wang, C. (2024). XR Technologies in vocational education and training research (2000-2024): A Bibliometric Review. Proceedings of the 2024 16th International Conference on Education Technology and Computers, 76-83. https://doi.org/10.1145/3702163.3702174",
+    "url": "https://doi.org/10.1145/3702163.3702174"
+  },
+  {
     "doi": "10.1057/s41599-023-01904-7",
     "title": "Adoption of blended learning: Chinese university students’ perspectives",
     "authors": [
@@ -1421,21 +1421,21 @@
     "highly_cited": true
   },
   {
-    "doi": "10.3389/fpsyg.2022.1079955",
-    "title": "Development and status of moral education research: Visual analysis based on knowledge graph",
+    "doi": "10.1177/21582440231212160",
+    "title": "The Implementation Path and Problems Encountered During Emergency Remote Teaching in Vocational Colleges: A Qualitative Study in China",
     "authors": [
-      "Jingying Chen",
-      "Yidan Liu",
-      "Jian Dai",
+      "Yuhui Jing",
+      "Xiaojiao Chen",
+      "Keke Zhu",
+      "Shusheng Shen",
       "Chengliang Wang"
     ],
     "year": 2023,
-    "journal": "Frontiers in Psychology",
+    "journal": "Sage Open",
     "category": "journal-article",
-    "citation_text": "Chen, J., Liu, Y., Dai, J., & Wang, C. (2023). Development and status of moral education research: Visual analysis based on knowledge graph. Frontiers in Psychology, 13, 1079955. https://doi.org/10.3389/fpsyg.2022.1079955",
-    "url": "https://doi.org/10.3389/fpsyg.2022.1079955",
+    "citation_text": "Jing, Y., Chen, X., Zhu, K., Shen, S., & Wang, C. (2023). The Implementation Path and Problems Encountered During Emergency Remote Teaching in Vocational Colleges: A Qualitative Study in China. Sage Open, 13(4), 21582440231212160. https://doi.org/10.1177/21582440231212160",
+    "url": "https://doi.org/10.1177/21582440231212160",
     "corresponding_authors": [
-      "Yidan Liu",
       "Chengliang Wang"
     ]
   },
@@ -1480,21 +1480,21 @@
     ]
   },
   {
-    "doi": "10.1177/21582440231212160",
-    "title": "The Implementation Path and Problems Encountered During Emergency Remote Teaching in Vocational Colleges: A Qualitative Study in China",
+    "doi": "10.3389/fpsyg.2022.1079955",
+    "title": "Development and status of moral education research: Visual analysis based on knowledge graph",
     "authors": [
-      "Yuhui Jing",
-      "Xiaojiao Chen",
-      "Keke Zhu",
-      "Shusheng Shen",
+      "Jingying Chen",
+      "Yidan Liu",
+      "Jian Dai",
       "Chengliang Wang"
     ],
     "year": 2023,
-    "journal": "Sage Open",
+    "journal": "Frontiers in Psychology",
     "category": "journal-article",
-    "citation_text": "Jing, Y., Chen, X., Zhu, K., Shen, S., & Wang, C. (2023). The Implementation Path and Problems Encountered During Emergency Remote Teaching in Vocational Colleges: A Qualitative Study in China. Sage Open, 13(4), 21582440231212160. https://doi.org/10.1177/21582440231212160",
-    "url": "https://doi.org/10.1177/21582440231212160",
+    "citation_text": "Chen, J., Liu, Y., Dai, J., & Wang, C. (2023). Development and status of moral education research: Visual analysis based on knowledge graph. Frontiers in Psychology, 13, 1079955. https://doi.org/10.3389/fpsyg.2022.1079955",
+    "url": "https://doi.org/10.3389/fpsyg.2022.1079955",
     "corresponding_authors": [
+      "Yidan Liu",
       "Chengliang Wang"
     ]
   },

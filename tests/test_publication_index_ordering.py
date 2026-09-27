@@ -3,7 +3,10 @@ import json
 from pathlib import Path
 import unittest
 
-from _scripts.sort_publication_index import author_position, ordered_publications, publication_group
+from _scripts.sort_publication_index import (
+    author_position, corresponding_rank, is_last_author, normalized,
+    ordered_publications, publication_group,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -28,8 +31,89 @@ class PublicationIndexOrderingTest(unittest.TestCase):
             self.assertEqual(groups, sorted(groups), year)
             for group in set(groups):
                 positions = [author_position(p, POLICY) for p in year_papers
-                             if publication_group(p, POLICY) == group]
+                             if publication_group(p, POLICY) == group
+                             and not is_last_author(p, POLICY)]
                 self.assertEqual(positions, sorted(positions), (year, group))
+
+    def test_non_last_author_slots_keep_the_previous_order(self):
+        metrics = {normalized(k): v["value"]
+                   for k, v in POLICY["journal_impact_factors"].items()}
+
+        def previous_key(paper):
+            group = publication_group(paper, POLICY)
+            position = author_position(paper, POLICY)
+            jif = metrics[normalized(paper["journal"])] if group == 0 and position == 1 else 0
+            return (-int(paper["year"]), group, position, -jif,
+                    normalized(paper["title"]), paper["doi"].lower())
+
+        previous = sorted(PAPERS, key=previous_key)
+        for i, paper in enumerate(previous):
+            if not is_last_author(paper, POLICY):
+                self.assertEqual(PAPERS[i], paper)
+
+    def test_last_authors_prioritize_sole_shared_then_non_corresponding(self):
+        for year in {p["year"] for p in PAPERS}:
+            for group in (0, 1, 2):
+                papers = [p for p in PAPERS if p["year"] == year
+                          and publication_group(p, POLICY) == group and is_last_author(p, POLICY)]
+                ranks = [corresponding_rank(p, POLICY) for p in papers]
+                self.assertEqual(ranks, sorted(ranks), (year, group))
+
+    def test_education_precedes_jif_for_sole_corresponding_last_authors(self):
+        self.assertEqual(POLICY["sole_last_author_priority"], ["education_relevance", "jif"])
+        for year in {p["year"] for p in PAPERS}:
+            for group in (0, 1, 2):
+                papers = [p for p in PAPERS if p["year"] == year
+                          and publication_group(p, POLICY) == group
+                          and is_last_author(p, POLICY) and corresponding_rank(p, POLICY) == 0]
+                criteria = []
+                for paper in papers:
+                    relevance = POLICY["education_relevance"][paper["doi"].lower()]
+                    rank = POLICY["education_relevance_levels"][relevance["level"]]
+                    jif = POLICY["journal_impact_factors"][paper["journal"]]["value"] if group == 0 else 0
+                    criteria.append((rank, -jif))
+                self.assertEqual(criteria, sorted(criteria), (year, group))
+
+    def test_last_author_role_overrides_number_of_authors_and_jif(self):
+        owner = POLICY["owner_names"][0]
+        base = dict(PAPERS[0], co_first_authors=[], year=2026)
+        sample = [
+            dict(base, doi="none", authors=["A", owner], corresponding_authors=["A"], journal="Nature"),
+            dict(base, doi="shared", authors=["A", "B", owner], corresponding_authors=["A", owner], journal="Nature"),
+            dict(base, doi="sole", authors=["A", "B", "C", "D", owner], corresponding_authors=[owner], journal="Discover Computing"),
+        ]
+        policy = deepcopy(POLICY)
+        policy["education_relevance"]["sole"] = {"level": "other"}
+        self.assertEqual([p["doi"] for p in ordered_publications(sample, policy)], ["sole", "shared", "none"])
+
+    def test_first_co_first_and_owner_aliases(self):
+        for owner in POLICY["owner_names"]:
+            sample = {"doi": "alias", "authors": ["A", owner], "corresponding_authors": [owner]}
+            self.assertTrue(is_last_author(sample, POLICY))
+            self.assertEqual(corresponding_rank(sample, POLICY), 0)
+            sample["corresponding_authors"] = ["A", owner]
+            self.assertEqual(corresponding_rank(sample, POLICY), 1)
+            sample["co_first_authors"] = ["A", owner]
+            self.assertFalse(is_last_author(sample, POLICY))
+            self.assertFalse(is_last_author({"doi": "single", "authors": [owner]}, POLICY))
+
+    def test_relevance_covers_exactly_the_sole_corresponding_last_papers(self):
+        sole = {p["doi"].lower() for p in PAPERS
+                if is_last_author(p, POLICY) and corresponding_rank(p, POLICY) == 0}
+        self.assertEqual(set(POLICY["education_relevance"]), sole)
+        for entry in POLICY["education_relevance"].values():
+            self.assertIn(entry["level"], POLICY["education_relevance_levels"])
+            self.assertTrue(entry["reason"])
+
+    def test_unreviewed_sole_last_paper_does_not_get_an_invented_rank(self):
+        paper = next(p for p in PAPERS if is_last_author(p, POLICY)
+                     and corresponding_rank(p, POLICY) == 0 and publication_group(p, POLICY) == 0)
+        policy = deepcopy(POLICY)
+        del policy["education_relevance"][paper["doi"].lower()]
+        with self.assertRaisesRegex(ValueError, "Review education relevance"):
+            ordered_publications([paper], policy)
+        with self.assertRaisesRegex(ValueError, "Verify a 2025 JIF"):
+            ordered_publications([dict(paper, journal="Unverified journal")], POLICY)
 
     def test_first_author_journals_use_numeric_jif_descending(self):
         expected = {
