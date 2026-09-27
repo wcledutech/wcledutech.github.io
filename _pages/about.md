@@ -346,48 +346,65 @@ redirect_from:
   line-height: 1.4;
 }
 
+#scholar-metrics {
+  scroll-margin-top: 80px;
+}
+
 .scholar-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: .85rem;
+  gap: 0;
+  padding: 4px 0 0;
 }
 
 .scholar-metric {
-  min-height: 142px;
+  min-width: 0;
+  min-height: 124px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border: 1px solid transparent;
-  border-radius: 8px;
-  padding: 1rem 1.05rem;
-  background:
-    linear-gradient(135deg, rgba(23,32,51,.94), rgba(15,118,110,.74) 48%, rgba(181,90,60,.72)) padding-box,
-    linear-gradient(135deg, rgba(255,255,255,.42), rgba(255,255,255,.06)) border-box;
-  box-shadow: 0 18px 42px rgba(23,32,51,.12);
-  color: #fff;
+  border-left: 1px solid #dce2e0;
+  padding: 0 20px;
+  color: #292f33;
+}
+
+.scholar-metric:first-child {
+  padding-left: 0;
+  border-left: 0;
 }
 
 .scholar-metric strong {
   display: block;
-  font-size: clamp(2.1rem, 4vw, 3rem);
-  line-height: .95;
+  font-size: 38px;
+  font-weight: 400;
+  font-variant-numeric: lining-nums tabular-nums;
+  line-height: 1.1;
   letter-spacing: 0;
 }
 
 .scholar-metric div > span {
   display: block;
-  margin-top: .55rem;
-  font-size: .98rem;
-  font-weight: 700;
-  line-height: 1.25;
+  margin-top: 10px;
+  color: #515c62;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.45;
 }
 
 .scholar-metric small {
   display: block;
-  margin-top: .45rem;
-  color: rgba(255,255,255,.82);
-  font-size: .76rem;
-  line-height: 1.35;
+  margin-top: 12px;
+  color: #66726f;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.about-page #gs-updated {
+  margin: 8px 0 24px;
+  color: #66726f;
+  font-size: 13px;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
 }
 
 .scholar-meta {
@@ -441,12 +458,32 @@ redirect_from:
   .scholar-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .scholar-grid {
+    padding-bottom: 0;
+  }
+
+  .scholar-metric {
+    padding: 20px;
+    border-top: 1px solid #dce2e0;
+  }
+
+  .scholar-metric:first-child {
+    grid-column: 1 / -1;
+    min-height: 0;
+    padding: 0 0 20px;
+    border-top: 0;
+  }
+
+  .scholar-metric:nth-child(even) {
+    padding-left: 0;
+    border-left: 0;
+  }
 }
 
 @media (max-width: 620px) {
   .profile-grid,
-  .card-grid,
-  .scholar-grid {
+  .card-grid {
     grid-template-columns: 1fr;
   }
 
