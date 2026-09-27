@@ -20,7 +20,7 @@ class ResourcesRemovalTest(unittest.TestCase):
         self.assertIn("Download BibTeX", layout)
         self.assertIn("Download RIS", layout)
         home = (ROOT / "_pages/about.md").read_text(encoding="utf-8")
-        self.assertEqual(home.count('class="profile-destination"'), 1)
+        self.assertIn("href=\"{{ '/research-highlights/' | relative_url }}\"", home)
         self.assertIn('class="profile-guides"', home)
 
 

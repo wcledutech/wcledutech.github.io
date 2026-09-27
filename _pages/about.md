@@ -180,6 +180,10 @@ redirect_from:
   font-size: 18px;
 }
 
+.about-page .profile-destination + .profile-destination {
+  border-top: 1px solid var(--line);
+}
+
 .about-page .profile-destination > .fa-arrow-right {
   font-size: 13px;
 }
@@ -473,6 +477,11 @@ redirect_from:
         <a class="profile-destination" href="{{ '/research-highlights/' | relative_url }}">
           <i class="fas fa-file-alt" aria-hidden="true"></i>
           <span><strong>Research highlights</strong><small>Paper summaries</small></span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+        <a class="profile-destination" href="{{ '/publication-index/' | relative_url }}">
+          <i class="fas fa-list-ul" aria-hidden="true"></i>
+          <span><strong>Publications by year</strong><small>Complete publication index</small></span>
           <i class="fas fa-arrow-right" aria-hidden="true"></i>
         </a>
       </div>
