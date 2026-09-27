@@ -6,13 +6,20 @@ selector can reverse year groups without reversing papers inside a year.
 
 Within each year:
 
-1. All journal articles and journal correspondence, then conference papers,
-   then other records (currently one preprint).
-2. The baseline within each group is Chengliang Wang's first/co-first papers,
-   second-author papers, third-author papers, and so on. First/co-first papers
-   keep their priority even if Wang is also the last listed author. A sole-author
-   paper remains first-author rather than entering the last-author ordering.
-3. First/co-first journal papers use descending 2025 Journal Impact Factor.
+1. Journal articles and journal correspondence, then conference papers,
+   then other records. First/co-first preprints are an explicit exception:
+   they join the first-author sequence in the journal-led group for that year.
+   They keep the `preprint` category and receive no journal impact factor.
+2. The baseline within each group is Chengliang Wang's first-author sequence,
+   second-author papers, third-author papers, and so on. Ordinary first-author
+   papers precede all co-first papers within that sequence, including when Wang
+   is the first listed co-first author. A co-first paper remains ahead of
+   second-author papers. Co-first credit applies only when Wang himself has it.
+   First/co-first papers keep their priority even if Wang is also the last
+   listed author. A sole-author paper remains first-author rather than entering
+   the last-author ordering.
+3. Within each ordinary-first or co-first tier, journals precede preprints.
+   Journal papers in each tier use descending 2025 Journal Impact Factor.
    These are current JIFs checked on 27 September 2026, not five-year IFs or
    CiteScores. Values and publisher sources are in
    `_data/publication_index_ordering.json`.

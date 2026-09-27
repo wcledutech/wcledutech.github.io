@@ -26,14 +26,25 @@ def publication_group(paper, policy):
     return 2
 
 
+def is_co_first_author(paper, policy):
+    return bool(set(policy["owner_names"]).intersection(paper.get("co_first_authors", [])))
+
+
 def author_position(paper, policy):
     owners = set(policy["owner_names"])
     positions = [i + 1 for i, name in enumerate(paper["authors"]) if name in owners]
     if len(positions) != 1:
         raise ValueError(f"Expected exactly one owner in {paper['doi']}")
-    if owners.intersection(paper.get("co_first_authors", [])):
+    if is_co_first_author(paper, policy):
         return 1
     return positions[0]
+
+
+def ordering_group(paper, policy):
+    # First-author preprints join the journal-led sequence without becoming journals.
+    if paper["category"] == "preprint" and author_position(paper, policy) == 1:
+        return 0
+    return publication_group(paper, policy)
 
 
 def is_last_author(paper, policy):
@@ -66,7 +77,8 @@ def ordered_publications(papers, policy):
         # Only first/co-first journal papers use JIF as the next ordering key.
         if group == 0 and position == 1:
             impact_factor = verified_jif(paper)
-        return (-int(paper["year"]), group, position, -impact_factor,
+        return (-int(paper["year"]), ordering_group(paper, policy), position,
+                is_co_first_author(paper, policy), paper["category"] == "preprint", -impact_factor,
                 normalized(paper["title"]), paper["doi"].lower())
 
     def last_author_key(paper):

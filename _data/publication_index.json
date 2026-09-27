@@ -23,6 +23,31 @@
     ]
   },
   {
+    "doi": "10.2139/ssrn.6968861",
+    "title": "Sociotechnical Turn in Interactive Learning Environments Research: Knowledge Structures from Multi-Database Topic Modeling (2000-2026)",
+    "authors": [
+      "Chengliang Wang",
+      "Yuanyuan Li",
+      "Xingchang Liu",
+      "Wenxin Zhang",
+      "Teng Yu",
+      "Yupeng Lin"
+    ],
+    "year": 2026,
+    "journal": "",
+    "category": "preprint",
+    "citation_text": "Wang, C., Li, Y., Liu, X., Zhang, W., Yu, T., & Lin, Y. (2026). Sociotechnical Turn in Interactive Learning Environments Research: Knowledge Structures from Multi-Database Topic Modeling (2000-2026). . https://doi.org/10.2139/ssrn.6968861",
+    "url": "https://doi.org/10.2139/ssrn.6968861",
+    "co_first_authors": [
+      "Chengliang Wang",
+      "Yuanyuan Li"
+    ],
+    "corresponding_authors": [
+      "Chengliang Wang",
+      "Yupeng Lin"
+    ]
+  },
+  {
     "doi": "10.1016/j.ijme.2026.101430",
     "title": "From information evaluation to technology use: Generative AI adoption in Chinese business schools",
     "authors": [
@@ -400,31 +425,6 @@
     ]
   },
   {
-    "doi": "10.2139/ssrn.6968861",
-    "title": "Sociotechnical Turn in Interactive Learning Environments Research: Knowledge Structures from Multi-Database Topic Modeling (2000-2026)",
-    "authors": [
-      "Chengliang Wang",
-      "Yuanyuan Li",
-      "Xingchang Liu",
-      "Wenxin Zhang",
-      "Teng Yu",
-      "Yupeng Lin"
-    ],
-    "year": 2026,
-    "journal": "",
-    "category": "preprint",
-    "citation_text": "Wang, C., Li, Y., Liu, X., Zhang, W., Yu, T., & Lin, Y. (2026). Sociotechnical Turn in Interactive Learning Environments Research: Knowledge Structures from Multi-Database Topic Modeling (2000-2026). . https://doi.org/10.2139/ssrn.6968861",
-    "url": "https://doi.org/10.2139/ssrn.6968861",
-    "co_first_authors": [
-      "Chengliang Wang",
-      "Yuanyuan Li"
-    ],
-    "corresponding_authors": [
-      "Chengliang Wang",
-      "Yupeng Lin"
-    ]
-  },
-  {
     "doi": "10.1177/07356331251322470",
     "title": "MetaClassroom: A New Paradigm and Experience for Programming Education",
     "authors": [
@@ -442,34 +442,6 @@
     "url": "https://doi.org/10.1177/07356331251322470",
     "corresponding_authors": [
       "Yuanyuan Li"
-    ]
-  },
-  {
-    "doi": "10.1007/s10639-025-13487-8",
-    "title": "Impact of AI-agent-supported collaborative learning on the learning outcomes of University programming courses",
-    "authors": [
-      "Haoming Wang",
-      "Chengliang Wang",
-      "Zhan Chen",
-      "Fa Liu",
-      "Chunjia Bao",
-      "Xianlong Xu"
-    ],
-    "year": 2025,
-    "journal": "Education and Information Technologies",
-    "category": "journal-article",
-    "citation_text": "Wang, H., Wang, C., Chen, Z., Liu, F., Bao, C., & Xu, X. (2025). Impact of AI-agent-supported collaborative learning on the learning outcomes of University programming courses. Education and Information Technologies, 30(12), 17717-17749. https://doi.org/10.1007/s10639-025-13487-8",
-    "url": "https://doi.org/10.1007/s10639-025-13487-8",
-    "co_first_authors": [
-      "Haoming Wang",
-      "Chengliang Wang"
-    ],
-    "corresponding_authors": [
-      "Xianlong Xu"
-    ],
-    "highly_cited": true,
-    "hot_paper_years": [
-      2026
     ]
   },
   {
@@ -556,6 +528,34 @@
       "Teng Yu"
     ],
     "highly_cited": true
+  },
+  {
+    "doi": "10.1007/s10639-025-13487-8",
+    "title": "Impact of AI-agent-supported collaborative learning on the learning outcomes of University programming courses",
+    "authors": [
+      "Haoming Wang",
+      "Chengliang Wang",
+      "Zhan Chen",
+      "Fa Liu",
+      "Chunjia Bao",
+      "Xianlong Xu"
+    ],
+    "year": 2025,
+    "journal": "Education and Information Technologies",
+    "category": "journal-article",
+    "citation_text": "Wang, H., Wang, C., Chen, Z., Liu, F., Bao, C., & Xu, X. (2025). Impact of AI-agent-supported collaborative learning on the learning outcomes of University programming courses. Education and Information Technologies, 30(12), 17717-17749. https://doi.org/10.1007/s10639-025-13487-8",
+    "url": "https://doi.org/10.1007/s10639-025-13487-8",
+    "co_first_authors": [
+      "Haoming Wang",
+      "Chengliang Wang"
+    ],
+    "corresponding_authors": [
+      "Xianlong Xu"
+    ],
+    "highly_cited": true,
+    "hot_paper_years": [
+      2026
+    ]
   },
   {
     "doi": "10.1080/10494820.2025.2472288",

@@ -4,8 +4,8 @@ from pathlib import Path
 import unittest
 
 from _scripts.sort_publication_index import (
-    author_position, corresponding_rank, is_last_author, normalized,
-    ordered_publications, publication_group,
+    author_position, corresponding_rank, is_co_first_author, is_last_author, normalized,
+    ordered_publications, ordering_group, publication_group,
 )
 
 
@@ -27,15 +27,15 @@ class PublicationIndexOrderingTest(unittest.TestCase):
     def test_every_year_has_journals_before_conferences_and_other_records(self):
         for year in {p["year"] for p in PAPERS}:
             year_papers = [p for p in PAPERS if p["year"] == year]
-            groups = [publication_group(p, POLICY) for p in year_papers]
+            groups = [ordering_group(p, POLICY) for p in year_papers]
             self.assertEqual(groups, sorted(groups), year)
             for group in set(groups):
                 positions = [author_position(p, POLICY) for p in year_papers
-                             if publication_group(p, POLICY) == group
+                             if ordering_group(p, POLICY) == group
                              and not is_last_author(p, POLICY)]
                 self.assertEqual(positions, sorted(positions), (year, group))
 
-    def test_non_last_author_slots_keep_the_previous_order(self):
+    def test_non_last_author_slots_keep_the_baseline_order(self):
         metrics = {normalized(k): v["value"]
                    for k, v in POLICY["journal_impact_factors"].items()}
 
@@ -43,7 +43,8 @@ class PublicationIndexOrderingTest(unittest.TestCase):
             group = publication_group(paper, POLICY)
             position = author_position(paper, POLICY)
             jif = metrics[normalized(paper["journal"])] if group == 0 and position == 1 else 0
-            return (-int(paper["year"]), group, position, -jif,
+            return (-int(paper["year"]), ordering_group(paper, POLICY), position,
+                    is_co_first_author(paper, POLICY), paper["category"] == "preprint", -jif,
                     normalized(paper["title"]), paper["doi"].lower())
 
         previous = sorted(PAPERS, key=previous_key)
@@ -119,9 +120,9 @@ class PublicationIndexOrderingTest(unittest.TestCase):
         expected = {
             2026: ["10.1007/s00371-025-04265-1"],
             2025: [
-                "10.1177/07356331251322470", "10.1007/s10639-025-13487-8",
-                "10.1080/10447318.2024.2383033", "10.1111/jcal.13117",
-                "10.1007/s11423-025-10535-5", "10.1007/s12144-025-07813-z",
+                "10.1177/07356331251322470", "10.1080/10447318.2024.2383033",
+                "10.1111/jcal.13117", "10.1007/s11423-025-10535-5",
+                "10.1007/s12144-025-07813-z", "10.1007/s10639-025-13487-8",
             ],
             2024: [
                 "10.1080/10447318.2023.2291609", "10.1057/s41599-024-02717-y",
@@ -154,9 +155,57 @@ class PublicationIndexOrderingTest(unittest.TestCase):
         for doi in POLICY["conference_dois"]:
             self.assertEqual(publication_group(indexed[doi], POLICY), 1)
         year_2026 = [p for p in PAPERS if int(p["year"]) == 2026]
-        self.assertEqual(year_2026[-2]["doi"], "10.1007/978-3-032-29791-4_24")
-        self.assertEqual(year_2026[-1]["category"], "preprint")
+        self.assertEqual(year_2026[-1]["doi"], "10.1007/978-3-032-29791-4_24")
+        self.assertEqual([p["doi"] for p in year_2026[:2]], [
+            "10.1007/s00371-025-04265-1", "10.2139/ssrn.6968861",
+        ])
+        preprint = indexed["10.2139/ssrn.6968861"]
+        self.assertEqual(preprint["category"], "preprint")
+        self.assertEqual(publication_group(preprint, POLICY), 2)
+        self.assertEqual(ordering_group(preprint, POLICY), 0)
         self.assertEqual([p for p in PAPERS if int(p["year"]) == 2022][-1]["category"], "proceedings-article")
+
+    def test_ordinary_first_preprints_precede_co_first_and_non_first_papers(self):
+        owner = POLICY["owner_names"][0]
+        preprint = next(p for p in PAPERS if p["category"] == "preprint")
+        base = dict(preprint, authors=[owner, "A", "B"], co_first_authors=[], corresponding_authors=[])
+        sample = [
+            dict(base, doi="first-journal", category="journal-article", journal="Current Psychology"),
+            dict(base, doi="first-preprint"),
+            dict(base, doi="co-first-journal", category="journal-article", journal="Nature",
+                 authors=["A", owner, "B"], co_first_authors=["A", owner]),
+            dict(base, doi="co-first-preprint", co_first_authors=[owner, "A"]),
+            dict(base, doi="second-journal", category="journal-article", journal="Nature", authors=["A", owner, "B"]),
+            dict(base, doi="first-conference", category="proceedings-article"),
+            dict(base, doi="second-preprint", authors=["A", owner, "B"]),
+        ]
+        expected = [p["doi"] for p in sample]
+        ordered = ordered_publications(list(reversed(sample)), POLICY)
+        self.assertEqual([p["doi"] for p in ordered], expected)
+        self.assertTrue(all(p["category"] == "preprint" for p in ordered if p["doi"].endswith("preprint")))
+
+    def test_co_first_papers_follow_ordinary_first_in_every_sequence(self):
+        for year in {p["year"] for p in PAPERS}:
+            for group in (0, 1, 2):
+                first = [p for p in PAPERS if p["year"] == year
+                         and ordering_group(p, POLICY) == group and author_position(p, POLICY) == 1]
+                shared = [is_co_first_author(p, POLICY) for p in first]
+                self.assertEqual(shared, sorted(shared), (year, group))
+                for co_first in (False, True):
+                    jifs = [POLICY["journal_impact_factors"][p["journal"]]["value"]
+                            for p in first if publication_group(p, POLICY) == 0
+                            and is_co_first_author(p, POLICY) == co_first]
+                    self.assertEqual(jifs, sorted(jifs, reverse=True))
+
+    def test_co_first_priority_applies_to_conferences_and_all_owner_aliases(self):
+        for owner in POLICY["owner_names"]:
+            base = dict(PAPERS[0], category="proceedings-article", authors=[owner, "A", "B"],
+                        co_first_authors=[], corresponding_authors=[])
+            first = dict(base, doi="ordinary", title="Z title")
+            co_first = dict(base, doi="shared", title="A title", co_first_authors=[owner, "A"])
+            self.assertEqual([p["doi"] for p in ordered_publications([co_first, first], POLICY)],
+                             ["ordinary", "shared"])
+            self.assertFalse(is_co_first_author(dict(base, co_first_authors=["A", "B"]), POLICY))
 
     def test_missing_jif_stops_instead_of_guessing(self):
         sample = dict(PAPERS[0], journal="Unverified journal")
