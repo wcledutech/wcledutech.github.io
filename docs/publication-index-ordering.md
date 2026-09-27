@@ -62,3 +62,33 @@ Without `--write` the script only checks the order. A new first/co-first or
 sole-corresponding last-author journal paper without a verified JIF stops the
 check instead of receiving a guessed value. Existing citation text, author-role flags, award markers, record counts,
 publication years, and publication categories are not modified by sorting.
+
+## Publications by research method
+
+The method lists in `_pages/publications.md` use the same verified author roles,
+JIF snapshot and education-relevance decisions. They are not grouped by year.
+Within each existing method category, use:
+
+1. Ordinary first-author papers, then co-first papers. Within either tier,
+   journals precede preprints and conference papers; journals use descending JIF.
+2. Other non-last authors in author-position order, with journals before
+   conference papers at the same position.
+3. Last-author papers: sole corresponding, shared corresponding, non-corresponding.
+   Sole-corresponding papers use education relevance first and JIF second.
+   Among equally relevant papers, conference papers follow journals with a JIF.
+4. Otherwise equal keys use newest year, title and DOI. Author role takes
+   precedence over publication year and type in these method-based lists.
+
+The DOI connects each original citation to `_data/publication_index.json`.
+Abbreviated citation text is not used to guess authorship. The updater changes
+only citation-line positions within each method group, preserving the original
+text, links, markers, category membership, counts, blank lines and line endings.
+No publication is added or removed. Unknown DOIs or unsupported multi-line
+citations stop the update instead of receiving a guessed position.
+
+```shell
+python -B -m _scripts.sort_publications_by_method --write
+python -B -m unittest discover -s tests -v
+```
+
+Without `--write`, the method updater checks the current order without editing.

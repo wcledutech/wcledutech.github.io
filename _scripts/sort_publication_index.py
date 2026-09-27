@@ -60,39 +60,42 @@ def corresponding_rank(paper, policy):
     return 0 if len(correspondents) == 1 else 1
 
 
-def ordered_publications(papers, policy):
+def verified_jif(paper, policy):
     metrics = {normalized(name): entry["value"]
                for name, entry in policy["journal_impact_factors"].items()}
+    journal = normalized(paper["journal"])
+    if journal not in metrics or metrics[journal] is None:
+        raise ValueError(f"Verify a {policy['jif_year']} JIF for {paper['journal']}")
+    return metrics[journal]
 
-    def verified_jif(paper):
-        journal = normalized(paper["journal"])
-        if journal not in metrics or metrics[journal] is None:
-            raise ValueError(f"Verify a {policy['jif_year']} JIF for {paper['journal']}")
-        return metrics[journal]
 
+def sole_last_author_criteria(paper, policy):
+    entry = policy["education_relevance"].get(paper["doi"].lower())
+    if entry is None:
+        raise ValueError(f"Review education relevance for {paper['doi']}")
+    criteria = {
+        "education_relevance": policy["education_relevance_levels"][entry["level"]],
+        "jif": -verified_jif(paper, policy) if publication_group(paper, policy) == 0 else 0,
+    }
+    return tuple(criteria[name] for name in policy["sole_last_author_priority"])
+
+
+def ordered_publications(papers, policy):
     def key(paper):
         group = publication_group(paper, policy)
         position = author_position(paper, policy)
         impact_factor = 0
         # Only first/co-first journal papers use JIF as the next ordering key.
         if group == 0 and position == 1:
-            impact_factor = verified_jif(paper)
+            impact_factor = verified_jif(paper, policy)
         return (-int(paper["year"]), ordering_group(paper, policy), position,
                 is_co_first_author(paper, policy), paper["category"] == "preprint", -impact_factor,
                 normalized(paper["title"]), paper["doi"].lower())
 
     def last_author_key(paper):
         role = corresponding_rank(paper, policy)
-        relevance, impact_factor = 0, 0
-        if role == 0:
-            entry = policy["education_relevance"].get(paper["doi"].lower())
-            if entry is None:
-                raise ValueError(f"Review education relevance for {paper['doi']}")
-            relevance = policy["education_relevance_levels"][entry["level"]]
-            if publication_group(paper, policy) == 0:
-                impact_factor = verified_jif(paper)
-        criteria = {"education_relevance": relevance, "jif": -impact_factor}
-        return (role, *(criteria[name] for name in policy["sole_last_author_priority"]),
+        criteria = sole_last_author_criteria(paper, policy) if role == 0 else (0, 0)
+        return (role, *criteria,
                 author_position(paper, policy), normalized(paper["title"]),
                 paper["doi"].lower())
 
