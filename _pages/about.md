@@ -352,40 +352,84 @@ redirect_from:
 
 .scholar-grid {
   display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 0;
-  padding: 4px 0 0;
+  grid-template-columns: minmax(0, 1.25fr) repeat(2, minmax(0, .85fr)) repeat(2, minmax(0, 1.1fr));
+  gap: 12px;
 }
 
 .scholar-metric {
+  --metric-accent: #526870;
   min-width: 0;
-  min-height: 124px;
+  min-height: 212px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  border-left: 1px solid #dce2e0;
-  padding: 0 20px;
+  gap: 12px;
+  padding: 20px 18px 16px;
+  border: 1px solid #dce3e1;
+  border-top: 2px solid #a8b8bb;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(35, 52, 45, .035);
   color: #292f33;
 }
 
-.scholar-metric:first-child {
-  padding-left: 0;
-  border-left: 0;
+.scholar-metric--citations {
+  --metric-accent: #176b63;
+  border-color: #cadcd5;
+  border-top-color: var(--metric-accent);
+  background: #eff6f2;
+}
+
+.scholar-metric--highly-cited {
+  --metric-accent: #8d692d;
+  border-color: #e4dcc9;
+  border-top-color: #b3945c;
+  background: #fcfaf4;
+}
+
+.scholar-metric--hot {
+  --metric-accent: #a34e38;
+  border-color: #e7d6d0;
+  border-top-color: #ba7c68;
+  background: #fcf7f5;
+}
+
+.scholar-metric-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 54px;
+}
+
+.scholar-metric-top .fas {
+  flex: 0 0 20px;
+  color: var(--metric-accent);
+  font-family: "Font Awesome 5 Free";
+  font-size: 18px;
+  font-weight: 900;
+  text-align: center;
 }
 
 .scholar-metric strong {
   display: block;
-  font-size: 38px;
+  min-width: 0;
+  color: #292f33;
+  font-size: 42px;
   font-weight: 400;
   font-variant-numeric: lining-nums tabular-nums;
   line-height: 1.1;
   letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
-.scholar-metric div > span {
+.scholar-metric--citations strong {
+  color: var(--metric-accent);
+  font-size: 46px;
+}
+
+.scholar-metric-label {
   display: block;
-  margin-top: 10px;
-  color: #515c62;
+  color: #39464b;
   font-size: 15px;
   font-weight: 400;
   line-height: 1.45;
@@ -393,7 +437,9 @@ redirect_from:
 
 .scholar-metric small {
   display: block;
-  margin-top: 12px;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid rgba(63, 82, 73, .12);
   color: #66726f;
   font-size: 13px;
   line-height: 1.5;
@@ -452,32 +498,21 @@ redirect_from:
   line-height: 1.48;
 }
 
-@media (max-width: 900px) {
-  .profile-grid,
-  .card-grid,
+@media (max-width: 1100px) {
   .scholar-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .scholar-grid {
-    padding-bottom: 0;
-  }
-
-  .scholar-metric {
-    padding: 20px;
-    border-top: 1px solid #dce2e0;
-  }
-
-  .scholar-metric:first-child {
+  .scholar-metric--citations {
     grid-column: 1 / -1;
-    min-height: 0;
-    padding: 0 0 20px;
-    border-top: 0;
+    min-height: 174px;
   }
+}
 
-  .scholar-metric:nth-child(even) {
-    padding-left: 0;
-    border-left: 0;
+@media (max-width: 900px) {
+  .profile-grid,
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -565,39 +600,44 @@ redirect_from:
     <h2>Scholar Metrics</h2>
     <p id="gs-updated">Google Scholar metrics snapshot: {{ site.data.scholar_snapshot.updated }} ({{ site.data.scholar_snapshot.source }}).</p>
     <div class="scholar-grid" aria-label="Google Scholar and ESI metrics">
-      <article class="scholar-metric">
-        <div>
+      <article class="scholar-metric scholar-metric--citations">
+        <div class="scholar-metric-top">
           <strong id="gs-citations">{{ site.data.scholar_snapshot.citedby }}</strong>
-          <span>Total citations</span>
+          <i class="fas fa-quote-right" aria-hidden="true"></i>
         </div>
+        <span class="scholar-metric-label">Total citations</span>
         <small>Since 2021: <span id="gs-citations-5y">{{ site.data.scholar_snapshot.citedby5y }}</span></small>
       </article>
       <article class="scholar-metric">
-        <div>
+        <div class="scholar-metric-top">
           <strong id="gs-hindex">{{ site.data.scholar_snapshot.hindex }}</strong>
-          <span>h-index</span>
+          <i class="fas fa-chart-line" aria-hidden="true"></i>
         </div>
+        <span class="scholar-metric-label">h-index</span>
         <small>Since 2021: <span id="gs-hindex-5y">{{ site.data.scholar_snapshot.hindex5y }}</span></small>
       </article>
       <article class="scholar-metric">
-        <div>
+        <div class="scholar-metric-top">
           <strong id="gs-i10index">{{ site.data.scholar_snapshot.i10index }}</strong>
-          <span>i10-index</span>
+          <i class="fas fa-layer-group" aria-hidden="true"></i>
         </div>
+        <span class="scholar-metric-label">i10-index</span>
         <small>Since 2021: <span id="gs-i10index-5y">{{ site.data.scholar_snapshot.i10index5y }}</span></small>
       </article>
-      <article class="scholar-metric">
-        <div>
+      <article class="scholar-metric scholar-metric--highly-cited">
+        <div class="scholar-metric-top">
           <strong>18</strong>
-          <span>ESI 1% highly cited papers</span>
+          <i class="fas fa-trophy" aria-hidden="true"></i>
         </div>
+        <span class="scholar-metric-label">ESI 1% highly cited papers</span>
         <small>Profile metric</small>
       </article>
-      <article class="scholar-metric">
-        <div>
+      <article class="scholar-metric scholar-metric--hot">
+        <div class="scholar-metric-top">
           <strong>5</strong>
-          <span>ESI 0.1% hot papers</span>
+          <i class="fas fa-fire" aria-hidden="true"></i>
         </div>
+        <span class="scholar-metric-label">ESI 0.1% hot papers</span>
         <small>Profile metric</small>
       </article>
     </div>
