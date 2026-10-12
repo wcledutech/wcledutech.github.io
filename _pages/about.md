@@ -498,6 +498,63 @@ redirect_from:
   line-height: 1.48;
 }
 
+#honors,
+#top-2-scientists-2026 {
+  scroll-margin-top: 80px;
+}
+
+.honor-featured {
+  padding: 20px 22px;
+  border-color: #dac9a3;
+  background: #fcfaf4;
+  box-shadow: none;
+}
+
+.honor-title {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.honor-title > .fas {
+  flex: 0 0 22px;
+  margin-top: 2px;
+  color: #8d692d;
+  font-size: 22px;
+}
+
+.honor-title strong {
+  min-width: 0;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.honor-featured p {
+  margin-top: 10px;
+}
+
+.honor-featured .honor-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  margin-top: 14px;
+}
+
+.honor-links a {
+  color: #176b63;
+  text-underline-offset: 3px;
+}
+
+.honor-links .fas {
+  margin-left: 5px;
+  font-size: 11px;
+}
+
+.honor-links a:focus-visible {
+  outline: 2px solid #176b63;
+  outline-offset: 4px;
+}
+
 @media (max-width: 1100px) {
   .scholar-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -580,6 +637,10 @@ redirect_from:
           As a master's student, he received the 2024 ECNU President's Scholarship, the highest academic honor at the university,
           becoming the first master's student in the history of the Faculty of Education to receive this distinction.
         </p>
+        <p>
+          He was included in the <a href="#top-2-scientists-2026" data-ss-opts='{"offset": -80}'>2026 Stanford/Elsevier World's Top 2% Scientists list</a>
+          for single-year citation impact.
+        </p>
       </article>
 
       <article class="about-card" style="--accent: var(--plum);">
@@ -646,6 +707,14 @@ redirect_from:
   <section class="about-section" id="honors">
     <h2>Honors, Awards, and Scholarships</h2>
     <div class="award-list" style="--accent: var(--gold);">
+      <div class="compact-item honor-featured" id="top-2-scientists-2026">
+        <div class="honor-title"><i class="fas fa-award" aria-hidden="true"></i><strong>2026 | World's Top 2% Scientists</strong></div>
+        <p>Stanford/Elsevier single-year citation impact list, based on citations received in 2025. Field: Education.</p>
+        <p class="honor-links">
+          <a href="{{ '/images/honors/top-2-scientists-2026-chengliang-wang.png' | relative_url }}" target="_blank" rel="noopener">View recognition record<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+          <a href="https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/9" target="_blank" rel="noopener">Official dataset<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+        </p>
+      </div>
       <div class="compact-item"><strong>2026-2028 | ACU Vice Chancellor's PhD Excellence Scholarship</strong><p>Research Training Program (RTP) Scholarships, totaling approximately 1,033,000 RMB over 3 years.</p></div>
       <div class="compact-item"><strong>2024-2025 | China National Scholarship for Postgraduate Students</strong><p>20,000 RMB.</p></div>
       <div class="compact-item"><strong>2024 | East China Normal University President's Scholarship</strong><p>The highest academic honor at ECNU, 20,000 RMB.</p></div>
