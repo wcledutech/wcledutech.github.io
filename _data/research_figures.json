@@ -1,0 +1,329 @@
+{
+  "metaclassroom-programming-education": {
+    "src": "/images/research-figures/metaclassroom-programming-education-fig-2.webp",
+    "full": "/images/research-figures/metaclassroom-programming-education-fig-2.png",
+    "width": 869,
+    "height": 487,
+    "original_width": 869,
+    "original_height": 487,
+    "number": 2,
+    "caption": "Overview of MetaClassroom.",
+    "alt": "The immersive MetaClassroom programming environment, with connected teaching, learning and practice spaces.",
+    "source": {
+      "doi": "10.1177/07356331251322470",
+      "pdf_page": 11,
+      "pdf_sha256": "71210537bb2a23c33aa1521dd2ef6a76ad86bca7d6311de693d69c94e317837c",
+      "image_index": 0,
+      "image_xref": 166,
+      "bbox": [
+        59.7543,
+        372.1323,
+        372.5647,
+        547.0867
+      ],
+      "method": "Original embedded PDF figure; no content cropping or redrawing"
+    }
+  },
+  "generative-ai-education-policy-framework": {
+    "src": "/images/research-figures/generative-ai-education-policy-framework-fig-1.webp",
+    "full": "/images/research-figures/generative-ai-education-policy-framework-fig-1.png",
+    "width": 1200,
+    "height": 564,
+    "original_width": 1382,
+    "original_height": 650,
+    "number": 1,
+    "caption": "Transformation action framework.",
+    "alt": "A three-level transformation action framework linking macro-level social change, meso-level educational organization and micro-level teaching and learning.",
+    "source": {
+      "doi": "10.1007/s11423-025-10535-5",
+      "pdf_page": 16,
+      "pdf_sha256": "a1f655a9f38ce46a1a079766d991e14a90d60be56876ea8b9560a5d871f66289",
+      "image_index": 0,
+      "image_xref": 128,
+      "bbox": [
+        53.845,
+        57.8503,
+        385.525,
+        213.8503
+      ],
+      "method": "Original embedded PDF figure; no content cropping or redrawing"
+    }
+  },
+  "aigc-adoption-ai-literacy-fsqca": {
+    "src": "/images/research-figures/aigc-adoption-ai-literacy-fsqca-fig-3.webp",
+    "full": "/images/research-figures/aigc-adoption-ai-literacy-fsqca-fig-3.png",
+    "width": 1200,
+    "height": 496,
+    "original_width": 1477,
+    "original_height": 611,
+    "number": 3,
+    "caption": "Research conceptual model.",
+    "alt": "The research model connecting four AI literacy dimensions and planned-behavior factors to configurations of AIGC adoption intention.",
+    "source": {
+      "doi": "10.1111/jcal.13117",
+      "pdf_page": 8,
+      "pdf_sha256": "c79387f2a8f2143e5d7c2af632dfc9c4ec5f44d98677770144c593390af47dc8",
+      "image_index": 0,
+      "image_xref": 226,
+      "bbox": [
+        120.4724,
+        248.6919,
+        474.8032,
+        395.1745
+      ],
+      "method": "Original embedded PDF figure; no content cropping or redrawing"
+    }
+  },
+  "ai-self-regulated-learning-meta-analysis": {
+    "src": "/images/research-figures/ai-self-regulated-learning-meta-analysis-fig-4.webp",
+    "full": "/images/research-figures/ai-self-regulated-learning-meta-analysis-fig-4.png",
+    "width": 1182,
+    "height": 660,
+    "original_width": 1182,
+    "original_height": 660,
+    "number": 4,
+    "caption": "The intersection of AI evolution and self-regulated learning processes.",
+    "alt": "A conceptual framework linking forethought, performance and self-reflection with rule-based, data-driven and generative AI support.",
+    "source": {
+      "doi": "10.1111/bjet.70058",
+      "pdf_page": 11,
+      "pdf_sha256": "af716f9ec7e0a0e355d69bd1cc7a6d1cc8425e3a2297bbc5d14c3235bb6d04af",
+      "image_index": 0,
+      "image_xref": 274,
+      "bbox": [
+        100.6299,
+        49.6065,
+        384.0945,
+        207.8513
+      ],
+      "method": "Original embedded PDF figure; no content cropping or redrawing"
+    }
+  },
+  "chatgpt-programming-ai-literacy": {
+    "src": "/images/research-figures/chatgpt-programming-ai-literacy-fig-1.webp",
+    "full": "/images/research-figures/chatgpt-programming-ai-literacy-fig-1.png",
+    "width": 1200,
+    "height": 1007,
+    "original_width": 2050,
+    "original_height": 1721,
+    "number": 1,
+    "caption": "Experimental design process.",
+    "alt": "The five-stage experimental design, showing programming learning activities, task details and their durations.",
+    "source": {
+      "doi": "10.1057/s41599-024-02751-w",
+      "pdf_page": 4,
+      "pdf_sha256": "b3972967980fa102f60ff7cbe0ccb1c769a740698e0b1bb277ec3fdf6fe19821",
+      "image_index": 0,
+      "image_xref": 161,
+      "bbox": [
+        51.647,
+        50.797,
+        543.628,
+        463.691
+      ],
+      "method": "Original embedded PDF figure; no content cropping or redrawing"
+    }
+  },
+  "ai-agents-collaborative-programming": {
+    "src": "/images/research-figures/ai-agents-collaborative-programming-fig-1.webp",
+    "full": "/images/research-figures/ai-agents-collaborative-programming-fig-1.png",
+    "width": 1200,
+    "height": 1114,
+    "original_width": 1384,
+    "original_height": 1285,
+    "number": 1,
+    "caption": "AI-agent-supported collaborative programming approach.",
+    "alt": "The collaborative programming workflow and its connections to AI agents, large language models, semantic memory and episodic memory.",
+    "source": {
+      "doi": "10.1007/s10639-025-13487-8",
+      "pdf_page": 7,
+      "pdf_sha256": "c2543e8c12af708e0d83c64df4749ad3547d67301bceb3629cd4bb3d853233c9",
+      "image_index": 0,
+      "image_xref": 101,
+      "bbox": [
+        53.605,
+        58.1103,
+        385.765,
+        366.3903
+      ],
+      "method": "Original embedded PDF figure; no content cropping or redrawing"
+    }
+  },
+  "human-ai-collaborative-learning-ecosystem": {
+    "src": "/images/research-figures/human-ai-collaborative-learning-ecosystem-fig-1.webp",
+    "full": "/images/research-figures/human-ai-collaborative-learning-ecosystem-fig-1.png",
+    "width": 1200,
+    "height": 869,
+    "original_width": 1400,
+    "original_height": 1014,
+    "number": 1,
+    "caption": "MA-PL supported intelligent programming instructional framework.",
+    "alt": "A four-part programming instructional framework for passive, active, constructive and interactive learning supported by multiple AI agents.",
+    "source": {
+      "doi": "10.1080/10447318.2026.2692021",
+      "pdf_page": 6,
+      "pdf_sha256": "20def512052f2e8d5f0462a4552d27938565d759f838330b2dd221d3686108b5",
+      "image_index": 0,
+      "image_xref": 1388,
+      "bbox": [
+        129.657,
+        482.1738,
+        465.619,
+        725.6128
+      ],
+      "method": "Original embedded PDF figure; no content cropping or redrawing"
+    }
+  },
+  "aigc-education-systematic-review": {
+    "src": "/images/research-figures/aigc-education-systematic-review-fig-7.webp",
+    "full": "/images/research-figures/aigc-education-systematic-review-fig-7.png",
+    "width": 1200,
+    "height": 603,
+    "original_width": 1382,
+    "original_height": 694,
+    "number": 7,
+    "caption": "The underlying mechanism and logical framework of AIGC's educational application.",
+    "alt": "A two-path, four-level framework linking the core advantages and potential risks of AIGC to educational application scenarios.",
+    "source": {
+      "doi": "10.1007/s10639-024-12549-7",
+      "pdf_page": 21,
+      "pdf_sha256": "504ea3525826b0db1f5245bfc1523e5c9ed28d466c147f8b3e567c3887efa54a",
+      "image_index": 0,
+      "image_xref": 222,
+      "bbox": [
+        53.845,
+        421.683,
+        385.525,
+        588.243
+      ],
+      "method": "Original embedded PDF figure; no content cropping or redrawing"
+    }
+  },
+  "genai-agents-education-systematic-review": {
+    "src": "/images/research-figures/genai-agents-education-systematic-review-fig-5.webp",
+    "full": "/images/research-figures/genai-agents-education-systematic-review-fig-5.png",
+    "width": 1200,
+    "height": 783,
+    "original_width": 1250,
+    "original_height": 816,
+    "number": 5,
+    "caption": "The theoretical framework of GenAI-agents in education.",
+    "alt": "Theories underpinning educational GenAI agents, grouped into cognition and learning, motivation and affect, and pedagogical knowledge and technology adoption.",
+    "source": {
+      "doi": "10.1080/10494820.2026.2672562",
+      "pdf_page": 15,
+      "pdf_sha256": "cc7ee3f2daad09bb4e0e6b6e48b23325ac5d0f7357f5a78a2a0f1aec4c9799c4",
+      "image_index": 0,
+      "image_xref": 1672,
+      "bbox": [
+        148.535,
+        53.292,
+        448.554,
+        249.279
+      ],
+      "method": "Original embedded PDF figure; no content cropping or redrawing"
+    }
+  },
+  "ai-agent-school-dual-memory": {
+    "src": "/images/research-figures/ai-agent-school-dual-memory-fig-1.webp",
+    "full": "/images/research-figures/ai-agent-school-dual-memory-fig-1.png",
+    "width": 1200,
+    "height": 1139,
+    "original_width": 2274,
+    "original_height": 2158,
+    "number": 1,
+    "caption": "Structural diagram of AI-Agent School (AAS).",
+    "alt": "The simulated AI-Agent School environment, showing classrooms, laboratories, a library, a playground and other school spaces.",
+    "source": {
+      "doi": "10.18653/v1/2025.findings-emnlp.312",
+      "pdf_page": 3,
+      "pdf_sha256": "473b56b6cf531ec8cce6b844266d1f2bbc7fbf05399f431937f6c6f7f9c9185d",
+      "image_index": 0,
+      "image_xref": 462,
+      "bbox": [
+        70.8565,
+        70.8407,
+        289.126,
+        277.9759
+      ],
+      "method": "Original embedded PDF figure; no content cropping or redrawing"
+    }
+  },
+  "classroom-emotion-image-dataset": {
+    "src": "/images/research-figures/classroom-emotion-image-dataset-fig-1.webp",
+    "full": "/images/research-figures/classroom-emotion-image-dataset-fig-1.png",
+    "width": 1200,
+    "height": 370,
+    "original_width": 1475,
+    "original_height": 455,
+    "number": 1,
+    "caption": "Workflow for data collection and preprocessing.",
+    "alt": "The original data collection workflow, from classroom video recording to facial image extraction, with the anonymization shown in the published figure retained.",
+    "source": {
+      "doi": "10.1016/j.dib.2024.111147",
+      "pdf_page": 5,
+      "pdf_sha256": "75457d2a596c615fb2aa0aed25215bbdd95332ec66cd8131fc531c615537b99f",
+      "image_index": 0,
+      "image_xref": 33,
+      "bbox": [
+        39.96,
+        39.066,
+        393.96,
+        148.116
+      ],
+      "method": "Original embedded PDF figure; no content cropping or redrawing"
+    }
+  },
+  "genai-business-schools-valence-adoption": {
+    "src": "/images/research-figures/genai-business-schools-valence-adoption-fig-2.webp",
+    "full": "/images/research-figures/genai-business-schools-valence-adoption-fig-2.png",
+    "width": 1200,
+    "height": 719,
+    "original_width": 1304,
+    "original_height": 781,
+    "number": 2,
+    "caption": "Results of path analysis: the valence framework.",
+    "alt": "Estimated paths from positive and negative valence factors to generative AI adoption intention and use, including the moderating role of institutional policy.",
+    "source": {
+      "doi": "10.1016/j.ijme.2025.101323",
+      "pdf_page": 11,
+      "pdf_sha256": "61680f733e5758efe4c91e24e252fd895470d592f2cbd0ee32843f086bee7a25",
+      "image_index": 0,
+      "image_xref": 306,
+      "bbox": [
+        115.654,
+        53.431,
+        428.566,
+        240.775
+      ],
+      "method": "Original embedded PDF figure; no content cropping or redrawing"
+    },
+    "note": "*p < 0.05; **p < 0.01; ***p < 0.001."
+  },
+  "genai-business-schools-information-adoption": {
+    "src": "/images/research-figures/genai-business-schools-information-adoption-fig-2.webp",
+    "full": "/images/research-figures/genai-business-schools-information-adoption-fig-2.png",
+    "width": 1200,
+    "height": 600,
+    "original_width": 1541,
+    "original_height": 770,
+    "number": 2,
+    "caption": "Results of path analysis: information evaluation and technology use.",
+    "alt": "Estimated paths connecting argument quality, source credibility and perceived ease of use with usefulness, intention and actual generative AI use, including expertise as a moderator.",
+    "source": {
+      "doi": "10.1016/j.ijme.2026.101430",
+      "pdf_page": 12,
+      "pdf_sha256": "0678a48e776c346ce9d79bf2a34e048d85caf947cda7394a957f194d7826b555",
+      "image_index": 0,
+      "image_xref": 423,
+      "bbox": [
+        87.2504,
+        53.415,
+        457.0424,
+        238.167
+      ],
+      "method": "Original embedded PDF figure; no content cropping or redrawing"
+    },
+    "note": "*p < 0.05; **p < 0.01; ***p < 0.001."
+  }
+}
