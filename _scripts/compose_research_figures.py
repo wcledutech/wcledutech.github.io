@@ -1,4 +1,4 @@
-"""Build two-panel publication overviews from verified local PDFs.
+"""Build publication overviews from verified local PDFs.
 
 Usage: python _scripts/compose_research_figures.py LOCAL_INVENTORY.json
 Only entries in research_figure_composites.json are updated. The other paper
@@ -88,47 +88,48 @@ def save_asset(image, stem, directory):
 
 
 def workflow_image(steps):
-    image = Image.new("RGB", (570, 1040), "white")
+    image = Image.new("RGB", (1500, 780), "white")
     draw = ImageDraw.Draw(image)
     for index, step in enumerate(steps):
-        y = 40 + index * 200
-        draw.text((30, y), f"{index + 1:02d}", font=font(42), fill=TEAL)
-        lines, line = [], ""
-        for word in step.split():
-            candidate = (line + " " + word).strip()
-            if draw.textlength(candidate, font=font(48)) > 400:
-                lines.append(line)
-                line = word
-            else:
-                line = candidate
-        lines.append(line)
-        for offset, line in enumerate(lines):
-            draw.text((122, y + offset * 60), line, font=font(48), fill=INK)
+        y = 80 + index * 150
+        draw.text((100, y), f"{index + 1:02d}", font=font(54), fill=TEAL, anchor="mm")
+        if draw.textlength(step, font=font(60)) > 1200:
+            raise ValueError("Workflow label exceeds the available width")
+        draw.text((835, y), step, font=font(60), fill=INK, anchor="mm")
         if index < 4:
-            draw.line((30, y + 165, 540, y + 165), fill=RULE, width=2)
+            draw.line((40, y + 75, 1460, y + 75), fill=RULE, width=2)
     return image
 
 
-def compact_composition(panels, layout):
-    width, margin, gap = 1600, 50, 50
-    tracks = [725, 725] if layout == "scenes" else [440, 1010]
-    resized = [image.resize((track, round(image.height * track / image.width)), Image.Resampling.LANCZOS) for (image, _), track in zip(panels, tracks)]
-    stage_height = max(image.height for image in resized)
-    canvas = Image.new("RGB", (width, stage_height + 240), "white")
+def overview_pair_composition(panels):
+    if len(panels) != 3:
+        raise ValueError("An overview and pair composition requires three panels")
+    width, margin, gap, caption_height = 1600, 50, 50, 130
+    tracks = [1500, 725, 725]
+    images = [image.resize((track, round(image.height * track / image.width)), Image.Resampling.LANCZOS) for (image, _), track in zip(panels, tracks)]
+    lower_y = margin + images[0].height + caption_height + gap
+    lower_height = max(image.height for image in images[1:])
+    canvas = Image.new("RGB", (width, lower_y + lower_height + caption_height + margin), "white")
     draw = ImageDraw.Draw(canvas)
-    x = margin
-    for image, (_, spec), track in zip(resized, panels, tracks):
-        canvas.paste(image, (x, margin + (stage_height - image.height) // 2))
+    for index, (image, (_, spec), track) in enumerate(zip(images, panels, tracks)):
+        x = margin if index < 2 else margin + tracks[1] + gap
+        y = margin if index == 0 else lower_y
+        stage_height = image.height if index == 0 else lower_height
+        canvas.paste(image, (x, y + (stage_height - image.height) // 2))
         center = x + track / 2
-        draw.text((center, stage_height + 90), spec["title"], font=font(42, True), fill=INK, anchor="mt")
-        draw.text((center, stage_height + 152), spec["reference"], font=font(32), fill=MUTED, anchor="mt")
-        x += track + gap
+        for text, offset, size, color in [(spec["title"], 26, 42, INK), (spec["reference"], 82, 32, MUTED)]:
+            if draw.textlength(text, font=font(size)) > track:
+                raise ValueError("Panel caption exceeds its track width")
+            draw.text((center, y + stage_height + offset), text, font=font(size), fill=color, anchor="mt")
+    draw.line((margin, lower_y - gap // 2, width - margin, lower_y - gap // 2), fill=RULE, width=2)
     return canvas
 
 
 def compose(panels, layout=None):
+    if layout == "overview-pair":
+        return overview_pair_composition(panels)
     if layout:
-        return compact_composition(panels, layout)
+        raise ValueError("Unknown composition layout: " + layout)
     width = min(1800, max(1200, *(image.width for image, _ in panels)))
     margin, gap, caption_height = 40, 56, 90
     content_width = width - margin * 2
@@ -158,8 +159,9 @@ def build(inventory_path, root=ROOT):
     figures = json.loads(figure_path.read_text(encoding="utf-8"))
     for slug, spec in specs.items():
         source = inventory[slug]
-        if len(spec["panels"]) != 2:
-            raise ValueError("Each composition must have exactly two panels")
+        expected_panels = 3 if spec.get("layout") == "overview-pair" else 2
+        if len(spec["panels"]) != expected_panels:
+            raise ValueError("The panel count does not match the composition layout")
         if hashlib.sha256(Path(source["path"]).read_bytes()).hexdigest() != source["sha256"]:
             raise ValueError("The verified source PDF has changed: " + slug)
         if source["doi"] != figures[slug]["source"]["doi"]:
@@ -178,7 +180,8 @@ def build(inventory_path, root=ROOT):
                     panels[-1]["steps"] = panel_spec["steps"]
                 images.append((image, panel_spec))
         assets = save_asset(compose(images, spec.get("layout")), stem + "-composite", directory)
-        figures[slug] = {**assets, "number": int(re.search(r"\d+", spec["panels"][0]["reference"])[0]), "label": spec["label"], "caption": spec["caption"], "alt": "Two-panel overview: " + " ".join(panel["alt"] for panel in panels), "panels": panels, "source": {**panels[0]["source"], "method": "Two-panel composition; panel-level sources and any selected chart details are recorded separately"}}
+        panel_count = "Three" if len(panels) == 3 else "Two"
+        figures[slug] = {**assets, "number": int(re.search(r"\d+", spec["panels"][0]["reference"])[0]), "label": spec["label"], "caption": spec["caption"], "alt": panel_count + "-panel overview: " + " ".join(panel["alt"] for panel in panels), "panels": panels, "source": {**panels[0]["source"], "method": panel_count + "-panel composition; panel-level sources and any selected chart details are recorded separately"}}
         if spec.get("layout"):
             figures[slug]["layout"] = spec["layout"]
         print(slug, "->", spec["label"], "|", assets["original_width"], "x", assets["original_height"])

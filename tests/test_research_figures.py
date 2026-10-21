@@ -59,7 +59,7 @@ class ResearchFiguresTest(unittest.TestCase):
                 size += len(data)
         self.assertLess(size, 3 * 1024 * 1024)
 
-    def test_only_the_six_requested_papers_have_two_panel_compositions(self):
+    def test_only_the_six_requested_papers_have_compositions(self):
         expected = {
             "metaclassroom-programming-education", "generative-ai-education-policy-framework",
             "ai-self-regulated-learning-meta-analysis", "chatgpt-programming-ai-literacy",
@@ -68,8 +68,9 @@ class ResearchFiguresTest(unittest.TestCase):
         composed = {slug for slug, figure in self.figures.items() if "panels" in figure}
         self.assertEqual(composed, expected)
         for slug in composed:
-            self.assertEqual(len(self.figures[slug]["panels"]), 2)
-            self.assertEqual([p["label"] for p in self.figures[slug]["panels"]], ["A", "B"])
+            labels = ["A", "B", "C"] if self.figures[slug].get("layout") == "overview-pair" else ["A", "B"]
+            self.assertEqual(len(self.figures[slug]["panels"]), len(labels))
+            self.assertEqual([p["label"] for p in self.figures[slug]["panels"]], labels)
 
     def test_panel_sources_and_full_size_assets_are_complete(self):
         for figure in self.figures.values():
@@ -87,8 +88,9 @@ class ResearchFiguresTest(unittest.TestCase):
         panels = self.figures["chatgpt-programming-ai-literacy"]["panels"]
         self.assertIn("one student output", self.figures["chatgpt-programming-ai-literacy"]["caption"])
         selected = [p for p in panels if "crop_pixels" in p["source"]]
-        self.assertEqual(len(selected), 1)
-        selected += self.figures["metaclassroom-programming-education"]["panels"]
+        self.assertEqual(len(selected), 2)
+        selected += [p for p in self.figures["metaclassroom-programming-education"]["panels"] if "crop_pixels" in p["source"]]
+        self.assertEqual(len(selected), 4)
         for panel in selected:
             left, top, right, bottom = panel["source"]["crop_pixels"]
             width, height = panel["source"]["uncropped_size"]
@@ -96,13 +98,22 @@ class ResearchFiguresTest(unittest.TestCase):
             self.assertTrue(0 <= top < bottom <= height)
             self.assertEqual((right - left, bottom - top), (panel["original_width"], panel["original_height"]))
 
-    def test_compact_redesign_is_limited_to_two_papers(self):
+    def test_overview_pair_redesign_is_limited_to_two_papers(self):
         layouts = {slug: figure["layout"] for slug, figure in self.figures.items() if "layout" in figure}
-        self.assertEqual(layouts, {"metaclassroom-programming-education": "scenes", "chatgpt-programming-ai-literacy": "study"})
+        self.assertEqual(layouts, {"metaclassroom-programming-education": "overview-pair", "chatgpt-programming-ai-literacy": "overview-pair"})
         for slug in layouts:
-            self.assertLess(self.figures[slug]["original_height"], self.figures[slug]["original_width"])
+            self.assertLess(self.figures[slug]["original_height"], self.figures[slug]["original_width"] * 1.3)
         scenes = self.figures["metaclassroom-programming-education"]["panels"]
-        self.assertEqual([p["reference"] for p in scenes], ["Figure 4, Scene 6", "Figure 4, Scene 5"])
+        self.assertEqual([p["reference"] for p in scenes], ["Figure 2", "Figure 4, Scene 6", "Figure 4, Scene 5"])
+        study = self.figures["chatgpt-programming-ai-literacy"]["panels"]
+        self.assertEqual([p["reference"] for p in study], ["Figure 1, condensed", "Figure 2, detail", "Figure 3, first example"])
+
+    def test_metaclassroom_overview_is_the_unmodified_original_image(self):
+        overview = self.figures["metaclassroom-programming-education"]["panels"][0]
+        self.assertNotIn("crop_pixels", overview["source"])
+        original = ROOT / "images/research-figures/metaclassroom-programming-education-fig-2.png"
+        restored = ROOT / overview["full"].lstrip("/")
+        self.assertEqual(hashlib.sha256(original.read_bytes()).digest(), hashlib.sha256(restored.read_bytes()).digest())
 
     def test_condensed_workflow_retains_five_stages_and_source_disclosure(self):
         figure = self.figures["chatgpt-programming-ai-literacy"]

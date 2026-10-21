@@ -1,24 +1,51 @@
 {
   "metaclassroom-programming-education": {
-    "src": "/images/research-figures/metaclassroom-programming-education-scenes-composite.webp",
-    "full": "/images/research-figures/metaclassroom-programming-education-scenes-composite.png",
-    "width": 1200,
-    "height": 551,
+    "src": "/images/research-figures/metaclassroom-programming-education-environment-scenes-composite.webp",
+    "full": "/images/research-figures/metaclassroom-programming-education-environment-scenes-composite.png",
+    "width": 1100,
+    "height": 1200,
     "original_width": 1600,
-    "original_height": 735,
-    "number": 4,
-    "label": "Figure 4, selected scenes",
-    "caption": "Virtual teaching and game-based practice in MetaClassroom.",
-    "alt": "Two-panel overview: Scene 6 from Figure 4: the virtual classroom with a programming blackboard, teaching platform and lectern. Scene 5 from Figure 4: the Game Corner, with interactive programming practice stations and memory-card activities.",
+    "original_height": 1746,
+    "number": 2,
+    "label": "Figures 2 and 4",
+    "caption": "The MetaClassroom environment, with virtual teaching and game-based practice shown below.",
+    "alt": "Three-panel overview: Figure 2: the original overview of the MetaClassroom learning environment, with its teaching spaces and interactive stations. Scene 6 from Figure 4: the virtual classroom with a programming blackboard, teaching platform and lectern. Scene 5 from Figure 4: the Game Corner, with interactive programming practice stations and memory-card activities.",
     "panels": [
       {
-        "src": "/images/research-figures/metaclassroom-programming-education-scenes-a.webp",
-        "full": "/images/research-figures/metaclassroom-programming-education-scenes-a.png",
+        "src": "/images/research-figures/metaclassroom-programming-education-environment-scenes-a.webp",
+        "full": "/images/research-figures/metaclassroom-programming-education-environment-scenes-a.png",
+        "width": 869,
+        "height": 487,
+        "original_width": 869,
+        "original_height": 487,
+        "label": "A",
+        "title": "Learning environment",
+        "reference": "Figure 2",
+        "alt": "Figure 2: the original overview of the MetaClassroom learning environment, with its teaching spaces and interactive stations.",
+        "source": {
+          "doi": "10.1177/07356331251322470",
+          "pdf_sha256": "71210537bb2a23c33aa1521dd2ef6a76ad86bca7d6311de693d69c94e317837c",
+          "pdf_page": 11,
+          "reference": "Figure 2",
+          "image_index": 0,
+          "image_xref": 166,
+          "bbox": [
+            59.7543,
+            372.1323,
+            372.5647,
+            547.0867
+          ],
+          "method": "Original embedded PDF image"
+        }
+      },
+      {
+        "src": "/images/research-figures/metaclassroom-programming-education-environment-scenes-b.webp",
+        "full": "/images/research-figures/metaclassroom-programming-education-environment-scenes-b.png",
         "width": 439,
         "height": 300,
         "original_width": 439,
         "original_height": 300,
-        "label": "A",
+        "label": "B",
         "title": "Virtual classroom",
         "reference": "Figure 4, Scene 6",
         "alt": "Scene 6 from Figure 4: the virtual classroom with a programming blackboard, teaching platform and lectern.",
@@ -49,13 +76,13 @@
         }
       },
       {
-        "src": "/images/research-figures/metaclassroom-programming-education-scenes-b.webp",
-        "full": "/images/research-figures/metaclassroom-programming-education-scenes-b.png",
+        "src": "/images/research-figures/metaclassroom-programming-education-environment-scenes-c.webp",
+        "full": "/images/research-figures/metaclassroom-programming-education-environment-scenes-c.png",
         "width": 440,
         "height": 300,
         "original_width": 440,
         "original_height": 300,
-        "label": "B",
+        "label": "C",
         "title": "Game-based practice",
         "reference": "Figure 4, Scene 5",
         "alt": "Scene 5 from Figure 4: the Game Corner, with interactive programming practice stations and memory-card activities.",
@@ -89,29 +116,19 @@
     "source": {
       "doi": "10.1177/07356331251322470",
       "pdf_sha256": "71210537bb2a23c33aa1521dd2ef6a76ad86bca7d6311de693d69c94e317837c",
-      "pdf_page": 13,
-      "reference": "Figure 4, Scene 6",
+      "pdf_page": 11,
+      "reference": "Figure 2",
       "image_index": 0,
-      "image_xref": 181,
+      "image_xref": 166,
       "bbox": [
-        56.7496,
-        67.2379,
-        375.3194,
-        284.7686
+        59.7543,
+        372.1323,
+        372.5647,
+        547.0867
       ],
-      "method": "Two-panel composition; panel-level sources and any selected chart details are recorded separately",
-      "crop_pixels": [
-        446,
-        0,
-        885,
-        300
-      ],
-      "uncropped_size": [
-        885,
-        605
-      ]
+      "method": "Three-panel composition; panel-level sources and any selected chart details are recorded separately"
     },
-    "layout": "scenes"
+    "layout": "overview-pair"
   },
   "generative-ai-education-policy-framework": {
     "src": "/images/research-figures/generative-ai-education-policy-framework-overview-composite.webp",
@@ -305,24 +322,24 @@
     }
   },
   "chatgpt-programming-ai-literacy": {
-    "src": "/images/research-figures/chatgpt-programming-ai-literacy-study-composite.webp",
-    "full": "/images/research-figures/chatgpt-programming-ai-literacy-study-composite.png",
-    "width": 1200,
-    "height": 782,
+    "src": "/images/research-figures/chatgpt-programming-ai-literacy-design-examples-composite.webp",
+    "full": "/images/research-figures/chatgpt-programming-ai-literacy-design-examples-composite.png",
+    "width": 1079,
+    "height": 1200,
     "original_width": 1600,
-    "original_height": 1043,
+    "original_height": 1779,
     "number": 1,
-    "label": "Figures 1 and 3",
-    "caption": "Five-stage study design, condensed from Figure 1, with one student output from Figure 3.",
-    "alt": "Two-panel overview: The five-stage study design condensed from Figure 1: preparation and recruitment, familiarisation, pre-test, programming task, and post-test and evaluation. The first complete student output chart from Figure 3, including its title, axes, legend and plotted values.",
+    "label": "Figures 1, 2 and 3",
+    "caption": "Study design condensed from Figure 1, with the task example from Figure 2 and one student output from Figure 3.",
+    "alt": "Three-panel overview: The five-stage study design condensed from Figure 1: preparation and recruitment, familiarisation, pre-test, programming task, and post-test and evaluation. The complete example chart from the task sheet in Figure 2, with its axes, legend and values retained; surrounding task instructions are omitted. The first complete student output chart from Figure 3, including its title, axes, legend and plotted values.",
     "panels": [
       {
-        "src": "/images/research-figures/chatgpt-programming-ai-literacy-study-a.webp",
-        "full": "/images/research-figures/chatgpt-programming-ai-literacy-study-a.png",
-        "width": 570,
-        "height": 1040,
-        "original_width": 570,
-        "original_height": 1040,
+        "src": "/images/research-figures/chatgpt-programming-ai-literacy-design-examples-a.webp",
+        "full": "/images/research-figures/chatgpt-programming-ai-literacy-design-examples-a.png",
+        "width": 1200,
+        "height": 624,
+        "original_width": 1500,
+        "original_height": 780,
         "label": "A",
         "title": "Study design",
         "reference": "Figure 1, condensed",
@@ -358,14 +375,51 @@
         ]
       },
       {
-        "src": "/images/research-figures/chatgpt-programming-ai-literacy-study-b.webp",
-        "full": "/images/research-figures/chatgpt-programming-ai-literacy-study-b.png",
+        "src": "/images/research-figures/chatgpt-programming-ai-literacy-design-examples-b.webp",
+        "full": "/images/research-figures/chatgpt-programming-ai-literacy-design-examples-b.png",
+        "width": 831,
+        "height": 675,
+        "original_width": 831,
+        "original_height": 675,
+        "label": "B",
+        "title": "Task example",
+        "reference": "Figure 2, detail",
+        "alt": "The complete example chart from the task sheet in Figure 2, with its axes, legend and values retained; surrounding task instructions are omitted.",
+        "source": {
+          "doi": "10.1057/s41599-024-02751-w",
+          "pdf_sha256": "b3972967980fa102f60ff7cbe0ccb1c769a740698e0b1bb277ec3fdf6fe19821",
+          "pdf_page": 5,
+          "reference": "Figure 2, detail",
+          "image_index": 0,
+          "image_xref": 180,
+          "bbox": [
+            117.581,
+            50.797,
+            477.814,
+            261.411
+          ],
+          "method": "Original embedded PDF image; selected complete chart detail, with all axes and legends retained",
+          "crop_pixels": [
+            670,
+            125,
+            1501,
+            800
+          ],
+          "uncropped_size": [
+            1501,
+            878
+          ]
+        }
+      },
+      {
+        "src": "/images/research-figures/chatgpt-programming-ai-literacy-design-examples-c.webp",
+        "full": "/images/research-figures/chatgpt-programming-ai-literacy-design-examples-c.png",
         "width": 705,
         "height": 522,
         "original_width": 705,
         "original_height": 522,
-        "label": "B",
-        "title": "Programming output",
+        "label": "C",
+        "title": "Student output",
         "reference": "Figure 3, first example",
         "alt": "The first complete student output chart from Figure 3, including its title, axes, legend and plotted values.",
         "source": {
@@ -408,7 +462,7 @@
         543.628,
         463.691
       ],
-      "method": "Two-panel composition; panel-level sources and any selected chart details are recorded separately",
+      "method": "Three-panel composition; panel-level sources and any selected chart details are recorded separately",
       "steps": [
         "Preparation & recruitment",
         "Familiarisation",
@@ -417,7 +471,7 @@
         "Post-test & evaluation"
       ]
     },
-    "layout": "study"
+    "layout": "overview-pair"
   },
   "ai-agents-collaborative-programming": {
     "src": "/images/research-figures/ai-agents-collaborative-programming-fig-1.webp",
