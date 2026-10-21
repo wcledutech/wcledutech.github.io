@@ -1,0 +1,50 @@
+{
+  "metaclassroom-programming-education": {
+    "label": "Figures 2 and 6",
+    "caption": "The learning environment and programming achievement across tests.",
+    "panels": [
+      {"page": 11, "image_index": 0, "reference": "Figure 2", "title": "Learning environment", "alt": "The MetaClassroom learning environment, reproduced from Figure 2."},
+      {"page": 19, "image_index": 0, "reference": "Figure 6", "title": "Learning achievement", "alt": "Figure 6: experimental and control groups' programming learning achievement across four tests, including the original values, legend and error bars."}
+    ]
+  },
+  "generative-ai-education-policy-framework": {
+    "label": "Figures 2 and 3",
+    "caption": "From education-specific models to changing classroom relationships.",
+    "panels": [
+      {"page": 21, "image_index": 0, "reference": "Figure 2", "title": "Educational transformation", "alt": "Figure 2: general large models, educational data and education-specific models leading to new educational forms."},
+      {"page": 22, "image_index": 0, "reference": "Figure 3", "title": "Classroom relationships", "alt": "Figure 3: three models of relationships between teachers, students and computers in education."}
+    ]
+  },
+  "ai-self-regulated-learning-meta-analysis": {
+    "label": "Figures 3 and 4",
+    "caption": "The evidence base across AI paradigms and the self-regulated learning framework.",
+    "panels": [
+      {"page": 10, "image_index": 0, "reference": "Figure 3", "title": "Evolution of the evidence base", "alt": "Figure 3: the distribution of 133 effect sizes by AI paradigm and publication period, retaining the original axes and legend."},
+      {"page": 11, "image_index": 0, "reference": "Figure 4", "title": "AI support across learning phases", "alt": "Figure 4: the conceptual intersection of AI evolution and the forethought, performance and self-reflection phases of self-regulated learning."}
+    ]
+  },
+  "chatgpt-programming-ai-literacy": {
+    "label": "Details from Figures 2 and 3",
+    "caption": "The programming task example and one student-produced output.",
+    "panels": [
+      {"page": 5, "image_index": 0, "crop": [670, 125, 1501, 800], "reference": "Figure 2, detail", "title": "Task example", "alt": "The complete example chart from the task sheet in Figure 2, with its axes, legend and values retained; surrounding task instructions are omitted."},
+      {"page": 5, "image_index": 1, "crop": [0, 0, 705, 522], "reference": "Figure 3, first example", "title": "Student output", "alt": "The first complete student output chart from Figure 3, including its title, axes, legend and plotted values."}
+    ]
+  },
+  "classroom-emotion-image-dataset": {
+    "label": "Figure 1 and Table 2",
+    "caption": "Data collection and the composition of the classroom image dataset. Table 2 is re-typeset with its original labels and values.",
+    "panels": [
+      {"page": 5, "image_index": 0, "reference": "Figure 1", "title": "Classroom data collection", "alt": "Figure 1: classroom recording and facial-image extraction, retaining the anonymization in the published paper."},
+      {"page": 4, "kind": "table", "reference": "Table 2, re-typeset", "title": "Data distribution", "alt": "Table 2, re-typeset: Surprise 218 images; Neutral 1611; Happy 592; Confuse 1176; Boring 1930; Total 5527. Original category labels and values are unchanged.", "headers": ["Category", "Images"], "rows": [["Surprise", 218], ["Neutral", 1611], ["Happy", 592], ["Confuse", 1176], ["Boring", 1930], ["Total", 5527]]}
+    ]
+  },
+  "genai-agents-education-systematic-review": {
+    "label": "Figures 4 and 6",
+    "caption": "Educational roles and the future directions of GenAI agents.",
+    "panels": [
+      {"page": 12, "image_index": 0, "reference": "Figure 4", "title": "Educational roles", "alt": "Figure 4: four educational GenAI-agent roles and their connections to literacy development."},
+      {"page": 17, "image_index": 0, "reference": "Figure 6", "title": "Future directions", "alt": "Figure 6: the future agenda from trust and control to contextual adaptation, multi-agent collaboration and ecological balance."}
+    ]
+  }
+}

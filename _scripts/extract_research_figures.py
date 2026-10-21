@@ -90,6 +90,9 @@ def extract(inventory_path, selections_path, root=ROOT):
     (root / "_data/research_figures.json").write_text(
         json.dumps(figures, ensure_ascii=True, indent=2) + "\n", encoding="utf-8"
     )
+    if (root / "_data/research_figure_composites.json").exists():
+        from compose_research_figures import build
+        build(inventory_path, root)
 
 
 if __name__ == "__main__":

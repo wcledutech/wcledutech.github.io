@@ -1,18 +1,76 @@
 {
   "metaclassroom-programming-education": {
-    "src": "/images/research-figures/metaclassroom-programming-education-fig-2.webp",
-    "full": "/images/research-figures/metaclassroom-programming-education-fig-2.png",
-    "width": 869,
-    "height": 487,
-    "original_width": 869,
-    "original_height": 487,
+    "src": "/images/research-figures/metaclassroom-programming-education-overview-composite.webp",
+    "full": "/images/research-figures/metaclassroom-programming-education-overview-composite.png",
+    "width": 771,
+    "height": 1200,
+    "original_width": 1200,
+    "original_height": 1868,
     "number": 2,
-    "caption": "Overview of MetaClassroom.",
-    "alt": "The immersive MetaClassroom programming environment, with connected teaching, learning and practice spaces.",
+    "label": "Figures 2 and 6",
+    "caption": "The learning environment and programming achievement across tests.",
+    "alt": "Two-panel overview: The MetaClassroom learning environment, reproduced from Figure 2. Figure 6: experimental and control groups' programming learning achievement across four tests, including the original values, legend and error bars.",
+    "panels": [
+      {
+        "src": "/images/research-figures/metaclassroom-programming-education-overview-a.webp",
+        "full": "/images/research-figures/metaclassroom-programming-education-overview-a.png",
+        "width": 869,
+        "height": 487,
+        "original_width": 869,
+        "original_height": 487,
+        "label": "A",
+        "title": "Learning environment",
+        "reference": "Figure 2",
+        "alt": "The MetaClassroom learning environment, reproduced from Figure 2.",
+        "source": {
+          "doi": "10.1177/07356331251322470",
+          "pdf_sha256": "71210537bb2a23c33aa1521dd2ef6a76ad86bca7d6311de693d69c94e317837c",
+          "pdf_page": 11,
+          "reference": "Figure 2",
+          "image_index": 0,
+          "image_xref": 166,
+          "bbox": [
+            59.7543,
+            372.1323,
+            372.5647,
+            547.0867
+          ],
+          "method": "Original embedded PDF image"
+        }
+      },
+      {
+        "src": "/images/research-figures/metaclassroom-programming-education-overview-b.webp",
+        "full": "/images/research-figures/metaclassroom-programming-education-overview-b.png",
+        "width": 869,
+        "height": 717,
+        "original_width": 869,
+        "original_height": 717,
+        "label": "B",
+        "title": "Learning achievement",
+        "reference": "Figure 6",
+        "alt": "Figure 6: experimental and control groups' programming learning achievement across four tests, including the original values, legend and error bars.",
+        "source": {
+          "doi": "10.1177/07356331251322470",
+          "pdf_sha256": "71210537bb2a23c33aa1521dd2ef6a76ad86bca7d6311de693d69c94e317837c",
+          "pdf_page": 19,
+          "reference": "Figure 6",
+          "image_index": 0,
+          "image_xref": 225,
+          "bbox": [
+            59.7543,
+            208.9702,
+            372.5647,
+            466.9796
+          ],
+          "method": "Original embedded PDF image"
+        }
+      }
+    ],
     "source": {
       "doi": "10.1177/07356331251322470",
-      "pdf_page": 11,
       "pdf_sha256": "71210537bb2a23c33aa1521dd2ef6a76ad86bca7d6311de693d69c94e317837c",
+      "pdf_page": 11,
+      "reference": "Figure 2",
       "image_index": 0,
       "image_xref": 166,
       "bbox": [
@@ -21,32 +79,90 @@
         372.5647,
         547.0867
       ],
-      "method": "Original embedded PDF figure; no content cropping or redrawing"
+      "method": "Two-panel composition; panel-level sources and any selected chart details are recorded separately"
     }
   },
   "generative-ai-education-policy-framework": {
-    "src": "/images/research-figures/generative-ai-education-policy-framework-fig-1.webp",
-    "full": "/images/research-figures/generative-ai-education-policy-framework-fig-1.png",
+    "src": "/images/research-figures/generative-ai-education-policy-framework-overview-composite.webp",
+    "full": "/images/research-figures/generative-ai-education-policy-framework-overview-composite.png",
     "width": 1200,
-    "height": 564,
+    "height": 1087,
     "original_width": 1382,
-    "original_height": 650,
-    "number": 1,
-    "caption": "Transformation action framework.",
-    "alt": "A three-level transformation action framework linking macro-level social change, meso-level educational organization and micro-level teaching and learning.",
+    "original_height": 1252,
+    "number": 2,
+    "label": "Figures 2 and 3",
+    "caption": "From education-specific models to changing classroom relationships.",
+    "alt": "Two-panel overview: Figure 2: general large models, educational data and education-specific models leading to new educational forms. Figure 3: three models of relationships between teachers, students and computers in education.",
+    "panels": [
+      {
+        "src": "/images/research-figures/generative-ai-education-policy-framework-overview-a.webp",
+        "full": "/images/research-figures/generative-ai-education-policy-framework-overview-a.png",
+        "width": 1200,
+        "height": 560,
+        "original_width": 1382,
+        "original_height": 645,
+        "label": "A",
+        "title": "Educational transformation",
+        "reference": "Figure 2",
+        "alt": "Figure 2: general large models, educational data and education-specific models leading to new educational forms.",
+        "source": {
+          "doi": "10.1007/s11423-025-10535-5",
+          "pdf_sha256": "a1f655a9f38ce46a1a079766d991e14a90d60be56876ea8b9560a5d871f66289",
+          "pdf_page": 21,
+          "reference": "Figure 2",
+          "image_index": 0,
+          "image_xref": 182,
+          "bbox": [
+            53.845,
+            57.8503,
+            385.525,
+            212.5303
+          ],
+          "method": "Original embedded PDF image"
+        }
+      },
+      {
+        "src": "/images/research-figures/generative-ai-education-policy-framework-overview-b.webp",
+        "full": "/images/research-figures/generative-ai-education-policy-framework-overview-b.png",
+        "width": 1200,
+        "height": 302,
+        "original_width": 1382,
+        "original_height": 348,
+        "label": "B",
+        "title": "Classroom relationships",
+        "reference": "Figure 3",
+        "alt": "Figure 3: three models of relationships between teachers, students and computers in education.",
+        "source": {
+          "doi": "10.1007/s11423-025-10535-5",
+          "pdf_sha256": "a1f655a9f38ce46a1a079766d991e14a90d60be56876ea8b9560a5d871f66289",
+          "pdf_page": 22,
+          "reference": "Figure 3",
+          "image_index": 0,
+          "image_xref": 192,
+          "bbox": [
+            53.845,
+            57.8503,
+            385.525,
+            141.3703
+          ],
+          "method": "Original embedded PDF image"
+        }
+      }
+    ],
     "source": {
       "doi": "10.1007/s11423-025-10535-5",
-      "pdf_page": 16,
       "pdf_sha256": "a1f655a9f38ce46a1a079766d991e14a90d60be56876ea8b9560a5d871f66289",
+      "pdf_page": 21,
+      "reference": "Figure 2",
       "image_index": 0,
-      "image_xref": 128,
+      "image_xref": 182,
       "bbox": [
         53.845,
         57.8503,
         385.525,
-        213.8503
+        212.5303
       ],
-      "method": "Original embedded PDF figure; no content cropping or redrawing"
+      "method": "Two-panel composition; panel-level sources and any selected chart details are recorded separately"
     }
   },
   "aigc-adoption-ai-literacy-fsqca": {
@@ -75,53 +191,199 @@
     }
   },
   "ai-self-regulated-learning-meta-analysis": {
-    "src": "/images/research-figures/ai-self-regulated-learning-meta-analysis-fig-4.webp",
-    "full": "/images/research-figures/ai-self-regulated-learning-meta-analysis-fig-4.png",
-    "width": 1182,
-    "height": 660,
-    "original_width": 1182,
-    "original_height": 660,
-    "number": 4,
-    "caption": "The intersection of AI evolution and self-regulated learning processes.",
-    "alt": "A conceptual framework linking forethought, performance and self-reflection with rule-based, data-driven and generative AI support.",
+    "src": "/images/research-figures/ai-self-regulated-learning-meta-analysis-overview-composite.webp",
+    "full": "/images/research-figures/ai-self-regulated-learning-meta-analysis-overview-composite.png",
+    "width": 1009,
+    "height": 1200,
+    "original_width": 1642,
+    "original_height": 1952,
+    "number": 3,
+    "label": "Figures 3 and 4",
+    "caption": "The evidence base across AI paradigms and the self-regulated learning framework.",
+    "alt": "Two-panel overview: Figure 3: the distribution of 133 effect sizes by AI paradigm and publication period, retaining the original axes and legend. Figure 4: the conceptual intersection of AI evolution and the forethought, performance and self-reflection phases of self-regulated learning.",
+    "panels": [
+      {
+        "src": "/images/research-figures/ai-self-regulated-learning-meta-analysis-overview-a.webp",
+        "full": "/images/research-figures/ai-self-regulated-learning-meta-analysis-overview-a.png",
+        "width": 1200,
+        "height": 587,
+        "original_width": 1642,
+        "original_height": 803,
+        "label": "A",
+        "title": "Evolution of the evidence base",
+        "reference": "Figure 3",
+        "alt": "Figure 3: the distribution of 133 effect sizes by AI paradigm and publication period, retaining the original axes and legend.",
+        "source": {
+          "doi": "10.1111/bjet.70058",
+          "pdf_sha256": "af716f9ec7e0a0e355d69bd1cc7a6d1cc8425e3a2297bbc5d14c3235bb6d04af",
+          "pdf_page": 10,
+          "reference": "Figure 3",
+          "image_index": 0,
+          "image_xref": 248,
+          "bbox": [
+            45.3544,
+            49.6065,
+            439.3701,
+            242.1521
+          ],
+          "method": "Original embedded PDF image"
+        }
+      },
+      {
+        "src": "/images/research-figures/ai-self-regulated-learning-meta-analysis-overview-b.webp",
+        "full": "/images/research-figures/ai-self-regulated-learning-meta-analysis-overview-b.png",
+        "width": 1182,
+        "height": 660,
+        "original_width": 1182,
+        "original_height": 660,
+        "label": "B",
+        "title": "AI support across learning phases",
+        "reference": "Figure 4",
+        "alt": "Figure 4: the conceptual intersection of AI evolution and the forethought, performance and self-reflection phases of self-regulated learning.",
+        "source": {
+          "doi": "10.1111/bjet.70058",
+          "pdf_sha256": "af716f9ec7e0a0e355d69bd1cc7a6d1cc8425e3a2297bbc5d14c3235bb6d04af",
+          "pdf_page": 11,
+          "reference": "Figure 4",
+          "image_index": 0,
+          "image_xref": 274,
+          "bbox": [
+            100.6299,
+            49.6065,
+            384.0945,
+            207.8513
+          ],
+          "method": "Original embedded PDF image"
+        }
+      }
+    ],
     "source": {
       "doi": "10.1111/bjet.70058",
-      "pdf_page": 11,
       "pdf_sha256": "af716f9ec7e0a0e355d69bd1cc7a6d1cc8425e3a2297bbc5d14c3235bb6d04af",
+      "pdf_page": 10,
+      "reference": "Figure 3",
       "image_index": 0,
-      "image_xref": 274,
+      "image_xref": 248,
       "bbox": [
-        100.6299,
+        45.3544,
         49.6065,
-        384.0945,
-        207.8513
+        439.3701,
+        242.1521
       ],
-      "method": "Original embedded PDF figure; no content cropping or redrawing"
+      "method": "Two-panel composition; panel-level sources and any selected chart details are recorded separately"
     }
   },
   "chatgpt-programming-ai-literacy": {
-    "src": "/images/research-figures/chatgpt-programming-ai-literacy-fig-1.webp",
-    "full": "/images/research-figures/chatgpt-programming-ai-literacy-fig-1.png",
-    "width": 1200,
-    "height": 1007,
-    "original_width": 2050,
-    "original_height": 1721,
-    "number": 1,
-    "caption": "Experimental design process.",
-    "alt": "The five-stage experimental design, showing programming learning activities, task details and their durations.",
+    "src": "/images/research-figures/chatgpt-programming-ai-literacy-overview-composite.webp",
+    "full": "/images/research-figures/chatgpt-programming-ai-literacy-overview-composite.png",
+    "width": 701,
+    "height": 1200,
+    "original_width": 1200,
+    "original_height": 2055,
+    "number": 2,
+    "label": "Details from Figures 2 and 3",
+    "caption": "The programming task example and one student-produced output.",
+    "alt": "Two-panel overview: The complete example chart from the task sheet in Figure 2, with its axes, legend and values retained; surrounding task instructions are omitted. The first complete student output chart from Figure 3, including its title, axes, legend and plotted values.",
+    "panels": [
+      {
+        "src": "/images/research-figures/chatgpt-programming-ai-literacy-overview-a.webp",
+        "full": "/images/research-figures/chatgpt-programming-ai-literacy-overview-a.png",
+        "width": 831,
+        "height": 675,
+        "original_width": 831,
+        "original_height": 675,
+        "label": "A",
+        "title": "Task example",
+        "reference": "Figure 2, detail",
+        "alt": "The complete example chart from the task sheet in Figure 2, with its axes, legend and values retained; surrounding task instructions are omitted.",
+        "source": {
+          "doi": "10.1057/s41599-024-02751-w",
+          "pdf_sha256": "b3972967980fa102f60ff7cbe0ccb1c769a740698e0b1bb277ec3fdf6fe19821",
+          "pdf_page": 5,
+          "reference": "Figure 2, detail",
+          "image_index": 0,
+          "image_xref": 180,
+          "bbox": [
+            117.581,
+            50.797,
+            477.814,
+            261.411
+          ],
+          "method": "Original embedded PDF image; selected complete chart detail, with all axes and legends retained",
+          "crop_pixels": [
+            670,
+            125,
+            1501,
+            800
+          ],
+          "uncropped_size": [
+            1501,
+            878
+          ]
+        }
+      },
+      {
+        "src": "/images/research-figures/chatgpt-programming-ai-literacy-overview-b.webp",
+        "full": "/images/research-figures/chatgpt-programming-ai-literacy-overview-b.png",
+        "width": 705,
+        "height": 522,
+        "original_width": 705,
+        "original_height": 522,
+        "label": "B",
+        "title": "Student output",
+        "reference": "Figure 3, first example",
+        "alt": "The first complete student output chart from Figure 3, including its title, axes, legend and plotted values.",
+        "source": {
+          "doi": "10.1057/s41599-024-02751-w",
+          "pdf_sha256": "b3972967980fa102f60ff7cbe0ccb1c769a740698e0b1bb277ec3fdf6fe19821",
+          "pdf_page": 5,
+          "reference": "Figure 3, first example",
+          "image_index": 1,
+          "image_xref": 181,
+          "bbox": [
+            51.647,
+            292.309,
+            543.628,
+            417.487
+          ],
+          "method": "Original embedded PDF image; selected complete chart detail, with all axes and legends retained",
+          "crop_pixels": [
+            0,
+            0,
+            705,
+            522
+          ],
+          "uncropped_size": [
+            2050,
+            522
+          ]
+        }
+      }
+    ],
     "source": {
       "doi": "10.1057/s41599-024-02751-w",
-      "pdf_page": 4,
       "pdf_sha256": "b3972967980fa102f60ff7cbe0ccb1c769a740698e0b1bb277ec3fdf6fe19821",
+      "pdf_page": 5,
+      "reference": "Figure 2, detail",
       "image_index": 0,
-      "image_xref": 161,
+      "image_xref": 180,
       "bbox": [
-        51.647,
+        117.581,
         50.797,
-        543.628,
-        463.691
+        477.814,
+        261.411
       ],
-      "method": "Original embedded PDF figure; no content cropping or redrawing"
+      "method": "Two-panel composition; panel-level sources and any selected chart details are recorded separately",
+      "crop_pixels": [
+        670,
+        125,
+        1501,
+        800
+      ],
+      "uncropped_size": [
+        1501,
+        878
+      ]
     }
   },
   "ai-agents-collaborative-programming": {
@@ -200,28 +462,86 @@
     }
   },
   "genai-agents-education-systematic-review": {
-    "src": "/images/research-figures/genai-agents-education-systematic-review-fig-5.webp",
-    "full": "/images/research-figures/genai-agents-education-systematic-review-fig-5.png",
-    "width": 1200,
-    "height": 783,
-    "original_width": 1250,
-    "original_height": 816,
-    "number": 5,
-    "caption": "The theoretical framework of GenAI-agents in education.",
-    "alt": "Theories underpinning educational GenAI agents, grouped into cognition and learning, motivation and affect, and pedagogical knowledge and technology adoption.",
+    "src": "/images/research-figures/genai-agents-education-systematic-review-overview-composite.webp",
+    "full": "/images/research-figures/genai-agents-education-systematic-review-overview-composite.png",
+    "width": 915,
+    "height": 1200,
+    "original_width": 1800,
+    "original_height": 2361,
+    "number": 4,
+    "label": "Figures 4 and 6",
+    "caption": "Educational roles and the future directions of GenAI agents.",
+    "alt": "Two-panel overview: Figure 4: four educational GenAI-agent roles and their connections to literacy development. Figure 6: the future agenda from trust and control to contextual adaptation, multi-agent collaboration and ecological balance.",
+    "panels": [
+      {
+        "src": "/images/research-figures/genai-agents-education-systematic-review-overview-a.webp",
+        "full": "/images/research-figures/genai-agents-education-systematic-review-overview-a.png",
+        "width": 1200,
+        "height": 764,
+        "original_width": 1860,
+        "original_height": 1184,
+        "label": "A",
+        "title": "Educational roles",
+        "reference": "Figure 4",
+        "alt": "Figure 4: four educational GenAI-agent roles and their connections to literacy development.",
+        "source": {
+          "doi": "10.1080/10494820.2026.2672562",
+          "pdf_sha256": "cc7ee3f2daad09bb4e0e6b6e48b23325ac5d0f7357f5a78a2a0f1aec4c9799c4",
+          "pdf_page": 12,
+          "reference": "Figure 4",
+          "image_index": 0,
+          "image_xref": 1630,
+          "bbox": [
+            74.8346,
+            53.291,
+            521.2346,
+            337.436
+          ],
+          "method": "Original embedded PDF image"
+        }
+      },
+      {
+        "src": "/images/research-figures/genai-agents-education-systematic-review-overview-b.webp",
+        "full": "/images/research-figures/genai-agents-education-systematic-review-overview-b.png",
+        "width": 1200,
+        "height": 663,
+        "original_width": 1860,
+        "original_height": 1027,
+        "label": "B",
+        "title": "Future directions",
+        "reference": "Figure 6",
+        "alt": "Figure 6: the future agenda from trust and control to contextual adaptation, multi-agent collaboration and ecological balance.",
+        "source": {
+          "doi": "10.1080/10494820.2026.2672562",
+          "pdf_sha256": "cc7ee3f2daad09bb4e0e6b6e48b23325ac5d0f7357f5a78a2a0f1aec4c9799c4",
+          "pdf_page": 17,
+          "reference": "Figure 6",
+          "image_index": 0,
+          "image_xref": 1691,
+          "bbox": [
+            74.8346,
+            53.292,
+            521.2346,
+            299.906
+          ],
+          "method": "Original embedded PDF image"
+        }
+      }
+    ],
     "source": {
       "doi": "10.1080/10494820.2026.2672562",
-      "pdf_page": 15,
       "pdf_sha256": "cc7ee3f2daad09bb4e0e6b6e48b23325ac5d0f7357f5a78a2a0f1aec4c9799c4",
+      "pdf_page": 12,
+      "reference": "Figure 4",
       "image_index": 0,
-      "image_xref": 1672,
+      "image_xref": 1630,
       "bbox": [
-        148.535,
-        53.292,
-        448.554,
-        249.279
+        74.8346,
+        53.291,
+        521.2346,
+        337.436
       ],
-      "method": "Original embedded PDF figure; no content cropping or redrawing"
+      "method": "Two-panel composition; panel-level sources and any selected chart details are recorded separately"
     }
   },
   "ai-agent-school-dual-memory": {
@@ -250,19 +570,99 @@
     }
   },
   "classroom-emotion-image-dataset": {
-    "src": "/images/research-figures/classroom-emotion-image-dataset-fig-1.webp",
-    "full": "/images/research-figures/classroom-emotion-image-dataset-fig-1.png",
+    "src": "/images/research-figures/classroom-emotion-image-dataset-overview-composite.webp",
+    "full": "/images/research-figures/classroom-emotion-image-dataset-overview-composite.png",
     "width": 1200,
-    "height": 370,
+    "height": 1189,
     "original_width": 1475,
-    "original_height": 455,
+    "original_height": 1461,
     "number": 1,
-    "caption": "Workflow for data collection and preprocessing.",
-    "alt": "The original data collection workflow, from classroom video recording to facial image extraction, with the anonymization shown in the published figure retained.",
+    "label": "Figure 1 and Table 2",
+    "caption": "Data collection and the composition of the classroom image dataset. Table 2 is re-typeset with its original labels and values.",
+    "alt": "Two-panel overview: Figure 1: classroom recording and facial-image extraction, retaining the anonymization in the published paper. Table 2, re-typeset: Surprise 218 images; Neutral 1611; Happy 592; Confuse 1176; Boring 1930; Total 5527. Original category labels and values are unchanged.",
+    "panels": [
+      {
+        "src": "/images/research-figures/classroom-emotion-image-dataset-overview-a.webp",
+        "full": "/images/research-figures/classroom-emotion-image-dataset-overview-a.png",
+        "width": 1200,
+        "height": 370,
+        "original_width": 1475,
+        "original_height": 455,
+        "label": "A",
+        "title": "Classroom data collection",
+        "reference": "Figure 1",
+        "alt": "Figure 1: classroom recording and facial-image extraction, retaining the anonymization in the published paper.",
+        "source": {
+          "doi": "10.1016/j.dib.2024.111147",
+          "pdf_sha256": "75457d2a596c615fb2aa0aed25215bbdd95332ec66cd8131fc531c615537b99f",
+          "pdf_page": 5,
+          "reference": "Figure 1",
+          "image_index": 0,
+          "image_xref": 33,
+          "bbox": [
+            39.96,
+            39.066,
+            393.96,
+            148.116
+          ],
+          "method": "Original embedded PDF image"
+        }
+      },
+      {
+        "src": "/images/research-figures/classroom-emotion-image-dataset-overview-b.webp",
+        "full": "/images/research-figures/classroom-emotion-image-dataset-overview-b.png",
+        "width": 1200,
+        "height": 615,
+        "original_width": 1400,
+        "original_height": 718,
+        "label": "B",
+        "title": "Data distribution",
+        "reference": "Table 2, re-typeset",
+        "alt": "Table 2, re-typeset: Surprise 218 images; Neutral 1611; Happy 592; Confuse 1176; Boring 1930; Total 5527. Original category labels and values are unchanged.",
+        "source": {
+          "doi": "10.1016/j.dib.2024.111147",
+          "pdf_sha256": "75457d2a596c615fb2aa0aed25215bbdd95332ec66cd8131fc531c615537b99f",
+          "pdf_page": 4,
+          "reference": "Table 2, re-typeset",
+          "method": "Table re-typeset in Times New Roman; original labels and values preserved",
+          "headers": [
+            "Category",
+            "Images"
+          ],
+          "rows": [
+            [
+              "Surprise",
+              218
+            ],
+            [
+              "Neutral",
+              1611
+            ],
+            [
+              "Happy",
+              592
+            ],
+            [
+              "Confuse",
+              1176
+            ],
+            [
+              "Boring",
+              1930
+            ],
+            [
+              "Total",
+              5527
+            ]
+          ]
+        }
+      }
+    ],
     "source": {
       "doi": "10.1016/j.dib.2024.111147",
-      "pdf_page": 5,
       "pdf_sha256": "75457d2a596c615fb2aa0aed25215bbdd95332ec66cd8131fc531c615537b99f",
+      "pdf_page": 5,
+      "reference": "Figure 1",
       "image_index": 0,
       "image_xref": 33,
       "bbox": [
@@ -271,7 +671,7 @@
         393.96,
         148.116
       ],
-      "method": "Original embedded PDF figure; no content cropping or redrawing"
+      "method": "Two-panel composition; panel-level sources and any selected chart details are recorded separately"
     }
   },
   "genai-business-schools-valence-adoption": {

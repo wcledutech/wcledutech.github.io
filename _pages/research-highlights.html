@@ -48,12 +48,25 @@ author_profile: true
           {% assign figure = site.data.research_figures[paper.slug] %}
           {% if figure %}
           <figure class="highlights-paper-figure">
+            {% if figure.panels %}
+            <div class="highlights-figure-composite" role="group" aria-label="{{ figure.caption | escape }}">
+              {% for panel in figure.panels %}
+              <div class="highlights-figure-panel">
+                <a class="highlights-panel-image" href="{{ panel.full | relative_url }}" target="_blank" rel="noopener" title="{{ panel.reference | escape }}. {{ panel.title | escape }}" aria-label="Enlarge {{ panel.reference | escape }} from {{ paper.title | escape }}">
+                  <img src="{{ panel.src | relative_url }}" width="{{ panel.width }}" height="{{ panel.height }}" alt="{{ panel.alt | escape }}" loading="lazy" decoding="async">
+                </a>
+                <p class="highlights-panel-caption"><span>{{ panel.label }}</span> {{ panel.title | escape }}</p>
+              </div>
+              {% endfor %}
+            </div>
+            {% else %}
             <a class="highlights-figure-image" href="{{ figure.full | relative_url }}" target="_blank" rel="noopener" title="Figure {{ figure.number }}. {{ figure.caption | escape }}{% if figure.note %} {{ figure.note | escape }}{% endif %}" aria-label="Enlarge Figure {{ figure.number }} from {{ paper.title | escape }}">
               <img src="{{ figure.src | relative_url }}" width="{{ figure.width }}" height="{{ figure.height }}" alt="{{ figure.alt | escape }}" loading="lazy" decoding="async">
             </a>
+            {% endif %}
             <figcaption>
-              <span class="highlights-figure-caption"><strong>Figure {{ figure.number }}.</strong> {{ figure.caption | escape }}{% if figure.note %}<span class="highlights-figure-note">{{ figure.note | escape }}</span>{% endif %}</span>
-              <a class="highlights-figure-expand" href="{{ figure.full | relative_url }}?view=original" target="_blank" rel="noopener" title="Open original image in a new tab" aria-label="View original Figure {{ figure.number }} from {{ paper.title | escape }} (opens in a new tab)"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+              <span class="highlights-figure-caption"><strong>{% if figure.label %}{{ figure.label | escape }}{% else %}Figure {{ figure.number }}{% endif %}.</strong> {{ figure.caption | escape }}{% if figure.note %}<span class="highlights-figure-note">{{ figure.note | escape }}</span>{% endif %}</span>
+              <a class="highlights-figure-expand" href="{{ figure.full | relative_url }}?view=original" target="_blank" rel="noopener" title="{% if figure.panels %}Open complete composition in a new tab{% else %}Open original image in a new tab{% endif %}" aria-label="{% if figure.panels %}View complete composition{% else %}View original Figure {{ figure.number }}{% endif %} from {{ paper.title | escape }} (opens in a new tab)"><i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
             </figcaption>
           </figure>
           {% endif %}

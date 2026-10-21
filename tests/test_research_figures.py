@@ -50,13 +50,56 @@ class ResearchFiguresTest(unittest.TestCase):
     def test_previews_are_webp_and_within_page_payload_budget(self):
         size = 0
         for figure in self.figures.values():
-            self.assertTrue(figure["src"].startswith("/images/research-figures/"))
-            data = (ROOT / figure["src"].lstrip("/")).read_bytes()
-            self.assertEqual(data[:4], b"RIFF")
-            self.assertEqual(data[8:12], b"WEBP")
-            self.assertLessEqual(max(figure["width"], figure["height"]), 1200)
-            size += len(data)
+            for image in figure.get("panels", [figure]):
+                self.assertTrue(image["src"].startswith("/images/research-figures/"))
+                data = (ROOT / image["src"].lstrip("/")).read_bytes()
+                self.assertEqual(data[:4], b"RIFF")
+                self.assertEqual(data[8:12], b"WEBP")
+                self.assertLessEqual(max(image["width"], image["height"]), 1200)
+                size += len(data)
         self.assertLess(size, 3 * 1024 * 1024)
+
+    def test_only_the_six_requested_papers_have_two_panel_compositions(self):
+        expected = {
+            "metaclassroom-programming-education", "generative-ai-education-policy-framework",
+            "ai-self-regulated-learning-meta-analysis", "chatgpt-programming-ai-literacy",
+            "classroom-emotion-image-dataset", "genai-agents-education-systematic-review",
+        }
+        composed = {slug for slug, figure in self.figures.items() if "panels" in figure}
+        self.assertEqual(composed, expected)
+        for slug in composed:
+            self.assertEqual(len(self.figures[slug]["panels"]), 2)
+            self.assertEqual([p["label"] for p in self.figures[slug]["panels"]], ["A", "B"])
+
+    def test_panel_sources_and_full_size_assets_are_complete(self):
+        for figure in self.figures.values():
+            for panel in figure.get("panels", []):
+                self.assertEqual(panel["source"]["doi"], figure["source"]["doi"])
+                self.assertEqual(panel["source"]["pdf_sha256"], figure["source"]["pdf_sha256"])
+                self.assertGreater(panel["source"]["pdf_page"], 0)
+                self.assertGreater(len(panel["alt"]), 30)
+                self.assertTrue(panel["reference"].startswith(("Figure", "Table")))
+                data = (ROOT / panel["full"].lstrip("/")).read_bytes()
+                self.assertEqual(data[:8], b"\x89PNG\r\n\x1a\n")
+                self.assertEqual(struct.unpack(">II", data[16:24]), (panel["original_width"], panel["original_height"]))
+
+    def test_selected_chart_details_are_explicit_and_within_source_bounds(self):
+        panels = self.figures["chatgpt-programming-ai-literacy"]["panels"]
+        self.assertIn("Details", self.figures["chatgpt-programming-ai-literacy"]["label"])
+        for panel in panels:
+            left, top, right, bottom = panel["source"]["crop_pixels"]
+            width, height = panel["source"]["uncropped_size"]
+            self.assertTrue(0 <= left < right <= width)
+            self.assertTrue(0 <= top < bottom <= height)
+            self.assertEqual((right - left, bottom - top), (panel["original_width"], panel["original_height"]))
+
+    def test_retypeset_table_preserves_all_published_categories_and_counts(self):
+        figure = self.figures["classroom-emotion-image-dataset"]
+        source = figure["panels"][1]["source"]
+        self.assertIn("re-typeset", figure["caption"])
+        self.assertEqual(source["headers"], ["Category", "Images"])
+        self.assertEqual(source["rows"], [["Surprise", 218], ["Neutral", 1611], ["Happy", 592], ["Confuse", 1176], ["Boring", 1930], ["Total", 5527]])
+        self.assertEqual(sum(row[1] for row in source["rows"][:-1]), 5527)
 
     def test_result_figures_retain_significance_notes(self):
         for slug in ("genai-business-schools-valence-adoption", "genai-business-schools-information-adoption"):
