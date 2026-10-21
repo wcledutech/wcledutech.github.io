@@ -1,0 +1,1169 @@
+{
+  "checked_on": "2026-10-22",
+  "profile_url": "https://scholar.google.com/citations?user=C_PHTMsAAAAJ&hl=en&pagesize=100",
+  "scope": "Publication index additions and author-maintained Scholar award annotations; publisher and Crossref metadata take precedence for bibliography.",
+  "profile_records": 88,
+  "profile_fully_loaded": true,
+  "index_records_before": 82,
+  "index_records_after": 84,
+  "added_dois": [
+    "10.1007/s10462-026-11698-0",
+    "10.1177/07356331261494349"
+  ],
+  "awards": {
+    "source": "Author-maintained trophy and dated-fire markers on the Google Scholar profile; no independent Clarivate status claim.",
+    "observed_trophy_count": 19,
+    "observed_fire_count": 10,
+    "new_highly_cited_dois": [],
+    "new_hot_paper_dois": [],
+    "display_highly_cited_count": 19,
+    "display_historical_hot_paper_count": 11,
+    "preserved_author_override": {
+      "doi": "10.1007/s10639-025-13487-8",
+      "hot_paper_years": [
+        2026
+      ],
+      "source": "Author confirmation documented in publication-index-annotations.md, 26-27 September 2026",
+      "reason": "Retain a confirmed historical hot-paper year even when the current Scholar title omits its fire marker."
+    }
+  },
+  "bibliographic_decisions": {
+    "new_publications": [
+      {
+        "doi": "10.1007/s10462-026-11698-0",
+        "title": "Artificial intelligence technologies for aging in place: a systematic review",
+        "authors": [
+          "Keyi Li",
+          "Chengliang Wang",
+          "Zhuopeng Yu"
+        ],
+        "year": 2026,
+        "journal": "Artificial Intelligence Review",
+        "category": "journal-article",
+        "citation_text": "Li, K., Wang, C., & Yu, Z. (2026). Artificial intelligence technologies for aging in place: a systematic review. Artificial Intelligence Review. Advance online publication. https://doi.org/10.1007/s10462-026-11698-0",
+        "url": "https://doi.org/10.1007/s10462-026-11698-0",
+        "published_online": "2026-10-01",
+        "corresponding_authors": [
+          "Keyi Li"
+        ]
+      },
+      {
+        "doi": "10.1177/07356331261494349",
+        "title": "From Prompting to Scaffolding: Divergent Human–AI Interaction Pathways of Pre-Service Teachers in Multi-Agent Micro-Teaching Simulation (MAMS)",
+        "authors": [
+          "Ruiqing Du",
+          "Zengzhao Chen",
+          "Yawen Shi",
+          "Chengliang Wang",
+          "Haiming Zhao",
+          "Zhifeng Wang"
+        ],
+        "year": 2026,
+        "journal": "Journal of Educational Computing Research",
+        "category": "journal-article",
+        "citation_text": "Du, R., Chen, Z., Shi, Y., Wang, C., Zhao, H., & Wang, Z. (2026). From prompting to scaffolding: Divergent human–AI interaction pathways of pre-service teachers in multi-agent micro-teaching simulation (MAMS). Journal of Educational Computing Research. Advance online publication. https://doi.org/10.1177/07356331261494349",
+        "url": "https://doi.org/10.1177/07356331261494349",
+        "published_online": "2026-10-07"
+      }
+    ],
+    "new_journal_metric": {
+      "journal": "Artificial Intelligence Review",
+      "year": 2025,
+      "value": 18.8,
+      "source": "https://link.springer.com/journal/10462"
+    },
+    "mams_source_difference": {
+      "scholar_date": "2026-03-13",
+      "publisher_and_crossref_date": "2026-10-07",
+      "decision": "Use the publisher/Crossref date and unhyphenated author names; do not treat the Scholar article identifier as a page range."
+    },
+    "existing_year_differences": [
+      {
+        "doi": "10.1080/13675567.2025.2520550",
+        "title": "Factors influencing the adoption of generative AI in supply chain management: an empirical study based on task-technology fit and the theory of planned behaviour",
+        "existing": 2026,
+        "scholar": "2025",
+        "decision": "Retain the index year, independently confirmed as the Crossref published-print year; Scholar uses the earlier online year.",
+        "source": "https://api.crossref.org/works/10.1080%2F13675567.2025.2520550"
+      },
+      {
+        "doi": "10.1108/ijmce-07-2023-0064",
+        "title": "The role of teachers’ direct and emotional mentoring in shaping undergraduates’ research aspirations: a social cognitive career theory perspective",
+        "existing": 2025,
+        "scholar": "2024",
+        "decision": "Retain the index year, independently confirmed as the Crossref published-print year; Scholar uses the earlier online year.",
+        "source": "https://api.crossref.org/works/10.1108%2Fijmce-07-2023-0064"
+      },
+      {
+        "doi": "10.1080/0144929x.2025.2551579",
+        "title": "How do virtual influencers drive impulsive buying behaviour in e-commerce live streaming: the effects of parasocial relationship and influencer-product fit",
+        "existing": 2026,
+        "scholar": "2025",
+        "decision": "Retain the index year, independently confirmed as the Crossref published-print year; Scholar uses the earlier online year.",
+        "source": "https://api.crossref.org/works/10.1080%2F0144929x.2025.2551579"
+      },
+      {
+        "doi": "10.1080/10447318.2025.2504198",
+        "title": "From Perception to Trust: The Multidimensional Landscape of Anthropomorphism in Robotics",
+        "existing": 2026,
+        "scholar": "2025",
+        "decision": "Retain the index year, independently confirmed as the Crossref published-print year; Scholar uses the earlier online year.",
+        "source": "https://api.crossref.org/works/10.1080%2F10447318.2025.2504198"
+      },
+      {
+        "doi": "10.1080/10494820.2024.2335481",
+        "title": "Unleashing the power of virtual learning environment: exploring the impact on learning outcomes through a meta-analysis",
+        "existing": 2025,
+        "scholar": "2024",
+        "decision": "Retain the index year, independently confirmed as the Crossref published-print year; Scholar uses the earlier online year.",
+        "source": "https://api.crossref.org/works/10.1080%2F10494820.2024.2335481"
+      },
+      {
+        "doi": "10.1080/10447318.2025.2526575",
+        "title": "Show Your Palm to Pay: Are Customers Ready for Palm Print Recognition Technology in Retail Stores in China?",
+        "existing": 2026,
+        "scholar": "2025",
+        "decision": "Retain the index year, independently confirmed as the Crossref published-print year; Scholar uses the earlier online year.",
+        "source": "https://api.crossref.org/works/10.1080%2F10447318.2025.2526575"
+      }
+    ],
+    "preprint_title": {
+      "doi": "10.2139/ssrn.6968861",
+      "scholar_range": "2020-2026",
+      "index_and_crossref_range": "2000-2026",
+      "decision": "Retain the title registered with Crossref."
+    }
+  },
+  "retained_index_record_absent_from_scholar": [
+    {
+      "doi": "10.1109/icetc66579.2025.11387501",
+      "title": "Empowering higher education with Extended Reality technology: a bibliometric perspective"
+    }
+  ],
+  "unmatched_older_scholar_records": [
+    {
+      "title": "Systematic Analysis of Research in Educational Management from the Perspective of Bibliometrics and Scientometrics",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:W7OEmFMy1HYC",
+      "year": "2022",
+      "decision": "Outside this incremental addition set; no verified DOI mapped to the existing DOI-based index."
+    },
+    {
+      "title": "The Intelligent Evolution of Programming Education: Action Research-Driven Optimization of Learning Environments and Ecological Innovation",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:hMod-77fHWUC",
+      "year": "2025",
+      "decision": "Outside this incremental addition set; no verified DOI mapped to the existing DOI-based index."
+    },
+    {
+      "title": "AI-Agent School: Construction and Evaluation of an Educational Simulation Environment Based on LLM-Driven Agents",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:blknAaTinKkC",
+      "year": "2025",
+      "decision": "Outside this incremental addition set; no verified DOI mapped to the existing DOI-based index."
+    },
+    {
+      "title": "Breaking the Boundaries of Traditional Vocabulary Learning: The Impact of Intelligent Interactive Companion based Bocabulary Learning Methods on Learning Outcomes, Motivation …",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:O3NaXMp0MMsC",
+      "year": "2025",
+      "decision": "Outside this incremental addition set; no verified DOI mapped to the existing DOI-based index."
+    },
+    {
+      "title": "Bibliometric research in educational technology: a critical literature",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:Tyk-4Ss8FVUC",
+      "year": "2023",
+      "decision": "Outside this incremental addition set; no verified DOI mapped to the existing DOI-based index."
+    }
+  ],
+  "scholar_observations": [
+    {
+      "byline": "CL Wang, XJ Chen, T Yu, YD Liu, YH Jing*",
+      "cited_by": "614",
+      "title": "🏆Education reform and change driven by digital technology: A bibliometric study from a global perspective [🔥in 2025/2026]",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:fPk4N6BV_jEC",
+      "venue": "Humanities and Social Sciences Communications 11 (1), 256, 2024",
+      "year": "2024",
+      "matched_doi": "10.1057/s41599-024-02717-y",
+      "observed_highly_cited": true,
+      "observed_hot_paper_years": [
+        2025,
+        2026
+      ]
+    },
+    {
+      "byline": "CL Wang, HM Wang, YY Li, J Dai, XQ Gu, T Yu*",
+      "cited_by": "549",
+      "title": "🏆Factors influencing university students’ behavioral intention to use generative artificial intelligence: Integrating the theory of planned behavior and AI literacy[🔥in 2025/2026]",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:JV2RwH3_ST0C",
+      "venue": "International Journal of Human–Computer Interaction 41 (11), 6649-6671, 2025",
+      "year": "2025",
+      "matched_doi": "10.1080/10447318.2024.2383033",
+      "observed_highly_cited": true,
+      "observed_hot_paper_years": [
+        2025,
+        2026
+      ]
+    },
+    {
+      "byline": "XJ Chen, ZB Hu, CL Wang*",
+      "cited_by": "285",
+      "title": "🏆Empowering education development through AIGC: A systematic literature review [🔥in 2025/2026]",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:4OULZ7Gr8RgC",
+      "venue": "Education and Information Technologies 29 (13), 17485-17537, 2024",
+      "year": "2024",
+      "matched_doi": "10.1007/s10639-024-12549-7",
+      "observed_highly_cited": true,
+      "observed_hot_paper_years": [
+        2025,
+        2026
+      ]
+    },
+    {
+      "byline": "Y Jing, L Zhao*, K Zhu, H Wang, CL Wang*, Q Xia",
+      "cited_by": "172",
+      "title": "Research landscape of adaptive learning in education: A bibliometric study on research publications from 2000 to 2022",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:u-x6o8ySG0sC",
+      "venue": "Sustainability 15 (4), 3115, 2023",
+      "year": "2023",
+      "matched_doi": "10.3390/su15043115",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "Y Jing, CL Wang, Y Chen, H Wang, T Yu, R Shadiev*",
+      "cited_by": "153",
+      "title": "Bibliometric mapping techniques in educational technology research: A systematic literature review",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:zYLM7Y9cAGgC",
+      "venue": "Education and Information Technologies 29 (8), 9283-9311, 2024",
+      "year": "2024",
+      "matched_doi": "10.1007/s10639-023-12178-6",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "T Yu, J Dai, CL Wang*",
+      "cited_by": "146",
+      "title": "🏆Adoption of blended learning: Chinese university students’ perspectives",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:qjMakFHDy7sC",
+      "venue": "Humanities and Social Sciences Communications 10 (1), 1-16, 2023",
+      "year": "2023",
+      "matched_doi": "10.1057/s41599-023-01904-7",
+      "observed_highly_cited": true,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "CL Wang, J Dai, KK Zhu, T Yu, XQ Gu",
+      "cited_by": "136",
+      "title": "🏆Understanding the continuance intention of college students toward new E-learning spaces based on an integrated model of the TAM and TTF [🔥in 2024/2025]",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:cFHS6HbyZ2cC",
+      "venue": "International Journal of Human–Computer Interaction 40 (24), 8419-8432, 2024",
+      "year": "2024",
+      "matched_doi": "10.1080/10447318.2023.2291609",
+      "observed_highly_cited": true,
+      "observed_hot_paper_years": [
+        2024,
+        2025
+      ]
+    },
+    {
+      "byline": "T Yu, AP Teoh, Q Bian, J Liao, C Wang",
+      "cited_by": "131",
+      "title": "🏆Can virtual influencers affect purchase intentions in tourism and hospitality e-commerce live streaming? An empirical study in China [🔥in 2026]",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:3s1wT3WcHBgC",
+      "venue": "International Journal of Contemporary Hospitality Management 37 (1), 216-238, 2025",
+      "year": "2025",
+      "matched_doi": "10.1108/ijchm-03-2024-0358",
+      "observed_highly_cited": true,
+      "observed_hot_paper_years": [
+        2026
+      ]
+    },
+    {
+      "byline": "YH Jing, HM Wang, XJ Chen, CL Wang*",
+      "cited_by": "114",
+      "title": "🏆What factors will affect the effectiveness of using ChatGPT to solve programming problems? A quasi-experimental study [🔥in 2025]",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:dfsIfKJdRG4C",
+      "venue": "Humanities and Social Sciences Communications 11 (1), 319, 2024",
+      "year": "2024",
+      "matched_doi": "10.1057/s41599-024-02751-w",
+      "observed_highly_cited": true,
+      "observed_hot_paper_years": [
+        2025
+      ]
+    },
+    {
+      "byline": "J Chen, Y Liu*, J Dai, CL Wang*",
+      "cited_by": "109",
+      "title": "Development and status of moral education research: Visual analysis based on knowledge graph",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:2osOgNQ5qMEC",
+      "venue": "Frontiers in psychology 13, 1079955, 2023",
+      "year": "2023",
+      "matched_doi": "10.3389/fpsyg.2022.1079955",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "HM Wang#, CL Wang#, Z Chen, F Liu, CJ Bao, XL Xu*",
+      "cited_by": "108",
+      "title": "🏆Impact of AI-agent-supported collaborative learning on the learning outcomes of University programming courses",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:RHpTSmoSYBkC",
+      "venue": "Education and Information Technologies, 1-33, 2025",
+      "year": "2025",
+      "matched_doi": "10.1007/s10639-025-13487-8",
+      "observed_highly_cited": true,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "CY Mo, CL Wang*, J Dai, P Jin",
+      "cited_by": "99",
+      "title": "Video playback speed influence on learning effect from the perspective of personalized adaptive learning: A study based on cognitive load theory",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:UeHWp8X0CEIC",
+      "venue": "Frontiers in Psychology 13, 839982, 2022",
+      "year": "2022",
+      "matched_doi": "10.3389/fpsyg.2022.839982",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "CL Wang, XJ Chen*, ZB Hu, S Jin, XQ Gu",
+      "cited_by": "74",
+      "title": "🏆Deconstructing University Learners' Adoption Intention Towards AIGC Technology: A Mixed‐Methods Study Using ChatGPT as an Example[🔥in 2025]",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:qUcmZB5y_30C",
+      "venue": "Journal of Computer Assisted Learning 41 (1), 13117, 2025",
+      "year": "2025",
+      "matched_doi": "10.1111/jcal.13117",
+      "observed_highly_cited": true,
+      "observed_hot_paper_years": [
+        2025
+      ]
+    },
+    {
+      "byline": "Y Xia, Y Deng, X Tao, S Zhang, CL Wang*",
+      "cited_by": "74",
+      "title": "🏆Digital art exhibitions and psychological well-being in Chinese Generation Z: An analysis based on the SOR framework",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:UebtZRa9Y70C",
+      "venue": "Humanities and Social Sciences Communications 11 (1), 1-15, 2024",
+      "year": "2024",
+      "matched_doi": "10.1057/s41599-024-02718-x",
+      "observed_highly_cited": true,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "Y Ma, CL Wang*",
+      "cited_by": "67",
+      "title": "Empowering music education with technology: a bibliometric perspective",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:e5wmG9Sq2KIC",
+      "venue": "Humanities and Social Sciences Communications 12 (345), 1-14, 2025",
+      "year": "2025",
+      "matched_doi": "10.1057/s41599-025-04616-2",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "J Chen, CL Wang, Y Tang*",
+      "cited_by": "64",
+      "title": "Knowledge mapping of volunteer motivation: A bibliometric analysis and cross-cultural comparative study",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:d1gkVwhDpl0C",
+      "venue": "Frontiers in psychology 13, 883150, 2022",
+      "year": "2022",
+      "matched_doi": "10.3389/fpsyg.2022.883150",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "J Dai, X Zhang, CL Wang",
+      "cited_by": "52",
+      "title": "🏆A meta-analysis of learners’ continuance intention toward online education platforms [🔥in 2024]",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:yD5IFk8b50cC",
+      "venue": "Education and Information Technologies 29 (16), 21833-21868, 2024",
+      "year": "2024",
+      "matched_doi": "10.1007/s10639-024-12654-7",
+      "observed_highly_cited": true,
+      "observed_hot_paper_years": [
+        2024
+      ]
+    },
+    {
+      "byline": "T Yu, J Dai, X Chen, CL Wang*",
+      "cited_by": "51",
+      "title": "🏆Factors influencing continuance intention in blended learning among business school students in China: based on grounded theory and FsQCA",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:YOwf2qJgpHMC",
+      "venue": "Interactive Learning Environments, 1-28, 2024",
+      "year": "2024",
+      "matched_doi": "10.1080/10494820.2024.2370477",
+      "observed_highly_cited": true,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "X Shang, Z Liu, C Gong, Z Hu, Y Wu, CL Wang*",
+      "cited_by": "49",
+      "title": "Knowledge mapping and evolution of research on older adults’ technology acceptance: a bibliometric study from 2013 to 2023",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:M3ejUd6NZC8C",
+      "venue": "Humanities and Social Sciences Communications 11 (1), 1-21, 2024",
+      "year": "2024",
+      "matched_doi": "10.1057/s41599-024-03658-2",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "Y Jing, CL Wang, Z Chen, S Shen, R Shadiev*",
+      "cited_by": "45",
+      "title": "A bibliometric analysis of studies on technology‐supported learning environments: Hot topics and frontier evolution",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:LkGwnXOMwfcC",
+      "venue": "Journal of Computer Assisted Learning, 2024",
+      "year": "2024",
+      "matched_doi": "10.1111/jcal.12934",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "C Wang, Y Chen, Z Hu, Y Li, X Gu",
+      "cited_by": "43",
+      "title": "The journey of challenges and victories: exploring the transformation action framework in the GenAI era from multifaceted policies",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:a0OBvERweLwC",
+      "venue": "Educational technology research and development 73 (5), 2951-2993, 2025",
+      "year": "2025",
+      "matched_doi": "10.1007/s11423-025-10535-5",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "CL Wang, J Dai, L Xu*",
+      "cited_by": "43",
+      "title": "Big data and data mining in education: a bibliometrics study from 2010 to 2022",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:u5HHmVD_uO8C",
+      "venue": "2022 7th International Conference on Cloud Computing and Big Data Analytics …, 2022",
+      "year": "2022",
+      "matched_doi": "10.1109/icccbda55098.2022.9778874",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "T Yu, CL Wang, Q Bian, AP Teoh*",
+      "cited_by": "42",
+      "title": "Acceptance of or resistance to facial recognition payment: A systematic review",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:4TOpqqG69KYC",
+      "venue": "Journal of Consumer Behaviour, 2024",
+      "year": "2024",
+      "matched_doi": "10.1002/cb.2385",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "XJ Chen, ZB Hu, YY Li, CL Wang*",
+      "cited_by": "41",
+      "title": "🏆The journey of challenges and triumphs: a systematic literature review of the dynamic evolution of human-centered artificial intelligence in education[🔥in 2026]",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:_Qo2XoVZTnwC",
+      "venue": "Interactive Learning Environments, 1-26, 2025",
+      "year": "2025",
+      "matched_doi": "10.1080/10494820.2025.2472288",
+      "observed_highly_cited": true,
+      "observed_hot_paper_years": [
+        2026
+      ]
+    },
+    {
+      "byline": "T Peng, CL Wang, J Xu, J Dai, T Yu*",
+      "cited_by": "40",
+      "title": "Evolution and Current Research Status of Educational Leadership Theory: A Content Analysis-Based Study",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:4DMP91E08xMC",
+      "venue": "SAGE Open 14 (3), 21582440241285763, 2024",
+      "year": "2024",
+      "matched_doi": "10.1177/21582440241285763",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "J Xu, YY Luo, CL Wang, MJ Wang, YH Wu",
+      "cited_by": "39",
+      "title": "🏆AI support in self-regulated learning: A decade of technological evolution and meta-analysis",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:2P1L_qKh6hAC",
+      "venue": "British Journal of Educational Technology, 2026",
+      "year": "2026",
+      "matched_doi": "10.1111/bjet.70058",
+      "observed_highly_cited": true,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "T Yu, AP Teoh, Q Bian, JY Liao*, CL Wang",
+      "cited_by": "38",
+      "title": "What Drives Purchase Intention in Live Streaming E-Commerce? The Perspectives of Virtual Streamers",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:4JMBOYKVnBMC",
+      "venue": "International Journal of Human–Computer Interaction, 1-20, 2025",
+      "year": "2025",
+      "matched_doi": "10.1080/10447318.2025.2487721",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "YD Liu, YH Jing, J Li, J Dai, ZB Hu, CL Wang",
+      "cited_by": "35",
+      "title": "Application of AI in engineering education: A bibliometric study",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:mB3voiENLucC",
+      "venue": "Review of Education 13 (1), 70044, 2025",
+      "year": "2025",
+      "matched_doi": "10.1002/rev3.70044",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "T Yu, J Dai, XJ Chen, CL Wang*",
+      "cited_by": "33",
+      "title": "🏆To use or not to use? Generative AI adoption in Chinese business schools [🔥in 2026]",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:RYcK_YlVTxYC",
+      "venue": "The International Journal of Management Education 24 (1), 101323, 2026",
+      "year": "2026",
+      "matched_doi": "10.1016/j.ijme.2025.101323",
+      "observed_highly_cited": true,
+      "observed_hot_paper_years": [
+        2026
+      ]
+    },
+    {
+      "byline": "J Chen, J Dai, T Yu*, CL Wang",
+      "cited_by": "33",
+      "title": "Factors influencing the adoption of generative AI in supply chain management: an empirical study based on task-technology fit and the theory of planned behaviour",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:isC4tDSrTZIC",
+      "venue": "International Journal of Logistics Research and Applications, 1-22, 2025",
+      "year": "2025",
+      "matched_doi": "10.1080/13675567.2025.2520550",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "H Li, J Xu*, Y Luo, CL Wang",
+      "cited_by": "29",
+      "title": "The role of teachers’ direct and emotional mentoring in shaping undergraduates’ research aspirations: a social cognitive career theory perspective",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:qxL8FJ1GzNcC",
+      "venue": "International Journal of Mentoring and Coaching in Education, 2024",
+      "year": "2024",
+      "matched_doi": "10.1108/ijmce-07-2023-0064",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "CL Wang, XJ Chen, YF Li, PJ Wang, HM Wang, YY Li*",
+      "cited_by": "27",
+      "title": "MetaClassroom: A New Paradigm and Experience for Programming Education",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:TQgYirikUcIC",
+      "venue": "Journal of Educational Computing Research, 07356331251322470, 2025",
+      "year": "2025",
+      "matched_doi": "10.1177/07356331251322470",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "T Yu, Y Zhang, AP Teoh, A Wang, CL Wang*",
+      "cited_by": "27",
+      "title": "Factors Influencing University Students’ Behavioral Intention to Use Electric Car-Sharing Services in Guangzhou, China",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:Y0pCki6q_DkC",
+      "venue": "SAGE Open 13 (4), 21582440231210551, 2023",
+      "year": "2023",
+      "matched_doi": "10.1177/21582440231210551",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "T Yu, AP Teoh, JY Liao*, CL Wang",
+      "cited_by": "26",
+      "title": "How do virtual influencers drive impulsive buying behaviour in e-commerce live streaming: the effects of parasocial relationship and influencer-product fit",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:GnPB-g6toBAC",
+      "venue": "Behaviour & Information Technology, 1-31, 2025",
+      "year": "2025",
+      "matched_doi": "10.1080/0144929x.2025.2551579",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "XJ Chen, T Yu, J Dai, YH Jing*, CL Wang",
+      "cited_by": "25",
+      "title": "🏆Unveiling learners’ intentions toward influencer-led education: an integration of qualitative and quantitative analysis",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:hFOr9nPyWt4C",
+      "venue": "Interactive Learning Environments, 1-19, 2025",
+      "year": "2025",
+      "matched_doi": "10.1080/10494820.2024.2444533",
+      "observed_highly_cited": true,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "J Chen, Y Liu*, K Zhu, J Dai, CL Wang",
+      "cited_by": "24",
+      "title": "The development and evolution of the research topic on the mental health of college students: A bibliometric review based on CiteSpace and VOSviewer",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:kNdYIx-mwKoC",
+      "venue": "Heliyon, 2024",
+      "year": "2024",
+      "matched_doi": "10.1016/j.heliyon.2024.e29477",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "XR Shang, ZJ Liu, C Gong, ZY He, CL Wang*",
+      "cited_by": "22",
+      "title": "From Perception to Trust: The Multidimensional Landscape of Anthropomorphism in Robotics",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:iH-uZ7U-co4C",
+      "venue": "International Journal of Human-Computer Interaction, 1-23, 2025",
+      "year": "2025",
+      "matched_doi": "10.1080/10447318.2025.2504198",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "T Yu, AP Teoh, JY Liao*, CL Wang",
+      "cited_by": "22",
+      "title": "🏆Determinants of switching intention to adopt electric vehicles: A comparative analysis of China and Malaysia",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:r0BpntZqJG4C",
+      "venue": "Technology in Society, 102949, 2025",
+      "year": "2025",
+      "matched_doi": "10.1016/j.techsoc.2025.102949",
+      "observed_highly_cited": true,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "T Yu, AP Teoh, J Liao*, CL Wang",
+      "cited_by": "22",
+      "title": "Factors influencing behavioral intention to use facial recognition payment in the restaurant industry: a comparative analysis of China and Malaysia",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:-f6ydRqryjwC",
+      "venue": "Journal of Travel & Tourism Marketing 42 (2), 222-247, 2025",
+      "year": "2025",
+      "matched_doi": "10.1080/10548408.2025.2455421",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "JY Wang, YY Li, XJ Chen, CL Wang*",
+      "cited_by": "20",
+      "title": "🏆Before and After: How Did the Pandemic Reshape Virtual Laboratory Research?",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:bEWYMUwI8FkC",
+      "venue": "SAGE Open 15 (2), 21582440251339961, 2025",
+      "year": "2025",
+      "matched_doi": "10.1177/21582440251339961",
+      "observed_highly_cited": true,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "YC Liu, GR Xu, S Yuan, C Zhou, CL Wang*",
+      "cited_by": "20",
+      "title": "Assessment as learning: Evidence based on meta-analysis and quantitative ethnography research",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:9ZlFYXVOiuMC",
+      "venue": "Studies in Educational Evaluation 83, 101423, 2024",
+      "year": "2024",
+      "matched_doi": "10.1016/j.stueduc.2024.101423",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "T Yu, AP Teoh*, CL Wang, Q Bian",
+      "cited_by": "19",
+      "title": "Convenient or risky? Investigating the behavioral intention to use facial recognition payment in smart hospitals",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:dhFuZR0502QC",
+      "venue": "Humanities and Social Sciences Communications 11 (1), 1-20, 2024",
+      "year": "2024",
+      "matched_doi": "10.1057/s41599-024-03910-9",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "CL Wang, XJ Chen, T Yu*",
+      "cited_by": "17",
+      "title": "🏆What drives learners’ behavioral intention to share knowledge on social media: evidence from a fuzzy-set qualitative comparative analysis (FsQCA)",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:j3f4tGmQtD8C",
+      "venue": "Current Psychology, 1-15, 2025",
+      "year": "2025",
+      "matched_doi": "10.1007/s12144-025-07813-z",
+      "observed_highly_cited": true,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "Y Jing, J Dai, CL Wang, S Shen, R Shadiev*",
+      "cited_by": "17",
+      "title": "Unleashing the power of virtual learning environment: exploring the impact on learning outcomes through a meta-analysis",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:3fE2CSJIrl8C",
+      "venue": "Interactive Learning Environments, 1-18, 2024",
+      "year": "2024",
+      "matched_doi": "10.1080/10494820.2024.2335481",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "X Chen, K Zhu, Y Jing, CL Wang*",
+      "cited_by": "13",
+      "title": "The Application Landscape and Research Status of Artificial Intelligence in Language Learning: A Visual Analysis",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:ufrVoPGSRksC",
+      "venue": "Proceedings of the 15th International Conference on Education Technology and …, 2023",
+      "year": "2023",
+      "matched_doi": "10.1145/3629296.3629370",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "T Yu, AP Teoh, Q Bian, CL Wang*",
+      "cited_by": "12",
+      "title": "What drives continuance intention to use electric vehicles: an extension of expectation-confirmation model",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:BqipwSGYUEgC",
+      "venue": "Transportation, 1-35, 2025",
+      "year": "2025",
+      "matched_doi": "10.1007/s11116-025-10667-w",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "Y Jing, X Chen, K Zhu, S Shen, CL Wang*",
+      "cited_by": "12",
+      "title": "The Implementation Path and Problems Encountered During Emergency Remote Teaching in Vocational Colleges: A Qualitative Study in China",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:YsMSGLbcyi4C",
+      "venue": "SAGE Open 13 (4), 21582440231212160, 2023",
+      "year": "2023",
+      "matched_doi": "10.1177/21582440231212160",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "XC Liu, QW Tang, WT Wu, XJ Chen, CL Wang*",
+      "cited_by": "11",
+      "title": "GenAI-agents in education: a systematic review of macro-level trends, educational roles, theoretical foundations and future agendas",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:SeFeTyx0c_EC",
+      "venue": "Interactive Learning Environments, 1-23, 2026",
+      "year": "2026",
+      "matched_doi": "10.1080/10494820.2026.2672562",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "Y Li, CL Wang, X Gu*",
+      "cited_by": "10",
+      "title": "Instructional design guidelines for virtual reality-based teacher training: A meta-analysis",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:ZeXyd9-uunAC",
+      "venue": "Educational Technology & Society, 2025",
+      "year": "2025",
+      "matched_doi": "10.30191/ets.202501_28(1).sp02",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "CL Wang, J Dai, Y Chen, X Zhang, L Xu*",
+      "cited_by": "10",
+      "title": "A Learning Analytics Model Based on Expression Recognition and Affective Computing: Review of Techniques and Survey of Acceptance",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:IjCSPb-OGe4C",
+      "venue": "Proceedings of the 2022 International Conference on Educational Innovation …, 2023",
+      "year": "2023",
+      "matched_doi": "10.2991/978-94-6463-012-1_19",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "S Jin, HM Wang*, Z Gao, Y Yang, B Chunjia, CL Wang*",
+      "cited_by": "9",
+      "title": "Evolution in Simulation: AI-Agent School with Dual Memory for High-Fidelity Educational Dynamics",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:J_g5lzvAfSwC",
+      "venue": "Findings of the Association for Computational Linguistics: EMNLP 2025, 5843-5857, 2025",
+      "year": "2025",
+      "matched_doi": "10.18653/v1/2025.findings-emnlp.312",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "T Yu, AP Teoh, J Liao, C Wang",
+      "cited_by": "8",
+      "title": "What drives the continuance intention of service robots in the hospitality industry? An integrated model of motivated consumer innovativeness and extended technology …",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:70eg2SAEIzsC",
+      "venue": "Journal of Hospitality Marketing & Management 35 (4), 608-653, 2026",
+      "year": "2026",
+      "matched_doi": "10.1080/19368623.2026.2616771",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "T Yu, AP Teoh, JY Liao*, CL Wang",
+      "cited_by": "8",
+      "title": "Show Your Palm to Pay: Are Customers Ready for Palm Print Recognition Technology in Retail Stores in China?",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:NMxIlDl6LWMC",
+      "venue": "International Journal of Human–Computer Interaction, 1-30, 2025",
+      "year": "2025",
+      "matched_doi": "10.1080/10447318.2025.2526575",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "J Chen, YL Tang*, CL Wang*",
+      "cited_by": "8",
+      "title": "Motivation and mechanism of university volunteers’ participation in major sport events: a grounded theory study on volunteers for the Hangzhou Asian games",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:maZDTaKrznsC",
+      "venue": "Current Psychology, 1-28, 2025",
+      "year": "2025",
+      "matched_doi": "10.1007/s12144-025-08052-y",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "T Yu, AP Teoh, QY Tu, CL Wang",
+      "cited_by": "6",
+      "title": "Quality, norms and privacy in AI chatbot adoption: a multigroup analysis",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:ldfaerwXgEUC",
+      "venue": "International Journal of Contemporary Hospitality Management, 1-24, 2026",
+      "year": "2026",
+      "matched_doi": "10.1108/ijchm-08-2025-1167",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "Y Xu, D Mao, C Wang",
+      "cited_by": "6",
+      "title": "XR Technologies in vocational education and training research (2000-2024): A Bibliometric Review",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:hC7cP41nSMkC",
+      "venue": "Proceedings of the 2024 the 16th International Conference on Education …, 2024",
+      "year": "2024",
+      "matched_doi": "10.1145/3702163.3702174",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "JQ Wang, CL Wang, T Xiao, XY Zhang",
+      "cited_by": "5",
+      "title": "Enhancing English language learning through moral dilemmas: A comparative study of GPT and human-written stories",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:35N4QoGY0k4C",
+      "venue": "Language Teaching Research, 13621688251391412, 2025",
+      "year": "2025",
+      "matched_doi": "10.1177/13621688251391412",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "T Yu, J Dai, XJ Chen, CL Wang*",
+      "cited_by": "3",
+      "title": "From information evaluation to technology use: Generative AI adoption in Chinese business schools",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:g5m5HwL7SMYC",
+      "venue": "The International Journal of Management Education 24 (3), 101430, 2026",
+      "year": "2026",
+      "matched_doi": "10.1016/j.ijme.2026.101430",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "HM Wang#, CL Wang#, HX Xu, CJ Bao, XL Xu",
+      "cited_by": "3",
+      "title": "Enhancing real-time facial emotion recognition in classrooms via Attention-ResNet optimization",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:vV6vV6tmYwMC",
+      "venue": "The Visual Computer 42 (1), 46, 2026",
+      "year": "2026",
+      "matched_doi": "10.1007/s00371-025-04265-1",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "C Cheng, J Dai*, L Yan, CL Wang",
+      "cited_by": "3",
+      "title": "Panels of peers are needed to gauge AI's trustworthiness-experts are not enough",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:lSLTfruPkqcC",
+      "venue": "Nature 647 (8090), 592, 2025",
+      "year": "2025",
+      "matched_doi": "10.1038/d41586-025-03783-1",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "Z Xiao, CL Wang, Y Lai, H Wang, X Gu",
+      "cited_by": "3",
+      "title": "The Future Landscape of Education: Constructing an Analytical and Application Framework for Generative Artificial Intelligence in Higher Education",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:TFP_iSt0sucC",
+      "venue": "Proceedings of the 19th International Conference of the Learning Sciences …, 2025",
+      "year": "2025",
+      "matched_doi": "10.22318/icls2025.986726",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "J Dai, P Jin, K Zhu, CL Wang, L Wen",
+      "cited_by": "3",
+      "title": "Systematic Analysis of Research in Educational Management from the Perspective of Bibliometrics and Scientometrics",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:W7OEmFMy1HYC",
+      "venue": "Journal of Innovation and Social Science Research ISSN 2591, 6890, 2022",
+      "year": "2022",
+      "matched_doi": null,
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "ZH Xiao, HM Wang*, S Jin, YT Lai, Y Cao, YX Zhang, CL Wang*",
+      "cited_by": "2",
+      "title": "Human-AI Collaborative Learning Ecosystem: Effects of Multi-Agent-Based Programming Learning on Learning Outcomes, Computational Thinking, and Behavioral Patterns in Higher …",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:rO6llkc54NcC",
+      "venue": "International Journal of Human–Computer Interaction, 1-22, 2026",
+      "year": "2026",
+      "matched_doi": "10.1080/10447318.2026.2692021",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "JY Wang, HM Wang, JW Yang*, CL Wang*",
+      "cited_by": "2",
+      "title": "Academic transformation in the era of artificial intelligence: drivers of university faculty adoption of GenAI based on the UTAUT model",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:HoB7MX3m0LUC",
+      "venue": "Humanities and Social Sciences Communications, 2026",
+      "year": "2026",
+      "matched_doi": "10.1057/s41599-026-07606-0",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "WS Liu, LJ Chen, XT Zhong, W Liu, XJ Chen, CL Wang*",
+      "cited_by": "2",
+      "title": "Thinking outside the box: a systematic review of gamification trends in children’s dance education",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:RGFaLdJalmkC",
+      "venue": "Research in Dance Education, 1-30, 2025",
+      "year": "2025",
+      "matched_doi": "10.1080/14647893.2025.2570912",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "JY Wang, XJ Chen, ZH Hu, JW Yang, CL Wang*",
+      "cited_by": "2",
+      "title": "Fuel for the mind: exploring coffee’s impact on university learning performance and experience",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:ns9cj8rnVeAC",
+      "venue": "British Food Journal, 1-22, 2025",
+      "year": "2025",
+      "matched_doi": "10.1108/bfj-11-2024-1178",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "H Wang, Z Xiao, L Yutong, C Bao, CL Wang*",
+      "cited_by": "2",
+      "title": "Knowledge Mapping and Trend Analysis of AI Agents in Education: A Bibliometric Study from 2004-2024",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:k_IJM867U9cC",
+      "venue": "Proceedings of the 19th International Conference of the Learning Sciences …, 2025",
+      "year": "2025",
+      "matched_doi": "10.22318/icls2025.764364",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "X Chen, L Chen, L Fu, CL Wang*",
+      "cited_by": "2",
+      "title": "Algorithm Selection and Application for Robot Path Planning Problems",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:KlAtU1dfN6UC",
+      "venue": "Journal of Physics: Conference Series 2722 (1), 012008, 2024",
+      "year": "2024",
+      "matched_doi": "10.1088/1742-6596/2722/1/012008",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "T Yu, ZK Zeng, T Liu, CL Wang",
+      "cited_by": "1",
+      "title": "Virtual streamers, real purchases: the roles of anthropomorphism, interactivity, and presence in e-commerce live streaming",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:pyW8ca7W8N0C",
+      "venue": "International Journal of Contemporary Hospitality Management 38 (13), 239-263, 2026",
+      "year": "2026",
+      "matched_doi": "10.1108/ijchm-02-2026-0155",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "T Yu, AP Teoh, CL Wang*",
+      "cited_by": "1",
+      "title": "Integrating explanation and prediction: A PLS-MGA-ANN study of drone food delivery continuance intention",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:M05iB0D1s5AC",
+      "venue": "International Journal of Hospitality Management 137, 104703, 2026",
+      "year": "2026",
+      "matched_doi": "10.1016/j.ijhm.2026.104703",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "CL Wang, HM Wang*, YT Lai, ZH Xiao, XL Xu",
+      "cited_by": "1",
+      "title": "Prediction of Online Mathematics Test Efficiency Based on Stacked Integrated Models: A Case Study of NAEP Data",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:YFjsv_pBGBYC",
+      "venue": "International Conference on Artificial Intelligence in Education, 221-229, 2025",
+      "year": "2025",
+      "matched_doi": "10.1007/978-3-031-99261-2_20",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "CL Wang, HM Wang*, ZH Hu, XJ Chen",
+      "cited_by": "1",
+      "title": "Annotated Emotional Image Datasets of Chinese University Students in Real Classrooms for Deep Learning",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:mVmsd5A6BfQC",
+      "venue": "Data in Brief, 111147, 2024",
+      "year": "2024",
+      "matched_doi": "10.1016/j.dib.2024.111147",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "XJ Chen, ZB Hu, YH Jing, CL Wang*",
+      "cited_by": "1",
+      "title": "The Development and Alleviation of Humanistic Artificial Intelligence in the Digital Age Education: A Content Analysis research",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:R3hNpaxXUhUC",
+      "venue": "Proceedings of the 2024 8th International Conference on Advances in …, 2024",
+      "year": "2024",
+      "matched_doi": "10.1145/3704137.3704189",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "Y Chen, H Wang, X Chen, Z Wu, CL Wang*",
+      "cited_by": "1",
+      "title": "Constructing an Action Model for Educational Systems in Response to Pandemics: A Textual Grounded Analysis",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:ULOm3_A8WrAC",
+      "venue": "Proceedings of the 18th International Conference of the Learning Sciences …, 2024",
+      "year": "2024",
+      "matched_doi": "10.22318/icls2024.604132",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "KY Li*, CL Wang, ZP Yu",
+      "cited_by": "",
+      "title": "Artificial intelligence technologies for aging in place: a systematic review",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:EUQCXRtRnyEC",
+      "venue": "Artificial Intelligence Review, 2026",
+      "year": "2026",
+      "matched_doi": "10.1007/s10462-026-11698-0",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "X Ling, CL Wang*",
+      "cited_by": "",
+      "title": "Bibliometric mapping and evolutionary logic of large language models reshaping medical education 2022–2026",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:bFI3QPDXJZMC",
+      "venue": "Discover Computing 29 (1), 543, 2026",
+      "year": "2026",
+      "matched_doi": "10.1007/s10791-026-10445-x",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "J Yang, H Wang, M Chen, X Chen, JY Wang*, CL Wang*",
+      "cited_by": "",
+      "title": "Configurational pathways of programming learning beliefs and self-efficacy among college students using intelligent agents: evidence from GenAI literacy and agent usage experience",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:_xSYboBqXhAC",
+      "venue": "Interactive Learning Environments, 1-33, 2026",
+      "year": "2026",
+      "matched_doi": "10.1080/10494820.2026.2713873",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "J Xu, YY Luo, CL Wang, HN Wu",
+      "cited_by": "",
+      "title": "Trust the messenger, then the message: unpacking the cross-route logic of danmaku engagement",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:f2IySw72cVMC",
+      "venue": "Aslib Journal of Information Management, 1-26, 2026",
+      "year": "2026",
+      "matched_doi": "10.1108/ajim-01-2026-0111",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "Y Jiang, CL Wang*",
+      "cited_by": "",
+      "title": "Reshaping the Language Learning Landscape: Factors Influencing Learners' Use of Open-Source Text-to-Video AI (Open-Sora) in Second Language Acquisition",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:ZHo1McVdvXMC",
+      "venue": "Journal of Computer Assisted Learning 42 (4), e70277, 2026",
+      "year": "2026",
+      "matched_doi": "10.1002/jcal.70277",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "X Ling, CL Wang*",
+      "cited_by": "",
+      "title": "Research landscape thematic evolution and future trends of artificial intelligence in medical education from 2015 to 2025",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:D03iK_w7-QYC",
+      "venue": "Discover Computing 29 (1), 447, 2026",
+      "year": "2026",
+      "matched_doi": "10.1007/s10791-026-10349-w",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "Y Pian, F Yang, ZF Di, CL Wang",
+      "cited_by": "",
+      "title": "“My Culture is as Good as Yours”: Designing an AI Agent to Support Intercultural Understanding in Rural EFL Classrooms",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:u_35RYKgDlwC",
+      "venue": "International Conference on Artificial Intelligence in Education, 308-318, 2026",
+      "year": "2026",
+      "matched_doi": "10.1007/978-3-032-29791-4_24",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "RQ Du, ZZ Chen, YW Shi, CL Wang, HM Zhao, ZF Wang",
+      "cited_by": "",
+      "title": "From Prompting to Scaffolding: Divergent Human–AI Interaction Pathways of Pre-Service Teachers in Multi-Agent Micro-Teaching Simulation (MAMS)",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:b0M2c_1WBrUC",
+      "venue": "Journal of Educational Computing Research, 07356331261494349, 2026",
+      "year": "2026",
+      "matched_doi": "10.1177/07356331261494349",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "Y Yang, Z Gao, K Nie, H Wang, C Wang, K Zhao",
+      "cited_by": "",
+      "title": "ModuSwarm: A Customizable and Scalable Framework for Human-Swarm Interaction",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:pqnbT2bcN3wC",
+      "venue": "Proceedings of the 2025 International Conference on Human-Engaged Computing, 1-6, 2025",
+      "year": "2025",
+      "matched_doi": "10.1145/3786995.3787000",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "XJ Chen, CL Wang",
+      "cited_by": "",
+      "title": "The Intelligent Evolution of Programming Education: Action Research-Driven Optimization of Learning Environments and Ecological Innovation",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:hMod-77fHWUC",
+      "venue": "Proceedings of CITERS 2025, 11, 2025",
+      "year": "2025",
+      "matched_doi": null,
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "HM Wang, CL Wang, CJ Bao",
+      "cited_by": "",
+      "title": "AI-Agent School: Construction and Evaluation of an Educational Simulation Environment Based on LLM-Driven Agents",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:blknAaTinKkC",
+      "venue": "Proceedings of CITERS 2025, 75, 2025",
+      "year": "2025",
+      "matched_doi": null,
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "H Wang, Y Zhang, C Bao, C Wang",
+      "cited_by": "",
+      "title": "Breaking the Boundaries of Traditional Vocabulary Learning: The Impact of Intelligent Interactive Companion based Bocabulary Learning Methods on Learning Outcomes, Motivation …",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:O3NaXMp0MMsC",
+      "venue": "AI 時代下的 STEAM 教育, 18, 2025",
+      "year": "2025",
+      "matched_doi": null,
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "CL Wang, Y Chen, HM Wang*, YH Jing, KK Zhu",
+      "cited_by": "",
+      "title": "Bibliometric research in educational technology: a critical literature",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:Tyk-4Ss8FVUC",
+      "venue": "GCCCE 2023 大会论文集 (英文论文), 41, 2023",
+      "year": "2023",
+      "matched_doi": null,
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    },
+    {
+      "byline": "C Wang, Y Li, X Liu, W Zhang, T Yu, Y Lin",
+      "cited_by": "",
+      "title": "Sociotechnical Turn in Interactive Learning Environments Research: Knowledge Structures from Multi-Database Topic Modeling (2020-2026)",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:zA6iFVUQeVQC",
+      "venue": "",
+      "year": "",
+      "matched_doi": "10.2139/ssrn.6968861",
+      "observed_highly_cited": false,
+      "observed_hot_paper_years": []
+    }
+  ]
+}

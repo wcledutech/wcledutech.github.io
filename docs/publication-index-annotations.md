@@ -1,6 +1,43 @@
 # Publication index annotations
 
-Checked 26-27 September 2026. Scope: `/publication-index/`, 82 existing records.
+## 22 October 2026 synchronization
+
+Compared all 88 visible Scholar records with the index by Scholar citation ID.
+Added two publisher- and Crossref-verified journal articles, bringing the index
+from 82 to 84 records:
+
+- Artificial intelligence technologies for aging in place: a systematic review
+  (`10.1007/s10462-026-11698-0`), published 1 October 2026. Springer explicitly
+  identifies Keyi Li as the corresponding author.
+- From Prompting to Scaffolding: Divergent Human–AI Interaction Pathways of
+  Pre-Service Teachers in Multi-Agent Micro-Teaching Simulation (MAMS)
+  (`10.1177/07356331261494349`), published 7 October 2026. Use SAGE/Crossref author
+  spellings and date; the Scholar detail has a different date and hyphenation.
+  No author-role designation is added without an explicit verified statement.
+
+The profile's 19 trophy annotations match the 19 already displayed on the index;
+no new highly cited or hot-paper marker was found. The profile has 10 dated-fire
+annotations. Keep the previously author-confirmed 2026 hot-paper annotation for
+the EAIT collaborative-learning paper, giving 11 historical hot-paper entries.
+These are author-maintained Scholar annotations, with the previously documented
+author overrides; this synchronization does not independently recertify Clarivate
+status.
+
+The six existing year differences reflect online versus issue publication dates:
+Crossref confirms the index's issue years. The SSRN title retains `2000-2026`,
+which matches Crossref. All 82 prior records remain unchanged. Five older Scholar
+records without a verified DOI mapping remain outside this incremental update;
+the existing IEEE paper absent from Scholar remains in the index. Full observed
+rows and decisions are in
+[`publication-index-sync-2026-10-22.json`](publication-index-sync-2026-10-22.json).
+
+The new Artificial Intelligence Review entry uses the publisher's 2025 JIF of
+18.8, checked on 22 October 2026. DOI links continue to open in new tabs, and the
+removed public footer source note remains absent.
+
+## Initial annotation check
+
+Checked 26-27 September 2026. Scope: `/publication-index/`, 82 records at that time.
 Bibliographic titles, author order, years, venues, DOIs and citations are unchanged.
 Annotations live in separate fields on each record, never inside names or titles.
 

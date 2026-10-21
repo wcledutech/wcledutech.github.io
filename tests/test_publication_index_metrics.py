@@ -15,7 +15,7 @@ class PublicationIndexMetricsTest(unittest.TestCase):
     def test_every_journal_has_a_sourced_metric_record(self):
         journals = {p["journal"] for p in PAPERS if publication_group(p, POLICY) == 0}
         self.assertEqual(set(METRICS), journals)
-        self.assertEqual(len(journals), 35)
+        self.assertEqual(len(journals), 36)
         self.assertEqual(POLICY["jif_year"], 2025)
         self.assertEqual(POLICY["jif_release_year"], 2026)
         for journal, metric in METRICS.items():
@@ -30,7 +30,7 @@ class PublicationIndexMetricsTest(unittest.TestCase):
 
     def test_old_heliyon_value_is_not_presented_as_current(self):
         self.assertIsNone(METRICS["Heliyon"]["value"])
-        self.assertEqual(sum(m["value"] is not None for m in METRICS.values()), 34)
+        self.assertEqual(sum(m["value"] is not None for m in METRICS.values()), 35)
         with self.assertRaisesRegex(ValueError, "Verify a 2025 JIF"):
             ordered_publications([dict(PAPERS[0], journal="Heliyon")], POLICY)
 

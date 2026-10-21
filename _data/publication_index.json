@@ -48,6 +48,24 @@
     ]
   },
   {
+    "doi": "10.1007/s10462-026-11698-0",
+    "title": "Artificial intelligence technologies for aging in place: a systematic review",
+    "authors": [
+      "Keyi Li",
+      "Chengliang Wang",
+      "Zhuopeng Yu"
+    ],
+    "year": 2026,
+    "journal": "Artificial Intelligence Review",
+    "category": "journal-article",
+    "citation_text": "Li, K., Wang, C., & Yu, Z. (2026). Artificial intelligence technologies for aging in place: a systematic review. Artificial Intelligence Review. Advance online publication. https://doi.org/10.1007/s10462-026-11698-0",
+    "url": "https://doi.org/10.1007/s10462-026-11698-0",
+    "published_online": "2026-10-01",
+    "corresponding_authors": [
+      "Keyi Li"
+    ]
+  },
+  {
     "doi": "10.1016/j.ijme.2026.101430",
     "title": "From information evaluation to technology use: Generative AI adoption in Chinese business schools",
     "authors": [
@@ -212,6 +230,24 @@
     "corresponding_authors": [
       "Chengliang Wang"
     ]
+  },
+  {
+    "doi": "10.1177/07356331261494349",
+    "title": "From Prompting to Scaffolding: Divergent Human–AI Interaction Pathways of Pre-Service Teachers in Multi-Agent Micro-Teaching Simulation (MAMS)",
+    "authors": [
+      "Ruiqing Du",
+      "Zengzhao Chen",
+      "Yawen Shi",
+      "Chengliang Wang",
+      "Haiming Zhao",
+      "Zhifeng Wang"
+    ],
+    "year": 2026,
+    "journal": "Journal of Educational Computing Research",
+    "category": "journal-article",
+    "citation_text": "Du, R., Chen, Z., Shi, Y., Wang, C., Zhao, H., & Wang, Z. (2026). From prompting to scaffolding: Divergent human–AI interaction pathways of pre-service teachers in multi-agent micro-teaching simulation (MAMS). Journal of Educational Computing Research. Advance online publication. https://doi.org/10.1177/07356331261494349",
+    "url": "https://doi.org/10.1177/07356331261494349",
+    "published_online": "2026-10-07"
   },
   {
     "doi": "10.1080/10447318.2025.2504198",

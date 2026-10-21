@@ -12,8 +12,8 @@ AUDIT = json.loads((ROOT / "docs/publication-index-annotation-sources.json").rea
 
 class PublicationIndexAnnotationsTest(unittest.TestCase):
     def test_records_and_plain_metadata(self):
-        self.assertEqual(len(PAPERS), 82)
-        self.assertEqual(len(INDEX), 82)
+        self.assertEqual(len(PAPERS), 84)
+        self.assertEqual(len(INDEX), 84)
         for paper in PAPERS:
             with self.subTest(doi=paper["doi"]):
                 for text in paper["authors"] + [paper["title"], paper["citation_text"]]:
@@ -69,7 +69,7 @@ class PublicationIndexAnnotationsTest(unittest.TestCase):
         self.assertEqual({doi: p["hot_paper_years"] for doi, p in INDEX.items() if p.get("hot_paper_years")}, fire)
 
     def test_audit_matches_display_data(self):
-        self.assertEqual(len(AUDIT), 82)
+        self.assertEqual(len(AUDIT), 84)
         for record in AUDIT:
             paper = INDEX[record["doi"]]
             for field in ("co_first_authors", "corresponding_authors", "hot_paper_years"):

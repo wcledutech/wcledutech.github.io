@@ -21,7 +21,7 @@ class PublicationIndexOrderingTest(unittest.TestCase):
         self.assertEqual(PAPERS, ordered)
         self.assertEqual(PAPERS, original)
         self.assertEqual(ordered, ordered_publications(list(reversed(PAPERS)), POLICY))
-        self.assertEqual(len({p["doi"].lower() for p in ordered}), 82)
+        self.assertEqual(len({p["doi"].lower() for p in ordered}), 84)
         self.assertEqual({p["doi"]: p for p in ordered}, {p["doi"]: p for p in original})
 
     def test_every_year_has_journals_before_conferences_and_other_records(self):

@@ -1195,6 +1195,44 @@
       "highly_cited": false,
       "hot_paper_years": [],
       "award_source": null
+    },
+    {
+      "doi": "10.1007/s10462-026-11698-0",
+      "title": "Artificial intelligence technologies for aging in place: a systematic review",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:EUQCXRtRnyEC",
+      "scholar_byline": "KY Li*, CL Wang, ZP Yu",
+      "role_source": "https://link.springer.com/article/10.1007/s10462-026-11698-0 (explicit Corresponding author section)",
+      "co_first_authors": [],
+      "corresponding_authors": [
+        "Keyi Li"
+      ],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null,
+      "checked_on": "2026-10-22",
+      "bibliographic_sources": [
+        "https://link.springer.com/article/10.1007/s10462-026-11698-0",
+        "https://api.crossref.org/works/10.1007%2Fs10462-026-11698-0"
+      ]
+    },
+    {
+      "doi": "10.1177/07356331261494349",
+      "title": "From Prompting to Scaffolding: Divergent Human–AI Interaction Pathways of Pre-Service Teachers in Multi-Agent Micro-Teaching Simulation (MAMS)",
+      "scholar_url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=C_PHTMsAAAAJ&pagesize=100&citation_for_view=C_PHTMsAAAAJ:b0M2c_1WBrUC",
+      "scholar_byline": "RQ Du, ZZ Chen, YW Shi, CL Wang, HM Zhao, ZF Wang",
+      "role_source": "https://journals.sagepub.com/doi/10.1177/07356331261494349 (no explicit equal-contribution or corresponding-author designation verified)",
+      "co_first_authors": [],
+      "corresponding_authors": [],
+      "highly_cited": false,
+      "hot_paper_years": [],
+      "award_source": null,
+      "checked_on": "2026-10-22",
+      "bibliographic_sources": [
+        "https://journals.sagepub.com/doi/10.1177/07356331261494349",
+        "https://api.crossref.org/works/10.1177%2F07356331261494349"
+      ]
     }
-  ]
+  ],
+  "last_scholar_sync_on": "2026-10-22",
+  "last_scholar_sync_record": "publication-index-sync-2026-10-22.json"
 }
