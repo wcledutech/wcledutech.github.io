@@ -18,7 +18,6 @@ import pymupdf
 ROOT = Path(__file__).resolve().parents[1]
 INK = "#242b32"
 MUTED = "#59636c"
-TEAL = "#176c63"
 RULE = "#dce4e2"
 
 
@@ -63,11 +62,6 @@ def read_panel(pdf, spec, source):
     else:
         image = Image.open(io.BytesIO(embedded["image"])).convert("RGB")
     provenance.update({"image_index": spec["image_index"], "image_xref": info["xref"], "bbox": [round(v, 4) for v in info["bbox"]], "method": "Original embedded PDF image"})
-    if spec.get("kind") == "workflow":
-        if len(spec["steps"]) != 5:
-            raise ValueError("The original study has five experimental stages")
-        provenance.update({"method": "Five-stage experimental design condensed from the published Figure 1; no study data changed", "steps": spec["steps"]})
-        return workflow_image(spec["steps"]), provenance
     if "crop" in spec:
         left, top, right, bottom = spec["crop"]
         if not (0 <= left < right <= image.width and 0 <= top < bottom <= image.height):
@@ -85,20 +79,6 @@ def save_asset(image, stem, directory):
     preview.thumbnail((1200, 1200), Image.Resampling.LANCZOS)
     preview.save(directory / (stem + ".webp"), quality=95, method=6)
     return {"src": "/images/research-figures/" + stem + ".webp", "full": "/images/research-figures/" + stem + ".png", "width": preview.width, "height": preview.height, "original_width": image.width, "original_height": image.height}
-
-
-def workflow_image(steps):
-    image = Image.new("RGB", (1500, 780), "white")
-    draw = ImageDraw.Draw(image)
-    for index, step in enumerate(steps):
-        y = 80 + index * 150
-        draw.text((100, y), f"{index + 1:02d}", font=font(54), fill=TEAL, anchor="mm")
-        if draw.textlength(step, font=font(60)) > 1200:
-            raise ValueError("Workflow label exceeds the available width")
-        draw.text((835, y), step, font=font(60), fill=INK, anchor="mm")
-        if index < 4:
-            draw.line((40, y + 75, 1460, y + 75), fill=RULE, width=2)
-    return image
 
 
 def overview_pair_composition(panels):
@@ -176,8 +156,6 @@ def build(inventory_path, root=ROOT):
                 image, provenance = read_panel(pdf, panel_spec, source)
                 assets = save_asset(image, stem + "-" + chr(97 + index), directory)
                 panels.append({**assets, "label": chr(65 + index), "title": panel_spec["title"], "reference": panel_spec["reference"], "alt": panel_spec["alt"], "source": provenance})
-                if "steps" in panel_spec:
-                    panels[-1]["steps"] = panel_spec["steps"]
                 images.append((image, panel_spec))
         assets = save_asset(compose(images, spec.get("layout")), stem + "-composite", directory)
         panel_count = "Three" if len(panels) == 3 else "Two"

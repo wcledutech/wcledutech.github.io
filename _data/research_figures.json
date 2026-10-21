@@ -322,33 +322,33 @@
     }
   },
   "chatgpt-programming-ai-literacy": {
-    "src": "/images/research-figures/chatgpt-programming-ai-literacy-design-examples-composite.webp",
-    "full": "/images/research-figures/chatgpt-programming-ai-literacy-design-examples-composite.png",
-    "width": 1079,
+    "src": "/images/research-figures/chatgpt-programming-ai-literacy-original-design-examples-composite.webp",
+    "full": "/images/research-figures/chatgpt-programming-ai-literacy-original-design-examples-composite.png",
+    "width": 850,
     "height": 1200,
     "original_width": 1600,
-    "original_height": 1779,
+    "original_height": 2258,
     "number": 1,
     "label": "Figures 1, 2 and 3",
-    "caption": "Study design condensed from Figure 1, with the task example from Figure 2 and one student output from Figure 3.",
-    "alt": "Three-panel overview: The five-stage study design condensed from Figure 1: preparation and recruitment, familiarisation, pre-test, programming task, and post-test and evaluation. The complete example chart from the task sheet in Figure 2, with its axes, legend and values retained; surrounding task instructions are omitted. The first complete student output chart from Figure 3, including its title, axes, legend and plotted values.",
+    "caption": "The original experimental design from Figure 1, with the task example from Figure 2 and one student output from Figure 3.",
+    "alt": "Three-panel overview: Original Figure 1 from the paper: the complete five-stage experimental design, retaining all process descriptions, durations, arrows and original formatting. The complete example chart from the task sheet in Figure 2, with its axes, legend and values retained; surrounding task instructions are omitted. The first complete student output chart from Figure 3, including its title, axes, legend and plotted values.",
     "panels": [
       {
-        "src": "/images/research-figures/chatgpt-programming-ai-literacy-design-examples-a.webp",
-        "full": "/images/research-figures/chatgpt-programming-ai-literacy-design-examples-a.png",
+        "src": "/images/research-figures/chatgpt-programming-ai-literacy-original-design-examples-a.webp",
+        "full": "/images/research-figures/chatgpt-programming-ai-literacy-original-design-examples-a.png",
         "width": 1200,
-        "height": 624,
-        "original_width": 1500,
-        "original_height": 780,
+        "height": 1007,
+        "original_width": 2050,
+        "original_height": 1721,
         "label": "A",
-        "title": "Study design",
-        "reference": "Figure 1, condensed",
-        "alt": "The five-stage study design condensed from Figure 1: preparation and recruitment, familiarisation, pre-test, programming task, and post-test and evaluation.",
+        "title": "Experimental design",
+        "reference": "Figure 1",
+        "alt": "Original Figure 1 from the paper: the complete five-stage experimental design, retaining all process descriptions, durations, arrows and original formatting.",
         "source": {
           "doi": "10.1057/s41599-024-02751-w",
           "pdf_sha256": "b3972967980fa102f60ff7cbe0ccb1c769a740698e0b1bb277ec3fdf6fe19821",
           "pdf_page": 4,
-          "reference": "Figure 1, condensed",
+          "reference": "Figure 1",
           "image_index": 0,
           "image_xref": 161,
           "bbox": [
@@ -357,26 +357,12 @@
             543.628,
             463.691
           ],
-          "method": "Five-stage experimental design condensed from the published Figure 1; no study data changed",
-          "steps": [
-            "Preparation & recruitment",
-            "Familiarisation",
-            "Pre-test",
-            "Programming task",
-            "Post-test & evaluation"
-          ]
-        },
-        "steps": [
-          "Preparation & recruitment",
-          "Familiarisation",
-          "Pre-test",
-          "Programming task",
-          "Post-test & evaluation"
-        ]
+          "method": "Original embedded PDF image"
+        }
       },
       {
-        "src": "/images/research-figures/chatgpt-programming-ai-literacy-design-examples-b.webp",
-        "full": "/images/research-figures/chatgpt-programming-ai-literacy-design-examples-b.png",
+        "src": "/images/research-figures/chatgpt-programming-ai-literacy-original-design-examples-b.webp",
+        "full": "/images/research-figures/chatgpt-programming-ai-literacy-original-design-examples-b.png",
         "width": 831,
         "height": 675,
         "original_width": 831,
@@ -412,8 +398,8 @@
         }
       },
       {
-        "src": "/images/research-figures/chatgpt-programming-ai-literacy-design-examples-c.webp",
-        "full": "/images/research-figures/chatgpt-programming-ai-literacy-design-examples-c.png",
+        "src": "/images/research-figures/chatgpt-programming-ai-literacy-original-design-examples-c.webp",
+        "full": "/images/research-figures/chatgpt-programming-ai-literacy-original-design-examples-c.png",
         "width": 705,
         "height": 522,
         "original_width": 705,
@@ -453,7 +439,7 @@
       "doi": "10.1057/s41599-024-02751-w",
       "pdf_sha256": "b3972967980fa102f60ff7cbe0ccb1c769a740698e0b1bb277ec3fdf6fe19821",
       "pdf_page": 4,
-      "reference": "Figure 1, condensed",
+      "reference": "Figure 1",
       "image_index": 0,
       "image_xref": 161,
       "bbox": [
@@ -462,14 +448,7 @@
         543.628,
         463.691
       ],
-      "method": "Three-panel composition; panel-level sources and any selected chart details are recorded separately",
-      "steps": [
-        "Preparation & recruitment",
-        "Familiarisation",
-        "Pre-test",
-        "Programming task",
-        "Post-test & evaluation"
-      ]
+      "method": "Three-panel composition; panel-level sources and any selected chart details are recorded separately"
     },
     "layout": "overview-pair"
   },

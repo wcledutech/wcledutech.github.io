@@ -28,11 +28,11 @@
   },
   "chatgpt-programming-ai-literacy": {
     "layout": "overview-pair",
-    "edition": "design-examples",
+    "edition": "original-design-examples",
     "label": "Figures 1, 2 and 3",
-    "caption": "Study design condensed from Figure 1, with the task example from Figure 2 and one student output from Figure 3.",
+    "caption": "The original experimental design from Figure 1, with the task example from Figure 2 and one student output from Figure 3.",
     "panels": [
-      {"page": 4, "image_index": 0, "kind": "workflow", "reference": "Figure 1, condensed", "title": "Study design", "alt": "The five-stage study design condensed from Figure 1: preparation and recruitment, familiarisation, pre-test, programming task, and post-test and evaluation.", "steps": ["Preparation & recruitment", "Familiarisation", "Pre-test", "Programming task", "Post-test & evaluation"]},
+      {"page": 4, "image_index": 0, "reference": "Figure 1", "title": "Experimental design", "alt": "Original Figure 1 from the paper: the complete five-stage experimental design, retaining all process descriptions, durations, arrows and original formatting."},
       {"page": 5, "image_index": 0, "crop": [670, 125, 1501, 800], "reference": "Figure 2, detail", "title": "Task example", "alt": "The complete example chart from the task sheet in Figure 2, with its axes, legend and values retained; surrounding task instructions are omitted."},
       {"page": 5, "image_index": 1, "crop": [0, 0, 705, 522], "reference": "Figure 3, first example", "title": "Student output", "alt": "The first complete student output chart from Figure 3, including its title, axes, legend and plotted values."}
     ]

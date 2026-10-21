@@ -102,11 +102,11 @@ class ResearchFiguresTest(unittest.TestCase):
         layouts = {slug: figure["layout"] for slug, figure in self.figures.items() if "layout" in figure}
         self.assertEqual(layouts, {"metaclassroom-programming-education": "overview-pair", "chatgpt-programming-ai-literacy": "overview-pair"})
         for slug in layouts:
-            self.assertLess(self.figures[slug]["original_height"], self.figures[slug]["original_width"] * 1.3)
+            self.assertLess(self.figures[slug]["original_height"], self.figures[slug]["original_width"] * 1.5)
         scenes = self.figures["metaclassroom-programming-education"]["panels"]
         self.assertEqual([p["reference"] for p in scenes], ["Figure 2", "Figure 4, Scene 6", "Figure 4, Scene 5"])
         study = self.figures["chatgpt-programming-ai-literacy"]["panels"]
-        self.assertEqual([p["reference"] for p in study], ["Figure 1, condensed", "Figure 2, detail", "Figure 3, first example"])
+        self.assertEqual([p["reference"] for p in study], ["Figure 1", "Figure 2, detail", "Figure 3, first example"])
 
     def test_metaclassroom_overview_is_the_unmodified_original_image(self):
         overview = self.figures["metaclassroom-programming-education"]["panels"][0]
@@ -115,13 +115,18 @@ class ResearchFiguresTest(unittest.TestCase):
         restored = ROOT / overview["full"].lstrip("/")
         self.assertEqual(hashlib.sha256(original.read_bytes()).digest(), hashlib.sha256(restored.read_bytes()).digest())
 
-    def test_condensed_workflow_retains_five_stages_and_source_disclosure(self):
+    def test_experimental_design_is_the_complete_original_figure(self):
         figure = self.figures["chatgpt-programming-ai-literacy"]
         workflow = figure["panels"][0]
-        self.assertEqual(workflow["steps"], ["Preparation & recruitment", "Familiarisation", "Pre-test", "Programming task", "Post-test & evaluation"])
+        self.assertNotIn("steps", workflow)
+        self.assertNotIn("crop_pixels", workflow["source"])
         self.assertEqual(workflow["source"]["pdf_page"], 4)
-        self.assertIn("condensed from Figure 1", figure["caption"])
-        self.assertIn("highlights-study-steps", (ROOT / "_pages/research-highlights.html").read_text(encoding="utf-8"))
+        self.assertEqual(workflow["source"]["method"], "Original embedded PDF image")
+        original = ROOT / "images/research-figures/chatgpt-programming-ai-literacy-fig-1.png"
+        restored = ROOT / workflow["full"].lstrip("/")
+        self.assertEqual(hashlib.sha256(original.read_bytes()).digest(), hashlib.sha256(restored.read_bytes()).digest())
+        self.assertNotIn("condensed", figure["caption"])
+        self.assertNotIn("highlights-study-steps", (ROOT / "_pages/research-highlights.html").read_text(encoding="utf-8"))
 
     def test_retypeset_table_preserves_all_published_categories_and_counts(self):
         figure = self.figures["classroom-emotion-image-dataset"]

@@ -53,13 +53,7 @@ author_profile: true
               {% for panel in figure.panels %}
               <div class="highlights-figure-panel">
                 <a class="highlights-panel-image" href="{{ panel.full | relative_url }}" target="_blank" rel="noopener" title="{{ panel.reference | escape }}. {{ panel.title | escape }}" aria-label="Enlarge {{ panel.reference | escape }} from {{ paper.title | escape }}">
-                  {% if panel.steps %}
-                  <ol class="highlights-study-steps">
-                    {% for step in panel.steps %}<li><span class="highlights-step-number" aria-hidden="true">0{{ forloop.index }}</span><span>{{ step | escape }}</span></li>{% endfor %}
-                  </ol>
-                  {% else %}
                   <img src="{{ panel.src | relative_url }}" width="{{ panel.width }}" height="{{ panel.height }}" alt="{{ panel.alt | escape }}" loading="lazy" decoding="async">
-                  {% endif %}
                 </a>
                 <p class="highlights-panel-caption">{% unless figure.layout %}<span>{{ panel.label }}</span> {% endunless %}{{ panel.title | escape }}</p>
               </div>
