@@ -1,10 +1,12 @@
 {
   "metaclassroom-programming-education": {
-    "label": "Figures 2 and 6",
-    "caption": "The learning environment and programming achievement across tests.",
+    "layout": "scenes",
+    "edition": "scenes",
+    "label": "Figure 4, selected scenes",
+    "caption": "Virtual teaching and game-based practice in MetaClassroom.",
     "panels": [
-      {"page": 11, "image_index": 0, "reference": "Figure 2", "title": "Learning environment", "alt": "The MetaClassroom learning environment, reproduced from Figure 2."},
-      {"page": 19, "image_index": 0, "reference": "Figure 6", "title": "Learning achievement", "alt": "Figure 6: experimental and control groups' programming learning achievement across four tests, including the original values, legend and error bars."}
+      {"page": 13, "image_index": 0, "crop": [446, 0, 885, 300], "crop_description": "Complete Scene 6 panel selected from the published four-scene figure", "reference": "Figure 4, Scene 6", "title": "Virtual classroom", "alt": "Scene 6 from Figure 4: the virtual classroom with a programming blackboard, teaching platform and lectern."},
+      {"page": 13, "image_index": 0, "crop": [0, 0, 440, 300], "crop_description": "Complete Scene 5 panel selected from the published four-scene figure", "reference": "Figure 4, Scene 5", "title": "Game-based practice", "alt": "Scene 5 from Figure 4: the Game Corner, with interactive programming practice stations and memory-card activities."}
     ]
   },
   "generative-ai-education-policy-framework": {
@@ -24,11 +26,13 @@
     ]
   },
   "chatgpt-programming-ai-literacy": {
-    "label": "Details from Figures 2 and 3",
-    "caption": "The programming task example and one student-produced output.",
+    "layout": "study",
+    "edition": "study",
+    "label": "Figures 1 and 3",
+    "caption": "Five-stage study design, condensed from Figure 1, with one student output from Figure 3.",
     "panels": [
-      {"page": 5, "image_index": 0, "crop": [670, 125, 1501, 800], "reference": "Figure 2, detail", "title": "Task example", "alt": "The complete example chart from the task sheet in Figure 2, with its axes, legend and values retained; surrounding task instructions are omitted."},
-      {"page": 5, "image_index": 1, "crop": [0, 0, 705, 522], "reference": "Figure 3, first example", "title": "Student output", "alt": "The first complete student output chart from Figure 3, including its title, axes, legend and plotted values."}
+      {"page": 4, "image_index": 0, "kind": "workflow", "reference": "Figure 1, condensed", "title": "Study design", "alt": "The five-stage study design condensed from Figure 1: preparation and recruitment, familiarisation, pre-test, programming task, and post-test and evaluation.", "steps": ["Preparation & recruitment", "Familiarisation", "Pre-test", "Programming task", "Post-test & evaluation"]},
+      {"page": 5, "image_index": 1, "crop": [0, 0, 705, 522], "reference": "Figure 3, first example", "title": "Programming output", "alt": "The first complete student output chart from Figure 3, including its title, axes, legend and plotted values."}
     ]
   },
   "classroom-emotion-image-dataset": {

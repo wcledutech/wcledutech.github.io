@@ -63,13 +63,18 @@ def read_panel(pdf, spec, source):
     else:
         image = Image.open(io.BytesIO(embedded["image"])).convert("RGB")
     provenance.update({"image_index": spec["image_index"], "image_xref": info["xref"], "bbox": [round(v, 4) for v in info["bbox"]], "method": "Original embedded PDF image"})
+    if spec.get("kind") == "workflow":
+        if len(spec["steps"]) != 5:
+            raise ValueError("The original study has five experimental stages")
+        provenance.update({"method": "Five-stage experimental design condensed from the published Figure 1; no study data changed", "steps": spec["steps"]})
+        return workflow_image(spec["steps"]), provenance
     if "crop" in spec:
         left, top, right, bottom = spec["crop"]
         if not (0 <= left < right <= image.width and 0 <= top < bottom <= image.height):
             raise ValueError("Crop is outside the source image")
         provenance["crop_pixels"] = spec["crop"]
         provenance["uncropped_size"] = list(image.size)
-        provenance["method"] += "; selected complete chart detail, with all axes and legends retained"
+        provenance["method"] += "; " + spec.get("crop_description", "selected complete chart detail, with all axes and legends retained")
         image = image.crop(spec["crop"])
     return image, provenance
 
@@ -82,7 +87,48 @@ def save_asset(image, stem, directory):
     return {"src": "/images/research-figures/" + stem + ".webp", "full": "/images/research-figures/" + stem + ".png", "width": preview.width, "height": preview.height, "original_width": image.width, "original_height": image.height}
 
 
-def compose(panels):
+def workflow_image(steps):
+    image = Image.new("RGB", (570, 1040), "white")
+    draw = ImageDraw.Draw(image)
+    for index, step in enumerate(steps):
+        y = 40 + index * 200
+        draw.text((30, y), f"{index + 1:02d}", font=font(42), fill=TEAL)
+        lines, line = [], ""
+        for word in step.split():
+            candidate = (line + " " + word).strip()
+            if draw.textlength(candidate, font=font(48)) > 400:
+                lines.append(line)
+                line = word
+            else:
+                line = candidate
+        lines.append(line)
+        for offset, line in enumerate(lines):
+            draw.text((122, y + offset * 60), line, font=font(48), fill=INK)
+        if index < 4:
+            draw.line((30, y + 165, 540, y + 165), fill=RULE, width=2)
+    return image
+
+
+def compact_composition(panels, layout):
+    width, margin, gap = 1600, 50, 50
+    tracks = [725, 725] if layout == "scenes" else [440, 1010]
+    resized = [image.resize((track, round(image.height * track / image.width)), Image.Resampling.LANCZOS) for (image, _), track in zip(panels, tracks)]
+    stage_height = max(image.height for image in resized)
+    canvas = Image.new("RGB", (width, stage_height + 240), "white")
+    draw = ImageDraw.Draw(canvas)
+    x = margin
+    for image, (_, spec), track in zip(resized, panels, tracks):
+        canvas.paste(image, (x, margin + (stage_height - image.height) // 2))
+        center = x + track / 2
+        draw.text((center, stage_height + 90), spec["title"], font=font(42, True), fill=INK, anchor="mt")
+        draw.text((center, stage_height + 152), spec["reference"], font=font(32), fill=MUTED, anchor="mt")
+        x += track + gap
+    return canvas
+
+
+def compose(panels, layout=None):
+    if layout:
+        return compact_composition(panels, layout)
     width = min(1800, max(1200, *(image.width for image, _ in panels)))
     margin, gap, caption_height = 40, 56, 90
     content_width = width - margin * 2
@@ -122,14 +168,19 @@ def build(inventory_path, root=ROOT):
     for slug, spec in specs.items():
         source = inventory[slug]
         images, panels = [], []
+        stem = slug + "-" + spec.get("edition", "overview")
         with pymupdf.open(source["path"]) as pdf:
             for index, panel_spec in enumerate(spec["panels"]):
                 image, provenance = read_panel(pdf, panel_spec, source)
-                assets = save_asset(image, slug + "-overview-" + chr(97 + index), directory)
+                assets = save_asset(image, stem + "-" + chr(97 + index), directory)
                 panels.append({**assets, "label": chr(65 + index), "title": panel_spec["title"], "reference": panel_spec["reference"], "alt": panel_spec["alt"], "source": provenance})
+                if "steps" in panel_spec:
+                    panels[-1]["steps"] = panel_spec["steps"]
                 images.append((image, panel_spec))
-        assets = save_asset(compose(images), slug + "-overview-composite", directory)
+        assets = save_asset(compose(images, spec.get("layout")), stem + "-composite", directory)
         figures[slug] = {**assets, "number": int(re.search(r"\d+", spec["panels"][0]["reference"])[0]), "label": spec["label"], "caption": spec["caption"], "alt": "Two-panel overview: " + " ".join(panel["alt"] for panel in panels), "panels": panels, "source": {**panels[0]["source"], "method": "Two-panel composition; panel-level sources and any selected chart details are recorded separately"}}
+        if spec.get("layout"):
+            figures[slug]["layout"] = spec["layout"]
         print(slug, "->", spec["label"], "|", assets["original_width"], "x", assets["original_height"])
     figure_path.write_text(json.dumps(figures, ensure_ascii=True, indent=2) + "\n", encoding="utf-8")
 

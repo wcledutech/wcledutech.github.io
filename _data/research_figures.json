@@ -1,86 +1,117 @@
 {
   "metaclassroom-programming-education": {
-    "src": "/images/research-figures/metaclassroom-programming-education-overview-composite.webp",
-    "full": "/images/research-figures/metaclassroom-programming-education-overview-composite.png",
-    "width": 771,
-    "height": 1200,
-    "original_width": 1200,
-    "original_height": 1868,
-    "number": 2,
-    "label": "Figures 2 and 6",
-    "caption": "The learning environment and programming achievement across tests.",
-    "alt": "Two-panel overview: The MetaClassroom learning environment, reproduced from Figure 2. Figure 6: experimental and control groups' programming learning achievement across four tests, including the original values, legend and error bars.",
+    "src": "/images/research-figures/metaclassroom-programming-education-scenes-composite.webp",
+    "full": "/images/research-figures/metaclassroom-programming-education-scenes-composite.png",
+    "width": 1200,
+    "height": 551,
+    "original_width": 1600,
+    "original_height": 735,
+    "number": 4,
+    "label": "Figure 4, selected scenes",
+    "caption": "Virtual teaching and game-based practice in MetaClassroom.",
+    "alt": "Two-panel overview: Scene 6 from Figure 4: the virtual classroom with a programming blackboard, teaching platform and lectern. Scene 5 from Figure 4: the Game Corner, with interactive programming practice stations and memory-card activities.",
     "panels": [
       {
-        "src": "/images/research-figures/metaclassroom-programming-education-overview-a.webp",
-        "full": "/images/research-figures/metaclassroom-programming-education-overview-a.png",
-        "width": 869,
-        "height": 487,
-        "original_width": 869,
-        "original_height": 487,
+        "src": "/images/research-figures/metaclassroom-programming-education-scenes-a.webp",
+        "full": "/images/research-figures/metaclassroom-programming-education-scenes-a.png",
+        "width": 439,
+        "height": 300,
+        "original_width": 439,
+        "original_height": 300,
         "label": "A",
-        "title": "Learning environment",
-        "reference": "Figure 2",
-        "alt": "The MetaClassroom learning environment, reproduced from Figure 2.",
+        "title": "Virtual classroom",
+        "reference": "Figure 4, Scene 6",
+        "alt": "Scene 6 from Figure 4: the virtual classroom with a programming blackboard, teaching platform and lectern.",
         "source": {
           "doi": "10.1177/07356331251322470",
           "pdf_sha256": "71210537bb2a23c33aa1521dd2ef6a76ad86bca7d6311de693d69c94e317837c",
-          "pdf_page": 11,
-          "reference": "Figure 2",
+          "pdf_page": 13,
+          "reference": "Figure 4, Scene 6",
           "image_index": 0,
-          "image_xref": 166,
+          "image_xref": 181,
           "bbox": [
-            59.7543,
-            372.1323,
-            372.5647,
-            547.0867
+            56.7496,
+            67.2379,
+            375.3194,
+            284.7686
           ],
-          "method": "Original embedded PDF image"
+          "method": "Original embedded PDF image; Complete Scene 6 panel selected from the published four-scene figure",
+          "crop_pixels": [
+            446,
+            0,
+            885,
+            300
+          ],
+          "uncropped_size": [
+            885,
+            605
+          ]
         }
       },
       {
-        "src": "/images/research-figures/metaclassroom-programming-education-overview-b.webp",
-        "full": "/images/research-figures/metaclassroom-programming-education-overview-b.png",
-        "width": 869,
-        "height": 717,
-        "original_width": 869,
-        "original_height": 717,
+        "src": "/images/research-figures/metaclassroom-programming-education-scenes-b.webp",
+        "full": "/images/research-figures/metaclassroom-programming-education-scenes-b.png",
+        "width": 440,
+        "height": 300,
+        "original_width": 440,
+        "original_height": 300,
         "label": "B",
-        "title": "Learning achievement",
-        "reference": "Figure 6",
-        "alt": "Figure 6: experimental and control groups' programming learning achievement across four tests, including the original values, legend and error bars.",
+        "title": "Game-based practice",
+        "reference": "Figure 4, Scene 5",
+        "alt": "Scene 5 from Figure 4: the Game Corner, with interactive programming practice stations and memory-card activities.",
         "source": {
           "doi": "10.1177/07356331251322470",
           "pdf_sha256": "71210537bb2a23c33aa1521dd2ef6a76ad86bca7d6311de693d69c94e317837c",
-          "pdf_page": 19,
-          "reference": "Figure 6",
+          "pdf_page": 13,
+          "reference": "Figure 4, Scene 5",
           "image_index": 0,
-          "image_xref": 225,
+          "image_xref": 181,
           "bbox": [
-            59.7543,
-            208.9702,
-            372.5647,
-            466.9796
+            56.7496,
+            67.2379,
+            375.3194,
+            284.7686
           ],
-          "method": "Original embedded PDF image"
+          "method": "Original embedded PDF image; Complete Scene 5 panel selected from the published four-scene figure",
+          "crop_pixels": [
+            0,
+            0,
+            440,
+            300
+          ],
+          "uncropped_size": [
+            885,
+            605
+          ]
         }
       }
     ],
     "source": {
       "doi": "10.1177/07356331251322470",
       "pdf_sha256": "71210537bb2a23c33aa1521dd2ef6a76ad86bca7d6311de693d69c94e317837c",
-      "pdf_page": 11,
-      "reference": "Figure 2",
+      "pdf_page": 13,
+      "reference": "Figure 4, Scene 6",
       "image_index": 0,
-      "image_xref": 166,
+      "image_xref": 181,
       "bbox": [
-        59.7543,
-        372.1323,
-        372.5647,
-        547.0867
+        56.7496,
+        67.2379,
+        375.3194,
+        284.7686
       ],
-      "method": "Two-panel composition; panel-level sources and any selected chart details are recorded separately"
-    }
+      "method": "Two-panel composition; panel-level sources and any selected chart details are recorded separately",
+      "crop_pixels": [
+        446,
+        0,
+        885,
+        300
+      ],
+      "uncropped_size": [
+        885,
+        605
+      ]
+    },
+    "layout": "scenes"
   },
   "generative-ai-education-policy-framework": {
     "src": "/images/research-figures/generative-ai-education-policy-framework-overview-composite.webp",
@@ -274,63 +305,67 @@
     }
   },
   "chatgpt-programming-ai-literacy": {
-    "src": "/images/research-figures/chatgpt-programming-ai-literacy-overview-composite.webp",
-    "full": "/images/research-figures/chatgpt-programming-ai-literacy-overview-composite.png",
-    "width": 701,
-    "height": 1200,
-    "original_width": 1200,
-    "original_height": 2055,
-    "number": 2,
-    "label": "Details from Figures 2 and 3",
-    "caption": "The programming task example and one student-produced output.",
-    "alt": "Two-panel overview: The complete example chart from the task sheet in Figure 2, with its axes, legend and values retained; surrounding task instructions are omitted. The first complete student output chart from Figure 3, including its title, axes, legend and plotted values.",
+    "src": "/images/research-figures/chatgpt-programming-ai-literacy-study-composite.webp",
+    "full": "/images/research-figures/chatgpt-programming-ai-literacy-study-composite.png",
+    "width": 1200,
+    "height": 782,
+    "original_width": 1600,
+    "original_height": 1043,
+    "number": 1,
+    "label": "Figures 1 and 3",
+    "caption": "Five-stage study design, condensed from Figure 1, with one student output from Figure 3.",
+    "alt": "Two-panel overview: The five-stage study design condensed from Figure 1: preparation and recruitment, familiarisation, pre-test, programming task, and post-test and evaluation. The first complete student output chart from Figure 3, including its title, axes, legend and plotted values.",
     "panels": [
       {
-        "src": "/images/research-figures/chatgpt-programming-ai-literacy-overview-a.webp",
-        "full": "/images/research-figures/chatgpt-programming-ai-literacy-overview-a.png",
-        "width": 831,
-        "height": 675,
-        "original_width": 831,
-        "original_height": 675,
+        "src": "/images/research-figures/chatgpt-programming-ai-literacy-study-a.webp",
+        "full": "/images/research-figures/chatgpt-programming-ai-literacy-study-a.png",
+        "width": 570,
+        "height": 1040,
+        "original_width": 570,
+        "original_height": 1040,
         "label": "A",
-        "title": "Task example",
-        "reference": "Figure 2, detail",
-        "alt": "The complete example chart from the task sheet in Figure 2, with its axes, legend and values retained; surrounding task instructions are omitted.",
+        "title": "Study design",
+        "reference": "Figure 1, condensed",
+        "alt": "The five-stage study design condensed from Figure 1: preparation and recruitment, familiarisation, pre-test, programming task, and post-test and evaluation.",
         "source": {
           "doi": "10.1057/s41599-024-02751-w",
           "pdf_sha256": "b3972967980fa102f60ff7cbe0ccb1c769a740698e0b1bb277ec3fdf6fe19821",
-          "pdf_page": 5,
-          "reference": "Figure 2, detail",
+          "pdf_page": 4,
+          "reference": "Figure 1, condensed",
           "image_index": 0,
-          "image_xref": 180,
+          "image_xref": 161,
           "bbox": [
-            117.581,
+            51.647,
             50.797,
-            477.814,
-            261.411
+            543.628,
+            463.691
           ],
-          "method": "Original embedded PDF image; selected complete chart detail, with all axes and legends retained",
-          "crop_pixels": [
-            670,
-            125,
-            1501,
-            800
-          ],
-          "uncropped_size": [
-            1501,
-            878
+          "method": "Five-stage experimental design condensed from the published Figure 1; no study data changed",
+          "steps": [
+            "Preparation & recruitment",
+            "Familiarisation",
+            "Pre-test",
+            "Programming task",
+            "Post-test & evaluation"
           ]
-        }
+        },
+        "steps": [
+          "Preparation & recruitment",
+          "Familiarisation",
+          "Pre-test",
+          "Programming task",
+          "Post-test & evaluation"
+        ]
       },
       {
-        "src": "/images/research-figures/chatgpt-programming-ai-literacy-overview-b.webp",
-        "full": "/images/research-figures/chatgpt-programming-ai-literacy-overview-b.png",
+        "src": "/images/research-figures/chatgpt-programming-ai-literacy-study-b.webp",
+        "full": "/images/research-figures/chatgpt-programming-ai-literacy-study-b.png",
         "width": 705,
         "height": 522,
         "original_width": 705,
         "original_height": 522,
         "label": "B",
-        "title": "Student output",
+        "title": "Programming output",
         "reference": "Figure 3, first example",
         "alt": "The first complete student output chart from Figure 3, including its title, axes, legend and plotted values.",
         "source": {
@@ -363,28 +398,26 @@
     "source": {
       "doi": "10.1057/s41599-024-02751-w",
       "pdf_sha256": "b3972967980fa102f60ff7cbe0ccb1c769a740698e0b1bb277ec3fdf6fe19821",
-      "pdf_page": 5,
-      "reference": "Figure 2, detail",
+      "pdf_page": 4,
+      "reference": "Figure 1, condensed",
       "image_index": 0,
-      "image_xref": 180,
+      "image_xref": 161,
       "bbox": [
-        117.581,
+        51.647,
         50.797,
-        477.814,
-        261.411
+        543.628,
+        463.691
       ],
       "method": "Two-panel composition; panel-level sources and any selected chart details are recorded separately",
-      "crop_pixels": [
-        670,
-        125,
-        1501,
-        800
-      ],
-      "uncropped_size": [
-        1501,
-        878
+      "steps": [
+        "Preparation & recruitment",
+        "Familiarisation",
+        "Pre-test",
+        "Programming task",
+        "Post-test & evaluation"
       ]
-    }
+    },
+    "layout": "study"
   },
   "ai-agents-collaborative-programming": {
     "src": "/images/research-figures/ai-agents-collaborative-programming-fig-1.webp",

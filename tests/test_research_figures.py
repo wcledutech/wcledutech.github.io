@@ -85,13 +85,32 @@ class ResearchFiguresTest(unittest.TestCase):
 
     def test_selected_chart_details_are_explicit_and_within_source_bounds(self):
         panels = self.figures["chatgpt-programming-ai-literacy"]["panels"]
-        self.assertIn("Details", self.figures["chatgpt-programming-ai-literacy"]["label"])
-        for panel in panels:
+        self.assertIn("one student output", self.figures["chatgpt-programming-ai-literacy"]["caption"])
+        selected = [p for p in panels if "crop_pixels" in p["source"]]
+        self.assertEqual(len(selected), 1)
+        selected += self.figures["metaclassroom-programming-education"]["panels"]
+        for panel in selected:
             left, top, right, bottom = panel["source"]["crop_pixels"]
             width, height = panel["source"]["uncropped_size"]
             self.assertTrue(0 <= left < right <= width)
             self.assertTrue(0 <= top < bottom <= height)
             self.assertEqual((right - left, bottom - top), (panel["original_width"], panel["original_height"]))
+
+    def test_compact_redesign_is_limited_to_two_papers(self):
+        layouts = {slug: figure["layout"] for slug, figure in self.figures.items() if "layout" in figure}
+        self.assertEqual(layouts, {"metaclassroom-programming-education": "scenes", "chatgpt-programming-ai-literacy": "study"})
+        for slug in layouts:
+            self.assertLess(self.figures[slug]["original_height"], self.figures[slug]["original_width"])
+        scenes = self.figures["metaclassroom-programming-education"]["panels"]
+        self.assertEqual([p["reference"] for p in scenes], ["Figure 4, Scene 6", "Figure 4, Scene 5"])
+
+    def test_condensed_workflow_retains_five_stages_and_source_disclosure(self):
+        figure = self.figures["chatgpt-programming-ai-literacy"]
+        workflow = figure["panels"][0]
+        self.assertEqual(workflow["steps"], ["Preparation & recruitment", "Familiarisation", "Pre-test", "Programming task", "Post-test & evaluation"])
+        self.assertEqual(workflow["source"]["pdf_page"], 4)
+        self.assertIn("condensed from Figure 1", figure["caption"])
+        self.assertIn("highlights-study-steps", (ROOT / "_pages/research-highlights.html").read_text(encoding="utf-8"))
 
     def test_retypeset_table_preserves_all_published_categories_and_counts(self):
         figure = self.figures["classroom-emotion-image-dataset"]

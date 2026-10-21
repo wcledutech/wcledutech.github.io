@@ -306,6 +306,89 @@
   font-weight: 700;
 }
 
+.research-highlights-page .highlights-layout-scenes {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.research-highlights-page .highlights-layout-study {
+  grid-template-columns: 120px minmax(0, 1fr);
+  align-items: start;
+  gap: 18px;
+}
+
+.research-highlights-page .highlights-layout-scenes .highlights-figure-panel,
+.research-highlights-page .highlights-layout-study .highlights-figure-panel {
+  padding: 0;
+  border: 0;
+}
+
+.research-highlights-page .highlights-layout-study .highlights-figure-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.research-highlights-page .highlights-layout-study .highlights-panel-caption {
+  order: -1;
+  margin: 0 0 12px;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.research-highlights-page .highlights-study-steps {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--highlights-ink);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.research-highlights-page .highlights-study-steps li {
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr);
+  gap: 7px;
+  margin: 0;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--highlights-rule);
+}
+
+.research-highlights-page .highlights-study-steps li:first-child {
+  padding-top: 0;
+}
+
+.research-highlights-page .highlights-study-steps li:last-child {
+  border-bottom: 0;
+}
+
+.research-highlights-page .highlights-step-number {
+  color: var(--highlights-accent);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.research-highlights-page .highlights-layout-study a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 1140px) {
+  .research-highlights-page .highlights-layout-study {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .research-highlights-page .highlights-study-steps {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 14px;
+  }
+
+  .research-highlights-page .highlights-study-steps li {
+    padding: 0 0 7px;
+  }
+}
+
 .research-highlights-page .highlights-paper-figure figcaption {
   display: flex;
   align-items: flex-start;
