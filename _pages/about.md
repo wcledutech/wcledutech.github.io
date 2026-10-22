@@ -709,7 +709,6 @@ redirect_from:
     <div class="award-list" style="--accent: var(--gold);">
       <div class="compact-item honor-featured" id="top-2-scientists-2026">
         <div class="honor-title"><i class="fas fa-award" aria-hidden="true"></i><strong>2026 | World's Top 2% Scientists</strong></div>
-        <p>Stanford/Elsevier single-year citation impact list, based on citations received in 2025. Field: Education.</p>
         <p class="honor-links">
           <a href="{{ '/images/honors/top-2-scientists-2026-chengliang-wang.png' | relative_url }}" target="_blank" rel="noopener">View recognition record<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
           <a href="https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/9" target="_blank" rel="noopener">Official dataset<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
