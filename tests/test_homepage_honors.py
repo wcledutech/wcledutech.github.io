@@ -60,6 +60,10 @@ class HomepageHonorsTest(unittest.TestCase):
         self.assertEqual(self.home.count(title), 2)
         self.assertRegex(self.home, r"\.honor-featured,\s*\.honor-highlight\s*\{\s*border-color: #dac9a3;\s*background: #fcfaf4;\s*\}")
 
+    def test_presidents_scholarship_description_states_both_distinctions(self):
+        description = "The only master's student at ECNU to receive the President's Scholarship in 2024, and the first master's student in the history of ECNU's Faculty of Education to receive this award."
+        self.assertIn("2024 | East China Normal University President's Scholarship</strong></div><p>" + description + "</p><p>The highest academic honor at ECNU, 20,000 RMB.</p>", self.home)
+
 
 if __name__ == "__main__":
     unittest.main()
