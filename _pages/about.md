@@ -346,6 +346,10 @@ redirect_from:
   line-height: 1.4;
 }
 
+.about-page .education-ranks {
+  margin: .65rem 0 .75rem;
+}
+
 #scholar-metrics {
   scroll-margin-top: 80px;
 }
@@ -778,6 +782,7 @@ redirect_from:
       </article>
       <article class="about-card" style="--accent: var(--indigo);">
         <h3>2019-2023 | Zhejiang University of Technology, College of Education</h3>
+        <div class="tag-row education-ranks"><span>Comprehensive Evaluation: 1st in College</span><span>GPA: 2nd in Major</span></div>
         <p>
           Hangzhou, Zhejiang Province, China. Undergraduate study in the College of Education, with strong coursework
           performance across artificial intelligence, learning systems, educational data, web development, big data,
