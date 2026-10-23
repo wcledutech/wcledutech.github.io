@@ -69,6 +69,19 @@ class HomepageHonorsTest(unittest.TestCase):
         title = '<div class="compact-item honor-highlight"><div class="honor-title"><i class="fas fa-award" aria-hidden="true"></i><strong>'
         self.assertIn(title + "2023 | Outstanding Graduate of Zhejiang Province</strong></div><p>Awarded only to the top 4% of graduates.</p>", self.home)
 
+    def test_national_scholarships_have_only_a_secondary_background(self):
+        secondary = [index for index, item in enumerate(self.parser.items) if "honor-secondary" in item.get("class", "").split()]
+        self.assertEqual(secondary, [2, 4])
+        self.assertRegex(self.home, r"\.honor-secondary\s*\{\s*background: #f6f8fa;\s*\}")
+        for year in ("2024-2025", "2023-2024"):
+            self.assertIn('<div class="compact-item honor-secondary"><strong>' + year + " | China National Scholarship for Postgraduate Students</strong>", self.home)
+
+    def test_second_national_scholarship_explains_maximum_and_department_first(self):
+        description = "Second award, achieving the two-award maximum during master's study; the department's first two-time recipient."
+        self.assertEqual(self.home.count(description), 1)
+        self.assertIn("2024-2025 | China National Scholarship for Postgraduate Students</strong><p>" + description + "</p><p>20,000 RMB.</p>", self.home)
+        self.assertIn("2023-2024 | China National Scholarship for Postgraduate Students</strong><p>20,000 RMB.</p>", self.home)
+
 
 if __name__ == "__main__":
     unittest.main()
