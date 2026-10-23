@@ -792,7 +792,7 @@ redirect_from:
           <li>Introduction of Big Data (95), Experiment of Big Data in Education (97), and Educational Data Statistics and Evaluation (97, highest score in the major).</li>
           <li>Oral Presentation Skill of Teacher (99, highest score in the major), Class Work Skill Training (97), Teachers Skills Training (95), Pedagogy of ICT in Primary and Secondary School (95), and Educational Management (94, highest score in the major).</li>
         </ul>
-        <div class="tag-row"><span>Comprehensive Evaluation: 1st in College</span><span>GPA: 2nd in Major</span></div>
+        <div class="tag-row"><span>Overall Performance: 1st in College</span><span>GPA: 2nd in Major</span></div>
       </article>
     </div>
   </section>
