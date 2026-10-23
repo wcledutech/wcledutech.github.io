@@ -643,7 +643,7 @@ redirect_from:
         </p>
         <p>
           He was included in the <a href="#top-2-scientists-2026" data-ss-opts='{"offset": -80}'>2026 Stanford/Elsevier World's Top 2% Scientists list</a>
-          for single-year citation impact.
+          for single-year citation impact in 2025.
         </p>
       </article>
 
@@ -712,7 +712,7 @@ redirect_from:
     <h2>Honors, Awards, and Scholarships</h2>
     <div class="award-list" style="--accent: var(--gold);">
       <div class="compact-item honor-featured" id="top-2-scientists-2026">
-        <div class="honor-title"><i class="fas fa-award" aria-hidden="true"></i><strong>2026 | World's Top 2% Scientists</strong></div>
+        <div class="honor-title"><i class="fas fa-award" aria-hidden="true"></i><strong>2026 | World's Top 2% Scientists (2025 Single-Year Impact)</strong></div>
         <p class="honor-links">
           <a href="{{ '/images/honors/top-2-scientists-2026-chengliang-wang.png' | relative_url }}" target="_blank" rel="noopener">View recognition record<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
           <a href="https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/9" target="_blank" rel="noopener">Official dataset<i class="fas fa-external-link-alt" aria-hidden="true"></i></a>

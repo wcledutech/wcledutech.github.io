@@ -38,7 +38,8 @@ class HomepageHonorsTest(unittest.TestCase):
         self.assertEqual(len(self.parser.items), 10)
         self.assertEqual(self.parser.items[0]["id"], "top-2-scientists-2026")
         self.assertIn('href="#top-2-scientists-2026"', self.home)
-        self.assertIn("2026 | World's Top 2% Scientists", self.home)
+        self.assertIn("2026 | World's Top 2% Scientists (2025 Single-Year Impact)", self.home)
+        self.assertIn("for single-year citation impact in 2025.", self.home)
         self.assertNotIn("Stanford/Elsevier single-year citation impact list, based on citations received in 2025. Field: Education.", self.home)
 
     def test_recognition_record_and_official_dataset_are_linked(self):
