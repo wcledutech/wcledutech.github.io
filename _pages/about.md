@@ -346,10 +346,6 @@ redirect_from:
   line-height: 1.4;
 }
 
-.about-page .education-ranks {
-  margin: .65rem 0 .75rem;
-}
-
 #scholar-metrics {
   scroll-margin-top: 80px;
 }
@@ -782,7 +778,6 @@ redirect_from:
       </article>
       <article class="about-card" style="--accent: var(--indigo);">
         <h3>2019-2023 | Zhejiang University of Technology, College of Education</h3>
-        <div class="tag-row education-ranks"><span>Comprehensive Evaluation: 1st in College</span><span>GPA: 2nd in Major</span></div>
         <p>
           Hangzhou, Zhejiang Province, China. Undergraduate study in the College of Education, with strong coursework
           performance across artificial intelligence, learning systems, educational data, web development, big data,
@@ -797,6 +792,7 @@ redirect_from:
           <li>Introduction of Big Data (95), Experiment of Big Data in Education (97), and Educational Data Statistics and Evaluation (97, highest score in the major).</li>
           <li>Oral Presentation Skill of Teacher (99, highest score in the major), Class Work Skill Training (97), Teachers Skills Training (95), Pedagogy of ICT in Primary and Secondary School (95), and Educational Management (94, highest score in the major).</li>
         </ul>
+        <div class="tag-row"><span>Comprehensive Evaluation: 1st in College</span><span>GPA: 2nd in Major</span></div>
       </article>
     </div>
   </section>
