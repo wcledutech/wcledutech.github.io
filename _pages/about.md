@@ -505,9 +505,13 @@ redirect_from:
 
 .honor-featured {
   padding: 20px 22px;
+  box-shadow: none;
+}
+
+.honor-featured,
+.honor-highlight {
   border-color: #dac9a3;
   background: #fcfaf4;
-  box-shadow: none;
 }
 
 .honor-title {
@@ -716,7 +720,7 @@ redirect_from:
       </div>
       <div class="compact-item"><strong>2026-2028 | ACU Vice Chancellor's PhD Excellence Scholarship</strong><p>Research Training Program (RTP) Scholarships, totaling approximately 1,033,000 RMB over 3 years.</p></div>
       <div class="compact-item"><strong>2024-2025 | China National Scholarship for Postgraduate Students</strong><p>20,000 RMB.</p></div>
-      <div class="compact-item"><strong>2024 | East China Normal University President's Scholarship</strong><p>The highest academic honor at ECNU, 20,000 RMB.</p></div>
+      <div class="compact-item honor-highlight"><strong>2024 | East China Normal University President's Scholarship</strong><p>The highest academic honor at ECNU, 20,000 RMB.</p></div>
       <div class="compact-item"><strong>2023-2024 | China National Scholarship for Postgraduate Students</strong><p>20,000 RMB.</p></div>
       <div class="compact-item"><strong>2023 | Outstanding Graduate of Zhejiang Province</strong><p>Provincial-level graduation honor.</p></div>
       <div class="compact-item"><strong>2023 | Outstanding Graduation Thesis Award</strong><p>Zhejiang University of Technology.</p></div>
