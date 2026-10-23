@@ -50,11 +50,13 @@ class HomepageHonorsTest(unittest.TestCase):
         with (ROOT / RECORD).open("rb") as stream:
             self.assertEqual(stream.read(8), b"\x89PNG\r\n\x1a\n")
 
-    def test_presidents_scholarship_shares_featured_honor_colors_only(self):
+    def test_presidents_scholarship_shares_featured_colors_title_and_icon(self):
         highlighted = [index for index, item in enumerate(self.parser.items) if "honor-highlight" in item.get("class", "").split()]
         self.assertEqual(highlighted, [3])
         self.assertNotIn("honor-featured", self.parser.items[3]["class"].split())
-        self.assertIn('<div class="compact-item honor-highlight"><strong>2024 | East China Normal University President\'s Scholarship</strong>', self.home)
+        title = '<div class="honor-title"><i class="fas fa-award" aria-hidden="true"></i><strong>'
+        self.assertIn('<div class="compact-item honor-highlight">' + title + "2024 | East China Normal University President's Scholarship</strong>", self.home)
+        self.assertEqual(self.home.count(title), 2)
         self.assertRegex(self.home, r"\.honor-featured,\s*\.honor-highlight\s*\{\s*border-color: #dac9a3;\s*background: #fcfaf4;\s*\}")
 
 
