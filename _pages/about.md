@@ -720,7 +720,7 @@ redirect_from:
       </div>
       <div class="compact-item"><strong>2026-2028 | ACU Vice Chancellor's PhD Excellence Scholarship</strong><p>Research Training Program (RTP) Scholarships, totaling approximately 1,033,000 RMB over 3 years.</p></div>
       <div class="compact-item"><strong>2024-2025 | China National Scholarship for Postgraduate Students</strong><p>20,000 RMB.</p></div>
-      <div class="compact-item honor-highlight"><div class="honor-title"><i class="fas fa-award" aria-hidden="true"></i><strong>2024 | East China Normal University President's Scholarship</strong></div><p>The only master's student at ECNU to receive the President's Scholarship in 2024, and the first master's student in the history of ECNU's Faculty of Education to receive this award.</p><p>The highest academic honor at ECNU, 20,000 RMB.</p></div>
+      <div class="compact-item honor-highlight"><div class="honor-title"><i class="fas fa-award" aria-hidden="true"></i><strong>2024 | East China Normal University President's Scholarship</strong></div><p>ECNU's only master's recipient in 2024; the Faculty of Education's first-ever master's recipient.</p><p>The highest academic honor at ECNU, 20,000 RMB.</p></div>
       <div class="compact-item"><strong>2023-2024 | China National Scholarship for Postgraduate Students</strong><p>20,000 RMB.</p></div>
       <div class="compact-item"><strong>2023 | Outstanding Graduate of Zhejiang Province</strong><p>Provincial-level graduation honor.</p></div>
       <div class="compact-item"><strong>2023 | Outstanding Graduation Thesis Award</strong><p>Zhejiang University of Technology.</p></div>
