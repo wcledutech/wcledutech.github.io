@@ -53,16 +53,21 @@ class HomepageHonorsTest(unittest.TestCase):
 
     def test_presidents_scholarship_shares_featured_colors_title_and_icon(self):
         highlighted = [index for index, item in enumerate(self.parser.items) if "honor-highlight" in item.get("class", "").split()]
-        self.assertEqual(highlighted, [3])
+        self.assertEqual(highlighted, [3, 5])
         self.assertNotIn("honor-featured", self.parser.items[3]["class"].split())
         title = '<div class="honor-title"><i class="fas fa-award" aria-hidden="true"></i><strong>'
         self.assertIn('<div class="compact-item honor-highlight">' + title + "2024 | East China Normal University President's Scholarship</strong>", self.home)
-        self.assertEqual(self.home.count(title), 2)
+        self.assertEqual(self.home.count(title), 3)
         self.assertRegex(self.home, r"\.honor-featured,\s*\.honor-highlight\s*\{\s*border-color: #dac9a3;\s*background: #fcfaf4;\s*\}")
 
     def test_presidents_scholarship_description_states_both_distinctions(self):
         description = "ECNU's only master's recipient in 2024; the Faculty of Education's first-ever master's recipient."
         self.assertIn("2024 | East China Normal University President's Scholarship</strong></div><p>" + description + "</p><p>The highest academic honor at ECNU, 20,000 RMB.</p>", self.home)
+
+    def test_zhejiang_graduate_honor_shares_styling_and_states_top_four_percent(self):
+        self.assertIn("honor-highlight", self.parser.items[5]["class"].split())
+        title = '<div class="compact-item honor-highlight"><div class="honor-title"><i class="fas fa-award" aria-hidden="true"></i><strong>'
+        self.assertIn(title + "2023 | Outstanding Graduate of Zhejiang Province</strong></div><p>Awarded only to the top 4% of graduates.</p>", self.home)
 
 
 if __name__ == "__main__":
