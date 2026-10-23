@@ -82,6 +82,10 @@ class HomepageHonorsTest(unittest.TestCase):
         self.assertIn("2024-2025 | China National Scholarship for Postgraduate Students</strong><p>" + description + "</p><p>20,000 RMB.</p>", self.home)
         self.assertIn("2023-2024 | China National Scholarship for Postgraduate Students</strong><p>20,000 RMB.</p>", self.home)
 
+    def test_award_spacing_is_slightly_wider_without_changing_other_lists(self):
+        self.assertRegex(self.home, r"\.award-list\s*\{\s*gap: 1rem;\s*\}")
+        self.assertRegex(self.home, r"\.award-list,\s*\.funding-list,\s*\.service-list\s*\{\s*display: grid;\s*gap: \.75rem;\s*\}")
+
 
 if __name__ == "__main__":
     unittest.main()

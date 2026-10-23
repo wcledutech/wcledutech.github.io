@@ -467,6 +467,10 @@ redirect_from:
   gap: .75rem;
 }
 
+.award-list {
+  gap: 1rem;
+}
+
 .compact-item {
   position: relative;
   padding: .85rem .9rem .85rem 1.05rem;
