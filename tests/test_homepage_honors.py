@@ -72,7 +72,7 @@ class HomepageHonorsTest(unittest.TestCase):
     def test_national_scholarships_have_only_a_secondary_background(self):
         secondary = [index for index, item in enumerate(self.parser.items) if "honor-secondary" in item.get("class", "").split()]
         self.assertEqual(secondary, [2, 4])
-        self.assertRegex(self.home, r"\.honor-secondary\s*\{\s*background: #f6f8fa;\s*\}")
+        self.assertRegex(self.home, r"\.honor-secondary\s*\{\s*background: #e7f0e8;\s*\}")
         for year in ("2024-2025", "2023-2024"):
             self.assertIn('<div class="compact-item honor-secondary"><strong>' + year + " | China National Scholarship for Postgraduate Students</strong>", self.home)
 

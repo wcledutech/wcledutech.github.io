@@ -515,7 +515,7 @@ redirect_from:
 }
 
 .honor-secondary {
-  background: #f6f8fa;
+  background: #e7f0e8;
 }
 
 .honor-title {
