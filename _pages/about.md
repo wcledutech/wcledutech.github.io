@@ -121,6 +121,10 @@ redirect_from:
   line-height: 1.2;
 }
 
+.about-page .about-section > h2 {
+  margin-bottom: .5em;
+}
+
 .about-section h1 {
   padding: 0;
   font-family: inherit;
