@@ -738,7 +738,7 @@ redirect_from:
       </div>
       <div class="compact-item honor-secondary"><strong>2024-2025 | China National Scholarship for Postgraduate Students</strong><p>Second award, achieving the two-award maximum during master's study; the department's first two-time recipient.</p><p>20,000 RMB.</p></div>
       <div class="compact-item honor-highlight"><div class="honor-title"><i class="fas fa-award" aria-hidden="true"></i><strong>2024 | East China Normal University President's Scholarship</strong></div><p>ECNU's only master's recipient in 2024; the Faculty of Education's first-ever master's recipient.</p><p>The highest academic honor at ECNU, 20,000 RMB.</p></div>
-      <div class="compact-item honor-secondary"><strong>2023-2024 | China National Scholarship for Postgraduate Students</strong><p>20,000 RMB.</p></div>
+      <div class="compact-item honor-secondary"><strong>2023-2024 | China National Scholarship for Postgraduate Students</strong><p>First award; the first student in the Department of Education Information Technology to receive the National Scholarship during the first academic year of master's study.</p><p>20,000 RMB.</p></div>
       <div class="compact-item honor-highlight"><div class="honor-title"><i class="fas fa-award" aria-hidden="true"></i><strong>2023 | Outstanding Graduate of Zhejiang Province</strong></div><p>Awarded only to the top 4% of graduates.</p></div>
       <div class="compact-item"><strong>2023 | Outstanding Graduation Thesis Award</strong><p>Zhejiang University of Technology.</p></div>
       <div class="compact-item"><strong>2022 | Best Presentation of Session 5</strong><p>The 7th International Conference on Cloud Computing and Big Data Analytics.</p></div>
