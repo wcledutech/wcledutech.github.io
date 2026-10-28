@@ -60,11 +60,11 @@ $(document).ready(function(){
   // init smooth scroll
   $("a").smoothScroll({offset: -20});
 
-  // add lightbox class to all image links
-  $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").addClass("image-popup");
+  // add lightbox class to image links unless they explicitly opt out
+  $("a[href$='.jpg'],a[href$='.jpeg'],a[href$='.JPG'],a[href$='.png'],a[href$='.gif']").not("[data-no-lightbox]").addClass("image-popup");
 
   // Magnific-Popup options
-  $(".image-popup").magnificPopup({
+  $(".image-popup").not("[data-no-lightbox]").magnificPopup({
     // disableOn: function() {
     //   if( $(window).width() < 500 ) {
     //     return false;

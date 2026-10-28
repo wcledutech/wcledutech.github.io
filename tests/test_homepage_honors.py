@@ -35,7 +35,7 @@ class HomepageHonorsTest(unittest.TestCase):
         self.parser.feed(self.home)
 
     def test_2026_single_year_recognition_is_first_and_linked_from_bio(self):
-        self.assertEqual(len(self.parser.items), 10)
+        self.assertEqual(len(self.parser.items), 11)
         self.assertEqual(self.parser.items[0]["id"], "top-2-scientists-2026")
         self.assertIn('href="#top-2-scientists-2026"', self.home)
         self.assertIn("2026 | World's Top 2% Scientists (2025 Single-Year Impact)", self.home)
@@ -43,7 +43,7 @@ class HomepageHonorsTest(unittest.TestCase):
         self.assertNotIn("Stanford/Elsevier single-year citation impact list, based on citations received in 2025. Field: Education.", self.home)
 
     def test_recognition_record_and_official_dataset_are_linked(self):
-        self.assertEqual(len(self.parser.links), 2)
+        self.assertEqual(len(self.parser.links), 3)
         self.assertIn(RECORD, self.parser.links[0]["href"])
         self.assertEqual(self.parser.links[1]["href"], "https://elsevier.digitalcommonsdata.com/datasets/btchxktzyw/9")
         for link in self.parser.links:
@@ -53,11 +53,11 @@ class HomepageHonorsTest(unittest.TestCase):
 
     def test_presidents_scholarship_shares_featured_colors_title_and_icon(self):
         highlighted = [index for index, item in enumerate(self.parser.items) if "honor-highlight" in item.get("class", "").split()]
-        self.assertEqual(highlighted, [3, 5])
-        self.assertNotIn("honor-featured", self.parser.items[3]["class"].split())
+        self.assertEqual(highlighted, [2, 4, 6])
+        self.assertNotIn("honor-featured", self.parser.items[4]["class"].split())
         title = '<div class="honor-title"><i class="fas fa-award" aria-hidden="true"></i><strong>'
         self.assertIn('<div class="compact-item honor-highlight">' + title + "2024 | East China Normal University President's Scholarship</strong>", self.home)
-        self.assertEqual(self.home.count(title), 3)
+        self.assertEqual(self.home.count(title), 4)
         self.assertRegex(self.home, r"\.honor-featured,\s*\.honor-highlight\s*\{\s*border-color: #dac9a3;\s*background: #fcfaf4;\s*\}")
 
     def test_presidents_scholarship_description_states_both_distinctions(self):
@@ -65,13 +65,13 @@ class HomepageHonorsTest(unittest.TestCase):
         self.assertIn("2024 | East China Normal University President's Scholarship</strong></div><p>" + description + "</p><p>The highest academic honor at ECNU, 20,000 RMB.</p>", self.home)
 
     def test_zhejiang_graduate_honor_shares_styling_and_states_top_four_percent(self):
-        self.assertIn("honor-highlight", self.parser.items[5]["class"].split())
+        self.assertIn("honor-highlight", self.parser.items[6]["class"].split())
         title = '<div class="compact-item honor-highlight"><div class="honor-title"><i class="fas fa-award" aria-hidden="true"></i><strong>'
         self.assertIn(title + "2023 | Outstanding Graduate of Zhejiang Province</strong></div><p>Awarded only to the top 4% of graduates.</p>", self.home)
 
     def test_national_scholarships_have_only_a_secondary_background(self):
         secondary = [index for index, item in enumerate(self.parser.items) if "honor-secondary" in item.get("class", "").split()]
-        self.assertEqual(secondary, [2, 4])
+        self.assertEqual(secondary, [3, 5])
         self.assertRegex(self.home, r"\.honor-secondary\s*\{\s*background: #e7f0e8;\s*\}")
         for year in ("2024-2025", "2023-2024"):
             self.assertIn('<div class="compact-item honor-secondary"><strong>' + year + " | China National Scholarship for Postgraduate Students</strong>", self.home)

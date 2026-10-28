@@ -731,6 +731,11 @@ redirect_from:
         </p>
       </div>
       <div class="compact-item"><strong>2026-2028 | ACU Vice Chancellor's PhD Excellence Scholarship</strong><p>Research Training Program (RTP) Scholarships, totaling approximately 1,033,000 RMB over 3 years.</p></div>
+      <div class="compact-item honor-highlight" id="etrd-reviewer-excellence-2025">
+        <div class="honor-title"><i class="fas fa-award" aria-hidden="true"></i><strong>2025 | ETR&amp;D Editors Reviewer Excellence Award</strong></div>
+        <p><em>Educational Technology Research and Development</em></p>
+        <p class="honor-links"><a href="{{ '/images/honors/etrd-2025-reviewer-excellence-chengliang-wang.png' | relative_url }}" target="_blank" rel="noopener" data-no-lightbox>View certificate<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
+      </div>
       <div class="compact-item honor-secondary"><strong>2024-2025 | China National Scholarship for Postgraduate Students</strong><p>Second award, achieving the two-award maximum during master's study; the department's first two-time recipient.</p><p>20,000 RMB.</p></div>
       <div class="compact-item honor-highlight"><div class="honor-title"><i class="fas fa-award" aria-hidden="true"></i><strong>2024 | East China Normal University President's Scholarship</strong></div><p>ECNU's only master's recipient in 2024; the Faculty of Education's first-ever master's recipient.</p><p>The highest academic honor at ECNU, 20,000 RMB.</p></div>
       <div class="compact-item honor-secondary"><strong>2023-2024 | China National Scholarship for Postgraduate Students</strong><p>20,000 RMB.</p></div>
