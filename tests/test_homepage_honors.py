@@ -80,7 +80,7 @@ class HomepageHonorsTest(unittest.TestCase):
         description = "Second award, achieving the two-award maximum during master's study; the department's first two-time recipient."
         self.assertEqual(self.home.count(description), 1)
         self.assertIn("2024-2025 | China National Scholarship for Postgraduate Students</strong><p>" + description + "</p><p>20,000 RMB.</p>", self.home)
-        self.assertIn("2023-2024 | China National Scholarship for Postgraduate Students</strong><p>First award; the first student in the Department of Education Information Technology to receive the National Scholarship during the first academic year of master's study.</p><p>20,000 RMB.</p>", self.home)
+        self.assertIn("2023-2024 | China National Scholarship for Postgraduate Students</strong><p>First award; the Department of Education Information Technology’s first National Scholarship recipient in the first year of master’s study.</p><p>20,000 RMB.</p>", self.home)
 
     def test_award_spacing_is_slightly_wider_without_changing_other_lists(self):
         self.assertRegex(self.home, r"\.award-list\s*\{\s*gap: 1rem;\s*\}")
