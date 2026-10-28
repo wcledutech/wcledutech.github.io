@@ -751,7 +751,7 @@ redirect_from:
     <h2>Funding</h2>
     <p class="section-lead">Research projects supported by university, provincial, and national undergraduate innovation programs.</p>
     <div class="funding-list" style="--accent: var(--teal);">
-      <div class="compact-item"><strong>2023-2024 | ECNU Faculty/Division Project</strong><p><em>Macro Trends, Normative Logic, and Practical Models of AIGC-Driven Educational Transformation</em> (1,000 RMB).</p></div>
+      <div class="compact-item"><strong>2023-2024 | ECNU Faculty/Division Project</strong><p><em>Macro Trends, Normative Logic, and Practical Models of AIGC-Driven Educational Transformation</em> (1,000 RMB).</p><p>Final project evaluation: Excellent (top 10%).</p></div>
       <div class="compact-item"><strong>2022-2023 | National Undergraduate Innovation and Entrepreneurship Training Program</strong><p><em>Constructing Learner Digital Profiles from a Personalized Adaptive Learning Perspective</em>, also funded by Zhejiang Province Xinmiao Talent Program (20,000 RMB).</p></div>
       <div class="compact-item"><strong>2022-2023 | National Undergraduate Innovation and Entrepreneurship Training Program</strong><p><em>An Emotion-Computing-Based System for Analyzing and Intervening in College Students' Classroom Learning States</em> (10,000 RMB).</p></div>
       <div class="compact-item"><strong>2022-2023 | Provincial Undergraduate Innovation and Entrepreneurship Training Program</strong><p><em>Analyzing the Impact of Video Attributes on Learners' Performance and Learning Experience</em> (5,000 RMB).</p></div>
