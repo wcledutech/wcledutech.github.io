@@ -732,7 +732,7 @@ redirect_from:
       </div>
       <div class="compact-item"><strong>2026-2028 | ACU Vice Chancellor's PhD Excellence Scholarship</strong><p>Research Training Program (RTP) Scholarships, totaling approximately 1,033,000 RMB over 3 years.</p></div>
       <div class="compact-item honor-highlight" id="etrd-reviewer-excellence-2025">
-        <div class="honor-title"><i class="fas fa-award" aria-hidden="true"></i><strong>2025 | ETR&amp;D (SSCI Q1) Editors Reviewer Excellence Award</strong></div>
+        <div class="honor-title"><i class="fas fa-award" aria-hidden="true"></i><strong>2025 | <em>ETR&amp;D</em> (SSCI Q1) Editors Reviewer Excellence Award</strong></div>
         <p><em>Educational Technology Research and Development</em></p>
         <p class="honor-links"><a href="{{ '/images/honors/etrd-2025-reviewer-excellence-chengliang-wang.png' | relative_url }}" target="_blank" rel="noopener" data-no-lightbox>View certificate<i class="fas fa-external-link-alt" aria-hidden="true"></i></a></p>
       </div>
