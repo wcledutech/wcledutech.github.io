@@ -24,6 +24,11 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Chengliang Wang"
+  alternate_name   : "王成梁"
+  identity_profiles:
+    - "https://www.researchgate.net/profile/Chengliang-Wang-5"
+    - "https://www.linkedin.com/in/chengliang-wang-aied"
+    - "https://dblp.org/pid/77/1962-1.html"
   avatar           : "images/android-chrome-512x512.png"
   bio              : ""
   location         : 

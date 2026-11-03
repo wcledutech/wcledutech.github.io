@@ -1,7 +1,11 @@
 ---
 permalink: /
 title: ""
-excerpt: "Chengliang Wang studies AI in education, programming instruction, learning environments and learner behavior at Australian Catholic University."
+seo_title: "Chengliang Wang | AI in Education | ACU"
+seo_title_suffix: false
+excerpt: "Chengliang Wang, PhD researcher at Australian Catholic University, studies AI in education, programming learning, and intelligent learning environments."
+profile_page: true
+lang: "en"
 author_profile: true
 about_sidebar_nav: true
 redirect_from:
@@ -159,6 +163,16 @@ redirect_from:
   margin: 0 0 28px;
   text-align: left;
   letter-spacing: 0;
+}
+
+.about-page .profile-language {
+  margin: 0 0 22px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.about-page .profile-language a {
+  color: var(--teal);
 }
 
 .about-page .profile-destinations {
@@ -589,6 +603,24 @@ redirect_from:
   }
 }
 
+@media (max-width: 1023px) {
+  .sidebar .profile_box {
+    flex-wrap: wrap;
+  }
+
+  .about-sidebar-nav {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    flex-basis: 100%;
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .about-sidebar-nav__title {
+    grid-column: 1 / -1;
+  }
+}
+
 @media (max-width: 620px) {
   .profile-grid,
   .card-grid {
@@ -612,11 +644,13 @@ redirect_from:
 
 <div class="about-page">
   <section class="about-section" id="profile">
-    <h1>Profile</h1>
+    <h1>Chengliang Wang</h1>
     <p class="section-lead">
-      My work connects educational technology, artificial intelligence, learning environments, programming education,
-      and learner behavior modeling.
+      Chengliang Wang is a PhD researcher at the Institute for Positive Psychology and Education,
+      Australian Catholic University. His research focuses on AI in education, programming learning,
+      intelligent learning environments, and learner behavior modeling.
     </p>
+    <p class="profile-language"><a href="{{ '/zh/' | relative_url }}" lang="zh-Hans" hreflang="zh-Hans">中文主页</a></p>
     <nav class="profile-links" aria-label="Research links">
       <div class="profile-destinations">
         <a class="profile-destination" href="{{ '/research-highlights/' | relative_url }}">

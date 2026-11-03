@@ -3,7 +3,7 @@
 {% assign seo_title = page.seo_title | default: page.citation_title | default: page.title | strip_html | strip_newlines | strip %}
 {% if seo_title == empty %}
   {% assign seo_title = site.title | append: " - Homepage" %}
-{% else %}
+{% elsif page.seo_title_suffix != false %}
   {% assign seo_title = seo_title | append: " | " | append: site.title %}
 {% endif %}
 {% assign content_description = page.description | default: page.excerpt | default: site.description | markdownify | strip_html | strip_newlines | strip %}{% assign seo_description = page.seo_description | default: content_description | strip_html | strip_newlines | strip %}
@@ -19,6 +19,11 @@
 <meta property="og:description" content="{{ seo_description | escape_once }}">
 <meta property="og:type" content="{% if page.citation_title %}article{% else %}website{% endif %}">
 <link rel="canonical" href="{{ canonical_url | escape_once }}">
+{% if page.profile_page %}
+<link rel="alternate" hreflang="en" href="{{ '/' | absolute_url }}">
+<link rel="alternate" hreflang="zh-Hans" href="{{ '/zh/' | absolute_url }}">
+<link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
+{% endif %}
 <meta property="og:url" content="{{ canonical_url | escape_once }}">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{{ seo_title | escape_once }}">
@@ -56,20 +61,21 @@
       "name": {{ site.title | jsonify }}
     },
     {
-      "@type": {% if page.url == "/" %}"ProfilePage"{% else %}"WebPage"{% endif %},
+      "@type": {% if page.profile_page %}"ProfilePage"{% else %}"WebPage"{% endif %},
       "@id": {{ page_id | jsonify }},
       "url": {{ canonical_url | jsonify }},
       "name": {{ seo_title | jsonify }},
       "description": {{ seo_description | jsonify }},
       "isPartOf": {"@id": {{ website_id | jsonify }}}
-      {% if page.url == "/" %}, "mainEntity": {"@id": {{ author_id | jsonify }}}{% endif %}
+      {% if page.profile_page %}, "mainEntity": {"@id": {{ author_id | jsonify }}}, "inLanguage": {{ page.lang | default: 'en' | jsonify }}{% endif %}
       {% if page.citation_title %}, "mainEntity": {"@id": {{ canonical_url | append: "#article" | jsonify }}}{% endif %}
     }
-    {% if page.url == "/" %},
+    {% if page.profile_page %},
     {
       "@type": "Person",
       "@id": {{ author_id | jsonify }},
       "name": {{ site.author.name | jsonify }},
+      "alternateName": {{ site.author.alternate_name | jsonify }},
       "url": {{ site.author.uri | jsonify }},
       "description": {{ site.description | jsonify }},
       "affiliation": {
@@ -81,6 +87,7 @@
         {{ site.author.orcid | jsonify }},
         {{ site.author.googlescholar | jsonify }},
         {{ site.author.github | prepend: "https://github.com/" | jsonify }}
+        {% for identity_profile in site.author.identity_profiles %}, {{ identity_profile | jsonify }}{% endfor %}
       ]
     }
     {% endif %}
