@@ -68,7 +68,7 @@ author_profile: true
 
 .publication-metrics {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(6, minmax(0, 1fr));
   gap: 0;
   margin-top: 28px;
   padding-top: 24px;
@@ -77,7 +77,7 @@ author_profile: true
 
 .publication-metric {
   min-width: 0;
-  padding: 0 24px;
+  padding: 0 16px;
   border-left: 1px solid #dce2e0;
 }
 
@@ -479,6 +479,8 @@ author_profile: true
     <div class="publication-metric"><strong>31</strong><span>First-author and corresponding-author studies</span></div>
     <div class="publication-metric"><strong>18</strong><span>ESI 1% highly cited papers</span></div>
     <div class="publication-metric"><strong>5</strong><span>ESI 0.1% hot papers</span></div>
+    <div class="publication-metric"><strong>{{ site.data.intellectual_property.software.size }}</strong><span>Software copyrights</span></div>
+    <div class="publication-metric"><strong>{{ site.data.intellectual_property.patents.size }}</strong><span>Patents</span></div>
   </div>
 </section>
 
