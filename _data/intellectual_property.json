@@ -1,0 +1,134 @@
+{
+  "software": [
+    {
+      "id": "xinban-leyuan",
+      "title": "Xinban Leyuan: Emotional Companionship Platform for Children with Autism",
+      "registration_number": "2025SR0811351",
+      "date": "2025-05-19",
+      "version": "V1.0",
+      "date_label": "Registered",
+      "document_type": "certificate",
+      "document_label": "View certificate",
+      "document": "/files/intellectual-property/2025SR0811351.pdf"
+    },
+    {
+      "id": "xinya",
+      "title": "Xinya: Emotional Companionship and Development App for Children",
+      "registration_number": "2025SR0747838",
+      "date": "2025-05-09",
+      "version": "V1.0",
+      "date_label": "Registered",
+      "document_type": "certificate",
+      "document_label": "View certificate",
+      "document": "/files/intellectual-property/2025SR0747838.pdf"
+    },
+    {
+      "id": "xinjing",
+      "title": "Xinjing: Picture-Book Reading App for Children",
+      "registration_number": "2025SR0462760",
+      "date": "2025-03-17",
+      "version": "V1.0",
+      "date_label": "Registered",
+      "document_type": "certificate",
+      "document_label": "View certificate",
+      "document": "/files/intellectual-property/2025SR0462760.pdf"
+    },
+    {
+      "id": "i-learning",
+      "title": "I-Learning: Intelligent Learning Companion System",
+      "registration_number": "2024SR2015301",
+      "date": "2024-12-09",
+      "version": "V1.0",
+      "date_label": "Registered",
+      "document_type": "certificate",
+      "document_label": "View certificate",
+      "document": "/files/intellectual-property/2024SR2015301.pdf"
+    },
+    {
+      "id": "cas",
+      "title": "Course Administration System (CAS)",
+      "subtitle": "Course management and review system.",
+      "registration_number": "2022SR1378618",
+      "date": "2022-10-27",
+      "date_label": "Certificate dispatched",
+      "document_type": "registration_notice",
+      "document_label": "View registration notice",
+      "version": "V1.0",
+      "document": "/files/intellectual-property/2022SR1378618-registration-notice.pdf"
+    },
+    {
+      "id": "know-yourself",
+      "title": "Know Yourself: Learner Characteristics and Learning Styles Assessment App",
+      "registration_number": "2022SR0612184",
+      "date": "2022-05-20",
+      "version": "V1.0",
+      "date_label": "Registered",
+      "document_type": "certificate",
+      "document_label": "View certificate",
+      "document": "/files/intellectual-property/2022SR0612184.jpg"
+    },
+    {
+      "id": "situational-english",
+      "title": "Situational English Learning App",
+      "registration_number": "2022SR0284161",
+      "date": "2022-02-28",
+      "version": "V1.0",
+      "date_label": "Registered",
+      "document_type": "certificate",
+      "document_label": "View certificate",
+      "document": "/files/intellectual-property/2022SR0284161.jpg"
+    },
+    {
+      "id": "green-journey",
+      "title": "Green Journey: Environmental Education App",
+      "registration_number": "2022SR0283781",
+      "date": "2022-02-28",
+      "version": "V1.0",
+      "date_label": "Registered",
+      "document_type": "certificate",
+      "document_label": "View certificate",
+      "document": "/files/intellectual-property/2022SR0283781.jpg"
+    },
+    {
+      "id": "trash-crushing-plan",
+      "title": "Trash Crushing Plan: Computer Game Software",
+      "registration_number": "2021SR1677922",
+      "date": "2021-11-09",
+      "version": "V1.0",
+      "date_label": "Registered",
+      "document_type": "certificate",
+      "document_label": "View certificate",
+      "document": "/files/intellectual-property/2021SR1677922.jpg"
+    }
+  ],
+  "patents": [
+    {
+      "id": "login-interface",
+      "title": "Login Graphical User Interface for Electronic Devices",
+      "type": "Design patent",
+      "patent_number": "ZL 202430676574.5",
+      "publication_number": "CN 309567865 S",
+      "date": "2025-10-28",
+      "date_label": "Granted",
+      "role": "Second designer",
+      "holder": "East China Normal University",
+      "document": "/files/intellectual-property/ZL2024306765745.pdf",
+      "document_type": "certificate",
+      "document_label": "View certificate"
+    },
+    {
+      "id": "educational-display",
+      "title": "Portable Multifunctional Educational Technology Display Device",
+      "type": "Utility model patent",
+      "patent_number": "ZL 202121008831.5",
+      "publication_number": "CN 214847151 U",
+      "date": "2021-11-23",
+      "date_label": "Granted",
+      "role": "Third inventor",
+      "holder": "Zhejiang University of Technology",
+      "document": "/files/intellectual-property/ZL2021210088315.pdf",
+      "document_type": "certificate",
+      "document_label": "View certificate"
+    }
+  ]
+}
