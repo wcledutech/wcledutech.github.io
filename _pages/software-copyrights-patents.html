@@ -1,52 +1,31 @@
 ---
 layout: default
 permalink: /software-copyrights-patents/
-title: "Software Copyrights & Patents"
+title: "Patents & Software Copyrights"
 excerpt: "Chengliang Wang's software copyright registrations and patents, with registration details and original certificates."
 author_profile: true
 ---
-<link rel="stylesheet" href="{{ '/assets/css/intellectual-property.css' | relative_url }}?v=20261116">
+<link rel="stylesheet" href="{{ '/assets/css/intellectual-property.css' | relative_url }}?v=20261116-positions">
 <div class="ip-page">
   <nav class="ip-back" aria-label="Publication portfolio">
     <a href="{{ '/publications/' | relative_url }}"><i class="fas fa-arrow-left" aria-hidden="true"></i> Back to publications</a>
   </nav>
   <header class="ip-header">
     <p class="ip-kicker">Research &amp; Development</p>
-    <h1>Software Copyrights &amp; Patents</h1>
+    <h1>Patents &amp; Software Copyrights</h1>
     <p class="ip-intro">Registered software and patented designs developed by Chengliang Wang and collaborators.</p>
     <nav class="ip-overview" aria-label="Browse intellectual property">
-      <a href="#software-copyrights"><strong>{{ site.data.intellectual_property.software.size }}</strong><span>Software copyrights</span><i class="fas fa-arrow-down" aria-hidden="true"></i></a>
       <a href="#patents"><strong>{{ site.data.intellectual_property.patents.size }}</strong><span>Patents</span><i class="fas fa-arrow-down" aria-hidden="true"></i></a>
+      <a href="#software-copyrights"><strong>{{ site.data.intellectual_property.software.size }}</strong><span>Software copyrights</span><i class="fas fa-arrow-down" aria-hidden="true"></i></a>
     </nav>
   </header>
-
-  <section class="ip-section" id="software-copyrights" aria-labelledby="software-title">
-    <div class="ip-section-heading"><h2 id="software-title">Software copyrights</h2><span>{{ site.data.intellectual_property.software.size }} registrations</span></div>
-    <div class="ip-list">
-      {% for item in site.data.intellectual_property.software %}
-      <article class="ip-record" id="{{ item.id | escape }}">
-        <div class="ip-year">{% if item.date %}{{ item.date | date: '%Y' }}{% else %}{{ item.year }}{% endif %}</div>
-        <div class="ip-record-body">
-          <p class="ip-type">Software copyright <span aria-hidden="true">·</span> {{ item.version | escape }}</p>
-          <h3>{% if item.document %}<a href="{{ item.document | relative_url }}" target="_blank" rel="noopener noreferrer" data-no-lightbox aria-label="{{ item.title | escape }} — {{ item.document_label | downcase }} (opens in a new tab)">{{ item.title | escape }}</a>{% else %}{{ item.title | escape }}{% endif %}</h3>
-          {% if item.subtitle %}<p class="ip-subtitle">{{ item.subtitle | escape }}</p>{% endif %}
-          <dl class="ip-details">
-            <div><dt>Registration no.</dt><dd>{{ item.registration_number | escape }}</dd></div>
-            {% if item.date %}<div><dt>{{ item.date_label | escape }}</dt><dd><time datetime="{{ item.date }}">{{ item.date | date: '%-d %B %Y' }}</time></dd></div>{% endif %}
-          </dl>
-          {% if item.document %}<a class="ip-document" href="{{ item.document | relative_url }}" target="_blank" rel="noopener noreferrer" data-no-lightbox aria-label="{{ item.document_label | escape }} for {{ item.title | escape }} (opens in a new tab)">{{ item.document_label | escape }} <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>{% endif %}
-        </div>
-      </article>
-      {% endfor %}
-    </div>
-  </section>
 
   <section class="ip-section" id="patents" aria-labelledby="patents-title">
     <div class="ip-section-heading"><h2 id="patents-title">Patents</h2><span>{{ site.data.intellectual_property.patents.size }} granted patents</span></div>
     <div class="ip-list">
       {% for item in site.data.intellectual_property.patents %}
       <article class="ip-record" id="{{ item.id | escape }}">
-        <div class="ip-year">{{ item.date | date: '%Y' }}</div>
+        <div class="ip-position"><strong>{{ item.position_label }}</strong><span>{{ item.position_type }}</span></div>
         <div class="ip-record-body">
           <p class="ip-type">{{ item.type | escape }} <span aria-hidden="true">·</span> China</p>
           <h3><a href="{{ item.document | relative_url }}" target="_blank" rel="noopener noreferrer" data-no-lightbox aria-label="{{ item.title | escape }} — view certificate (opens in a new tab)">{{ item.title | escape }}</a></h3>
@@ -58,6 +37,27 @@ author_profile: true
             <div class="ip-holder"><dt>Patent holder</dt><dd>{{ item.holder | escape }}</dd></div>
           </dl>
           <a class="ip-document" href="{{ item.document | relative_url }}" target="_blank" rel="noopener noreferrer" data-no-lightbox aria-label="View certificate for {{ item.title | escape }} (opens in a new tab)">View certificate <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
+
+  <section class="ip-section" id="software-copyrights" aria-labelledby="software-title">
+    <div class="ip-section-heading"><h2 id="software-title">Software copyrights</h2><span>{{ site.data.intellectual_property.software.size }} registrations</span></div>
+    <div class="ip-list">
+      {% for item in site.data.intellectual_property.software %}
+      <article class="ip-record" id="{{ item.id | escape }}">
+        <div class="ip-position"><strong>{{ item.position_label }}</strong><span>{{ item.position_type }}</span></div>
+        <div class="ip-record-body">
+          <p class="ip-type">Software copyright <span aria-hidden="true">·</span> {{ item.version | escape }}</p>
+          <h3>{% if item.document %}<a href="{{ item.document | relative_url }}" target="_blank" rel="noopener noreferrer" data-no-lightbox aria-label="{{ item.title | escape }} — {{ item.document_label | downcase }} (opens in a new tab)">{{ item.title | escape }}</a>{% else %}{{ item.title | escape }}{% endif %}</h3>
+          {% if item.subtitle %}<p class="ip-subtitle">{{ item.subtitle | escape }}</p>{% endif %}
+          <dl class="ip-details">
+            <div><dt>Registration no.</dt><dd>{{ item.registration_number | escape }}</dd></div>
+            {% if item.date %}<div><dt>{{ item.date_label | escape }}</dt><dd><time datetime="{{ item.date }}">{{ item.date | date: '%-d %B %Y' }}</time></dd></div>{% else %}<div><dt>Registration year</dt><dd>{{ item.year }}</dd></div>{% endif %}
+          </dl>
+          {% if item.document %}<a class="ip-document" href="{{ item.document | relative_url }}" target="_blank" rel="noopener noreferrer" data-no-lightbox aria-label="{{ item.document_label | escape }} for {{ item.title | escape }} (opens in a new tab)">{{ item.document_label | escape }} <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>{% endif %}
         </div>
       </article>
       {% endfor %}

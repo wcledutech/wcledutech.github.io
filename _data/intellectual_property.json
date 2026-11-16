@@ -1,58 +1,6 @@
 {
   "software": [
     {
-      "id": "xinban-leyuan",
-      "title": "Xinban Leyuan: Emotional Companionship Platform for Children with Autism",
-      "registration_number": "2025SR0811351",
-      "date": "2025-05-19",
-      "version": "V1.0",
-      "date_label": "Registered",
-      "document_type": "certificate",
-      "document_label": "View certificate",
-      "document": "/files/intellectual-property/2025SR0811351.pdf"
-    },
-    {
-      "id": "xinya",
-      "title": "Xinya: Emotional Companionship and Development App for Children",
-      "registration_number": "2025SR0747838",
-      "date": "2025-05-09",
-      "version": "V1.0",
-      "date_label": "Registered",
-      "document_type": "certificate",
-      "document_label": "View certificate",
-      "document": "/files/intellectual-property/2025SR0747838.pdf"
-    },
-    {
-      "id": "xinjing",
-      "title": "Xinjing: Picture-Book Reading App for Children",
-      "registration_number": "2025SR0462760",
-      "date": "2025-03-17",
-      "version": "V1.0",
-      "date_label": "Registered",
-      "document_type": "certificate",
-      "document_label": "View certificate",
-      "document": "/files/intellectual-property/2025SR0462760.pdf"
-    },
-    {
-      "id": "i-learning",
-      "title": "I-Learning: Intelligent Learning Companion System",
-      "registration_number": "2024SR2015301",
-      "date": "2024-12-09",
-      "version": "V1.0",
-      "date_label": "Registered",
-      "document_type": "certificate",
-      "document_label": "View certificate",
-      "document": "/files/intellectual-property/2024SR2015301.pdf"
-    },
-    {
-      "id": "cas",
-      "title": "Course Administration System (CAS)",
-      "subtitle": "Course management and review system.",
-      "registration_number": "2022SR1378618",
-      "year": 2022,
-      "version": "V1.0"
-    },
-    {
       "id": "know-yourself",
       "title": "Know Yourself: Learner Characteristics and Learning Styles Assessment App",
       "registration_number": "2022SR0612184",
@@ -61,7 +9,21 @@
       "date_label": "Registered",
       "document_type": "certificate",
       "document_label": "View certificate",
-      "document": "/files/intellectual-property/2022SR0612184.jpg"
+      "document": "/files/intellectual-property/2022SR0612184.jpg",
+      "position": 1,
+      "position_label": "1st",
+      "position_type": "listed holder"
+    },
+    {
+      "id": "cas",
+      "title": "Course Administration System (CAS)",
+      "subtitle": "Course management and review system.",
+      "registration_number": "2022SR1378618",
+      "year": 2022,
+      "version": "V1.0",
+      "position": 1,
+      "position_label": "1st",
+      "position_type": "listed holder"
     },
     {
       "id": "situational-english",
@@ -72,7 +34,10 @@
       "date_label": "Registered",
       "document_type": "certificate",
       "document_label": "View certificate",
-      "document": "/files/intellectual-property/2022SR0284161.jpg"
+      "document": "/files/intellectual-property/2022SR0284161.jpg",
+      "position": 1,
+      "position_label": "1st",
+      "position_type": "listed holder"
     },
     {
       "id": "green-journey",
@@ -83,7 +48,10 @@
       "date_label": "Registered",
       "document_type": "certificate",
       "document_label": "View certificate",
-      "document": "/files/intellectual-property/2022SR0283781.jpg"
+      "document": "/files/intellectual-property/2022SR0283781.jpg",
+      "position": 2,
+      "position_label": "2nd",
+      "position_type": "listed holder"
     },
     {
       "id": "trash-crushing-plan",
@@ -94,7 +62,66 @@
       "date_label": "Registered",
       "document_type": "certificate",
       "document_label": "View certificate",
-      "document": "/files/intellectual-property/2021SR1677922.jpg"
+      "document": "/files/intellectual-property/2021SR1677922.jpg",
+      "position": 2,
+      "position_label": "2nd",
+      "position_type": "listed holder"
+    },
+    {
+      "id": "i-learning",
+      "title": "I-Learning: Intelligent Learning Companion System",
+      "registration_number": "2024SR2015301",
+      "date": "2024-12-09",
+      "version": "V1.0",
+      "date_label": "Registered",
+      "document_type": "certificate",
+      "document_label": "View certificate",
+      "document": "/files/intellectual-property/2024SR2015301.pdf",
+      "position": 3,
+      "position_label": "3rd",
+      "position_type": "listed holder"
+    },
+    {
+      "id": "xinban-leyuan",
+      "title": "Xinban Leyuan: Emotional Companionship Platform for Children with Autism",
+      "registration_number": "2025SR0811351",
+      "date": "2025-05-19",
+      "version": "V1.0",
+      "date_label": "Registered",
+      "document_type": "certificate",
+      "document_label": "View certificate",
+      "document": "/files/intellectual-property/2025SR0811351.pdf",
+      "position": 3,
+      "position_label": "3rd",
+      "position_type": "listed holder"
+    },
+    {
+      "id": "xinya",
+      "title": "Xinya: Emotional Companionship and Development App for Children",
+      "registration_number": "2025SR0747838",
+      "date": "2025-05-09",
+      "version": "V1.0",
+      "date_label": "Registered",
+      "document_type": "certificate",
+      "document_label": "View certificate",
+      "document": "/files/intellectual-property/2025SR0747838.pdf",
+      "position": 3,
+      "position_label": "3rd",
+      "position_type": "listed holder"
+    },
+    {
+      "id": "xinjing",
+      "title": "Xinjing: Picture-Book Reading App for Children",
+      "registration_number": "2025SR0462760",
+      "date": "2025-03-17",
+      "version": "V1.0",
+      "date_label": "Registered",
+      "document_type": "certificate",
+      "document_label": "View certificate",
+      "document": "/files/intellectual-property/2025SR0462760.pdf",
+      "position": 3,
+      "position_label": "3rd",
+      "position_type": "listed holder"
     }
   ],
   "patents": [
@@ -110,7 +137,10 @@
       "holder": "East China Normal University",
       "document": "/files/intellectual-property/ZL2024306765745.pdf",
       "document_type": "certificate",
-      "document_label": "View certificate"
+      "document_label": "View certificate",
+      "position": 2,
+      "position_label": "2nd",
+      "position_type": "designer"
     },
     {
       "id": "educational-display",
@@ -124,7 +154,10 @@
       "holder": "Zhejiang University of Technology",
       "document": "/files/intellectual-property/ZL2021210088315.pdf",
       "document_type": "certificate",
-      "document_label": "View certificate"
+      "document_label": "View certificate",
+      "position": 3,
+      "position_label": "3rd",
+      "position_type": "inventor"
     }
   ]
 }

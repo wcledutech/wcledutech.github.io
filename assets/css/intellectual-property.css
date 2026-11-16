@@ -35,7 +35,9 @@
 .ip-page .ip-section-heading h2 { margin: 0; font-size: 28px; line-height: 1.3; }
 .ip-section-heading > span { margin-left: auto; color: var(--ip-muted); font-size: 16px; white-space: nowrap; }
 .ip-record { display: grid; grid-template-columns: 90px minmax(0, 1fr); gap: 24px; padding: 28px 0; border-bottom: 1px solid var(--ip-line); scroll-margin-top: 85px; }
-.ip-year { padding-top: 1px; color: var(--ip-accent); font-size: 27px; line-height: 1.25; }
+.ip-position { padding-top: 1px; color: var(--ip-accent); line-height: 1.25; }
+.ip-position strong { display: block; font-size: 27px; font-weight: 400; }
+.ip-position span { display: block; margin-top: 6px; color: var(--ip-muted); font-size: 14px; }
 .ip-record-body { min-width: 0; }
 .ip-page .ip-type { margin-bottom: 7px; color: var(--ip-muted); font-size: 15px; }
 .ip-type span { padding: 0 5px; }
@@ -65,7 +67,9 @@
   .ip-section-heading { flex-wrap: wrap; gap: 4px 12px; }
   .ip-section-heading > span { margin-left: 0; font-size: 14px; }
   .ip-record { grid-template-columns: minmax(0, 1fr); gap: 10px; padding: 24px 0; }
-  .ip-year { font-size: 22px; }
+  .ip-position { display: flex; align-items: baseline; gap: 8px; }
+  .ip-position strong { font-size: 22px; }
+  .ip-position span { margin-top: 0; }
   .ip-page .ip-record h3 { font-size: 23px; }
   .ip-details { gap: 12px; }
 }

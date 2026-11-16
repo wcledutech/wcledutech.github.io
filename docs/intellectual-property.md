@@ -28,3 +28,19 @@ as the second designer on the design patent and third inventor on the utility mo
 Document links use `target="_blank"`, `rel="noopener noreferrer"`, and
 `data-no-lightbox` so images open in a new tab instead of the global image lightbox.
 The navigation has three columns on desktop and one column on narrow screens.
+
+## Display order
+
+Patents precede software copyrights. Within each section, records are ordered
+by Chengliang Wang's position in the named inventor, designer or copyright-holder
+list. The left marker displays that position instead of the year; dates remain
+in the record details. Copyright-holder order is read directly from the eight
+certificates. CAS is listed first in the author's CV cited above.
+
+First-listed software: Know Yourself, CAS, Situational English. This sequence
+prioritizes learner-characteristics and learning-styles assessment, followed by
+course-system development and language-learning software. Second-listed software:
+Green Journey, Trash Crushing Plan. Third-listed software: I-Learning, Xinban Leyuan,
+Xinya, Xinjing. Among the latter group, the intelligent learning companion is
+placed first, followed by emotional-companionship and reading applications.
+Array order in the data file is intentional; do not re-sort it by date.
