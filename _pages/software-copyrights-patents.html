@@ -50,7 +50,6 @@ author_profile: true
       <article class="ip-record" id="{{ item.id | escape }}">
         <div class="ip-position"><strong>{{ item.position_label }}</strong><span>{{ item.position_type }}</span></div>
         <div class="ip-record-body">
-          <p class="ip-type">Software copyright <span aria-hidden="true">·</span> {{ item.version | escape }}</p>
           <h3>{% if item.document %}<a href="{{ item.document | relative_url }}" target="_blank" rel="noopener noreferrer" data-no-lightbox aria-label="{{ item.title | escape }} — {{ item.document_label | downcase }} (opens in a new tab)">{{ item.title | escape }}</a>{% else %}{{ item.title | escape }}{% endif %}</h3>
           {% if item.subtitle %}<p class="ip-subtitle">{{ item.subtitle | escape }}</p>{% endif %}
           <dl class="ip-details">
