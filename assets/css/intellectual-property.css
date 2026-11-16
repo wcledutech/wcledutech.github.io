@@ -44,6 +44,7 @@
 .ip-record h3 a:hover { color: var(--ip-accent); }
 .ip-page .ip-subtitle { margin-top: 8px; color: var(--ip-muted); font-size: 17px; }
 .ip-details { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 9px 28px; margin: 17px 0 14px; font-size: 16px; }
+.ip-page .ip-details, .ip-page .ip-details dt, .ip-page .ip-details dd { font-family: "Times New Roman", Times, serif; }
 .ip-details > div { min-width: 0; }
 .ip-details dt { display: block; margin: 0; color: var(--ip-muted); font-size: 14px; font-weight: 400; }
 .ip-details dd { margin: 1px 0 0; overflow-wrap: anywhere; }

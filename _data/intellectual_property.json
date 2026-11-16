@@ -49,12 +49,8 @@
       "title": "Course Administration System (CAS)",
       "subtitle": "Course management and review system.",
       "registration_number": "2022SR1378618",
-      "date": "2022-10-27",
-      "date_label": "Certificate dispatched",
-      "document_type": "registration_notice",
-      "document_label": "View registration notice",
-      "version": "V1.0",
-      "document": "/files/intellectual-property/2022SR1378618-registration-notice.pdf"
+      "year": 2022,
+      "version": "V1.0"
     },
     {
       "id": "know-yourself",

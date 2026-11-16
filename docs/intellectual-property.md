@@ -14,9 +14,10 @@ CAS is registration **2022SR1378618**, corroborated by the author's local CV
 (`简历-成果更新至8.15-对外展示版.pdf`, page 2). Its available supporting document
 is the Copyright Protection Center's certificate dispatch notice, application
 reference **2022R11L1085062**. The notice states that the certificate was dispatched
-on **27 October 2022**. This is a dispatch date, not a registration date; the page
-labels it accordingly and links to **View registration notice**. Replace the
-notice link with the certificate only when the actual certificate becomes available.
+on **27 October 2022**. This is a dispatch date, not a registration date.
+At the author's request, CAS is displayed with its title, year, version and
+registration number only. No notice or certificate link is published for this
+record. Add a certificate link when the author supplies the actual certificate.
 
 The design patent's registered title is **电子设备的登录图形用户界面**, translated as
 **Login Graphical User Interface for Electronic Devices**. The source filename

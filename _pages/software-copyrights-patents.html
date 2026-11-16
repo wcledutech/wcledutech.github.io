@@ -5,7 +5,7 @@ title: "Software Copyrights & Patents"
 excerpt: "Chengliang Wang's software copyright registrations and patents, with registration details and original certificates."
 author_profile: true
 ---
-<link rel="stylesheet" href="{{ '/assets/css/intellectual-property.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/intellectual-property.css' | relative_url }}?v=20261116">
 <div class="ip-page">
   <nav class="ip-back" aria-label="Publication portfolio">
     <a href="{{ '/publications/' | relative_url }}"><i class="fas fa-arrow-left" aria-hidden="true"></i> Back to publications</a>
@@ -25,16 +25,16 @@ author_profile: true
     <div class="ip-list">
       {% for item in site.data.intellectual_property.software %}
       <article class="ip-record" id="{{ item.id | escape }}">
-        <div class="ip-year">{{ item.date | date: '%Y' }}</div>
+        <div class="ip-year">{% if item.date %}{{ item.date | date: '%Y' }}{% else %}{{ item.year }}{% endif %}</div>
         <div class="ip-record-body">
           <p class="ip-type">Software copyright <span aria-hidden="true">·</span> {{ item.version | escape }}</p>
-          <h3><a href="{{ item.document | relative_url }}" target="_blank" rel="noopener noreferrer" data-no-lightbox aria-label="{{ item.title | escape }} — {{ item.document_label | downcase }} (opens in a new tab)">{{ item.title | escape }}</a></h3>
+          <h3>{% if item.document %}<a href="{{ item.document | relative_url }}" target="_blank" rel="noopener noreferrer" data-no-lightbox aria-label="{{ item.title | escape }} — {{ item.document_label | downcase }} (opens in a new tab)">{{ item.title | escape }}</a>{% else %}{{ item.title | escape }}{% endif %}</h3>
           {% if item.subtitle %}<p class="ip-subtitle">{{ item.subtitle | escape }}</p>{% endif %}
           <dl class="ip-details">
             <div><dt>Registration no.</dt><dd>{{ item.registration_number | escape }}</dd></div>
-            <div><dt>{{ item.date_label | escape }}</dt><dd><time datetime="{{ item.date }}">{{ item.date | date: '%-d %B %Y' }}</time></dd></div>
+            {% if item.date %}<div><dt>{{ item.date_label | escape }}</dt><dd><time datetime="{{ item.date }}">{{ item.date | date: '%-d %B %Y' }}</time></dd></div>{% endif %}
           </dl>
-          <a class="ip-document" href="{{ item.document | relative_url }}" target="_blank" rel="noopener noreferrer" data-no-lightbox aria-label="{{ item.document_label | escape }} for {{ item.title | escape }} (opens in a new tab)">{{ item.document_label | escape }} <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
+          {% if item.document %}<a class="ip-document" href="{{ item.document | relative_url }}" target="_blank" rel="noopener noreferrer" data-no-lightbox aria-label="{{ item.document_label | escape }} for {{ item.title | escape }} (opens in a new tab)">{{ item.document_label | escape }} <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>{% endif %}
         </div>
       </article>
       {% endfor %}
