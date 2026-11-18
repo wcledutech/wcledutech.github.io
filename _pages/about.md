@@ -177,7 +177,7 @@ redirect_from:
 
 .about-page .profile-destinations {
   display: grid;
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
 }
@@ -186,9 +186,10 @@ redirect_from:
   display: grid;
   grid-template-columns: 22px minmax(0, 1fr) 16px;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
+  min-width: 0;
   min-height: 82px;
-  padding: 16px 4px;
+  padding: 16px;
   color: var(--ink);
   text-decoration: none;
 }
@@ -199,7 +200,7 @@ redirect_from:
 }
 
 .about-page .profile-destination + .profile-destination {
-  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
 }
 
 .about-page .profile-destination > .fa-arrow-right {
@@ -284,6 +285,15 @@ redirect_from:
   min-width: 0;
   overflow-wrap: anywhere;
   letter-spacing: 0;
+}
+
+@media (max-width: 900px) {
+  .about-page .profile-destinations { grid-template-columns: minmax(0, 1fr); }
+  .about-page .profile-destination { padding: 16px 4px; }
+  .about-page .profile-destination + .profile-destination {
+    border-left: 0;
+    border-top: 1px solid var(--line);
+  }
 }
 
 @media (max-width: 620px) {
@@ -661,6 +671,11 @@ redirect_from:
         <a class="profile-destination" href="{{ '/publication-index/' | relative_url }}">
           <i class="fas fa-list-ul" aria-hidden="true"></i>
           <span><strong>Publications by year</strong><small>Complete publication index</small></span>
+          <i class="fas fa-arrow-right" aria-hidden="true"></i>
+        </a>
+        <a class="profile-destination" href="{{ '/software-copyrights-patents/' | relative_url }}">
+          <i class="fas fa-certificate" aria-hidden="true"></i>
+          <span><strong>Patents &amp; software copyrights</strong><small>Registrations &amp; certificates</small></span>
           <i class="fas fa-arrow-right" aria-hidden="true"></i>
         </a>
       </div>

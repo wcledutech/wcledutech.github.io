@@ -18,13 +18,14 @@ class DestinationParser(HTMLParser):
 
 
 class ProfileNavigationTest(unittest.TestCase):
-    def test_publication_index_follows_research_highlights(self):
+    def test_research_links_include_publications_and_intellectual_property(self):
         home = (ROOT / "_pages/about.md").read_text(encoding="utf-8")
         parser = DestinationParser()
         parser.feed(home)
         self.assertEqual(parser.destinations, [
             "{{ '/research-highlights/' | relative_url }}",
             "{{ '/publication-index/' | relative_url }}",
+            "{{ '/software-copyrights-patents/' | relative_url }}",
         ])
         self.assertIn("<strong>Publications by year</strong>", home)
         self.assertIn("grid-template-columns: minmax(0, 1fr);", home)
