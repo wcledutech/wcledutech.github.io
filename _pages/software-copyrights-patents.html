@@ -5,7 +5,7 @@ title: "Patents & Software Copyrights"
 excerpt: "Chengliang Wang's software copyright registrations and patents, with registration details and original certificates."
 author_profile: true
 ---
-<link rel="stylesheet" href="{{ '/assets/css/intellectual-property.css' | relative_url }}?v=20261116-positions">
+<link rel="stylesheet" href="{{ '/assets/css/intellectual-property.css' | relative_url }}?v=20261120-compact">
 <div class="ip-page">
   <nav class="ip-back" aria-label="Publication portfolio">
     <a href="{{ '/publications/' | relative_url }}"><i class="fas fa-arrow-left" aria-hidden="true"></i> Back to publications</a>
@@ -31,12 +31,12 @@ author_profile: true
           <h3><a href="{{ item.document | relative_url }}" target="_blank" rel="noopener noreferrer" data-no-lightbox aria-label="{{ item.title | escape }} — view certificate (opens in a new tab)">{{ item.title | escape }}</a></h3>
           <dl class="ip-details">
             <div><dt>Patent no.</dt><dd>{{ item.patent_number | escape }}</dd></div>
-            <div><dt>Granted</dt><dd><time datetime="{{ item.date }}">{{ item.date | date: '%-d %B %Y' }}</time></dd></div>
             <div><dt>Grant publication no.</dt><dd>{{ item.publication_number | escape }}</dd></div>
+            <div><dt>Granted</dt><dd><time datetime="{{ item.date }}">{{ item.date | date: '%-d %B %Y' }}</time></dd></div>
+            <div><dt>Patent holder</dt><dd>{{ item.holder | escape }}</dd></div>
             <div><dt>Chengliang Wang</dt><dd>{{ item.role | escape }}</dd></div>
-            <div class="ip-holder"><dt>Patent holder</dt><dd>{{ item.holder | escape }}</dd></div>
+            <div class="ip-doc-cell"><dt class="ip-sr-only">Certificate</dt><dd><a class="ip-document" href="{{ item.document | relative_url }}" target="_blank" rel="noopener noreferrer" data-no-lightbox aria-label="View certificate for {{ item.title | escape }} (opens in a new tab)">View certificate <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></dd></div>
           </dl>
-          <a class="ip-document" href="{{ item.document | relative_url }}" target="_blank" rel="noopener noreferrer" data-no-lightbox aria-label="View certificate for {{ item.title | escape }} (opens in a new tab)">View certificate <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>
         </div>
       </article>
       {% endfor %}
@@ -55,8 +55,8 @@ author_profile: true
           <dl class="ip-details">
             <div><dt>Registration no.</dt><dd>{{ item.registration_number | escape }}</dd></div>
             {% if item.date %}<div><dt>{{ item.date_label | escape }}</dt><dd><time datetime="{{ item.date }}">{{ item.date | date: '%-d %B %Y' }}</time></dd></div>{% else %}<div><dt>Registration year</dt><dd>{{ item.year }}</dd></div>{% endif %}
+            {% if item.document %}<div class="ip-doc-cell"><dt class="ip-sr-only">Certificate</dt><dd><a class="ip-document" href="{{ item.document | relative_url }}" target="_blank" rel="noopener noreferrer" data-no-lightbox aria-label="{{ item.document_label | escape }} for {{ item.title | escape }} (opens in a new tab)">{{ item.document_label | escape }} <i class="fas fa-external-link-alt" aria-hidden="true"></i></a></dd></div>{% endif %}
           </dl>
-          {% if item.document %}<a class="ip-document" href="{{ item.document | relative_url }}" target="_blank" rel="noopener noreferrer" data-no-lightbox aria-label="{{ item.document_label | escape }} for {{ item.title | escape }} (opens in a new tab)">{{ item.document_label | escape }} <i class="fas fa-external-link-alt" aria-hidden="true"></i></a>{% endif %}
         </div>
       </article>
       {% endfor %}
