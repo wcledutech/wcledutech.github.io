@@ -35,7 +35,7 @@ body .masthead {
   -webkit-backdrop-filter: saturate(140%) blur(8px);
   backdrop-filter: saturate(140%) blur(8px);
 }
-body .masthead__inner-wrap { max-width: 1240px; padding: 14px 1.5em; }
+body .masthead__inner-wrap { max-width: 1560px; padding: 14px 40px; }
 body .masthead__menu-item a,
 body .greedy-nav a {
   font-family: var(--rf-sans);
@@ -64,21 +64,12 @@ body .greedy-nav .hidden-links { background: var(--rf-card); border-color: var(-
 
 /* ---------- Two-column frame ---------- */
 
-body #main { max-width: 1240px; margin-top: 2rem; padding-left: 1.5em; padding-right: 1.5em; }
+body #main { max-width: 1560px; margin-top: 2rem; padding-left: 40px; padding-right: 40px; }
 
 @media (min-width: 57.8125em) {
-  body .sidebar { width: 250px; margin-right: 0; }
-  /* Keep the sticky profile reachable when it is taller than the window */
-  body .sidebar.sticky {
-    top: 5.5rem;
-    max-height: calc(100vh - 6.5rem);
-    overflow-y: auto;
-    padding: 0 6px 16px 0;
-    scrollbar-width: thin;
-    scrollbar-color: transparent transparent;
-  }
-  body .sidebar.sticky:hover { scrollbar-color: var(--rf-line) transparent; }
-  body .page { width: calc(100% - 250px); padding-left: 36px; }
+  body .sidebar { width: 270px; margin-right: 0; }
+  body .sidebar.sticky { top: 88px; }
+  body .page { width: calc(100% - 270px); padding-left: 40px; }
 }
 
 /* ---------- Sidebar profile card ---------- */
@@ -248,7 +239,7 @@ body .about-page .about-card {
 }
 body .about-page .about-card h3 {
   margin-bottom: 10px;
-  font-family: var(--rf-serif);
+  font-family: Cambria, "Times New Roman", "Noto Serif SC", "Songti SC", serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 1.4;
@@ -288,47 +279,64 @@ body .about-page .scholar-metric {
 body .about-page .scholar-metric--citations { background: var(--rf-accent-soft); border-color: #cfe0db; }
 body .about-page .scholar-metric-top { min-height: 0; }
 body .about-page .scholar-metric strong {
-  font-family: var(--rf-serif);
+  font-family: var(--rf-sans);
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 600;
+  letter-spacing: -.02em;
+  font-variant-numeric: lining-nums tabular-nums;
   color: var(--rf-accent);
 }
+body .about-page .scholar-metric-top .fas { font-size: 16px; opacity: .55; }
 body .about-page .scholar-metric--highly-cited strong { color: var(--rf-gold); }
 body .about-page .scholar-metric--hot strong { color: #a34e38; }
-body .about-page .scholar-metric-label { color: var(--rf-ink); font-size: 15px; }
-body .about-page .scholar-metric small { padding-top: 10px; border-top-color: var(--rf-line); font-size: 13px; }
+body .about-page .scholar-metric-label { color: var(--rf-muted); font-size: 15px; line-height: 1.45; }
+body .about-page .scholar-metric small { white-space: nowrap; padding-top: 10px; border-top-color: var(--rf-line); font-size: 13px; }
 
 /* Honors, funding, internships */
 body .about-page .award-list,
 body .about-page .funding-list,
 body .about-page .service-list { gap: 12px; }
 
+/* One calm style for every item: white, hairline border, accent bar.
+   Featured honors are marked only by the award icon and a gold bar. */
 body .about-page .compact-item {
-  padding: 18px 22px 18px 26px;
-  border: 1px solid var(--rf-line-soft);
+  padding: 18px 24px 18px 28px;
+  border: 1px solid var(--rf-line);
   border-radius: 12px;
-  background: var(--rf-tile);
+  background: var(--rf-card);
   box-shadow: none;
 }
-body .about-page .compact-item::before { top: 18px; bottom: 18px; width: 3px; }
+body .about-page .compact-item::before { top: 18px; bottom: 18px; width: 3px; opacity: .85; }
 body .about-page .compact-item strong {
-  font-family: var(--rf-sans);
-  font-size: 17px;
-  font-weight: 600;
+  /* Cambria/Times have level (lining) digits, so years like 2026 sit evenly */
+  font-family: Cambria, "Times New Roman", "Noto Serif SC", "Songti SC", serif;
+  font-size: 18px;
+  font-weight: 700;
   line-height: 1.5;
+  letter-spacing: .005em;
   color: var(--rf-ink);
 }
+body .about-page .compact-item em { font-style: italic; }
 body .about-page .compact-item p {
-  margin-top: 4px;
-  color: var(--rf-text);
+  margin-top: 6px;
+  color: var(--rf-muted);
   font-size: 16px;
   line-height: 1.65;
 }
 body .about-page .honor-featured,
-body .about-page .honor-highlight { border-color: #eadfc6; background: #fbf7ec; }
-body .about-page .honor-secondary { border-color: #d9e7e2; background: #eef5f2; }
+body .about-page .honor-highlight,
+body .about-page .honor-secondary { border-color: var(--rf-line); background: var(--rf-card); }
+body .about-page .honor-title { align-items: center; gap: 10px; }
+body .about-page .honor-title > .fas { flex-basis: 18px; margin-top: 0; font-size: 18px; color: var(--rf-gold); }
 body .about-page .honor-title strong { font-size: 18px; }
-body .about-page .honor-links a { color: var(--rf-accent); }
+body .about-page .honor-featured p { margin-top: 8px; }
+body .about-page .honor-links a {
+  color: var(--rf-accent);
+  font-size: 15px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(23, 107, 99, .3);
+}
+body .about-page .honor-links a:hover { border-bottom-color: var(--rf-accent); }
 
 /* ---------- Other pages: soften white panels on the warm background ---------- */
 

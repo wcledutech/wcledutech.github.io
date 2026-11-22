@@ -1,3 +1,20 @@
 <script src="/assets/js/main.min.js?v=20261028"></script>
+<script>
+  /* Sticky sidebar that is taller than the window: let it scroll with the page
+     until its bottom is visible, then stick there (no inner scrollbar). */
+  (function () {
+    var sidebar = document.querySelector('.sidebar.sticky');
+    if (!sidebar) return;
+    var offset = 88, gap = 16;
+    function fit() {
+      if (window.innerWidth < 925) { sidebar.style.top = ''; return; }
+      var h = sidebar.offsetHeight, vh = window.innerHeight;
+      sidebar.style.top = (h + offset + gap > vh ? vh - h - gap : offset) + 'px';
+    }
+    window.addEventListener('resize', fit);
+    window.addEventListener('load', fit);
+    fit();
+  })();
+</script>
 
 {% include fetch_google_scholar_stats.html %}
