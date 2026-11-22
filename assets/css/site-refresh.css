@@ -1,0 +1,370 @@
+/* ==========================================================================
+   Site refresh — calm, spacious academic style
+   Loaded after main.css. Selectors are prefixed with `body` so they also
+   win over the inline <style> blocks that individual pages carry.
+   ========================================================================== */
+
+:root {
+  --rf-bg: #faf8f3;
+  --rf-card: #ffffff;
+  --rf-tile: #f6f3ec;
+  --rf-line: #e7e1d5;
+  --rf-line-soft: #efeae0;
+  --rf-ink: #1f2523;
+  --rf-text: #3b4441;
+  --rf-muted: #6a736f;
+  --rf-accent: #176b63;
+  --rf-accent-soft: #e6f0ed;
+  --rf-gold: #8d692d;
+  --rf-serif: Georgia, "Times New Roman", "Noto Serif SC", "Songti SC", serif;
+  --rf-sans: "Segoe UI", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+  --rf-radius: 18px;
+  --rf-shadow: 0 1px 2px rgba(31, 37, 35, .03), 0 10px 30px rgba(31, 37, 35, .04);
+}
+
+/* ---------- Base ---------- */
+
+html { font-size: 16px; background-color: var(--rf-bg); }
+body { background-color: var(--rf-bg); color: var(--rf-text); font-family: var(--rf-sans); }
+
+/* ---------- Top navigation ---------- */
+
+body .masthead {
+  background-color: rgba(250, 248, 243, .92);
+  border-bottom: 1px solid var(--rf-line);
+  -webkit-backdrop-filter: saturate(140%) blur(8px);
+  backdrop-filter: saturate(140%) blur(8px);
+}
+body .masthead__inner-wrap { max-width: 1240px; padding: 14px 1.5em; }
+body .masthead__menu-item a,
+body .greedy-nav a {
+  font-family: var(--rf-sans);
+  font-size: 16px;
+  color: var(--rf-text);
+}
+body .greedy-nav .visible-links a {
+  margin: 0 .15rem;
+  padding: .5rem .95rem;
+  border-radius: 999px;
+  transition: background-color .2s ease, color .2s ease;
+}
+body .greedy-nav .visible-links a::before { display: none; }
+body .greedy-nav .visible-links a:hover { color: var(--rf-accent); background: var(--rf-card); }
+body .greedy-nav .masthead__menu-home-item a {
+  font-family: var(--rf-serif);
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--rf-ink);
+  margin-left: 0;
+  padding-left: 0;
+}
+body .greedy-nav .masthead__menu-home-item a:hover { background: transparent; }
+body .greedy-nav, body .greedy-nav .hidden-links { background: transparent; }
+body .greedy-nav .hidden-links { background: var(--rf-card); border-color: var(--rf-line); border-radius: 12px; }
+
+/* ---------- Two-column frame ---------- */
+
+body #main { max-width: 1240px; margin-top: 2rem; padding-left: 1.5em; padding-right: 1.5em; }
+
+@media (min-width: 57.8125em) {
+  body .sidebar { width: 250px; margin-right: 0; }
+  /* Keep the sticky profile reachable when it is taller than the window */
+  body .sidebar.sticky {
+    top: 5.5rem;
+    max-height: calc(100vh - 6.5rem);
+    overflow-y: auto;
+    padding: 0 6px 16px 0;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+  }
+  body .sidebar.sticky:hover { scrollbar-color: var(--rf-line) transparent; }
+  body .page { width: calc(100% - 250px); padding-left: 36px; }
+}
+
+/* ---------- Sidebar profile card ---------- */
+
+body .sidebar .profile_box {
+  padding: 22px 20px;
+  border: 1px solid var(--rf-line);
+  border-radius: var(--rf-radius);
+  background: var(--rf-card);
+  box-shadow: var(--rf-shadow);
+}
+body .sidebar .author__avatar img { max-width: 140px; padding: 4px; border-color: var(--rf-line); }
+body .sidebar .author__name {
+  margin-top: .6rem;
+  font-family: var(--rf-serif);
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--rf-ink);
+}
+body .sidebar p,
+body .sidebar li {
+  font-family: var(--rf-sans);
+  font-size: 15px;
+  line-height: 1.6;
+}
+body .sidebar .author__urls { padding-top: .5rem; }
+body .sidebar .author__urls li { color: var(--rf-text); }
+body .sidebar .author__urls li > div { color: var(--rf-muted); }
+body .sidebar .author__urls a { color: var(--rf-text); }
+body .sidebar .author__urls a:hover { color: var(--rf-accent); }
+body .sidebar .author__urls .fa-fw,
+body .sidebar .author__urls .ai-fw { color: var(--rf-accent); }
+
+body .about-sidebar-nav {
+  margin-top: 1.1rem;
+  padding: 1rem 0 0;
+  border: 0;
+  border-top: 1px solid var(--rf-line);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  font-family: var(--rf-sans);
+}
+body .about-sidebar-nav__title { color: var(--rf-muted); font-size: 12px; letter-spacing: .1em; }
+body .about-sidebar-nav a { font-size: 15px; color: var(--rf-text); border-radius: 10px; }
+body .about-sidebar-nav a:hover {
+  color: var(--rf-accent);
+  border-color: transparent;
+  background: var(--rf-accent-soft);
+  transform: none;
+}
+
+/* ---------- Homepage: sections as cards ---------- */
+
+body .about-page {
+  --ink: var(--rf-ink);
+  --muted: var(--rf-muted);
+  --line: var(--rf-line);
+  --soft: var(--rf-tile);
+  --teal: var(--rf-accent);
+  color: var(--rf-text);
+  font-family: var(--rf-sans);
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+body .about-page .about-section {
+  margin: 0 0 28px;
+  padding: 40px 44px;
+  border: 1px solid var(--rf-line);
+  border-radius: var(--rf-radius);
+  background: var(--rf-card);
+  box-shadow: var(--rf-shadow);
+  scroll-margin-top: 90px;
+}
+body .about-page .about-section:first-child { margin-top: 0; }
+
+body .about-page .about-section > h2 {
+  position: relative;
+  margin: 0 0 22px;
+  padding-left: 16px;
+  font-family: var(--rf-serif);
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--rf-ink);
+}
+body .about-page .about-section > h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .2em;
+  bottom: .2em;
+  width: 4px;
+  border-radius: 2px;
+  background: var(--rf-accent);
+}
+
+body .about-page .section-lead {
+  max-width: none;
+  margin: -6px 0 24px;
+  color: var(--rf-muted);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Profile header */
+body .about-page #profile > h1 {
+  margin: 0 0 14px;
+  font-family: var(--rf-serif);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--rf-ink);
+}
+body .about-page #profile > .section-lead {
+  max-width: none;
+  margin: 0 0 16px;
+  color: var(--rf-text);
+  font-size: 19px;
+  line-height: 1.75;
+}
+body .about-page .profile-language { margin: 0 0 28px; font-size: 16px; }
+body .about-page .profile-language a {
+  display: inline-block;
+  padding: 4px 16px;
+  border: 1px solid var(--rf-line);
+  border-radius: 999px;
+  color: var(--rf-ink);
+  text-decoration: none;
+  font-weight: 600;
+}
+body .about-page .profile-language a:hover { border-color: var(--rf-accent); color: var(--rf-accent); }
+
+body .about-page .profile-destinations {
+  gap: 14px;
+  border: 0;
+}
+body .about-page .profile-destination {
+  min-height: 0;
+  padding: 18px 20px;
+  border: 1px solid var(--rf-line);
+  border-radius: 14px;
+  background: var(--rf-tile);
+  transition: border-color .2s ease, background-color .2s ease;
+}
+body .about-page .profile-destination + .profile-destination { border-left: 1px solid var(--rf-line); border-top: 1px solid var(--rf-line); }
+body .about-page .profile-destination:hover { border-color: var(--rf-accent); background: var(--rf-card); }
+body .about-page .profile-destination strong { font-family: var(--rf-sans); font-size: 17px; font-weight: 600; }
+body .about-page .profile-destination small { font-size: 14px; }
+
+body .about-page .profile-guides { padding: 22px 0 0; font-size: 16px; }
+body .about-page .profile-guides-label { font-weight: 600; }
+
+/* Inner cards */
+body .about-page .profile-grid { margin-top: 30px; gap: 18px; }
+body .about-page .card-grid,
+body .about-page .timeline-grid { gap: 18px; }
+
+body .about-page .about-card {
+  padding: 24px 26px;
+  border: 1px solid var(--rf-line-soft);
+  border-radius: 14px;
+  background: var(--rf-tile);
+  box-shadow: none;
+}
+body .about-page .about-card h3 {
+  margin-bottom: 10px;
+  font-family: var(--rf-serif);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--rf-ink);
+}
+body .about-page .about-card p,
+body .about-page .about-card li {
+  color: var(--rf-text);
+  font-size: 16px;
+  line-height: 1.75;
+}
+body .about-page .about-card p { margin-bottom: .7em; }
+body .about-page .about-card a { color: var(--rf-accent); }
+
+body .about-page .tag-row { gap: 8px; margin-top: 14px; }
+body .about-page .tag-row span {
+  padding: 5px 14px;
+  border: 1px solid var(--rf-line);
+  border-radius: 999px;
+  background: var(--rf-card);
+  color: var(--rf-text);
+  font-size: 14px;
+}
+
+/* Scholar metrics */
+body .about-page #gs-updated { margin: -10px 0 22px; color: var(--rf-muted); font-size: 14px; }
+body .about-page .scholar-grid { gap: 14px; }
+body .about-page .scholar-metric {
+  min-height: 0;
+  gap: 6px;
+  padding: 22px 20px 18px;
+  border: 1px solid var(--rf-line);
+  border-radius: 14px;
+  background: var(--rf-tile);
+  box-shadow: none;
+}
+body .about-page .scholar-metric--citations { background: var(--rf-accent-soft); border-color: #cfe0db; }
+body .about-page .scholar-metric-top { min-height: 0; }
+body .about-page .scholar-metric strong {
+  font-family: var(--rf-serif);
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--rf-accent);
+}
+body .about-page .scholar-metric--highly-cited strong { color: var(--rf-gold); }
+body .about-page .scholar-metric--hot strong { color: #a34e38; }
+body .about-page .scholar-metric-label { color: var(--rf-ink); font-size: 15px; }
+body .about-page .scholar-metric small { padding-top: 10px; border-top-color: var(--rf-line); font-size: 13px; }
+
+/* Honors, funding, internships */
+body .about-page .award-list,
+body .about-page .funding-list,
+body .about-page .service-list { gap: 12px; }
+
+body .about-page .compact-item {
+  padding: 18px 22px 18px 26px;
+  border: 1px solid var(--rf-line-soft);
+  border-radius: 12px;
+  background: var(--rf-tile);
+  box-shadow: none;
+}
+body .about-page .compact-item::before { top: 18px; bottom: 18px; width: 3px; }
+body .about-page .compact-item strong {
+  font-family: var(--rf-sans);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--rf-ink);
+}
+body .about-page .compact-item p {
+  margin-top: 4px;
+  color: var(--rf-text);
+  font-size: 16px;
+  line-height: 1.65;
+}
+body .about-page .honor-featured,
+body .about-page .honor-highlight { border-color: #eadfc6; background: #fbf7ec; }
+body .about-page .honor-secondary { border-color: #d9e7e2; background: #eef5f2; }
+body .about-page .honor-title strong { font-size: 18px; }
+body .about-page .honor-links a { color: var(--rf-accent); }
+
+/* ---------- Other pages: soften white panels on the warm background ---------- */
+
+body .publication-hero,
+body .collaboration-hero,
+body .research-hero,
+body .zh-research .zh-header,
+body .zh-research .zh-topic-section {
+  background: var(--rf-card);
+  margin-bottom: 28px;
+  padding: 36px 40px;
+  border: 1px solid var(--rf-line);
+  border-radius: var(--rf-radius);
+  box-shadow: var(--rf-shadow);
+}
+body .publication-group,
+body .method-group { border-radius: 12px; }
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 1100px) {
+  body .about-page .about-section { padding: 32px 30px; }
+}
+
+@media (max-width: 57.8125em) {
+  body #main { padding-left: 16px; padding-right: 16px; margin-top: 1.25rem; }
+  body .sidebar .profile_box { padding: 16px; gap: 14px; }
+}
+
+@media (max-width: 620px) {
+  body .about-page { font-size: 16px; }
+  body .about-page .about-section { margin-bottom: 18px; padding: 24px 18px; border-radius: 14px; }
+  body .about-page .about-section > h2 { font-size: 23px; }
+  body .about-page #profile > h1 { font-size: 32px; }
+  body .about-page #profile > .section-lead { font-size: 17px; }
+  body .about-page .about-card { padding: 18px; }
+  body .about-page .compact-item { padding: 14px 16px 14px 20px; }
+  body .about-page .scholar-metric strong { font-size: 34px; }
+}
